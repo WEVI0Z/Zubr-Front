@@ -1,0 +1,60 @@
+@import "../../../stylesheets/variables";
+
+.header {
+  min-height: 50px;
+  max-width: 1200px;
+  min-width: 400px;
+  padding: 0 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__wrapper {
+    width: 100%;
+    background-color: $light-green;
+  }
+
+  &__main-link {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__slogan {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-left: 20px;
+  }
+
+  &__authorization {
+    display: block;
+    position: relative;
+    padding: 5px 10px;
+
+    font-size: 16px;
+    font-family: Montserrat, sans-serif, monospace;
+    color: $dark-green;
+
+    background-color: $white;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover, &:focus {
+      transform: translateY(-2p+x);
+      cursor: pointer;
+    }
+
+    &:active {
+
+    }
+  }
+}
