@@ -1,38 +1,13 @@
 @import "variables";
+@import "typography";
 
 body {
   margin: 0;
   padding: 0;
+  font-family: $inter-font;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-a {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: $white;
-  transition: all 0.2s ease-out;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    bottom: 0;
-
-    border-bottom: 1px solid $white;
-    transition: all 0.2s ease-out;
-  }
-
-  &:hover::before, &:focus::before {
-    width: 100%;
-  }
-
-  &:active {
-    transform: translateY(1px);
-  }
 }

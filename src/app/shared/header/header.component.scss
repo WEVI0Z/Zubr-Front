@@ -1,60 +1,119 @@
-@import "../../../stylesheets/variables";
+@import "../../../stylesheets/global";
 
 .header {
-  min-height: 50px;
-  max-width: 1200px;
-  min-width: 400px;
-  padding: 0 50px;
+  max-width: $max-width;
+  height: 1080px;
   margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 
   &__wrapper {
     width: 100%;
-    background-color: $light-green;
+    background-color: #007AFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &__main-link {
-    padding: 0;
-    margin: 0;
+  &__upper-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+  }
+
+  &__particles {
+    position: absolute;
+    width: 100%;
+    height: 1080px;
+    z-index: 0;
+  }
+
+  &__orgs {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    min-width: 110px;
+    height: 50px;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    width: 394px;
+    margin: 54px 8px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__container {
+    &--heading {
+      z-index: 1;
+      flex-grow: 1;
+      max-width: 1010px;
+    }
+  }
+
+  &__nav {
+    z-index: 1;
+    flex-grow: 1;
   }
 
   &__slogan {
-    padding: 0;
+    justify-self: flex-end;
     margin: 0;
+    margin-top: 303px;
+    z-index: 1;
+
+    color: white;
+    font-size: 128px;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  &__description {
+    &--part-1 {
+      max-width: 1342px;
+      margin: 0 100px;
+      padding: 0;
 
-  &__item {
-    margin-left: 20px;
-  }
-
-  &__authorization {
-    display: block;
-    position: relative;
-    padding: 5px 10px;
-
-    font-size: 16px;
-    font-family: Montserrat, sans-serif, monospace;
-    color: $dark-green;
-
-    background-color: $white;
-    border-radius: 6px;
-    border: none;
-    transition: all 0.2s ease-in-out;
-
-    &:hover, &:focus {
-      transform: translateY(-2p+x);
-      cursor: pointer;
+      letter-spacing: -10px;
+      font-weight: 300;
     }
 
-    &:active {
+    &--part-2 {
+      margin: 0 18px;
+      margin-top: -70px;
+      padding: 0;
 
+      letter-spacing: -10px;
+      font-weight: 300;
     }
   }
 }
+
+.nav {
+  color: white;
+  max-width: 574px;
+  margin: 57px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  &__item {
+    padding: 0 5px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+
+    &:hover, &:focus {
+      opacity: 0.5;
+    }
+  }
+}
+
