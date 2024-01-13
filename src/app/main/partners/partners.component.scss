@@ -1,0 +1,87 @@
+@import "../../../stylesheets/global";
+
+.partners {
+  max-width: $max-width;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0 92px;
+  margin-bottom: 60px;
+
+  &__slogan {
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -10px;
+  }
+
+  &__wrapper {
+    padding: 30px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    min-height: 203px;
+
+    background-color: #007AFF;
+    background-image: url("/assets/shared/blue-background.png");
+
+  }
+
+  &__item {
+    max-width: 300px;
+    min-height: 90px;
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 30px;
+
+    background-color: white;
+    border-radius: 2%;
+
+    &:last-child {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__name {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #007AFF;
+    text-decoration: none;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    max-width: 1295px;
+    flex-grow: 1;
+    margin-right: 135px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__image {
+    align-self: center;
+  }
+
+  &__button {
+    position: absolute;
+
+    right: 50px;
+    top: 50px;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    margin: 0;
+
+    color: white;
+    font-size: 64px;
+    letter-spacing: -8px;
+    font-weight: 300;
+  }
+}
