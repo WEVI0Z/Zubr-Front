@@ -4,12 +4,12 @@
     <div class="header__upper-container">
       <ul class="header__orgs">
         <li class="header__org org">
-          <a href="#" class="org__link">
+          <a href="#" routerLink="/main" class="org__link">
             <img width="47" height="47" src="assets/header/robin-logo.svg" alt="Лого чемпионата Робин" class="org__image">
           </a>
         </li>
         <li class="header__org org">
-          <a href="#" class="org__link">
+          <a href="https://zubronok.by/" class="org__link">
             <img width="47" height="50" src="assets/header/zubr-logo.svg" alt="Лого лагеря 'Зубренок'" class="org__image">
           </a>
         </li>
@@ -19,16 +19,16 @@
       </div>
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">О чемпионате</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Компетенции</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">RU</a></li>
-          <li class="nav__item">
+          <li class="nav__item"><a href="#" routerLink="/about" class="nav__link">О чемпионате</a></li>
+          <li class="nav__item"><a href="#" routerLink="/sphere-list" class="nav__link">Компетенции</a></li>
+          <li class="nav__item"><a href="#" routerLink="/news" class="nav__link">Новости</a></li>
+          <li class="nav__item" hidden><a href="#" class="nav__link">RU</a></li>
+          <li class="nav__item" hidden>
             <a href="#" class="nav__link">
               <img  src="assets/header/eye.svg" alt="Версия для слабовидящих" class="nav__image">
             </a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Вход</a></li>
+          <li class="nav__item" hidden><a href="#" class="nav__link">Вход</a></li>
         </ul>
       </nav>
     </div>
