@@ -34,9 +34,10 @@
     display: flex;
     align-self: flex-start;
     margin-bottom: 30px;
+    padding: 5px;
 
     background-color: white;
-    border-radius: 2%;
+    border-radius: 3%;
 
     &:last-child {
       margin-bottom: 80px;

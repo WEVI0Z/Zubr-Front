@@ -8,13 +8,17 @@ const routes: Routes = [
     loadChildren: () => import("./main/main.module").then(m => m.MainModule)
   },
   {
+    path: "undefined",
+    loadChildren: () => import("./undefined/undefined.module").then(m => m.UndefinedModule)
+  },
+  {
     path: "",
     pathMatch: "full",
     redirectTo: "/main"
   },
   {
     path: "**",
-    redirectTo: "/main"
+    redirectTo: "/undefined"
   }
 ];
 
