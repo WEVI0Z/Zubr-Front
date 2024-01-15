@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { ParticlesConfig } from './particles-config';
+import {Router} from "@angular/router";
 
 declare let particlesJS: any;
 
@@ -9,11 +10,18 @@ declare let particlesJS: any;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
+  protected isPageMain: boolean = this.router.url === "/";
+
   public ngOnInit(): void {
-    this.invokeParticles();
+    if (this.isPageMain) {
+      this.invokeParticles();
+    }
   }
 
-  public invokeParticles(): void {
+  constructor(private router: Router) {
+  }
+
+  private invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function() {});
   }
 

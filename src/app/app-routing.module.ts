@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import("./undefined/undefined.module").then(m => m.UndefinedModule)
   },
   {
+    path: "about",
+    loadChildren: () => import("./about/about.module").then(m => m.AboutModule)
+  },
+  {
     path: "**",
     redirectTo: "/undefined"
   }

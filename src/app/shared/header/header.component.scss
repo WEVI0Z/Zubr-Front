@@ -2,12 +2,15 @@
 
 .header {
   max-width: $max-width;
-  height: 100vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+
+  &--basic {
+    height: 100vh;
+  }
 
   &__wrapper {
     width: 100%;
