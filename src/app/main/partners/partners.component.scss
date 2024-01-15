@@ -21,7 +21,7 @@
     display: flex;
     align-items: flex-start;
     position: relative;
-    min-height: 203px;
+    overflow: hidden;
 
     background-color: #007AFF;
     background-image: url("/assets/shared/blue-background.png");
@@ -29,7 +29,8 @@
   }
 
   &__item {
-    max-width: 300px;
+    margin: 0 30px 0 30px;
+    width: 300px;
     min-height: 90px;
     display: flex;
     align-self: flex-start;
@@ -38,10 +39,6 @@
 
     background-color: white;
     border-radius: 3%;
-
-    &:last-child {
-      margin-bottom: 80px;
-    }
   }
 
   &__name {
@@ -56,33 +53,14 @@
   &__list {
     margin: 0;
     display: flex;
-    max-width: 1295px;
-    flex-grow: 1;
-    margin-right: 135px;
-    flex-wrap: wrap;
     justify-content: space-between;
+
+    transition: 500ms;
   }
 
   &__image {
+    width: 66px;
+    height: 76px;
     align-self: center;
-  }
-
-  &__button {
-    position: absolute;
-
-    right: 50px;
-    top: 50px;
-  }
-
-  &__text {
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    margin: 0;
-
-    color: white;
-    font-size: 64px;
-    letter-spacing: -8px;
-    font-weight: 300;
   }
 }

@@ -18,6 +18,7 @@
     height: 44vh;
     top: 50%;
     left: 50%;
+    z-index: 0;
 
     transform: translate(-50%, -50%);
     background-color: #007AFF;
@@ -27,15 +28,17 @@
 
   &__text {
     margin: 0;
-    font-size: 11vh;
-
+    z-index: 1;
     max-width: 100vh;
+
+    font-size: 11vh;
     font-weight: 300;
     letter-spacing: -1vh;
   }
 
   &__link {
     padding: 0.4vh;
+    z-index: 1;
 
     text-decoration: none;
     color: #007AFF;
