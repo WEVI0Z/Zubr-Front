@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren: () => import("./about/about.module").then(m => m.AboutModule)
   },
   {
+    path: "sphere-list",
+    loadChildren: () => import("./sphere-list/sphere-list.module").then(m => m.SphereListModule)
+  },
+  {
     path: "**",
     redirectTo: "/undefined"
   }
