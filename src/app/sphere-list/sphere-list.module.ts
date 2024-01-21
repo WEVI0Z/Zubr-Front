@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SphereListComponent } from './sphere-list.component';
 import { ItemComponent } from './item/item.component';
 import {SphereListRoutingModule} from "./sphere-list-routing.module";
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -11,10 +12,11 @@ import {SphereListRoutingModule} from "./sphere-list-routing.module";
     SphereListComponent,
     ItemComponent
   ],
-  imports: [
-    CommonModule,
-    SphereListRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        SphereListRoutingModule,
+        SharedModule
+    ],
   exports: [
     SphereListRoutingModule
   ]

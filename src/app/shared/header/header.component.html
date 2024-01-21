@@ -1,6 +1,6 @@
 <div class="header__wrapper">
   <div id="particles-js" class="header__particles"></div>
-  <header class="header">
+  <header [class]="!isPageMain ? 'header' : 'header header--basic'">
     <div class="header__upper-container">
       <ul class="header__orgs">
         <li class="header__org org">
