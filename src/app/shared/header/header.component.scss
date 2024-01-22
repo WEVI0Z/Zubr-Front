@@ -122,22 +122,15 @@
   &__link {
     text-decoration: none;
     color: white;
-
-    &:hover, &:focus {
-      opacity: 0.5;
-    }
   }
 
   &__competitions {
     position: absolute;
     display: none;
-    padding: 5px;
     width: 270px;
 
     transition: 500ms;
     opacity: 0;
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     -webkit-box-shadow: 0 7px 8px 1px rgba(34, 60, 80, 0.2);
@@ -151,7 +144,18 @@
   }
 
   &__competition {
-    margin-top: 4px;
+    background-color: #fff;
+    .nav__link {
+
+      padding: 4px;
+      color: black;
+      background-color: #fff;
+      display: block;
+
+      &:hover, &:focus {
+        background-color: #007AFF80;
+      }
+    }
   }
 }
 
