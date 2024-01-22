@@ -1,6 +1,17 @@
 import { Injectable } from '@angular/core';
 import {Sphere} from "../interface/sphere";
 import {SUMO} from "../content/sumo";
+import {LINE} from "../content/line";
+import {FOOTBALL} from "../content/football";
+import {DESIGN_YOUNGER} from "../content/design-younger";
+import {DESIGN_ELDER} from "../content/design-elder";
+import {WEB_DEVELOPMENT} from "../content/web-development";
+import {PROTOTYPING_YOUNGER} from "../content/prototyping-younger";
+import {PROTOTYPING_ELDER} from "../content/prototyping-elder";
+import {BOT_CONSTRUCTOR} from "../content/bot-constructor";
+import {DRONES} from "../content/drones";
+import {WEB_DESIGN} from "../content/web-design";
+import {PROGRAMMING} from "../content/programming";
 
 @Injectable({
   providedIn: 'root'
@@ -10,5 +21,16 @@ export class SphereService {
 
   constructor() {
     this.sphereList.push(SUMO);
+    this.sphereList.push(LINE);
+    this.sphereList.push(FOOTBALL);
+    this.sphereList.push(DESIGN_YOUNGER);
+    this.sphereList.push(DESIGN_ELDER);
+    this.sphereList.push(WEB_DEVELOPMENT);
+    this.sphereList.push(PROTOTYPING_YOUNGER);
+    this.sphereList.push(PROTOTYPING_ELDER);
+    this.sphereList.push(BOT_CONSTRUCTOR);
+    this.sphereList.push(DRONES);
+    this.sphereList.push(WEB_DESIGN);
+    this.sphereList.push(PROGRAMMING);
   }
 }

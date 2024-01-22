@@ -6,10 +6,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 
   &--basic {
     height: 100vh;
+    overflow: hidden;
   }
 
   &__wrapper {
@@ -132,6 +132,7 @@
     position: absolute;
     display: none;
     padding: 5px;
+    width: 270px;
 
     transition: 500ms;
     opacity: 0;

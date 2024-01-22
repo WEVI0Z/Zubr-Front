@@ -1,5 +1,5 @@
 <div class="header__wrapper">
-  <div id="particles-js" class="header__particles"></div>
+  <div id="particles-js" [class]="isPageMain ? 'header__particles' : 'visually-hidden'"></div>
   <header [class]="!isPageMain ? 'header' : 'header header--basic'">
     <div class="header__upper-container">
       <ul class="header__orgs">
@@ -74,7 +74,7 @@
                 </a>
               </li>
               <li class="nav__competition">
-                <a href="/sphere-list/wev-design" class="nav__link">
+                <a href="/sphere-list/web-design" class="nav__link">
                   Web-дизайн
                 </a>
               </li>
