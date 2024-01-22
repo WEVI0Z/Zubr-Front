@@ -2,6 +2,8 @@ import {Sphere} from "../interface/sphere";
 
 export const PROGRAMMING: Sphere = {
   name: "programming",
+  viewName: "Программирование",
+  description: "Программирование – это процесс создания компьютерных программ.",
   content: `<h2>ПРОГРАММИРОВАНИЕ</h2>
 <ol>
 <li>ОБЩИЕ ПОЛОЖЕНИЯ</li>

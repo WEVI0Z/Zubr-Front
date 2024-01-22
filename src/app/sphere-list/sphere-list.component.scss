@@ -1,0 +1,61 @@
+@import "../../stylesheets/global";
+
+.sphere {
+  margin: auto;
+  margin-top: 40px;
+  max-width: $max-width;
+  padding: 0 92px;
+
+  &__name {
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    margin-bottom: 30px;
+    max-width: 345px;
+    min-height: 485px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    color: white;
+
+    -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    background-color: #007AFF;
+    background-image: url("/assets/shared/blue-background.png");
+  }
+
+  &__image {
+    align-self: center;
+    object-fit: cover;
+
+    border-radius: 2%;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__slogan {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
