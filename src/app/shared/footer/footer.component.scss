@@ -52,6 +52,15 @@
 
       background-image: url("/assets/footer/star-icon.svg");
     }
+
+    &__link {
+      text-decoration: none;
+      color: white;
+    }
+
+    &__link:hover, &__link:focus {
+      text-decoration: underline;
+    }
   }
 
   &__contacts {
@@ -89,7 +98,7 @@
     text-decoration: none;
     font-weight: 300;
 
-    &:hover, &:focus {
+    &--link:hover, &--link:focus {
       text-decoration: underline;
     }
   }

@@ -27,4 +27,11 @@ main {
     font-weight: 300;
     letter-spacing: -10px;
   }
+
+  &__numerated {
+    li {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
 }
