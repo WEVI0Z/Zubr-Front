@@ -5,33 +5,3 @@ main {
   flex-direction: column;
   min-height: 100vh;
 }
-
-.about {
-  max-width: $max-width;
-  margin: auto;
-  padding: 0 90px;
-  flex-grow: 1;
-
-  &__heading {
-    margin: 30px 0 5px 0;
-  }
-
-  &__paragraph {
-    margin: 0;
-  }
-
-  &__name {
-    margin: 0;
-
-    font-size: 96px;
-    font-weight: 300;
-    letter-spacing: -10px;
-  }
-
-  &__numerated {
-    li {
-      font-size: 18px;
-      font-weight: 400;
-    }
-  }
-}
