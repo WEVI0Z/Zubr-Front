@@ -13,6 +13,5 @@ export class SphereComponent {
     .slice(0, 3);
 
   constructor(private sphereService: SphereService) {
-    console.log(this.sphereList)
   }
 }
