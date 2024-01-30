@@ -8,7 +8,7 @@ import {SphereService} from "../../sphere-list/service/sphere.service";
   styleUrls: ['./sphere.component.scss']
 })
 export class SphereComponent {
-  protected sphereList: Sphere[] = this.sphereService.sphereList
+  protected sphereList: Sphere[] = [...this.sphereService.sphereList]
     .sort((a, b) => 1 * (Math.floor(Math.random() * 2) == 1 ? 1 : -1))
     .slice(0, 3);
 
