@@ -23,64 +23,9 @@
           <li class="nav__item nav__item--competitions">
             <a href="#" routerLink="/sphere-list" class="nav__link">Компетенции</a>
             <ul class="nav__competitions">
-              <li class="nav__competition">
-                <a href="/sphere-list/sumo" class="nav__link">
-                  Интеллектуальное сумо 15х15
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/line" class="nav__link">
-                  Следование по линии
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/football" class="nav__link">
-                  Футбол управляемых роботов 2х2
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/design-younger" class="nav__link">
-                  Графический дизайн (младшая категория)
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/design-elder" class="nav__link">
-                  Графический дизайн (старшая категория)
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/web-development" class="nav__link">
-                  Web-разработка
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/prototyping-younger" class="nav__link">
-                  Прототипирование (младшая категория)
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/prototyping-elder" class="nav__link">
-                  Прототипирование (старшая категория)
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/bot-constructor" class="nav__link">
-                  Bot-конструктор
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/drones" class="nav__link">
-                  Технологии беспилотных летательных аппаратов
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/web-design" class="nav__link">
-                  Web-дизайн
-                </a>
-              </li>
-              <li class="nav__competition">
-                <a href="/sphere-list/programming" class="nav__link">
-                  Программирование
+              <li class="nav__competition" *ngFor="let sphere of sphereList">
+                <a [href]="'/sphere-list/' + sphere.name" class="nav__link">
+                  {{sphere.viewName}}
                 </a>
               </li>
             </ul>

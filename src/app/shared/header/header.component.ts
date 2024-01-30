@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import { ParticlesConfig } from './particles-config';
 import {Router} from "@angular/router";
+import {Sphere} from "../../sphere-list/interface/sphere";
+import {SphereService} from "../../sphere-list/service/sphere.service";
 
 declare let particlesJS: any;
 
@@ -11,6 +13,7 @@ declare let particlesJS: any;
 })
 export class HeaderComponent implements OnInit{
   protected isPageMain: boolean = this.router.url === "/";
+  protected sphereList: Sphere[] = this.sphereService.sphereList;
 
   public ngOnInit(): void {
     if (this.isPageMain) {
@@ -18,7 +21,8 @@ export class HeaderComponent implements OnInit{
     }
   }
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private sphereService: SphereService) {
   }
 
   private invokeParticles(): void {
