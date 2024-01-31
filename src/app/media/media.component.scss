@@ -24,22 +24,47 @@ main {
 
   &__list {
     width: 100%;
-    display: grid;
+    //display: grid;
+    //justify-content: space-between;
+    //grid-template-columns: repeat(auto-fill, minmax(433px, 1fr));
+    display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fill, minmax(433px, 1fr));
+    flex-wrap: wrap;
   }
 
   &__item {
     margin-bottom: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 398px;
+      width: 403px;
+      z-index: -1;
+
+      background-color: #007AFF;
+      border-radius: 5px;
+      transition: 0.2s ease-in-out;
+    }
+
+    &:hover::before, &:active::before {
+      height: 100%;
+    }
+
+    &:hover .media__description, &:active .media__description {
+      color: white;
+    }
   }
 
   &__description {
-    margin: 10px 0 0 0;
+    margin: 8px 0 10px 10px;
 
     font-size: 16px;
     letter-spacing: -8%;
     font-weight: 500;
     color: black;
+    transition: 0.2s ease-in-out;
   }
 
   &__link {

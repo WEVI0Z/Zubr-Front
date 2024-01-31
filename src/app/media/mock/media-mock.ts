@@ -5,11 +5,9 @@ export const MEDIA_LIST: Media[] = [
     path: "mock-1.jpg"
   },
   {
-    name: "Зубренок",
     path: "mock-2.jpg"
   },
   {
-    name: "Чемпионат",
     path: "mock-3.jpg"
   },
   {
