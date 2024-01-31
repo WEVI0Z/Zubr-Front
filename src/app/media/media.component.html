@@ -1,1 +1,15 @@
-<p>media works!</p>
+<main>
+  <app-header></app-header>
+  <section class="media">
+    <h2 class="media__title">Медиа</h2>
+    <ul class="media__list">
+      <li class="media__item" *ngFor="let media of mediaList">
+        <a [href]="'../../assets/media/' + media.path" class="media__link">
+          <img class="media__image" [src]="'../../assets/media/' + media.path" [alt]="media.name ? media.name : 'Фотография'">
+          <p class="media__description">{{media.name ? media.name : 'Фотография'}}</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <app-footer></app-footer>
+</main>

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { MediaComponent } from './media.component';
+import {MediaRoutingModule} from "./media-routing.module";
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -9,7 +11,13 @@ import { MediaComponent } from './media.component';
     MediaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MediaRoutingModule,
+    SharedModule,
+    NgOptimizedImage
+  ],
+  exports: [
+    MediaRoutingModule
   ]
 })
 export class MediaModule { }

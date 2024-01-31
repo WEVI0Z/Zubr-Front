@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import("./sphere-list/sphere-list.module").then(m => m.SphereListModule)
   },
   {
+    path: "media",
+    loadChildren: () => import("./media/media.module").then(m => m.MediaModule)
+  },
+  {
     path: "**",
     redirectTo: "/undefined"
   }

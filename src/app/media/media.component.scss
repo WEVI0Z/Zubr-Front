@@ -1,0 +1,56 @@
+@import "../../stylesheets/global";
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.media {
+  max-width: $max-width;
+  margin: 70px auto;
+  padding: 0 90px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -11px;
+  }
+
+  &__list {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(433px, 1fr));
+  }
+
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    margin: 10px 0 0 0;
+
+    font-size: 16px;
+    letter-spacing: -8%;
+    font-weight: 500;
+    color: black;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__image {
+    width: 403px;
+    height: 403px;
+
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}

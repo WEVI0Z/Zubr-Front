@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MediaService} from "./service/media.service";
+import {Media} from "./interface/media";
 
 @Component({
   selector: 'app-media',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./media.component.scss']
 })
 export class MediaComponent {
+  protected mediaList: Media[] = this.mediaService.mediaList;
 
+  constructor(private mediaService: MediaService) {
+  }
 }
