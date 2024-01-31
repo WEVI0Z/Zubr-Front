@@ -36,6 +36,14 @@
     box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     background-color: #007AFF;
     background-image: url("/assets/shared/blue-background.png");
+    transition: 0.2s ease-in-out;
+
+    &:hover, &:focus {
+      -webkit-box-shadow: 0 0 16px 4px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0 0 16px 4px rgba(34, 60, 80, 0.2);
+      box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+      transform: scale(1.01);
+    }
   }
 
   &__image {
