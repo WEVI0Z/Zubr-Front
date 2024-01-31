@@ -21,7 +21,7 @@ export const WEB_DEVELOPMENT_ELDER: Sphere = {
 <ol start="3">
 <li>ТРЕБОВАНИЯ К ВЁРСТКЕ</li>
 </ol>
-<p>3.1. вёрстка валидная. Для проверки валидности верстки используйте сервис https://validator.w3.org</p>
+<p>3.1. вёрстка валидная. Для проверки валидности верстки используйте сервис <a href="https://validator.w3.org">https://validator.w3.org</a></p>
 <p>3.2. вёрстка семантическая</p>
 <p>3.3. при написании кода рекомендуется следовать гайдлайну <a href="https://codeguide.academy/html-css.html">https://codeguide.academy/html-css.html</a></p>
 <p>3.4. контент размещается в блоке, который горизонтально центрируется на странице</p>
