@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {SphereService} from "../service/sphere.service";
 import {Router} from "@angular/router";
+import {Sphere} from "../interface/sphere";
 
 @Component({
   selector: 'app-item',
@@ -9,6 +10,7 @@ import {Router} from "@angular/router";
 })
 export class ItemComponent implements AfterViewInit{
   @ViewChild("wrapper", {read: ElementRef}) wrapper!: ElementRef;
+  protected sphere?: Sphere;
 
   constructor(private sphereService: SphereService,
               private router: Router) {
@@ -23,6 +25,7 @@ export class ItemComponent implements AfterViewInit{
 
     this.sphereService.sphereList.forEach(sphere => {
       if (url.includes(sphere.name)) {
+        this.sphere = sphere;
         wrapper.innerHTML = sphere.content;
       }
     })

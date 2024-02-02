@@ -4,7 +4,7 @@ export const PROGRAMMING: Sphere = {
   name: "programming",
   viewName: "Программирование",
   description: "Программирование – это процесс создания компьютерных программ.",
-  content: `<h2>ПРОГРАММИРОВАНИЕ</h2>
+  content: `
 <ol>
 <li>ОБЩИЕ ПОЛОЖЕНИЯ</li>
 </ol>
