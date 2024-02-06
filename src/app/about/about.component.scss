@@ -40,6 +40,28 @@ main {
   &__tasks {
     margin-top: 45px;
   }
+
+  &__link {
+    margin-top: 50px;
+    display: block;
+    position: relative;
+    font-size: 40px;
+    padding: 5px;
+
+    text-decoration: none;
+    color: white;
+    background-color: #007AFF;
+    background-image: url("/assets/shared/blue-background.png");
+  }
+
+  &__image {
+    position: relative;
+    top: 6px;
+    width: 40px;
+    height: 44px;
+
+    object-fit: contain;
+  }
 }
 
 

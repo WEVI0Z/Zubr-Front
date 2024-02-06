@@ -2,7 +2,7 @@
 <main style="position: relative">
   <h2 class="item__heading">
     {{sphere ? sphere.viewName : "Компетенция не найдена"}}
-    <a href="../../../assets/sphere/приложение-робин-2024.docx" class="item__link" aria-label="Скачать документ"></a>
+    <a [href]="'../../../assets/sphere/docx/' + sphere?.viewName + '.docx'" class="item__link" aria-label="Скачать документ"></a>
   </h2>
   <div #wrapper class="item"></div>
 </main>
