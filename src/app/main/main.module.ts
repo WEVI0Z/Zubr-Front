@@ -6,6 +6,7 @@ import {SharedModule} from "../shared/shared.module";
 import { SphereComponent } from './sphere/sphere.component';
 import { MediaComponent } from './media/media.component';
 import { PartnersComponent } from './partners/partners.component';
+import { TimerComponent } from './timer/timer.component';
 
 
 
@@ -14,7 +15,8 @@ import { PartnersComponent } from './partners/partners.component';
     MainComponent,
     SphereComponent,
     MediaComponent,
-    PartnersComponent
+    PartnersComponent,
+    TimerComponent
   ],
     imports: [
         CommonModule,

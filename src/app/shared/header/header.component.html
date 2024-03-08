@@ -51,13 +51,35 @@
             </ul>
           </li>
           <li class="nav__item"><a href="#" routerLink="/media" class="nav__link">Медиа</a></li>
-          <li class="nav__item" hidden><a href="#" class="nav__link">RU</a></li>
+          <li class="nav__item nav__item--langs">
+            <a href="#" class="nav__link nav__cur-lang">{{ currentLang }}</a>
+            <ul class="nav__langs">
+              <li class="nav__competition" data-google-lang="ru" onclick="onClickTranslate(this)">
+                <a href="#" class="nav__link" data-google-lang="ru" onclick="onClickTranslate(this)">RU</a>
+              </li>
+              <li class="nav__competition" data-google-lang="be" onclick="onClickTranslate(this)">
+                <a href="#" class="nav__link" data-google-lang="be" onclick="onClickTranslate(this)">BE</a>
+              </li>
+              <li class="nav__competition" data-google-lang="en" onclick="onClickTranslate(this)">
+                <a href="#" class="nav__link" data-google-lang="en" onclick="onClickTranslate(this)">EN</a>
+              </li>
+            </ul>
+          </li>
           <li class="nav__item" hidden>
             <a href="#" class="nav__link">
               <img  src="assets/header/eye.svg" alt="Версия для слабовидящих" class="nav__image">
             </a>
           </li>
-          <li class="nav__item" hidden><a href="#" class="nav__link">Вход</a></li>
+          <li class="nav__item nav__user">
+            <a href="javascript:void(0)" class="nav__link">
+              <img src="assets/header/user.svg" alt="Вход" class="nav__image">
+            </a>
+          </li>
+          <li class="nav__item nav__user">
+            <a href="https://email.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
+              <img src="assets/header/icon-mail.svg" alt="Почта" class="nav__image">
+            </a>
+          </li>
         </ul>
       </nav>
     </div>

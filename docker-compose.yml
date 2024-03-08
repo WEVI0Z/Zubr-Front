@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  main_app:
+    build: .
+    ports:
+      - target: 80
+        published: "7878"
+        protocol: tcp
+    restart: always
+    network_mode: bridge

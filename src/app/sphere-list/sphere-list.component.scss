@@ -19,6 +19,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    list-style-type: none;
+    padding: 0;
   }
 
   &__card {

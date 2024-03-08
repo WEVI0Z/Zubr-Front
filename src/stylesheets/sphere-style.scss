@@ -29,3 +29,29 @@ td {
 
   border: 1px solid black;
 }
+
+ol.two-level-list {
+  counter-reset: item;
+
+  & > li::marker {
+    content: "1." counter(item) " ";
+  }
+
+  & > li {
+    counter-increment: item;
+  }
+
+  li {
+    font-weight: unset;
+    font-size: unset;
+  }
+
+  li > ul {
+    list-style-type: disc;
+  }
+}
+
+.italic {
+  font-weight: 200;
+  font-style: italic;
+}

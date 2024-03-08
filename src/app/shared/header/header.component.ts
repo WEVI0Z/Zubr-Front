@@ -14,6 +14,7 @@ declare let particlesJS: any;
 export class HeaderComponent implements OnInit{
   protected isPageMain: boolean = this.router.url === "/";
   protected sphereList: Sphere[] = this.sphereService.sphereList;
+  protected currentLang: string = 'RU';
 
   public ngOnInit(): void {
     if (this.isPageMain) {
@@ -23,10 +24,24 @@ export class HeaderComponent implements OnInit{
 
   constructor(private router: Router,
               private sphereService: SphereService) {
+
+    let lang = this.getCookie('googtrans');
+    if(lang.includes('en')) {
+      this.currentLang = 'EN';
+    }else if(lang.includes('be')) {
+      this.currentLang = 'BE';
+    }
   }
 
   private invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function() {});
+  }
+
+  private getCookie(name : any): any {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
 }
