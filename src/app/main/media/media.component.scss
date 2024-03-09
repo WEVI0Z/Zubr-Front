@@ -1,0 +1,70 @@
+@import "../../../stylesheets/global";
+
+.media {
+  max-width: $max-width;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0 92px;
+  box-sizing: border-box;
+
+  &__slogan {
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -10px;
+  }
+
+  &__card {
+    padding: 30px;
+    display: flex;
+    position: relative;
+
+    -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    background-color: #007AFF;
+    background-image: url("/assets/shared/blue-background.png");
+  }
+
+  &__image {
+    max-width: 1176px;
+    min-width: 400px;
+    max-height: 623px;
+    min-height: 200px;
+    object-fit: cover;
+    flex-grow: 1;
+
+    border-radius: 2%;
+  }
+
+  &__description {
+    margin: 0;
+    margin-left: 20px;
+    flex-grow: 1;
+
+    font-size: 24px;
+    color: white;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    right: 0;
+    max-width: 790px;
+
+    line-height: 110px;
+    font-weight: 300;
+    color: white;
+    font-size: 150px;
+    letter-spacing: -15px;
+  }
+
+  &__button {
+    position: absolute;
+
+    right: 30px;
+    top: 50%;
+  }
+}

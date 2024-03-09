@@ -1,1 +1,100 @@
-<p>header works!</p>
+<div class="header__wrapper">
+  <div id="particles-js" [class]="isPageMain ? 'header__particles' : 'visually-hidden'"></div>
+  <header [class]="!isPageMain ? 'header' : 'header header--basic'">
+    <div class="header__upper-container">
+      <ul class="header__orgs">
+        <li class="header__org org">
+          <a href="https://zubronok.by/" target="_blank" class="org__link">
+            <img width="47" height="47" src="../../../assets/header/zubr-logo.svg" alt="Лого лагеря 'Зубренок'" class="org__image">
+          </a>
+        </li>
+        <li class="header__org org">
+          <a href="#" routerLink="/" class="org__link">
+            <img width="47" height="50" src="../../../assets/header/robin-logo.svg" alt="Лого чемпионата Робин" class="org__image">
+          </a>
+        </li>
+      </ul>
+      <div class="header__container--heading">
+        <h1 class="header__heading">Национальный детский образовательно-оздоровительный центр “Зубренок”</h1>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" routerLink="/about" class="nav__link">О чемпионате</a></li>
+          <li class="nav__item nav__item--competitions">
+            <a href="#" routerLink="/sphere-list" class="nav__link">Компетенции</a>
+            <ul class="nav__competitions">
+              <li class="nav__competition" *ngFor="let sphere of sphereList">
+                <a [href]="'/sphere-list/' + sphere.name" class="nav__link">
+                  {{sphere.viewName}}
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--competitions">
+            <a href="#" routerLink="/" class="nav__link">Наши ресурсы</a>
+            <ul class="nav__competitions">
+              <li class="nav__competition">
+                <a href="https://files.robin-zubronok.by" target="_blank" class="nav__link">
+                  Электронный репозиторий
+                </a>
+              </li>
+              <li class="nav__competition">
+                <a href="https://moodle.robin-zubronok.by" target="_blank" class="nav__link">
+                  Дистанционная платформа Moodle
+                </a>
+              </li>
+              <li class="nav__competition">
+                <a href="https://gpt4.robin-zubronok.by/chat" target="_blank" class="nav__link">
+                  ChatGPT
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" routerLink="/media" class="nav__link">Медиа</a></li>
+          <li class="nav__item nav__item--langs">
+            <a href="#" class="nav__link nav__cur-lang">{{ currentLang }}</a>
+            <ul class="nav__langs">
+              <li class="nav__competition" data-google-lang="ru" onclick="onClickTranslate(this)">
+                <a href="#" class="nav__link" data-google-lang="ru" onclick="onClickTranslate(this)">RU</a>
+              </li>
+              <li class="nav__competition" data-google-lang="be" onclick="onClickTranslate(this)">
+                <a href="#" class="nav__link" data-google-lang="be" onclick="onClickTranslate(this)">BE</a>
+              </li>
+              <li class="nav__competition" data-google-lang="en" onclick="onClickTranslate(this)">
+                <a href="#" class="nav__link" data-google-lang="en" onclick="onClickTranslate(this)">EN</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item" hidden>
+            <a href="#" class="nav__link">
+              <img  src="assets/header/eye.svg" alt="Версия для слабовидящих" class="nav__image">
+            </a>
+          </li>
+          <li class="nav__item nav__user">
+            <a href="javascript:void(0)" class="nav__link">
+              <img src="assets/header/user.svg" alt="Вход" class="nav__image">
+            </a>
+          </li>
+          <li class="nav__item nav__user">
+            <a href="https://email.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
+              <img src="assets/header/icon-mail.svg" alt="Почта" class="nav__image">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <ul [class]="!isPageMain ? 'header__slogan visually-hidden' : 'header__slogan'">
+      <li class="header__description--part-1">
+        Открытый республиканский  IT-чемпионат
+      </li>
+      <li class="header__description--part-2">
+        «<span style="letter-spacing: -3vw; font-weight: 300; font-size: 22.3vw">Р</span>
+        <span style="letter-spacing: -1.7vw; font-weight: 300; font-size: 22.3vw">о</span>
+        <span style="letter-spacing: -2.5vw; font-weight: 300; font-size: 22.3vw">б</span>
+        <span style="letter-spacing: -3vw; font-weight: 300; font-size: 22.3vw">И</span>
+        <span style="letter-spacing: -1.7vw; font-weight: 300; font-size: 22.3vw">н</span>
+        -  2024»
+      </li>
+    </ul>
+  </header>
+</div>

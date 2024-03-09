@@ -1,0 +1,57 @@
+.undefined {
+  width: calc(100vw - 10.9vh * 2);
+  height: calc(100vh - 9.3vh * 2);
+  padding: 9.3vh 10.9vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  color: white;
+
+  background-image: url("/assets/shared/blue-background.png");
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 65vh;
+    height: 44vh;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+
+    transform: translate(-50%, -50%);
+    background-color: #007AFF;
+    background-image: url("/assets/undefined/404-ico.svg");
+    background-size: contain;
+  }
+
+  &__text {
+    margin: 0;
+    z-index: 1;
+    max-width: 100vh;
+
+    font-size: 11vh;
+    font-weight: 300;
+    letter-spacing: -1vh;
+  }
+
+  &__link {
+    padding: 0.4vh;
+    z-index: 1;
+
+    text-decoration: none;
+    color: #007AFF;
+    font-size: 5vh;
+
+    background-color: white;
+
+    &:hover, &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

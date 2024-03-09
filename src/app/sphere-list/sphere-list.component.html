@@ -1,0 +1,14 @@
+<app-header></app-header>
+<main class="sphere">
+  <h2 class="sphere__name">Компетенции</h2>
+  <ul class="sphere__list">
+    <li class="sphere__card" *ngFor="let sphere of sphereList">
+      <a href="#" routerLink="/sphere-list/{{sphere.name}}" class="sphere__link">
+        <img src="assets/sphere/{{sphere.name}}.jpg" width="345" height="345" alt="Фотография компетенции" class="sphere__image">
+        <h3 class="sphere__slogan">{{sphere.viewName}}</h3>
+        <p class="sphere__description">{{sphere.description}}</p>
+      </a>
+    </li>
+  </ul>
+</main>
+<app-footer></app-footer>

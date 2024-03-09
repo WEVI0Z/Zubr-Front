@@ -1,0 +1,12 @@
+<section class="timer" *ngIf="ifTimerRelevant">
+  <h2 class="timer__heading">До смены РобИн</h2>
+  <ul class="timer__list">
+    <li class="timer__item"><p class="timer__time">{{daysLeft}}</p><p class="timer__days">{{dayString}}</p></li>
+    <li class="timer__space">:</li>
+    <li class="timer__item"><p class="timer__time">{{hoursLeft < 10 ? "0" + hoursLeft : hoursLeft}}</p><p class="timer__days">{{hourString}}</p></li>
+    <li class="timer__space">:</li>
+    <li class="timer__item"><p class="timer__time">{{minutesLeft < 10 ? "0" + minutesLeft : minutesLeft}}</p><p class="timer__days">{{minuteString}}</p></li>
+    <li class="timer__space">:</li>
+    <li class="timer__item"><p class="timer__time">{{secondsLeft < 10 ? "0" + secondsLeft : secondsLeft}}</p><p class="timer__days">{{secondString}}</p></li>
+  </ul>
+</section>

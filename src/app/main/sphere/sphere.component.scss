@@ -1,0 +1,116 @@
+@import "../../../stylesheets/global";
+
+.sphere {
+  margin: auto;
+  margin-top: 40px;
+  max-width: $max-width;
+  padding: 0 92px;
+  box-sizing: border-box;
+
+  &__name {
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__card {
+    margin-bottom: 30px;
+    max-width: 345px;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+    justify-content: space-between;
+
+    color: white;
+
+    -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    background-color: #007AFF;
+    background-image: url("/assets/shared/blue-background.png");
+    transition: 0.2s ease-in-out;
+
+    &:hover, &:focus {
+      -webkit-box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+      -moz-box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+      box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+      transform: scale(1.01);
+    }
+  }
+
+  &__image {
+    align-self: center;
+    object-fit: cover;
+
+    border-radius: 2%;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__slogan {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &__button {
+    position: absolute;
+
+    right: 30px;
+    top: 50%;
+  }
+
+  &__champion {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__question {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1830px) {
+  .sphere {
+    height: 780px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1432px) {
+  .sphere {
+    height: 770px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1010px) {
+  .sphere {
+    height: 750px;
+    overflow: hidden;
+  }
+}
