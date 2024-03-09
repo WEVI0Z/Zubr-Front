@@ -28,6 +28,30 @@ main {
     }
   }
 
+  &__task {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    position: relative;
+    font-size: 40px;
+    padding: 5px;
+
+    text-decoration: none;
+    color: white;
+    background-color: #007AFF;
+    background-image: url("/assets/shared/blue-background.png");
+  }
+
+  &__picture {
+    position: relative;
+    margin-left: 6px;
+    top: 5px;
+    width: 44px;
+    height: 44px;
+
+    object-fit: contain;
+  }
+
   &__heading {
     text-transform: uppercase;
   }
