@@ -237,6 +237,10 @@
       margin: 0 10px;
     }
 
+    &__particles {
+      display: none;
+    }
+
     &__description {
       &--part-1 {
         max-width: 71vw;
@@ -378,7 +382,7 @@
 
 
       &:hover, &:focus {
-        display: block;
+        display: none;
       }
     }
 
