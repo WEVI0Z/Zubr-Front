@@ -166,6 +166,7 @@
     display: none;
     width: 270px;
 
+
     list-style-type: none;
     padding: 0;
 
@@ -189,13 +190,13 @@
 
   &__competition {
     background-color: #fff;
-
+    
     .nav__link {
 
-      padding: 4px;
       color: black;
       background-color: #fff;
       display: block;
+      padding: 4px 0 4px 0;
 
       &:hover, &:focus {
         background-color: #007AFF80;
