@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\src\\app\\main\\partners\\partners.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\partners\\partners.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\src\\app\\main\\partners\\partners.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\partners\\partners.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "partners.component.html",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\src\\app\\main\\partners\\partners.component.html",
+              "RelativeDocumentMoniker": "src\\app\\main\\partners\\partners.component.html",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\src\\app\\main\\partners\\partners.component.html",
+              "RelativeToolTip": "src\\app\\main\\partners\\partners.component.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-26T11:48:15.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "partners.component.ts",
+              "DocumentMoniker": "D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\src\\app\\main\\partners\\partners.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\partners\\partners.component.ts",
+              "ToolTip": "D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner\\src\\app\\main\\partners\\partners.component.ts",
+              "RelativeToolTip": "src\\app\\main\\partners\\partners.component.ts",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-26T11:46:28.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
