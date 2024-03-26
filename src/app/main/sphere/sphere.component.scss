@@ -112,5 +112,64 @@
   .sphere {
     height: 750px;
     overflow: hidden;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: center;
+
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 778px) {
+  .sphere {
+    height: 750px;
+    padding: 0;
+    overflow: hidden;
+
+    &__name {
+      font-size: 65px;
+      letter-spacing: -7px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: center;
+
+      list-style-type: none;
+      padding: 0;
+    }
+
+    &__card {
+      margin-bottom: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      position: relative;
+      justify-content: space-between;
+
+      color: white;
+
+      -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      background-color: #007AFF;
+      background-image: url("/assets/shared/blue-background.png");
+      transition: 0.2s ease-in-out;
+
+      &:hover, &:focus {
+        -webkit-box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+        -moz-box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+        box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+        transform: scale(1.01);
+      }
+    }
   }
 }

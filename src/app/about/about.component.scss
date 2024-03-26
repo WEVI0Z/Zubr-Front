@@ -183,3 +183,62 @@ main {
     max-width: 743px;
   }
 }
+
+@media (max-width: 778px) {
+  .about {
+    max-width: $max-width;
+    margin: 30px auto;
+    padding: 0 10px;
+
+    &__name {
+      margin: 0;
+
+      font-size: 55px;
+      font-weight: 300;
+      letter-spacing: -5px;
+    }
+  }
+
+  .tasks__item {
+    max-width: 320px;
+  }
+
+  .goal {
+    &__name {
+      margin: 0;
+
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: -5px;
+    }
+
+    &__card {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      background-color: #007AFF;
+      background-image: url("/assets/shared/blue-background.png");
+    }
+
+    &__image {
+      margin: 5px;
+      width: 107px;
+      height: 107px;
+      padding: 9.5px;
+
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    &__paragraph {
+      margin: 10px;
+      max-width: 389px;
+
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -1px;
+      color: white;
+    }
+  }
+}

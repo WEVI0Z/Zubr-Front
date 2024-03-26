@@ -68,3 +68,77 @@
     top: 50%;
   }
 }
+
+@media (max-width: 778px) {
+  .media {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0;
+
+    &__slogan {
+      margin: 0;
+
+      font-size: 96px;
+      font-weight: 300;
+      letter-spacing: -10px;
+    }
+
+    &__card {
+      padding: 0;
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+
+      -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      background-color: #007AFF;
+      background-image: url("/assets/shared/blue-background.png");
+    }
+
+    &__image {
+      max-width: 1176px;
+      min-width: 360px;
+      max-height: 623px;
+      min-height: 200px;
+      object-fit: cover;
+      flex-grow: 1;
+
+      border-radius: 2%;
+    }
+
+    &__description {
+      margin: 0;
+      margin-left: 10px;
+      flex-grow: 1;
+
+      font-size: 24px;
+      color: white;
+    }
+
+    &__name {
+      position: relative;
+      bottom: 0;
+      margin: 0;
+      right: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 10px;
+
+      line-height: 50px;
+      font-weight: 300;
+      color: white;
+      font-size: 60px;
+      letter-spacing: -3px;
+    }
+
+    &__button {
+      position: absolute;
+
+      right: 30px;
+      top: 50%;
+    }
+  }
+
+}

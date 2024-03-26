@@ -71,3 +71,63 @@
     font-weight: 300;
   }
 }
+
+@media (max-width: 778px) {
+  .sphere {
+    margin: auto;
+    margin-top: 40px;
+    max-width: $max-width;
+    padding: 0;
+    box-sizing: border-box;
+
+    &__name {
+      margin: 0;
+
+      font-size: 50px;
+      font-weight: 300;
+      letter-spacing: -2px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      list-style-type: none;
+      padding: 0;
+    }
+
+    &__card {
+      margin-bottom: 30px;
+      max-width: 330px;
+      min-height: 485px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 15px;
+
+      color: white;
+
+      -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      background-color: #007AFF;
+      background-image: url("/assets/shared/blue-background.png");
+      transition: 0.2s ease-in-out;
+
+      &:hover, &:focus {
+        -webkit-box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+        -moz-box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+        box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
+        transform: scale(1.01);
+      }
+    }
+
+    &__image {
+      align-self: center;
+      object-fit: cover;
+      width: 330px;
+
+      border-radius: 2%;
+    }
+  }
+}

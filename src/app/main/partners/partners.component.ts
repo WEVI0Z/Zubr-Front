@@ -7,7 +7,8 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/
 })
 export class PartnersComponent implements AfterViewInit{
   @ViewChild("partnerList", {read: ElementRef}) partnerList!: ElementRef;
-  @ViewChild("partnerWrapper", {read: ElementRef}) partnerWrapper!: ElementRef;
+  @ViewChild("partnerWrapper", {read: ElementRef}) partnerWrapper!: ElementRef
+  @ViewChild("mainWrapper", {read: ElementRef}) mainWrapper!: ElementRef;
   offset: number = 0;
   multiplier: number = -1;
 
@@ -18,9 +19,16 @@ export class PartnersComponent implements AfterViewInit{
   changeImage(): void {
     const element: HTMLElement = this.partnerList.nativeElement;
     const wrapper: HTMLElement = this.partnerWrapper.nativeElement;
+    const mainWrapper: HTMLElement = this.mainWrapper.nativeElement;
+    const mainWidth: number = mainWrapper.clientWidth;
     const elementWidth: number = element.clientWidth;
     const wrapperWidth: number = wrapper.clientWidth;
     const offsetPerScroll: number = elementWidth * 0.1;
+
+    if (mainWidth <= 778) {
+      element.style.transform = ``;
+      return;
+    }
 
     if (this.offset * -1 >= elementWidth - wrapperWidth) {
       this.multiplier = 1
