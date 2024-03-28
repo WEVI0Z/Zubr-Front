@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\main",
+    "\\src\\app\\main\\partners",
+    "\\src\\assets",
+    "\\src\\assets\\partners"
   ],
-  "SelectedNode": "\\D:\\\u0423\u0447\u0435\u0431\u0430 4.2\\work\\partner",
+  "SelectedNode": "\\src\\app\\main\\partners\\partners.component.scss",
   "PreviewInSolutionExplorer": false
 }
