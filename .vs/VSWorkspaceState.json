@@ -4,10 +4,8 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\main",
-    "\\src\\app\\main\\partners",
-    "\\src\\assets",
-    "\\src\\assets\\partners"
+    "\\src\\app\\main\\partners"
   ],
-  "SelectedNode": "\\src\\app\\main\\partners\\partners.component.scss",
+  "SelectedNode": "\\.angular",
   "PreviewInSolutionExplorer": false
 }

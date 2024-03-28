@@ -11,14 +11,14 @@ export class PartnersComponent implements AfterViewInit{
   @ViewChild("mainWrapper", {read: ElementRef}) mainWrapper!: ElementRef;
   offset: number = 0;
   multiplier: number = -1;
-  imageChangeInterval: any;
+  imageChangeInterval: number = 2500;
   isRButtonHidden: boolean = false;
   isLButtonHidden: boolean = false;
 
   ngAfterViewInit(): void {
-    this.imageChangeInterval = setInterval(() => {
+    this.imageChangeInterval = window.setInterval(() => {
       this.changeImage();
-    }, 2250);
+    }, 2500);
   }
 
   changeImage(): void {
@@ -94,9 +94,9 @@ export class PartnersComponent implements AfterViewInit{
   }
 
   resumeImageChange(): void {
-    this.imageChangeInterval = setInterval(() => {
+    this.imageChangeInterval = window.setInterval(() => {
       this.changeImage();
-    }, 2250);
+    }, 2500);
   }
 
   handleMouseWheel(event: any) {
