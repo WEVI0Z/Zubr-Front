@@ -1,0 +1,129 @@
+{
+  "SHARED": {
+    "HEADER": {
+      "ZUBRTITLE": " The National children’s education and health center «Zubrenok» ",
+      "ABOUT": " About ",
+      "COMPETENCE": {
+        "TITLE": " Сompetence ",
+        "COMP1": " Intellectual sumo 15x15 7th grade ",
+        "COMP2": " Following the line 7th grade ",
+        "COMP3": " Football controlled robots 2x2 7th grade ",
+        "COMP4": " Graphic design 8th grade ",
+        "COMP5": " Graphic design 10th grade ",
+        "COMP6": " Web development 8th grade ",
+        "COMP7": " Web development 9th grade ",
+        "COMP8": " Prototyping 8th grade ",
+        "COMP9": " Prototyping 10th grade ",
+        "COMP10": " Bot-constructor 9th grade ",
+        "COMP11": " Web design 9th grade ",
+        "COMP12": " Programming 10th grade "
+      },
+      "RESOURCE": {
+        "TITLE": " Оur resources ",
+        "RES1": " Electronic repository  ",
+        "RES2": " Moodle Remote Platform  ",
+        "RES3": " ChatGPT "
+      },
+      "MEDIA": " Media ",
+      "LOGIN": {
+        "TITLE": "Login",
+        "ACCOUNT": " Account ",
+        "EMAIL": " Email ",
+        "CLOUD": " Cloud "
+      },
+      "MAINTITLE": " Open Republican IT championship ",
+      "ROBIN": {
+        "ROB_": " «",
+        "ROB_R": "R",
+        "ROB_O": "o",
+        "ROB_B": "b",
+        "ROB_I": "I",
+        "ROB_N": "n",
+        "ROB_2024": " - 2024» "
+      }
+    },
+
+    "FOOTER": {
+      "CONTACTS": "Contacts",
+      "DEV1": "developed by ",
+      "DEV2": "Alexey Garkaviy",
+      "DES1": "designed by ",
+      "DES2": "bissektr1sa",
+      "CONTACTFACE1": "Contact person: ",
+      "CONTACTFACE2": "Elisey Tarasov",
+      "EMAIL1": "E-mail: ",
+      "EMAIL2": "info@robin-zubronok.by",
+      "ADDRESS1": "The address of the organizing commitete: ",
+      "ADDRESS2": "222397, Minsk region, Myadelsky district, Zubrenevka village, NDC Zubrjnok, IT championship «RobIn-2024»",
+      "PHONE1": "Phones: ",
+      "PHONE2": "8 (01797) 22 784 (fax) ",
+      "PHONE3": "+375298008175 (моб. Viber)",
+      "LASTTITLE": "© 2024 Open Republican IT championship «RobIn-2024». All rights reserved"
+
+    }
+  },
+
+  "MAIN": {
+
+
+    "TIMER": {
+      "TITLE": "Before the RobIn shift:",
+      "DAY": "days",
+      "HOUR": "hours",
+      "MINUT": "minutes",
+      "SECOND": "seconds"
+    },
+
+    "SPHERE": {
+      "TITLE": "Сompetence",
+      "ABOUT_CHAMP": "Open Republican IT championship «RobIn-2024»",
+      "ABOUT_SPHERE": "Competencies. What are they like and what do they represent?"
+    },
+
+    "MEDIA": {
+      "TITLE": "Media",
+      "ABOUT_CHAMP": "Open Republican IT championship «RobIn-2024»",
+      "ABOUT_MEDIA": "Photo gallery of the championship"
+    },
+
+    "PARTNERS": {
+      "TITLE": "Partners",
+      "PARTN1": "Brest Regional Center for Tourism and Local History of Children and Youth",
+      "PARTN2": "Vitebsk Regional Palace of Children and Youth",
+      "PARTN3": "Grodno Regional Center for Technical Creativity",
+      "PARTN4": "Mogilev Regional Center of Creativity",
+      "PARTN5": "National Children's Technopark",
+      "PARTN6": "Department of Technical Creativity and Sports Minsk State Palace of Children and Youth",
+      "PARTN7": "Gomel Regional Center for Technical Creativity of Children and Youth",
+      "PARTN8": "Educational Robotics Cup",
+      "PARTN9": "Minsk Regional Institute of Education Development",
+      "PARTN10": "Faculty of Information Technology and Robotics of UO BNTU"
+    }
+  },
+
+  "ABOUT": {
+    "TITLE": "О чемпионате",
+    "PARAGR_1": "В эпоху современных технологий огромное внимание уделяется развитию искусственного интеллекта, робототехническим системам, виртуальной и дополненной реальностям.",
+    "PARAGR_2": "Ни для кого не секрет, что данные IT-сферы повсеместно внедряются в образование. Для того, чтобы подрастающее поколение Беларуси могло продемонстрировать свои достижения в этих областях, в НДЦ «Зубренок» проводится IT-чемпионат «РобИн».",
+    "GOAL": "Цель проведения",
+    "GOAL_PARAGR": "Создание условий для популяризации сферы инноваций и высоких технологий среди подрастающего поколения, поддержка и вовлечение талантливых детей в научно-техническое творчество.",
+    "TASK_NAME": "Задачи",
+    "TASK_PARAGR1": "Поиск и разработка инновационных технологий и методов работы с детьми.",
+    "TASK_PARAGR2": "Способствовать разработке и реализации детских инновационных проектов с помощью высокотехнологичного оборудования,и программного обеспечения создающих условия для формирования современных и будущих профессиональных компетенций навыков инженерного мышления.",
+    "TASK_PARAGR3": "Создавать интеллектуальную образовательную среду, мотивирующую каждого учащегося повсеместно использовать свои знания и умения с целью изменения окружающей обстановки по принципам высокотехнологичного производства.",
+    "TASK_PARAGR4": "Создавать условия для организации опытно-экспериментальных работ по освоению новых технологий, новых видов профессиональной деятельности, форм профессионального обучения.",
+    "POSITION": "Положение РобИн 2024",
+    "COMPOSITION": " Состав республиканского организационного комитета"
+
+  },
+
+  "SPHERE-LIST": {
+    "NAME": "Сompetence"
+  },
+
+
+  "UNDEFINED": {
+    "LINE": "Oops... This page does not exist....",
+    "BACK": "Go back to the main page"
+  }
+}

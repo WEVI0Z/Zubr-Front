@@ -1,6 +1,6 @@
 <app-header></app-header>
 <main class="sphere">
-  <h2 class="sphere__name">Компетенции</h2>
+  <h2 class="sphere__name">{{'SPHERE-LIST.NAME' | translate}}</h2>
   <ul class="sphere__list">
     <li class="sphere__card" *ngFor="let sphere of sphereList">
       <a href="#" routerLink="/sphere-list/{{sphere.name}}" class="sphere__link">

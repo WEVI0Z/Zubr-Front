@@ -4,8 +4,13 @@ import { SphereListComponent } from './sphere-list.component';
 import { ItemComponent } from './item/item.component';
 import {SphereListRoutingModule} from "./sphere-list-routing.module";
 import {SharedModule} from "../shared/shared.module";
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -15,7 +20,18 @@ import {SharedModule} from "../shared/shared.module";
     imports: [
         CommonModule,
         SphereListRoutingModule,
-        SharedModule
+      SharedModule,
+      HttpClientModule,
+      TranslateModule.forRoot(
+        {
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          },
+          defaultLanguage: "ru"
+        }
+      )
     ],
   exports: [
     SphereListRoutingModule

@@ -1,0 +1,557 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\service\\sphere.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\sphere-list\\service\\sphere.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\content\\sumo.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\sphere-list\\content\\sumo.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\sphere-list\\sphere-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\interface\\sphere.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\sphere-list\\interface\\sphere.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\about\\about.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\timer\\timer.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\timer\\timer.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\main-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\media\\media.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\media\\media.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\main.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\main.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\about\\about.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\sphere-list\\sphere-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\sphere-list\\sphere-list.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\partners\\partners.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\partners\\partners.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\ru.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\i18n\\ru.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\i18n\\en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\be.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\i18n\\be.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\partners\\partners.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\partners\\partners.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\header\\header.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\shared\\header\\header.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\timer\\timer.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\timer\\timer.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\header\\header.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\shared\\header\\header.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\shared.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\shared\\shared.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\mock\\media-mock.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\media\\mock\\media-mock.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\service\\media.service.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\media\\service\\media.service.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\service\\media.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\media\\service\\media.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\media\\media.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main\\main.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\about\\about.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 262,
+          "SelectedChildIndex": 26,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "en.json",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\en.json",
+              "RelativeDocumentMoniker": "src\\assets\\i18n\\en.json",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\en.json",
+              "RelativeToolTip": "src\\assets\\i18n\\en.json",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGMAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-26T08:01:55.166Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "header.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\header\\header.component.html",
+              "RelativeDocumentMoniker": "src\\app\\shared\\header\\header.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\header\\header.component.html",
+              "RelativeToolTip": "src\\app\\shared\\header\\header.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-25T08:19:27.873Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "shared.module.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\shared.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\shared\\shared.module.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\shared.module.ts",
+              "RelativeToolTip": "src\\app\\shared\\shared.module.ts",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAmwCAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-26T16:51:19.066Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "header.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\header\\header.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\shared\\header\\header.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\shared\\header\\header.component.ts",
+              "RelativeToolTip": "src\\app\\shared\\header\\header.component.ts",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwBEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-25T08:20:32.051Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "about.module.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\about\\about.module.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.module.ts",
+              "RelativeToolTip": "src\\app\\about\\about.module.ts",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T13:45:25.71Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "about.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\about\\about.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.component.ts",
+              "RelativeToolTip": "src\\app\\about\\about.component.ts",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T13:42:22.501Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sphere.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\interface\\sphere.ts",
+              "RelativeDocumentMoniker": "src\\app\\sphere-list\\interface\\sphere.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\interface\\sphere.ts",
+              "RelativeToolTip": "src\\app\\sphere-list\\interface\\sphere.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T19:32:53.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "about.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.component.html",
+              "RelativeDocumentMoniker": "src\\app\\about\\about.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\about\\about.component.html",
+              "RelativeToolTip": "src\\app\\about\\about.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-29T17:58:28.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "partners.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\partners\\partners.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\partners\\partners.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\partners\\partners.component.ts",
+              "RelativeToolTip": "src\\app\\main\\partners\\partners.component.ts",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T17:55:07.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\app.module.ts",
+              "RelativeToolTip": "src\\app\\app.module.ts",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T16:54:00.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "sphere-list.module.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\sphere-list\\sphere-list.module.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.module.ts",
+              "RelativeToolTip": "src\\app\\sphere-list\\sphere-list.module.ts",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T15:37:45.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "sphere-list.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.component.html",
+              "RelativeDocumentMoniker": "src\\app\\sphere-list\\sphere-list.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.component.html",
+              "RelativeToolTip": "src\\app\\sphere-list\\sphere-list.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-29T15:37:39.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "media-mock.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\mock\\media-mock.ts",
+              "RelativeDocumentMoniker": "src\\app\\media\\mock\\media-mock.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\mock\\media-mock.ts",
+              "RelativeToolTip": "src\\app\\media\\mock\\media-mock.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T15:37:12.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "media.service.spec.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\service\\media.service.spec.ts",
+              "RelativeDocumentMoniker": "src\\app\\media\\service\\media.service.spec.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\service\\media.service.spec.ts",
+              "RelativeToolTip": "src\\app\\media\\service\\media.service.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T15:37:07.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "media.service.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\service\\media.service.ts",
+              "RelativeDocumentMoniker": "src\\app\\media\\service\\media.service.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\media\\service\\media.service.ts",
+              "RelativeToolTip": "src\\app\\media\\service\\media.service.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T15:37:03.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "media.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.html",
+              "RelativeDocumentMoniker": "src\\app\\main\\media\\media.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.html",
+              "RelativeToolTip": "src\\app\\main\\media\\media.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-29T15:35:59.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "main.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.component.html",
+              "RelativeDocumentMoniker": "src\\app\\main\\main.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.component.html",
+              "RelativeToolTip": "src\\app\\main\\main.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-29T14:48:51.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main-routing.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\main-routing.module.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main-routing.module.ts",
+              "RelativeToolTip": "src\\app\\main\\main-routing.module.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T14:48:49.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "media.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.spec.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\media\\media.component.spec.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.spec.ts",
+              "RelativeToolTip": "src\\app\\main\\media\\media.component.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T14:48:18.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "media.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\media\\media.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\media\\media.component.ts",
+              "RelativeToolTip": "src\\app\\main\\media\\media.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T14:48:12.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "partners.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\partners\\partners.component.html",
+              "RelativeDocumentMoniker": "src\\app\\main\\partners\\partners.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\partners\\partners.component.html",
+              "RelativeToolTip": "src\\app\\main\\partners\\partners.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-29T13:39:30.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "main.module.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\main.module.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.module.ts",
+              "RelativeToolTip": "src\\app\\main\\main.module.ts",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T11:48:45.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "main.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\main.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\main.component.ts",
+              "RelativeToolTip": "src\\app\\main\\main.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T11:48:36.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "timer.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\timer\\timer.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\main\\timer\\timer.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\timer\\timer.component.ts",
+              "RelativeToolTip": "src\\app\\main\\timer\\timer.component.ts",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAHkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T11:46:45.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "timer.component.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\timer\\timer.component.html",
+              "RelativeDocumentMoniker": "src\\app\\main\\timer\\timer.component.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\main\\timer\\timer.component.html",
+              "RelativeToolTip": "src\\app\\main\\timer\\timer.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-29T11:46:27.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sphere.service.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\service\\sphere.service.ts",
+              "RelativeDocumentMoniker": "src\\app\\sphere-list\\service\\sphere.service.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\service\\sphere.service.ts",
+              "RelativeToolTip": "src\\app\\sphere-list\\service\\sphere.service.ts",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-29T10:17:35.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sphere-list.component.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\sphere-list\\sphere-list.component.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\sphere-list.component.ts",
+              "RelativeToolTip": "src\\app\\sphere-list\\sphere-list.component.ts",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-26T17:17:15.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sumo.ts",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\content\\sumo.ts",
+              "RelativeDocumentMoniker": "src\\app\\sphere-list\\content\\sumo.ts",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\app\\sphere-list\\content\\sumo.ts",
+              "RelativeToolTip": "src\\app\\sphere-list\\content\\sumo.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-26T17:56:04.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "be.json",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\be.json",
+              "RelativeDocumentMoniker": "src\\assets\\i18n\\be.json",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\be.json",
+              "RelativeToolTip": "src\\assets\\i18n\\be.json",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAFkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-29T12:00:00.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\index.html",
+              "RelativeDocumentMoniker": "src\\index.html",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\index.html",
+              "RelativeToolTip": "src\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-25T11:24:47.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ru.json",
+              "DocumentMoniker": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\ru.json",
+              "RelativeDocumentMoniker": "src\\assets\\i18n\\ru.json",
+              "ToolTip": "C:\\Users\\artem\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\zubrenok2.0\\WEVI0Z\\Zubr-Front\\src\\assets\\i18n\\ru.json",
+              "RelativeToolTip": "src\\assets\\i18n\\ru.json",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAFkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-29T12:00:31.421Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

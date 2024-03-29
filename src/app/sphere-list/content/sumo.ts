@@ -1,8 +1,50 @@
 import { Sphere } from "../interface/sphere";
+import { HeaderComponent } from "../../shared/header/header.component";
+
+import { SphereListComponent } from "../sphere-list.component";
+import { SphereService } from "../service/sphere.service";
+
+
+export class Sumo {
+
+  //public static currentLange: string = 'ru';
+  //constructor(language: string) {
+  //  //this.currentLange = language;
+  //}
+
+  //static viewNameRU: string = "Интеллектуальное сумо 15х15 7 класс";
+  //static viewNameBE: string = "";
+  //static viewNameEN: string = "Intelige sumo";
+
+  //static descriptionRU: string =`Робот-сумо – это вид спорта, в котором два робота пытаются вытолкнуть друг друга из круга. Роботы, используемые в этом соревновании, называются сумоботами. Инженерные задачи заключаются в том, чтобы робот нашел своего противника и вытолкнул его за пределы плоской арены.`
+  //static descriptionBE: string = ``;
+  //static descriptionEN: string = ``;
+
+  //static contentRU: string = "";
+  //static contentBE: string = "";
+  //static contentEN: string = "";
+
+  //private nameView: string = "gfver";
+
+  //get_viewName(): void {
+  //  if (this.currentLange = "ru") {
+  //    this.viewNameRU = this.nameView;
+  //  }
+  //  else if (this.currentLange = "be") {
+  //    return this.viewNameBE;
+  //  }
+  //  else
+  //    return this.viewNameEN
+  //}
+
+
+}
+
+
 
 export const SUMO: Sphere = {
-    name: "sumo",
-    viewName: "Интеллектуальное сумо 15х15 7 класс",
+  name: "sumo",
+  viewName: "Интеллектуальное сумо 15х15 7 класс",
     description: `Робот-сумо – это вид спорта, в котором два робота пытаются вытолкнуть друг друга из круга. Роботы, используемые в этом соревновании, называются сумоботами. Инженерные задачи заключаются в том, чтобы робот нашел своего противника и вытолкнул его за пределы плоской арены.`,
     content: /*html*/`
         <ol>

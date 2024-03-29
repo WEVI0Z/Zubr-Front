@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Sphere} from "../interface/sphere";
-import {SUMO} from "../content/sumo";
+import { Sphere } from "../interface/sphere";
+import { SUMO, Sumo } from "../content/sumo";
 import {LINE} from "../content/line";
 import {FOOTBALL} from "../content/football";
 import {DESIGN_YOUNGER} from "../content/design-younger";
@@ -12,15 +12,22 @@ import {DRONES} from "../content/drones";
 import {WEB_DESIGN} from "../content/web-design";
 import {PROGRAMMING} from "../content/programming";
 import {WEB_DEVELOPMENT_YOUNGER} from "../content/web-development-younger";
-import {WEB_DEVELOPMENT_ELDER} from "../content/web-development-elder";
+import { WEB_DEVELOPMENT_ELDER } from "../content/web-development-elder";
+
+//import {Sumo}
 
 @Injectable({
   providedIn: 'root'
 })
 export class SphereService {
   sphereList: Sphere[] = [];
+  //currentLanguage: string = "ru";
 
   constructor() {
+    //this.Sumo.currentLange
+
+    //Sumo.currentLang = "en";
+
     this.sphereList.push(SUMO);
     this.sphereList.push(LINE);
     this.sphereList.push(FOOTBALL);
