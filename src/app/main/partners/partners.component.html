@@ -46,11 +46,7 @@
         <img ngSrc="assets/partners/ico-10.jpg" alt="Лого партнера" class="partners__image" height="50" width="250">
       </li>
     </ul>
-    <button class="partners__rbutton" [hidden]="isRButtonHidden" (click)="nextImage()">
-      <img src="assets/partners/right-arrow.png" alt="Следующая картинка">
-    </button>
-    <button class="partners__lbutton" [hidden]="isLButtonHidden" (click)="previosImage()">
-      <img src="assets/partners/left-arrow.png" alt="Следующая картинка">
-    </button>
+    <button class="partners__button partners__button--left" [hidden]="isLButtonHidden" (click)="previosImage()"></button>
+    <button class="partners__button partners__button--right" [hidden]="isRButtonHidden" (click)="nextImage()"></button>
   </div>
 </section>

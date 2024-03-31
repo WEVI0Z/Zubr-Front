@@ -9,32 +9,43 @@
   box-sizing: border-box;
 
 
-  &__rbutton {
+  &__button {
     position: absolute;
     top: 50%;
-    right: 5px;
     transform: translate(0, -50%);
     width: 30px;
     height: 30px;
-  }
 
-  &__lbutton {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translate(0, -50%);
-    width: 30px;
-    height: 30px;
-  }
+    background-color: #007AFF;
+    -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    border-radius: 50%;
+    border: none;
 
-  &__lbutton img {
-    width: 100%;
-    height: auto;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
 
-  &__rbutton img {
-    width: 100%;
-    height: auto;
+      background-size: contain;
+      background-image: url("/assets/shared/more-ico.svg");
+    }
+
+    &--left {
+      left: 5px;
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--right {
+      right: 5px;
+    }
   }
 
   &__slogan {

@@ -10,7 +10,7 @@ import {UtilsService} from "../../shared/services/utils.service";
 })
 export class MediaComponent implements OnInit{
   private mediaList: Media[] = this.utilsService.randomizeList(this.mediaService.mediaList);
-  private currentIndex: number = 0
+  private currentIndex: number = 0;
 
   protected currentPicture: Media = this.mediaList[this.currentIndex];
   protected nextPicture: Media = this.mediaList[this.currentIndex + 1];
