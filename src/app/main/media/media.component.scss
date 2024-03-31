@@ -19,12 +19,17 @@
     padding: 30px;
     display: flex;
     position: relative;
+    flex-direction: row-reverse;
 
     -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     background-color: #007AFF;
     background-image: url("/assets/shared/blue-background.png");
+  }
+
+  &__image-wrapper {
+    position: relative;
   }
 
   &__image {
@@ -35,7 +40,16 @@
     object-fit: cover;
     flex-grow: 1;
 
-    border-radius: 2%;
+    opacity: 1;
+    transition-duration: 300ms;
+
+    &.hidden {
+      top: 0;
+      left: 0;
+
+      position: absolute;
+      opacity: 0;
+    }
   }
 
   &__description {
@@ -69,7 +83,7 @@
   }
 }
 
-@media (max-width: 778px) {
+@media (max-width: 981px) {
   .media {
     width: 100%;
     margin: auto;
@@ -85,51 +99,44 @@
     }
 
     &__card {
+      margin-top: 40px;
       padding: 0;
       display: flex;
       position: relative;
       flex-wrap: wrap;
-
-      -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
-      -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
-      box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
-      background-color: #007AFF;
-      background-image: url("/assets/shared/blue-background.png");
+      justify-content: left;
     }
 
     &__image {
       max-width: 1176px;
       min-width: 360px;
-      max-height: 623px;
+      max-height: 400px;
       min-height: 200px;
       object-fit: cover;
       flex-grow: 1;
-
-      border-radius: 2%;
     }
 
     &__description {
-      margin: 0;
-      margin-left: 10px;
-      flex-grow: 1;
+      margin: 23px 19px;
+      flex-grow: 0;
+      width: 203px;
+      font-weight: normal;
 
-      font-size: 24px;
+      font-size: 14px;
       color: white;
     }
 
     &__name {
       position: relative;
       bottom: 0;
-      margin: 0;
+      margin: 10px 10px;
       right: 0;
-      width: 100%;
-      margin-bottom: 20px;
-      margin-left: 10px;
+      width: 400px;
 
-      line-height: 50px;
+      line-height: 33px;
       font-weight: 300;
       color: white;
-      font-size: 60px;
+      font-size: 40px;
       letter-spacing: -3px;
     }
 
