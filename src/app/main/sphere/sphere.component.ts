@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Sphere} from "../../sphere-list/interface/sphere";
 import {SphereService} from "../../sphere-list/service/sphere.service";
+import {UtilsService} from "../../shared/services/utils.service";
 
 @Component({
   selector: 'app-sphere',
@@ -8,10 +9,9 @@ import {SphereService} from "../../sphere-list/service/sphere.service";
   styleUrls: ['./sphere.component.scss']
 })
 export class SphereComponent {
-  protected sphereList: Sphere[] = [...this.sphereService.sphereList]
-    .sort((a, b) => 1 * (Math.floor(Math.random() * 2) == 1 ? 1 : -1))
-    .slice(0, 3);
+  protected sphereList: Sphere[] = this.utilsService.randomizeList(this.sphereService.sphereList).slice(0, 3);
 
-  constructor(private sphereService: SphereService) {
+  constructor(private sphereService: SphereService,
+              private utilsService: UtilsService) {
   }
 }
