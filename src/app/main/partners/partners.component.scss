@@ -8,23 +8,33 @@
   margin-bottom: 60px;
   box-sizing: border-box;
 
+  &__container {
+    position: relative;
+    overflow: visible;
+  }
 
   &__rbutton {
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: -45px;
     transform: translate(0, -50%);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/partners/r_arrow.png");
+    background-size: cover;
+    border: none;
   }
 
   &__lbutton {
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: -45px;
     transform: translate(0, -50%);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/partners/l_arrow.png");
+    background-size: cover;
+    border: none;
   }
 
   &__lbutton img {
