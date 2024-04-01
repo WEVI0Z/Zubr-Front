@@ -16,24 +16,28 @@
   &__rbutton {
     position: absolute;
     top: 50%;
-    right: -45px;
+    right: -50px;
     transform: translate(0, -50%);
     width: 40px;
     height: 40px;
     background-image: url("/assets/partners/r_arrow.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
   }
 
   &__lbutton {
     position: absolute;
     top: 50%;
-    left: -45px;
+    left: -50px;
     transform: translate(0, -50%);
     width: 40px;
     height: 40px;
     background-image: url("/assets/partners/l_arrow.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
   }
 
@@ -67,6 +71,7 @@
     box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     background-image: url("/assets/shared/blue-background.png");
   }
+
 
   &__item {
     margin: 0 30px 0 30px;

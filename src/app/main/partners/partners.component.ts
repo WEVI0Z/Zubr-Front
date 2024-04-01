@@ -33,8 +33,6 @@ export class PartnersComponent implements AfterViewInit {
     const elementWidth: number = element.clientWidth;
     const wrapperWidth: number = wrapper.clientWidth;
     const offsetPerScroll: number = elementWidth * 0.1;
-    this.isRButtonHidden = false;
-    this.isLButtonHidden = false;
 
     if (mainWidth <= 778) {
       element.style.transform = ``;
@@ -43,29 +41,31 @@ export class PartnersComponent implements AfterViewInit {
 
     if (this.offset * -1 >= elementWidth - wrapperWidth) {
       // Если достигнут конец элементов карусели
-      const firstImage = element.children[0] as HTMLElement;
-      element.appendChild(firstImage);
-      this.offset += offsetPerScroll;
+      this.offset = 0;
+      this.offset -= offsetPerScroll * this.multiplier;
+      element.style.transform = `translateX(${this.offset + offsetPerScroll}px)`;
+      return;
     } else if (this.offset >= 0) {
       // Если достигнуто начало элементов карусели
-      const lastImage = element.children[element.children.length - 1] as HTMLElement;
-      element.insertBefore(lastImage, element.children[0]);
-      this.offset -= offsetPerScroll;
+      this.offset = -(elementWidth - wrapperWidth);
+      this.offset -= offsetPerScroll * this.multiplier;
+      element.style.transform = `translateX(${this.offset - offsetPerScroll}px)`;
+      return;
     }
 
-    this.offset += offsetPerScroll * this.multiplier;
+    this.offset -= offsetPerScroll * this.multiplier;
 
     element.style.transform = `translateX(${this.offset}px)`;
   }
 
   previosImage(): void {
-    this.multiplier = 1;
+    this.multiplier = -1;
     this.changeImage();
     clearInterval(this.imageChangeInterval);
   }
 
   nextImage(): void {
-    this.multiplier = -1;
+    this.multiplier = 1;
     this.changeImage();
     clearInterval(this.imageChangeInterval);
   }

@@ -46,6 +46,13 @@
           <a href="https://bntu.by/faculties/fitr" class="partners__name" target="_blank">Факультет информационных технологий и робототехники УО «БНТУ»</a>
           <img ngSrc="assets/partners/ico-10.jpg" alt="Лого партнера" class="partners__image" height="50" width="250">
         </li>
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="http://bresttur.by/" class="partners__name" target="_blank">
+            ГУО «Брестский областной центр туризма и краеведения детей
+            и молодежи»
+          </a>
+          <img ngSrc="assets/partners/ico-1.png" width="66" height="76" alt="Лого партнера" class="partners__image">
+        </li>
       </ul>
     </div>
     <button class="partners__rbutton"  (click)="nextImage()"></button>
