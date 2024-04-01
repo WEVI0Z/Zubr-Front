@@ -65,7 +65,7 @@
 
   &__name {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     margin: 0;
     right: 0;
     max-width: 790px;
@@ -127,12 +127,12 @@
       justify-content: left;
     }
 
-    &__image {
-      max-width: 1176px;
+    &__image-wrapper {
+      max-width: 970px;
       min-width: 360px;
-      max-height: 400px;
+      max-height: 300px;
       min-height: 200px;
-      object-fit: cover;
+      position: relative;
       flex-grow: 1;
     }
 
@@ -148,8 +148,7 @@
 
     &__name {
       position: relative;
-      bottom: 0;
-      margin: 10px 10px;
+      bottom: 5%;
       right: 0;
       width: 400px;
 

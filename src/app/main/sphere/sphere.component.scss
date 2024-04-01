@@ -50,6 +50,20 @@
       box-shadow: 0 0 12px 4px rgba(34, 60, 80, 0.6);
       transform: scale(1.01);
     }
+
+    &--main {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 246px;
+        top: 32%;
+        left: 10%;
+
+        background-image: url("/assets/sphere/competition-main.png");
+        background-size: contain;
+      }
+    }
   }
 
   &__image {
