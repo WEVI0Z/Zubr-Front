@@ -81,7 +81,7 @@ export class TimerComponent implements OnInit{
     }
 
     if ((this.hoursLeft % 10 >= 5 && this.hoursLeft % 10 <= 9) ||
-      this.hoursLeft === 11 || this.hoursLeft === 10 ||this.hoursLeft === 0 ||
+      this.hoursLeft === 11 || this.hoursLeft === 10 ||this.hoursLeft % 10 === 0 ||
       this.hoursLeft === 12 || this.hoursLeft === 13 || this.hoursLeft === 14) {
       this.hourString = this.getHourLang(5);
     }
@@ -93,7 +93,7 @@ export class TimerComponent implements OnInit{
     }
 
     if ((this.minutesLeft % 10 >= 5 && this.minutesLeft % 10 <= 9) ||
-      this.minutesLeft === 11 || this.minutesLeft === 10 ||this.minutesLeft === 0 ||
+      this.minutesLeft === 11 || this.minutesLeft === 10 ||this.minutesLeft % 10 === 0 ||
       this.minutesLeft === 12 || this.minutesLeft === 13 || this.minutesLeft === 14) {
       this.minuteString = this.getMinutLang(5);
     }
@@ -105,7 +105,7 @@ export class TimerComponent implements OnInit{
     }
 
     if ((this.secondsLeft % 10 >= 5 && this.secondsLeft % 10 <= 9) ||
-      this.secondsLeft === 11 || this.secondsLeft === 10 ||this.secondsLeft === 0 ||
+      this.secondsLeft === 11 || this.secondsLeft === 10 ||this.secondsLeft % 10 === 0 ||
       this.secondsLeft === 12 || this.secondsLeft === 13 || this.secondsLeft === 14) {
       this.secondString = this.getSecondLang(5);
     }

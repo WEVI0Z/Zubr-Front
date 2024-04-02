@@ -6,6 +6,7 @@ import {SharedModule} from "../shared/shared.module";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { ShareBlockModule } from '../share-block/share-block.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -19,6 +20,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CommonModule,
     MediaRoutingModule,
     SharedModule,
+    NgOptimizedImage,
+    ShareBlockModule
     NgOptimizedImage,
     HttpClientModule,
     TranslateModule.forRoot(

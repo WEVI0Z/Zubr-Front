@@ -8,9 +8,51 @@
   margin-bottom: 60px;
   box-sizing: border-box;
 
+  &__container {
+    position: relative;
+    overflow: visible;
+  }
+
+  &__rbutton {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translate(0, -50%);
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/partners/r_arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+
+  &__lbutton {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translate(0, -50%);
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/partners/l_arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+
+  &__lbutton img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__rbutton img {
+    width: 100%;
+    height: auto;
+  }
+
   &__slogan {
     margin: 0;
-
     font-size: 96px;
     font-weight: 300;
     letter-spacing: -10px;
@@ -23,14 +65,13 @@
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-
     background-color: #007AFF;
     -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     background-image: url("/assets/shared/blue-background.png");
-
   }
+
 
   &__item {
     margin: 0 30px 0 30px;
@@ -40,7 +81,6 @@
     align-self: flex-start;
     margin-bottom: 30px;
     padding: 5px;
-
     background-color: white;
     border-radius: 3%;
     transition: 0.3s ease-in-out;
@@ -52,7 +92,6 @@
 
   &__name {
     margin: 0;
-
     font-size: 16px;
     font-weight: 400;
     color: #007AFF;
@@ -63,9 +102,7 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-
     transition: 500ms;
-
     list-style-type: none;
     padding: 0;
   }
@@ -74,5 +111,82 @@
     width: 66px;
     height: 76px;
     align-self: center;
+  }
+}
+
+@media (max-width: 778px) {
+  .partners {
+    max-width: $max-width;
+    margin: 40px 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &__slogan {
+      margin: 0;
+
+      font-size: 80px;
+      font-weight: 300;
+      letter-spacing: -10px;
+    }
+
+    &__wrapper {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+
+      background-color: #007AFF;
+      -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+      background-image: url("/assets/shared/blue-background.png");
+
+    }
+
+    &__item {
+      margin: 10px;
+      width: 300px;
+      min-height: 90px;
+      display: flex;
+      align-self: center;
+      padding: 5px;
+
+      background-color: white;
+      border-radius: 3%;
+      transition: 0.3s ease-in-out;
+
+      &:hover, &:focus {
+        transform: scale(1.1);
+      }
+    }
+
+    &__name {
+      margin: 0;
+
+      font-size: 16px;
+      font-weight: 400;
+      color: #007AFF;
+      text-decoration: none;
+    }
+
+    &__list {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      transition: 500ms;
+
+      list-style-type: none;
+      padding: 0;
+    }
+
+    &__image {
+      width: 66px;
+      height: 76px;
+      align-self: center;
+    }
   }
 }
