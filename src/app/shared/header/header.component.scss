@@ -165,9 +165,9 @@
     position: absolute;
     display: none;
     width: 270px;
+    padding: 0;
 
     list-style-type: none;
-    padding: 0;
 
     transition: 500ms;
     opacity: 0;
@@ -191,15 +191,19 @@
     background-color: #fff;
 
     .nav__link {
-
-      padding: 4px;
+      padding: 4px 5px 4px 5px;
       color: black;
       background-color: #fff;
       display: block;
 
       &:hover, &:focus {
         background-color: #007AFF80;
+        color: white;
       }
+    }
+
+    &:hover, &:focus {
+      background-color: #007AFF80;
     }
   }
 }
