@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TrenslateClass } from '../../translate.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-media',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class MediaComponent {
 
+  
 }

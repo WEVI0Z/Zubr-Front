@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { TrenslateClass } from '../../translate.component';
 
 const TARGET_DATE: Date = new Date(2024, 3, 8, 23, 59, 59);
 
@@ -27,29 +28,16 @@ export class TimerComponent implements OnInit{
   protected milliseconds: number = 0;
   protected ifTimerRelevant: boolean = new Date() < TARGET_DATE;
   private currentLang: string ="ru";
+  private translation: TrenslateClass;
 
 
   constructor(public translate: TranslateService) {
-    let lang = this.getCookie('language');
-    if (lang.includes('en')) {
-      this.currentLang = 'en';
-    } else if (lang.includes('be')) {
-      this.currentLang = 'be';
-    }
+ 
+    this.translation = new TrenslateClass(translate, this.currentLang)
 
+    this.currentLang = this.translation.getCurrentLanguage().toLowerCase();
   }
 
-  private getCookie(name: any): any {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : this.currentLang.toLowerCase();
-  }
-
-  public translateData(lang: string): void {
-
-    this.translate.use(lang.toLowerCase());
-  }
 
   ngOnInit(): void {
     this.setTime(this.calculateDifference(new Date(), TARGET_DATE));

@@ -12,9 +12,13 @@ export class ItemComponent implements AfterViewInit{
   @ViewChild("wrapper", {read: ElementRef}) wrapper!: ElementRef;
   protected sphere?: Sphere;
 
+
   constructor(private sphereService: SphereService,
-              private router: Router) {
+    private router: Router) {
+
   }
+
+
 
   ngAfterViewInit(): void {
     this.identifyContent(this.router.url);

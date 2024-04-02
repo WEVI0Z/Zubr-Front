@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { TrenslateClass } from '../translate.component';
 
 @Component({
   selector: 'app-about',
@@ -10,27 +11,14 @@ export class AboutComponent {
 
   public currentLang: string = 'ru';
 
+  private translation: TrenslateClass;
+
   constructor(public translate: TranslateService) {
-    let lang = this.getCookie('language');
-    if (lang.includes('en')) {
-      this.currentLang = 'EN';
-    } else if (lang.includes('be')) {
-      this.currentLang = 'BE';
-    }
 
-    this.translateData(this.currentLang);
+    this.translation = new TrenslateClass(translate, this.currentLang)
+
+    this.currentLang = this.translation.getCurrentLanguage();
+    this.translation.translateData(this.currentLang);
+
   }
-
-  private getCookie(name: any): any {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : this.currentLang.toLowerCase();
-  }
-
-  public translateData(lang: string): void {
-
-    this.translate.use(lang.toLowerCase());
-  }
-
 }
