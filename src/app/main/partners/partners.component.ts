@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-partners',
@@ -14,6 +14,21 @@ export class PartnersComponent implements AfterViewInit {
   imageChangeInterval: number = 2500;
   isRButtonHidden: boolean = false;
   isLButtonHidden: boolean = false;
+
+  @HostListener('window:resize')
+  onWindowResize(): void {
+    this.checkWindowSize();
+  }
+
+  checkWindowSize(): void {
+    const mainWrapper: HTMLElement = this.mainWrapper.nativeElement;
+    const mainWidth: number = mainWrapper.clientWidth;
+
+    if (mainWidth > 778) {
+      this.isRButtonHidden = false;
+      this.isLButtonHidden = false;
+    }
+  }
 
   ngAfterViewInit(): void {
     this.startImageChange();
@@ -33,22 +48,33 @@ export class PartnersComponent implements AfterViewInit {
     const elementWidth: number = element.clientWidth;
     const wrapperWidth: number = wrapper.clientWidth;
     const offsetPerScroll: number = elementWidth * 0.1;
+    element.style.transition = 'transform 0.5s ease-in-out';
+    this.isRButtonHidden = false;
+    this.isLButtonHidden = false;
 
     if (mainWidth <= 778) {
       element.style.transform = ``;
+      this.isRButtonHidden = true;
+      this.isLButtonHidden = true;
       return;
+    }else {
+     
     }
 
     if (this.offset * -1 >= elementWidth - wrapperWidth) {
       // Если достигнут конец элементов карусели
       this.offset = 0;
       this.offset -= offsetPerScroll * this.multiplier;
-      element.style.transform = `translateX(${this.offset + offsetPerScroll}px)`;
+
+      element.style.transition = 'transform 0.001s ease-in-out';
+      element.style.transform = `translateX(${this.offset + offsetPerScroll}px)`;    
       return;
     } else if (this.offset >= 0) {
       // Если достигнуто начало элементов карусели
       this.offset = -(elementWidth - wrapperWidth);
       this.offset -= offsetPerScroll * this.multiplier;
+
+      element.style.transition = 'transform 0.001s ease-in-out';
       element.style.transform = `translateX(${this.offset - offsetPerScroll}px)`;
       return;
     }
@@ -75,6 +101,7 @@ export class PartnersComponent implements AfterViewInit {
   }
 
   resumeImageChange(): void {
+    this.multiplier = 1;
     this.startImageChange();
   }
 
