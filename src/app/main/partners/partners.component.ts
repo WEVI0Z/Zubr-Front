@@ -1,21 +1,40 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-partners',
   templateUrl: './partners.component.html',
   styleUrls: ['./partners.component.scss']
 })
-export class PartnersComponent implements AfterViewInit{
-  @ViewChild("partnerList", {read: ElementRef}) partnerList!: ElementRef;
-  @ViewChild("partnerWrapper", {read: ElementRef}) partnerWrapper!: ElementRef
-  @ViewChild("mainWrapper", {read: ElementRef}) mainWrapper!: ElementRef;
+export class PartnersComponent implements AfterViewInit {
+  @ViewChild("partnerList", { read: ElementRef }) partnerList!: ElementRef;
+  @ViewChild("partnerWrapper", { read: ElementRef }) partnerWrapper!: ElementRef;
+  @ViewChild("mainWrapper", { read: ElementRef }) mainWrapper!: ElementRef;
   offset: number = 0;
   multiplier: number = -1;
   imageChangeInterval: number = 2500;
   isRButtonHidden: boolean = false;
   isLButtonHidden: boolean = false;
 
+  @HostListener('window:resize')
+  onWindowResize(): void {
+    this.checkWindowSize();
+  }
+
+  checkWindowSize(): void {
+    const mainWrapper: HTMLElement = this.mainWrapper.nativeElement;
+    const mainWidth: number = mainWrapper.clientWidth;
+
+    if (mainWidth > 778) {
+      this.isRButtonHidden = false;
+      this.isLButtonHidden = false;
+    }
+  }
+
   ngAfterViewInit(): void {
+    this.startImageChange();
+  }
+
+  startImageChange(): void {
     this.imageChangeInterval = window.setInterval(() => {
       this.changeImage();
     }, 2500);
@@ -29,64 +48,52 @@ export class PartnersComponent implements AfterViewInit{
     const elementWidth: number = element.clientWidth;
     const wrapperWidth: number = wrapper.clientWidth;
     const offsetPerScroll: number = elementWidth * 0.1;
+    element.style.transition = 'transform 0.5s ease-in-out';
     this.isRButtonHidden = false;
     this.isLButtonHidden = false;
 
     if (mainWidth <= 778) {
       element.style.transform = ``;
+      this.isRButtonHidden = true;
+      this.isLButtonHidden = true;
+      return;
+    }else {
+     
+    }
+
+    if (this.offset * -1 >= elementWidth - wrapperWidth) {
+      // Если достигнут конец элементов карусели
+      this.offset = 0;
+      this.offset -= offsetPerScroll * this.multiplier;
+
+      element.style.transition = 'transform 0.001s ease-in-out';
+      element.style.transform = `translateX(${this.offset + offsetPerScroll}px)`;    
+      return;
+    } else if (this.offset >= 0) {
+      // Если достигнуто начало элементов карусели
+      this.offset = -(elementWidth - wrapperWidth);
+      this.offset -= offsetPerScroll * this.multiplier;
+
+      element.style.transition = 'transform 0.001s ease-in-out';
+      element.style.transform = `translateX(${this.offset - offsetPerScroll}px)`;
       return;
     }
 
-    if (this.offset * -1 >= elementWidth - wrapperWidth) {
-      this.multiplier = 1
-    } else if (this.offset >= 0) {
-      this.multiplier = -1;
-    }
+    this.offset -= offsetPerScroll * this.multiplier;
 
-    this.offset += offsetPerScroll * this.multiplier;
-
-    element.style.transform = `translateX(${this.offset}px)`
-
-    if (this.offset * -1 >= elementWidth - wrapperWidth) {
-      this.isRButtonHidden = true;
-    } else if (this.offset >= 0) {
-      this.isLButtonHidden = true;
-    }
-    
+    element.style.transform = `translateX(${this.offset}px)`;
   }
 
   previosImage(): void {
-    const element: HTMLElement = this.partnerList.nativeElement;
-    const wrapper: HTMLElement = this.partnerWrapper.nativeElement;
-    const elementWidth: number = element.clientWidth;
-    const wrapperWidth: number = wrapper.clientWidth;
-
-    this.multiplier = 1;
-    this.changeImage();
-    clearInterval(this.imageChangeInterval);
-
-    if (this.offset * -1 >= elementWidth - wrapperWidth) {
-      this.isRButtonHidden = true;
-    } else if (this.offset >= 0) {
-      this.isLButtonHidden = true;
-    }
-  }
-
-  nextImage(): void {
-    const element: HTMLElement = this.partnerList.nativeElement;
-    const wrapper: HTMLElement = this.partnerWrapper.nativeElement;
-    const elementWidth: number = element.clientWidth;
-    const wrapperWidth: number = wrapper.clientWidth;
-
     this.multiplier = -1;
     this.changeImage();
     clearInterval(this.imageChangeInterval);
+  }
 
-    if (this.offset * -1 >= elementWidth - wrapperWidth) {
-      this.isRButtonHidden = true;
-    } else if (this.offset >= 0) {
-      this.isLButtonHidden = true;
-    }
+  nextImage(): void {
+    this.multiplier = 1;
+    this.changeImage();
+    clearInterval(this.imageChangeInterval);
   }
 
   stopImageChange(): void {
@@ -94,9 +101,8 @@ export class PartnersComponent implements AfterViewInit{
   }
 
   resumeImageChange(): void {
-    this.imageChangeInterval = window.setInterval(() => {
-      this.changeImage();
-    }, 2500);
+    this.multiplier = 1;
+    this.startImageChange();
   }
 
   handleMouseWheel(event: any) {
@@ -108,6 +114,5 @@ export class PartnersComponent implements AfterViewInit{
     } else if (event.deltaY < 0) {
       this.previosImage(); // Вызовите функцию для прокрутки вверх
     }
-   }
-
+  }
 }
