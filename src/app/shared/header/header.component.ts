@@ -4,6 +4,7 @@ import {Router} from "@angular/router";
 import {Sphere} from "../../sphere-list/interface/sphere";
 import {SphereService} from "../../sphere-list/service/sphere.service";
 import { TranslateService } from '@ngx-translate/core';
+import { TrenslateClass } from '../../translate.component';
 
 declare let particlesJS: any;
 
@@ -15,7 +16,9 @@ declare let particlesJS: any;
 export class HeaderComponent implements OnInit{
   protected isPageMain: boolean = this.router.url === "/";
   protected sphereList: Sphere[] = this.sphereService.sphereList;
-  public currentLang: string = 'RU';
+  public currentLANG: string = 'RU';
+  private translation: TrenslateClass;
+
 
   public ngOnInit(): void {
     if (this.isPageMain) {
@@ -27,52 +30,19 @@ export class HeaderComponent implements OnInit{
     private sphereService: SphereService,
     public translate: TranslateService) {
 
-    let lang = this.getCookie('language');
-    if (lang.includes('en')) {
-      this.currentLang = 'EN';
-    } else if (lang.includes('be')) {
-      this.currentLang = 'BE';
-    }
+    this.translation = new TrenslateClass(translate, this.currentLANG)
 
-    this.translateData(this.currentLang);
-    
-
+    this.currentLANG = this.translation.getCurrentLanguage();
+    this.translation.translateData(this.currentLANG);
   }
 
   private invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function() {});
   }
 
-  private getCookie(name : any): any {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : this.currentLang.toLowerCase();
-  }
-
-  
-  
-
-  public setCookie(lang: string) {
-    document.cookie = "language=" + lang+"; path/";
-
-    //"user=John; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT"
-  }
-
-  public translateData(lang: string): void {
-
-
-    this.translate.use(lang.toLowerCase());
-
-
-    //this.setCookie(lang);
-    //window.location.reload();
-  }
-
   public reLoad(lang: string): any {
-    this.setCookie(lang);
+    this.translation.setCookie(lang);
     window.location.reload();
-    //this.translate.use(lang.toLowerCase());
 
   }
 }

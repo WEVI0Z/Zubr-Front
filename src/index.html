@@ -2,16 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Открытый республиканский IT-чемпионат Робин - 2024</title>
+  <title>Открытый республиканский IT-чемпионат «РобИн-2024»</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="yandex-verification" content="31c2d449cd522ba0" />
   <meta name="google-site-verification" content="bxWPkf9M8uLPZgdkf4_S3vdF_o_KzNnzyoVNisIOwNg"/>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -60,56 +56,7 @@
     });
   </script>
 
-  <script>
-    const googleTranslateConfig = {
-      lang: "ru"
-    };
-
-    function TranslateInit() {
-        let code = TranslateGetCode();
-        // Находим флаг с выбранным языком для перевода и добавляем к нему активный класс
-        $('[data-google-lang="' + code + '"]').addClass('language__img_active');
-
-        if (code == googleTranslateConfig.lang) {
-            // Если язык по умолчанию, совпадает с языком на который переводим
-            // То очищаем куки
-            TranslateClearCookie();
-        }
-        
-        //// Инициализируем виджет с языком по умолчанию
-        new google.translate.TranslateElement({
-            pageLanguage: googleTranslateConfig.lang,
-        });
-    }
-
-    function onClickTranslate(el) {
-      //translate.use("data-google-lang");
-      console.log($(el).attr("data-google-lang"));
-      TranslateSetCookie($(el).attr("data-google-lang"))
-      // Перезагружаем страницу
-      window.location.reload();
-
-    }
-
-    function TranslateGetCode() {
-        let lang = ($.cookie('googtrans') != undefined && $.cookie('googtrans') != "null") ? $.cookie('googtrans') : googleTranslateConfig.lang;
-        return lang.substr(-2);
-    }
-
-    function TranslateClearCookie() {
-        $.cookie("googtrans", null, {
-            domain: document.domain,
-            path: '/'
-        });
-    }
-
-    function TranslateSetCookie(code) {
-        $.cookie("googtrans", "/auto/" + code, {
-            domain: document.domain,
-            path: '/'
-        });
-    }
-  </script>
+  
 
   <div id="myBtn" title="К началу страницы"><i class="fa fa-angle-double-up"></i></div>
 </body>

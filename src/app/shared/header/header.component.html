@@ -52,17 +52,15 @@
           </li>
           <li class="nav__item"><a href="#" routerLink="/media" class="nav__link">{{'SHARED.HEADER.MEDIA' | translate}}</a></li>
           <li class="nav__item nav__item--langs">
-            <a class="nav__link nav__cur-lang">{{ currentLang }}</a>
+            <a class="nav__link nav__cur-lang">{{ currentLANG }}</a>
             <ul class="nav__langs">
-              <li class="nav__competition" data-google-lang="ru" (click)="reLoad('ru')">
-                <a href="#" class="nav__link" data-google-lang="ru" (click)="reLoad('ru')">RU</a>
+              <li class="nav__competition" (click)="reLoad('ru')">
+                <a href="#" class="nav__link" (click)="reLoad('ru')">RU</a>
               </li>
-              <li class="nav__competition" data-google-lang="be" (click)="reLoad('be')">
-                <a href="#" class="nav__link" data-google-lang="be" (click)="reLoad('be')">BE</a>
+              <li class="nav__competition" (click)="reLoad('be')">
+                <a href="#" class="nav__link" (click)="reLoad('be')">BE</a>
               </li>
-              <li class="nav__competition" data-google-lang="en" (click)="reLoad('en')">
-                <a href="#" class="nav__link" data-google-lang="en" (click)="reLoad('en')">EN</a>
-              </li>
+              
             </ul>
           </li>
           <li class="nav__item" hidden>

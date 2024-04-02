@@ -1,22 +1,15 @@
 {
+  "INDEX": {
+
+    "TITLE": "Open Republican IT championship «RobIn-2024»"
+  },
+
   "SHARED": {
     "HEADER": {
       "ZUBRTITLE": " The National children’s education and health center «Zubrenok» ",
       "ABOUT": " About ",
       "COMPETENCE": {
-        "TITLE": " Сompetence ",
-        "COMP1": " Intellectual sumo 15x15 7th grade ",
-        "COMP2": " Following the line 7th grade ",
-        "COMP3": " Football controlled robots 2x2 7th grade ",
-        "COMP4": " Graphic design 8th grade ",
-        "COMP5": " Graphic design 10th grade ",
-        "COMP6": " Web development 8th grade ",
-        "COMP7": " Web development 9th grade ",
-        "COMP8": " Prototyping 8th grade ",
-        "COMP9": " Prototyping 10th grade ",
-        "COMP10": " Bot-constructor 9th grade ",
-        "COMP11": " Web design 9th grade ",
-        "COMP12": " Programming 10th grade "
+        "TITLE": " Сompetence "
       },
       "RESOURCE": {
         "TITLE": " Оur resources ",
@@ -57,7 +50,7 @@
       "ADDRESS2": "222397, Minsk region, Myadelsky district, Zubrenevka village, NDC Zubrjnok, IT championship «RobIn-2024»",
       "PHONE1": "Phones: ",
       "PHONE2": "8 (01797) 22 784 (fax) ",
-      "PHONE3": "+375298008175 (моб. Viber)",
+      "PHONE3": "+375298008175 (mob. Viber)",
       "LASTTITLE": "© 2024 Open Republican IT championship «RobIn-2024». All rights reserved"
 
     }
@@ -101,24 +94,31 @@
     }
   },
 
+  "MEDIA": {
+    "TITLE": "Media"
+  },
+
   "ABOUT": {
-    "TITLE": "О чемпионате",
-    "PARAGR_1": "В эпоху современных технологий огромное внимание уделяется развитию искусственного интеллекта, робототехническим системам, виртуальной и дополненной реальностям.",
-    "PARAGR_2": "Ни для кого не секрет, что данные IT-сферы повсеместно внедряются в образование. Для того, чтобы подрастающее поколение Беларуси могло продемонстрировать свои достижения в этих областях, в НДЦ «Зубренок» проводится IT-чемпионат «РобИн».",
-    "GOAL": "Цель проведения",
-    "GOAL_PARAGR": "Создание условий для популяризации сферы инноваций и высоких технологий среди подрастающего поколения, поддержка и вовлечение талантливых детей в научно-техническое творчество.",
-    "TASK_NAME": "Задачи",
-    "TASK_PARAGR1": "Поиск и разработка инновационных технологий и методов работы с детьми.",
-    "TASK_PARAGR2": "Способствовать разработке и реализации детских инновационных проектов с помощью высокотехнологичного оборудования,и программного обеспечения создающих условия для формирования современных и будущих профессиональных компетенций навыков инженерного мышления.",
-    "TASK_PARAGR3": "Создавать интеллектуальную образовательную среду, мотивирующую каждого учащегося повсеместно использовать свои знания и умения с целью изменения окружающей обстановки по принципам высокотехнологичного производства.",
-    "TASK_PARAGR4": "Создавать условия для организации опытно-экспериментальных работ по освоению новых технологий, новых видов профессиональной деятельности, форм профессионального обучения.",
-    "POSITION": "Положение РобИн 2024",
-    "COMPOSITION": " Состав республиканского организационного комитета"
+    "TITLE": "About",
+    "PARAGR_1": "In the era of modern technology, great attention is paid to the development of artificial intelligence, robotic systems, virtual and augmented realities.",
+    "PARAGR_2": "It's no secret that these IT spheres are being widely introduced into education. In order for the younger generation of Belarus to demonstrate their achievements in these areas, the IT championship «RobIn» is being held at the NDC Zubrenok",
+    "GOAL": "The purpose of the event",
+    "GOAL_PARAGR": "Creating conditions for the popularization of innovation and high technology among the younger generation, support and involvement of talented children in scientific and technical creativity.",
+    "TASK_NAME": "Tasks",
+    "TASK_PARAGR1": "Search and development of innovative technologies and methods of working with children.",
+    "TASK_PARAGR2": "To create an intellectual educational environment that motivates each student to use their knowledge and skills everywhere in order to change the environment according to the principles of high-tech production.",
+    "TASK_PARAGR3": "To contribute to the development and implementation of children's innovative projects with the help of high-tech equipment and software that create conditions for the formation of modern and future professional competencies, engineering thinking skills.",
+    "TASK_PARAGR4": "To create conditions for the organization of experimental work on the development of new technologies, new types of professional activities, forms of vocational training.",
+    "POSITION": "Robin's Position 2024 (ru)",
+    "COMPOSITION": "The composition of the Republican Organizing Committee (ru)"
 
   },
 
   "SPHERE-LIST": {
-    "NAME": "Сompetence"
+    "NAME": "Сompetence",
+    "ITEM": {
+      "TASKS": "Tasks"
+    }
   },
 
 
