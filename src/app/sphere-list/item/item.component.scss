@@ -1,5 +1,5 @@
-@import "../../../stylesheets/global";
-@import "../../../stylesheets/sphere-style";
+@import '../../../stylesheets/global';
+@import '../../../stylesheets/sphere-style';
 
 main {
   margin: auto;
@@ -16,7 +16,7 @@ main {
     font-size: 16px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 50px;
       height: 50px;
@@ -24,7 +24,7 @@ main {
       left: 5px;
 
       background-size: contain;
-      background-image: url("./../../../assets/shared/document.svg");
+      background-image: url('./../../../assets/shared/document.svg');
     }
   }
 
@@ -38,8 +38,8 @@ main {
 
     text-decoration: none;
     color: white;
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
   }
 
   &__picture {
@@ -83,14 +83,14 @@ li {
       font-size: 16px;
 
       &::before {
-        content: "";
+        content: '';
         width: 50px;
         height: 50px;
         top: -8px;
         left: 5px;
 
         background-size: contain;
-        background-image: url("./../../../assets/shared/document.svg");
+        background-image: url('./../../../assets/shared/document.svg');
       }
     }
 

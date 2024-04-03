@@ -9,10 +9,10 @@
 
   color: white;
 
-  background-image: url("/assets/shared/blue-background.png");
+  background-image: url('/assets/shared/blue-background.png');
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 65vh;
     height: 44vh;
@@ -21,8 +21,8 @@
     z-index: 0;
 
     transform: translate(-50%, -50%);
-    background-color: #007AFF;
-    background-image: url("/assets/undefined/404-ico.svg");
+    background-color: #007aff;
+    background-image: url('/assets/undefined/404-ico.svg');
     background-size: contain;
   }
 
@@ -41,12 +41,13 @@
     z-index: 1;
 
     text-decoration: none;
-    color: #007AFF;
+    color: #007aff;
     font-size: 5vh;
 
     background-color: white;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 0.7;
     }
 

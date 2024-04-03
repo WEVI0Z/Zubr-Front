@@ -4,22 +4,70 @@
     <h2 class="media__title">Медиа</h2>
     <ul class="media__list">
       <li class="media__item" *ngFor="let media of mediaList">
-        <a [href]="'../../assets/media/' + media.path" data-fancybox="photo" [attr.data-caption]="media.name ? media.name : 'Фотография'" class="media__link">
-          <img class="media__image" [src]="'../../assets/media/' + media.path" [alt]="media.name ? media.name : 'Фотография'">
-          <p class="media__description">{{media.name ? media.name : 'Фотография'}}</p>
+        <a
+          [href]="'../../assets/media/' + media.path"
+          data-fancybox="photo"
+          [attr.data-caption]="media.name ? media.name : 'Фотография'"
+          class="media__link"
+        >
+          <img
+            class="media__image"
+            [src]="'../../assets/media/' + media.path"
+            [alt]="media.name ? media.name : 'Фотография'"
+          />
+          <p class="media__description">
+            {{ media.name ? media.name : 'Фотография' }}
+          </p>
         </a>
       </li>
       <li class="media__item fancybox-youtube-container">
-        <a class="fancybox.iframe fancybox-youtube" data-fancybox href="https://www.youtube.com/embed/K9kon1kD7HQ?si=VFFOrsI8W0R8EJMk"></a>
-        <iframe class="media__image" width="403" height="403" src="https://www.youtube.com/embed/K9kon1kD7HQ?si=VFFOrsI8W0R8EJMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a
+          class="fancybox.iframe fancybox-youtube"
+          data-fancybox
+          href="https://www.youtube.com/embed/K9kon1kD7HQ?si=VFFOrsI8W0R8EJMk"
+        ></a>
+        <iframe
+          class="media__image"
+          width="403"
+          height="403"
+          src="https://www.youtube.com/embed/K9kon1kD7HQ?si=VFFOrsI8W0R8EJMk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </li>
       <li class="media__item fancybox-youtube-container">
-        <a class="fancybox.iframe fancybox-youtube" data-fancybox href="https://www.youtube.com/embed/Bn2T-m-d1jU?si=y85cM7MiAKCxR22j"></a>
-        <iframe width="403" height="403" src="https://www.youtube.com/embed/Bn2T-m-d1jU?si=y85cM7MiAKCxR22j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a
+          class="fancybox.iframe fancybox-youtube"
+          data-fancybox
+          href="https://www.youtube.com/embed/Bn2T-m-d1jU?si=y85cM7MiAKCxR22j"
+        ></a>
+        <iframe
+          width="403"
+          height="403"
+          src="https://www.youtube.com/embed/Bn2T-m-d1jU?si=y85cM7MiAKCxR22j"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </li>
       <li class="media__item fancybox-youtube-container">
-        <a class="fancybox.iframe fancybox-youtube" data-fancybox href="https://www.youtube.com/embed/bHY9OWusqb8?si=wNxtxqvAIDxaX6Wm"></a>
-        <iframe width="403" height="403" src="https://www.youtube.com/embed/bHY9OWusqb8?si=wNxtxqvAIDxaX6Wm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a
+          class="fancybox.iframe fancybox-youtube"
+          data-fancybox
+          href="https://www.youtube.com/embed/bHY9OWusqb8?si=wNxtxqvAIDxaX6Wm"
+        ></a>
+        <iframe
+          width="403"
+          height="403"
+          src="https://www.youtube.com/embed/bHY9OWusqb8?si=wNxtxqvAIDxaX6Wm"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </li>
     </ul>
   </section>
