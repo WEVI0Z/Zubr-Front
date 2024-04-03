@@ -1,17 +1,21 @@
 import { Sphere } from '../interface/sphere';
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 
 export class WEB_DESIGN {
 
   private static nameSphere: string = "web-design";
 
-  private static viewNameRU: string = "Web-дизайн 9 класс";
-  private static viewNameBE: string = "Web-дызайн 9 клас";
-    private static viewNameEN: string = "Web-design 9th grade";
+  private static viewNameRU: string = ruDictionary.SPHERE["web-design"].viewName;
+  private static viewNameBE: string = beDictionary.SPHERE["web-design"].viewName;
+  private static viewNameEN: string = enDictionary.SPHERE["web-design"].viewName;
 
-  private static descriptionRU: string = "Веб-дизайн — вид графического дизайна, направленный на разработку и оформление объектов информационной среды Интернета, призванный обеспечить им высокие потребительские свойства и эстетические качества. Подобная трактовка отделяет веб-дизайн от веб-программирования, подчёркивает специфику предметной деятельности веб-дизайнера, позиционирует веб-дизайн как вид графического дизайна. Немаловажной частью проектирования ресурса в последнее время стало приведение ресурса в соответствие стандартам W3C, что обеспечивает доступность содержания для инвалидов и пользователей портативных устройств.";
-  private static descriptionBE: string = "Вэб-дызайн - від графічнага дызайну, накіраваны на распрацоўку і афармленне аб'ектаў інфармацыйнага асяроддзя Інтэрнэту, закліканы забяспечыць ім высокія спажывецкія ўласцівасці і эстэтычныя якасці. Падобная трактоўка аддзяляе вэб-дызайн ад вэб-праграміравання, падкрэслівае спецыфіку прадметнай дзейнасці вэб-дызайнера, пазіцыяніруе вэб-дызайн як від графічнага дызайну. Немалаважнай часткай праектавання рэсурсу ў апошні час стала прывядзенне рэсурсу ў адпаведнасць стандартам W3C, што забяспечвае даступнасць зместу для інвалідаў і карыстальнікаў партатыўных прылад.";
-  private static descriptionEN: string = "Web design is a type of graphic design aimed at developing and designing objects of the Internet information environment, designed to provide them with high consumer properties and aesthetic qualities. This interpretation separates web design from web programming, emphasizes the specifics of the web designer’s substantive activity, and positions web design as a type of graphic design. An important part of resource design recently has been to bring the resource into compliance with W3C standards, which ensures accessibility of the content for people with disabilities and users of portable devices.";
+  private static descriptionRU: string = ruDictionary.SPHERE["web-design"].description;
+  private static descriptionBE: string = beDictionary.SPHERE["web-design"].description;
+  private static descriptionEN: string = enDictionary.SPHERE["web-design"].description;
+
 
   private static contentRU: string = `
         <ol>

@@ -21,7 +21,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MediaRoutingModule,
     SharedModule,
     NgOptimizedImage,
-    ShareBlockModule
+    ShareBlockModule,
     NgOptimizedImage,
     HttpClientModule,
     TranslateModule.forRoot(

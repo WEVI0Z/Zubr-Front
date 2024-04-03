@@ -1,16 +1,19 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class SUMO{
 
   private static nameSphere: string = "sumo";
 
-  private static viewNameRU: string = "Интеллектуальное сумо 15х15 7 класс";
-  private static viewNameBE: string = "Iнтэлектуальнае сумо 15х15 7 клас";
-  private static viewNameEN: string = "Intellectual sumo 15x15 7th grade";
+  private static viewNameRU: string = ruDictionary.SPHERE.sumo.viewName;
+  private static viewNameBE: string = beDictionary.SPHERE.sumo.viewName;
+  private static viewNameEN: string = enDictionary.SPHERE.sumo.viewName;
 
-  private static descriptionRU: string = "Робот-сумо – это вид спорта, в котором два робота пытаются вытолкнуть друг друга из круга. Роботы, используемые в этом соревновании, называются сумоботами. Инженерные задачи заключаются в том, чтобы робот нашел своего противника и вытолкнул его за пределы плоской арены.";
-  private static descriptionBE: string = "Робат-сумо - гэта від спорту, у якім два робаты спрабуюць выштурхнуць адзін аднаго з круга. Робаты, якія выкарыстоўваюцца ў гэтым спаборніцтве, называюцца сумоботамі.Інжынерныя задачы складаюцца ў тым, каб робат знайшоў свайго саперніка і выштурхнуў яго за межы плоскай арэны.";
-  private static descriptionEN: string = "Robot sumo is a sport in which two robots try to push each other out of a circle. The robots used in this competition are called sumobots. The engineering challenges are for the robot to find its opponent and push him out of the flat arena.";
+  private static descriptionRU: string = ruDictionary.SPHERE.sumo.description;
+  private static descriptionBE: string = beDictionary.SPHERE.sumo.description;
+  private static descriptionEN: string = enDictionary.SPHERE.sumo.description;
 
   private static contentRU: string = `
         <ol>

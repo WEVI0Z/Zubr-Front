@@ -1,17 +1,20 @@
 import { Sphere } from '../interface/sphere';
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 
 export class BOT_CONSTRUCTOR {
 
   private static nameSphere: string = 'bot-constructor';
 
-  private static viewNameRU: string = `bot-конструктор 9 класс`;
-  private static viewNameBE: string = `bot-канструктар 9 клас`;
-  private static viewNameEN: string = `bot-constructor 9th grade`;
+  private static viewNameRU: string = ruDictionary.SPHERE['bot-constructor'].viewName;
+  private static viewNameBE: string = beDictionary.SPHERE['bot-constructor'].viewName;
+  private static viewNameEN: string = enDictionary.SPHERE['bot-constructor'].viewName;
 
-  private static descriptionRU: string = `Бот — это автоматизированный многофункциональный помощник, который может показывать информацию подписчикам и собирать информацию по запросу согласно заранее подготовленным сценариям. Telegram − кроссплатформенная система мгновенного обмена сообщениями (мессенджер) с функциями VoIP, позволяющая обмениваться текстовыми, голосовыми и видеосообщениями, стикерами и фотографиями, файлами многих форматов.`;
-  private static descriptionBE: string = `Бот - гэта аўтаматызаваны шматфункцыянальны памочнік, які можа паказваць інфармацыю падпісчыкам і збіраць інфармацыю па запыце згодна з загадзя падрыхтаваным сцэнарыем. Telegram - кросплатформавая сістэма імгненнага абмену паведамленнямі (месенджар) з функцыямі VoIP, якая дазваляе абменьвацца тэкставымі, галасавымі і відэапаведамленнямі, стыкерамі і фатаграфіямі, файламі шматлікіх фарматаў.`;
-  private static descriptionEN: string = "A bot is an automated multifunctional assistant that can show information to subscribers and collect information upon request according to pre-prepared scripts. Telegram is a cross-platform instant messaging system (messenger) with VoIP functions that allows you to exchange text, voice and video messages, stickers and photos, and files of many formats.";
+  private static descriptionRU: string = ruDictionary.SPHERE['bot-constructor'].description;
+  private static descriptionBE: string = beDictionary.SPHERE['bot-constructor'].description;;
+  private static descriptionEN: string = enDictionary.SPHERE['bot-constructor'].description;
 
   private static contentRU: string = `
         <ol>

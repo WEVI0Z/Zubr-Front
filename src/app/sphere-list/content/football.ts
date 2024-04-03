@@ -1,16 +1,19 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class FOOTBALL {
 
   private static nameSphere: string = "football";
 
-  private static viewNameRU: string = "Футбол управляемых роботов 2х2 7 класс";
-  private static viewNameBE: string = "Футбол кіраваных робатаў 2х2 7 клас";
-  private static viewNameEN: string = "Football controlled robots 2x2 7th grade";
+  private static viewNameRU: string = ruDictionary.SPHERE.football.viewName;
+  private static viewNameBE: string = beDictionary.SPHERE.football.viewName;
+  private static viewNameEN: string = enDictionary.SPHERE.football.viewName;
 
-  private static descriptionRU: string = "Футбол роботов стремится воссоздать игру в футбол людей. Команды двое на двое, состоящие из автономных роботов, гонятся за мячом; их цель – забить противнику как можно больше голов.";
-  private static descriptionBE: string = "Футбол робатаў імкнецца ўзнавіць гульню ў футбол людзей. Каманды двое на двое, якія складаюцца з аўтаномных робатаў, гоняцца за мячом; іх мэта - забіць суперніку як мага больш галоў.";
-  private static descriptionEN: string = "Robot soccer aims to recreate the game of human soccer. Two-on-two teams of autonomous robots chase a ball; their goal is to score as many goals as possible to the opponent.";
+  private static descriptionRU: string = ruDictionary.SPHERE.football.description;
+  private static descriptionBE: string = beDictionary.SPHERE.football.description;
+  private static descriptionEN: string = enDictionary.SPHERE.football.description;
 
   private static contentRU: string = `
         <ol>

@@ -61,10 +61,14 @@
 
     "TIMER": {
       "TITLE": "Before the RobIn shift:",
-      "DAY": "days",
-      "HOUR": "hours",
-      "MINUT": "minutes",
-      "SECOND": "seconds"
+      "DAY1": "day",
+      "DAY2": "days",
+      "HOUR1": "hour",
+      "HOUR2": "hours",
+      "MINUT1": "minute",
+      "MINUT2": "minutes",
+      "SECOND1": "second",
+      "SECOND2": "seconds"
     },
 
     "SPHERE": {
@@ -120,7 +124,70 @@
       "TASKS": "Tasks"
     }
   },
+  "SPHERE": {
+    "bot-constructor": {
+      "viewName": "bot-constructor 9th grade",
+      "description": "A bot is an automated multifunctional assistant that can show information to subscribers and collect information upon request according to pre-prepared scripts. Telegram is a cross-platform instant messaging system (messenger) with VoIP functions that allows you to exchange text, voice and video messages, stickers and photos, and files of many formats.",
+      "content": ""
 
+    },
+    "design-elder": {
+      "viewName": "Graphic design 10th grade",
+      "description": "A graphic designer specializes in designing the environment using graphics. It works with signs, billboards, posters, indexes, signs and diagrams, and also takes care of the readability of necessary information, such as Internet sites, magazines, newspapers, leaflets, book and CD covers, restaurant menus, product catalogs, etc. The areas of graphic design include: corporate identity and branding, font development, advertising design, design of books, magazines and newspapers, design for the Internet.",
+      "content": ""
+    },
+    "design-younger": {
+      "viewName": "Graphic design 8th grade",
+      "description": "A graphic designer specializes in designing the environment using graphics. It works with signs, billboards, posters, indexes, signs and diagrams, and also takes care of the readability of necessary information, such as Internet sites, magazines, newspapers, leaflets, book and CD covers, restaurant menus, product catalogs, etc. The areas of graphic design include: corporate identity and branding, font development, advertising design, design of books, magazines and newspapers, design for the Internet.",
+      "content": ""
+    },
+
+    "football": {
+      "viewName": "Football controlled robots 2x2 7th grade",
+      "description": "Robot soccer aims to recreate the game of human soccer. Two-on-two teams of autonomous robots chase a ball; their goal is to score as many goals as possible to the opponent.",
+      "content": ""
+    },
+    "line": {
+      "viewName": "Following the line 7th grade",
+      "description": "Participants in the “Following the Line” competition need to prepare a robot capable of autonomously moving along the track. The robots' task is to drive along the track as quickly as possible. The track consists of a black line on a white synthetic field.",
+      "content": ""
+    },
+    "programming": {
+      "viewName": "Programming 10th grade",
+      "description": "Programming is the process of creating computer programs.",
+      "content": ""
+    },
+    "prototyping-elder": {
+      "viewName": "Prototyping 10th grade",
+      "description": "Prototyping is engineering and design work associated with the creation of prototypes (prototypes) for subsequent research, testing and other checks. In the process of working with a prototype, it becomes possible to work out and eliminate all possible inconsistencies and malfunctions, as well as refine design solutions.",
+      "content": ""
+    },
+    "prototyping-younger": {
+      "viewName": "Prototyping 8th grade",
+      "description": "Prototyping is engineering and design work associated with the creation of prototypes (prototypes) for subsequent research, testing and other checks. In the process of working with a prototype, it becomes possible to work out and eliminate all possible inconsistencies and malfunctions, as well as refine design solutions.",
+      "content": ""
+    },
+    "sumo": {
+      "viewName": "Intellectual sumo 15x15 7th grade",
+      "description": "Robot sumo is a sport in which two robots try to push each other out of a circle. The robots used in this competition are called sumobots. The engineering challenges are for the robot to find its opponent and push him out of the flat arena.",
+      "content": ""
+    },
+    "web-design": {
+      "viewName": "Web-design 9th grade",
+      "description": "Web design is a type of graphic design aimed at developing and designing objects of the Internet information environment, designed to provide them with high consumer properties and aesthetic qualities. This interpretation separates web design from web programming, emphasizes the specifics of the web designer’s substantive activity, and positions web design as a type of graphic design. An important part of resource design recently has been to bring the resource into compliance with W3C standards, which ensures accessibility of the content for people with disabilities and users of portable devices.",
+      "content": ""
+    },
+    "web-devolopment-elder": {
+      "viewName": "Web-development 9th grade",
+      "description": "Working with web technologies is a key skill in a world that increasingly places the Internet at the center of the modern digital platform. It is also one of the most complex and varied skills to master. Strong design and communication skills combined with an understanding of target audiences, markets and trends are all essential. During the development process, web designers and developers create databases, create programs, and test and debug websites.",
+      "content": ""
+    },
+    "web-devolopment-younger": {
+      "viewName": "Web-development 8th grade",
+      "description": "Working with web technologies is a key skill in a world that increasingly places the Internet at the center of the modern digital platform. It is also one of the most complex and varied skills to master. Strong design and communication skills combined with an understanding of target audiences, markets and trends are all essential. During the development process, web designers and developers create databases, create programs, and test and debug websites.",
+      "content": ""
+    }
+  },
 
   "UNDEFINED": {
     "LINE": "Oops... This page does not exist....",

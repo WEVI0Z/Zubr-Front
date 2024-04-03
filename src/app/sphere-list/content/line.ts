@@ -1,16 +1,19 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class LINE {
 
   private static nameSphere: string = "line";
+  private static viewNameRU: string = ruDictionary.SPHERE.line.viewName;
+  private static viewNameBE: string = beDictionary.SPHERE.line.viewName;
+  private static viewNameEN: string = enDictionary.SPHERE.line.viewName;
 
-  private static viewNameRU: string = "Следование по линии 7 класс";
-  private static viewNameBE: string = "Прахаджэнне па лініі 7 клас";
-  private static viewNameEN: string = "Following the line 7th grade";
+  private static descriptionRU: string = ruDictionary.SPHERE.line.description;
+  private static descriptionBE: string = beDictionary.SPHERE.line.description;
+  private static descriptionEN: string = enDictionary.SPHERE.line.description;
 
-  private static descriptionRU: string = "Участникам конкурса «Следование по линии» необходимо подготовить робота, способного автономно передвигаться по трассе. Задача роботов – проехать по трассе как можно быстрее. Трек состоит из черной линии на белом синтетическом поле.";
-  private static descriptionBE: string = "Удзельнікам конкурсу «Праходжанне па лініі» неабходна падрыхтаваць робата, здольнага аўтаномна перамяшчацца па трасе. Задача робатаў: праехаць па трасе як мага хутчэй. Трэк складаецца з чорнай лініі на белым сінтэтычным полі.";
-  private static descriptionEN: string = "Participants in the “Following the Line” competition need to prepare a robot capable of autonomously moving along the track. The robots' task is to drive along the track as quickly as possible. The track consists of a black line on a white synthetic field.";
 
   private static contentRU: string = `
     <ol>

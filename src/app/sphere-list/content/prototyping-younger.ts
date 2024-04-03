@@ -1,16 +1,20 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class PROTOTYPING_YOUNGER {
 
-  private static nameSphere: string = "prototyping-elder";
+  private static nameSphere: string = "prototyping-younger";
 
-  private static viewNameRU: string = "Прототипирование 8 класс";
-  private static viewNameBE: string = "Прататыпіраванне 8 клас";
-  private static viewNameEN: string = "Prototyping 8th grade";
 
-  private static descriptionRU: string = "Прототипирование – это инженерно-конструкторская работа, связанная с созданием прототипов (опытных образцов) для последующих исследований, тестирования и прочих проверок. В процессе работы с прототипом становится возможной отработка и устранение всех возможных несоответствий и неисправностей, а также доработка конструкторских решений.";
-  private static descriptionBE: string = "Прататыпіраванне - гэта інжынерна-канструктарская праца, звязаная са стварэннем прататыпаў (доследных узораў) для наступных даследаванняў, тэсціравання і іншых праверак. Падчас прац з прататыпам становіцца магчымай адпрацоўка і ўхіленне ўсіх магчымых неадпаведнасцяў і няспраўнасцяў, а таксама дапрацоўка канструктарскіх рашэнняў.";
-  private static descriptionEN: string = "Prototyping is engineering and design work associated with the creation of prototypes (prototypes) for subsequent research, testing and other checks. In the process of working with a prototype, it becomes possible to work out and eliminate all possible inconsistencies and malfunctions, as well as refine design solutions.";
+  private static viewNameRU: string = ruDictionary.SPHERE["prototyping-younger"].viewName;
+  private static viewNameBE: string = beDictionary.SPHERE["prototyping-younger"].viewName;
+  private static viewNameEN: string = enDictionary.SPHERE["prototyping-younger"].viewName;
+
+  private static descriptionRU: string = ruDictionary.SPHERE["prototyping-younger"].description;
+  private static descriptionBE: string = beDictionary.SPHERE["prototyping-younger"].description;
+  private static descriptionEN: string = enDictionary.SPHERE["prototyping-younger"].description;
 
   private static contentRU: string = `<ol>
             <li>ОБЩИЕ ПОЛОЖЕНИЯ</li>

@@ -1,16 +1,20 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class PROGRAMMING {
 
   private static nameSphere: string = "programming";
+  private static viewNameRU: string = ruDictionary.SPHERE.programming.viewName;
+  private static viewNameBE: string = beDictionary.SPHERE.programming.viewName;
+  private static viewNameEN: string = enDictionary.SPHERE.programming.viewName;
 
-  private static viewNameRU: string = "Программирование 10 класс";
-  private static viewNameBE: string = "Праграміраванне 10 клас";
-  private static viewNameEN: string = "Programming 10th grade";
+  private static descriptionRU: string = ruDictionary.SPHERE.programming.description;
+  private static descriptionBE: string = beDictionary.SPHERE.programming.description;
+  private static descriptionEN: string = enDictionary.SPHERE.programming.description;
 
-  private static descriptionRU: string = "Программирование – это процесс создания компьютерных программ.";
-  private static descriptionBE: string = "Праграміраванне - гэта працэс стварэння камп'ютарных праграм.";
-  private static descriptionEN: string = "Programming is the process of creating computer programs.";
+
 
   private static contentRU: string = `
         <ol>

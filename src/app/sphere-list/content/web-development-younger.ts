@@ -1,17 +1,20 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class WEB_DEVELOPMENT_YOUNGER {
 
 
   private static nameSphere: string = "web-development-younger";
 
-  private static viewNameRU: string = "Web-разработка 8 класс";
-  private static viewNameBE: string = "Web-распрацоўка 8 клас";
-  private static viewNameEN: string = "Web-development 8th grade";
+  private static viewNameRU: string = ruDictionary.SPHERE["web-devolopment-younger"].viewName;
+  private static viewNameBE: string = beDictionary.SPHERE["web-devolopment-younger"].viewName;
+  private static viewNameEN: string = enDictionary.SPHERE["web-devolopment-younger"].viewName;
 
-  private static descriptionRU: string = "Работа с веб-технологиями – это ключевой навык в мире, который все чаще ставит Интернет в центр современной цифровой платформы. Это также один из самых сложных и разнообразных навыков. Сильные дизайнерские и коммуникативные навыки в сочетании с пониманием целевой аудитории, рынков и тенденций – все это очень важно. В процессе разработки веб-дизайнеры и разработчики создают базы данных, создают программы, а также тестируют и отлаживают веб-сайты.";
-  private static descriptionBE: string = "Праца з вэб-тэхналогіямі - гэта ключавы навык у свеце, які ўсё часцей ставіць Інтэрнэт у цэнтр сучаснай лічбавай платформы. Гэта таксама адзін з самых складаных і разнастайных навыкаў. Моцныя дызайнерскія і камунікатыўныя навыкі ў спалучэнні з разуменнем мэтавай аўдыторыі, рынкаў і тэндэнцый - усё гэта вельмі важна. У працэсе распрацоўкі вэб-дызайнеры і распрацоўшчыкі ствараюць базы даных, ствараюць праграмы, а таксама тэсціруюць і адладжваюць вэб-сайты.";
-  private static descriptionEN: string = "Working with web technologies is a key skill in a world that increasingly places the Internet at the center of the modern digital platform. It is also one of the most complex and varied skills to master. Strong design and communication skills combined with an understanding of target audiences, markets and trends are all essential. During the development process, web designers and developers create databases, create programs, and test and debug websites.";
+  private static descriptionRU: string = ruDictionary.SPHERE["web-devolopment-younger"].description;
+  private static descriptionBE: string = beDictionary.SPHERE["web-devolopment-younger"].description;
+  private static descriptionEN: string = enDictionary.SPHERE["web-devolopment-younger"].description;
 
   private static contentRU: string = `
         <ol>

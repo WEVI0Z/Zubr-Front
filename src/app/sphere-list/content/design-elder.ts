@@ -1,17 +1,20 @@
 import { Sphere } from "../interface/sphere";
+import beDictionary from '../../../assets/i18n/be.json'
+import ruDictionary from '../../../assets/i18n/ru.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 export class DESIGN_ELDER {
 
 
   private static nameSphere: string = "design-elder";
 
-  private static viewNameRU: string = "Графический дизайн 10 класс";
-  private static viewNameBE: string = "Графічны дызайн 10 клас";
-  private static viewNameEN: string = "Graphic design 10th grade";
+  private static viewNameRU: string = ruDictionary.SPHERE["design-elder"].viewName;
+  private static viewNameBE: string = beDictionary.SPHERE["design-elder"].viewName;
+  private static viewNameEN: string = enDictionary.SPHERE["design-elder"].viewName;
 
-  private static descriptionRU: string = `Графический дизайнер специализируется на оформлении окружающей среды средствами графики. Он работает с вывесками, рекламными щитами, плакатами, указателями, знаками и схемами, а также заботится об удобочитаемости необходимой информации, такой как интернет-сайты, журналы, газеты, листовки, обложки книг и дисков, меню в ресторане, каталоги товаров и др. К направлениям графического дизайна относятся: фирменный стиль и брендинг, разработка шрифтов, дизайн рекламы, дизайн книг, журналов и газет, дизайн для Интернета.`;
-  private static descriptionBE: string = `Графічны дызайнер спецыялізуецца на афармленні навакольнага асяроддзя сродкамі графікі. Ён працуе з шыльдамі, рэкламнымі шчытамі, плакатамі, паказальнікамі, знакамі і схемамі, а таксама клапоціцца аб зручначытальнасці неабходнай інфармацыі, такой як інтэрнэт-сайты, часопісы, газеты, лістоўкі, вокладкі кніг і дыскаў, меню ў рэстаране, каталогі тавараў і інш. Да напрамкаў графічнага дызайну адносяцца: фірмовы стыль і брэндынг, распрацоўка шрыфтоў, дызайн рэкламы, дызайн кніг, часопісаў і газет, дызайн для Інтэрнэту.`;
-  private static descriptionEN: string = "A graphic designer specializes in designing the environment using graphics. It works with signs, billboards, posters, indexes, signs and diagrams, and also takes care of the readability of necessary information, such as Internet sites, magazines, newspapers, leaflets, book and CD covers, restaurant menus, product catalogs, etc. The areas of graphic design include: corporate identity and branding, font development, advertising design, design of books, magazines and newspapers, design for the Internet.";
+  private static descriptionRU: string = ruDictionary.SPHERE["design-elder"].description;
+  private static descriptionBE: string = beDictionary.SPHERE["design-elder"].description;
+  private static descriptionEN: string = enDictionary.SPHERE["design-elder"].description;
 
   private static contentRU: string = `
         <ol>

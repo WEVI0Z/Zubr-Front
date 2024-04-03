@@ -30,7 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         },
         defaultLanguage: "ru"
       }
-    )
+    ),
     SharedModule,
     ShareBlockModule
   ],

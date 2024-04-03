@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TrenslateClass } from '../../translate.component';
+import ruDictionary from '../../../assets/i18n/ru.json'
+import beDictionary from '../../../assets/i18n/be.json'
+import enDictionary from '../../../assets/i18n/en.json'
 
 const TARGET_DATE: Date = new Date(2024, 3, 8, 23, 59, 59);
 
@@ -117,48 +120,48 @@ export class TimerComponent implements OnInit{
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          dayLang = 'день';
+          dayLang = ruDictionary.MAIN.TIMER.DAY1;
           break;
         case 'en':
-          dayLang = 'day';
+          dayLang = enDictionary.MAIN.TIMER.DAY1;
           break;
         case 'be':
-          dayLang = 'дзень';
+          dayLang = beDictionary.MAIN.TIMER.DAY1;
           break;
         default:
-          dayLang = 'день';
+          dayLang = ruDictionary.MAIN.TIMER.DAY1;
           break;
       }
     }
     else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          dayLang = 'дня';
+          dayLang = ruDictionary.MAIN.TIMER.DAY2;
           break;
         case 'en':
-          dayLang = 'days';
+          dayLang = enDictionary.MAIN.TIMER.DAY2;
           break;
         case 'be':
-          dayLang = 'днi';
+          dayLang = beDictionary.MAIN.TIMER.DAY2;
           break;
         default:
-          dayLang = 'дня';
+          dayLang = ruDictionary.MAIN.TIMER.DAY2;
           break;
       }
     }
     else {
       switch (this.currentLang) {
         case 'ru':
-          dayLang = 'дней';
+          dayLang = ruDictionary.MAIN.TIMER.DAY5;
           break;
         case 'en':
-          dayLang = 'days';
+          dayLang = enDictionary.MAIN.TIMER.DAY2;
           break;
         case 'be':
-          dayLang = 'дзён';
+          dayLang = beDictionary.MAIN.TIMER.DAY5;
           break;
         default:
-          dayLang = 'дней';
+          dayLang = ruDictionary.MAIN.TIMER.DAY5;
           break;
       }
     }
@@ -172,48 +175,48 @@ export class TimerComponent implements OnInit{
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          hourLang = 'час';
+          hourLang = ruDictionary.MAIN.TIMER.HOUR1;
           break;
         case 'en':
-          hourLang = 'hour';
+          hourLang = enDictionary.MAIN.TIMER.HOUR1;
           break;
         case 'be':
-          hourLang = 'гадзiна';
+          hourLang = beDictionary.MAIN.TIMER.HOUR1;
           break;
         default:
-          hourLang = 'час';
+          hourLang = ruDictionary.MAIN.TIMER.HOUR1;
           break;
       }
     }
     else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          hourLang = 'часа';
+          hourLang = ruDictionary.MAIN.TIMER.HOUR2;
           break;
         case 'en':
-          hourLang = 'hours';
+          hourLang = enDictionary.MAIN.TIMER.HOUR2;
           break;
         case 'be':
-          hourLang = 'гадзiны';
+          hourLang = beDictionary.MAIN.TIMER.HOUR2;
           break;
         default:
-          hourLang = 'часа';
+          hourLang = ruDictionary.MAIN.TIMER.HOUR2;
           break;
       }
     }
     else {
       switch (this.currentLang) {
         case 'ru':
-          hourLang = 'часов';
+          hourLang = ruDictionary.MAIN.TIMER.HOUR5;
           break;
         case 'en':
-          hourLang = 'hours';
+          hourLang = enDictionary.MAIN.TIMER.HOUR2;
           break;
         case 'be':
-          hourLang = 'гадзiн';
+          hourLang = beDictionary.MAIN.TIMER.HOUR5;
           break;
         default:
-          hourLang = 'часов';
+          hourLang = ruDictionary.MAIN.TIMER.HOUR5;
           break;
       }
     }
@@ -227,48 +230,48 @@ export class TimerComponent implements OnInit{
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          minutLang = 'минута';
+          minutLang = ruDictionary.MAIN.TIMER.MINUT1;
           break;
         case 'en':
-          minutLang = 'minute';
+          minutLang = enDictionary.MAIN.TIMER.MINUT1;
           break;
         case 'be':
-          minutLang = 'хвiлiна';
+          minutLang = beDictionary.MAIN.TIMER.MINUT1;
           break;
         default:
-          minutLang = 'час';
+          minutLang = ruDictionary.MAIN.TIMER.MINUT1;
           break;
       }
     }
     else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          minutLang = 'минуты';
+          minutLang = ruDictionary.MAIN.TIMER.MINUT2;
           break;
         case 'en':
-          minutLang = 'minutes';
+          minutLang = enDictionary.MAIN.TIMER.MINUT2;
           break;
         case 'be':
-          minutLang = 'хвiлiны';
+          minutLang = beDictionary.MAIN.TIMER.MINUT2;
           break;
         default:
-          minutLang = 'часа';
+          minutLang = ruDictionary.MAIN.TIMER.MINUT2;
           break;
       }
     }
     else {
       switch (this.currentLang) {
         case 'ru':
-          minutLang = 'минут';
+          minutLang = ruDictionary.MAIN.TIMER.MINUT5;
           break;
         case 'en':
-          minutLang = 'minutes';
+          minutLang = enDictionary.MAIN.TIMER.MINUT2;
           break;
         case 'be':
-          minutLang = 'хвiлiн';
+          minutLang = beDictionary.MAIN.TIMER.MINUT5;
           break;
         default:
-          minutLang = 'минут';
+          minutLang = ruDictionary.MAIN.TIMER.MINUT5;
           break;
       }
     }
@@ -282,48 +285,48 @@ export class TimerComponent implements OnInit{
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          secondLang = 'секунда';
+          secondLang = ruDictionary.MAIN.TIMER.SECOND1;
           break;
         case 'en':
-          secondLang = 'second';
+          secondLang = enDictionary.MAIN.TIMER.SECOND1;
           break;
         case 'be':
-          secondLang = 'секунда';
+          secondLang = beDictionary.MAIN.TIMER.SECOND1;
           break;
         default:
-          secondLang = 'секунда';
+          secondLang = ruDictionary.MAIN.TIMER.SECOND1;
           break;
       }
     }
     else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          secondLang = 'секунды';
+          secondLang = ruDictionary.MAIN.TIMER.SECOND2;
           break;
         case 'en':
-          secondLang = 'seconds';
+          secondLang = enDictionary.MAIN.TIMER.SECOND2;
           break;
         case 'be':
-          secondLang = 'секунды';
+          secondLang = beDictionary.MAIN.TIMER.SECOND2;
           break;
         default:
-          secondLang = 'секунды';
+          secondLang = ruDictionary.MAIN.TIMER.SECOND2;
           break;
       }
     }
     else {
       switch (this.currentLang) {
         case 'ru':
-          secondLang = 'секунд';
+          secondLang = ruDictionary.MAIN.TIMER.SECOND5;
           break;
         case 'en':
-          secondLang = 'seconds';
+          secondLang = enDictionary.MAIN.TIMER.SECOND2;
           break;
         case 'be':
-          secondLang = 'секунд';
+          secondLang = beDictionary.MAIN.TIMER.SECOND5;
           break;
         default:
-          secondLang = 'секунд';
+          secondLang = ruDictionary.MAIN.TIMER.SECOND5;
           break;
       }
     }
