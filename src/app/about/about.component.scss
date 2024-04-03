@@ -1,4 +1,4 @@
-@import "../../stylesheets/global";
+@import '../../stylesheets/global';
 
 main {
   display: flex;
@@ -50,8 +50,8 @@ main {
 
     text-decoration: none;
     color: white;
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
   }
 
   &__image {
@@ -63,7 +63,6 @@ main {
     object-fit: contain;
   }
 }
-
 
 .goal {
   &__name {
@@ -79,8 +78,8 @@ main {
     align-items: center;
     margin-top: 20px;
 
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
   }
 
   &__image {
@@ -135,8 +134,8 @@ main {
     width: 136px;
     height: 136px;
 
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
   }
 
   &__image {
@@ -217,8 +216,8 @@ main {
       align-items: center;
       margin-top: 20px;
 
-      background-color: #007AFF;
-      background-image: url("/assets/shared/blue-background.png");
+      background-color: #007aff;
+      background-image: url('/assets/shared/blue-background.png');
     }
 
     &__image {

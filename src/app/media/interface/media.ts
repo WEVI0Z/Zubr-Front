@@ -1,4 +1,4 @@
 export interface Media {
-  name?: string,
+  name?: string
   path: string
 }
