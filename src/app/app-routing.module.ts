@@ -31,10 +31,14 @@ const routes: Routes = [
       import('./media/media.module').then((m) => m.MediaModule),
   },
   {
-    path: '**',
-    redirectTo: '/undefined',
+    path: "about-cookie",
+    loadChildren: () => import("./cookie-consent/about-cookie/about-cookie.module").then(m => m.AboutCookieModule)
   },
-]
+  {
+    path: "**",
+    redirectTo: "/undefined"
+  }
+];
 
 @NgModule({
   imports: [
