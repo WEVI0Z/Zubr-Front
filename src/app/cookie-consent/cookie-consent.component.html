@@ -7,7 +7,7 @@
         <p clss="cookies-text">{{message}}</p>
         <button (click)="acceptCookies()" class="cookies-button">{{acceptText}}</button>
         <button (click)="rejectCookies()" class="cookies-button">{{rejectText}}</button>
-        <a href="#" routerLink="/about-cookie" class="about-cookies">{{aboutCookies}}</a>
+        <a href="#" routerLink="/about-cookie" (click)="aboutCookie()" class="about-cookies">{{aboutCookies}}</a>
     </div>
 </div>
 <div class="overlay" *ngIf="!isCookieConsentGiven"></div>

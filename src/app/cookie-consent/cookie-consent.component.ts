@@ -21,4 +21,8 @@ export class CookieConsentComponent {
     localStorage.setItem('cookieConsent', 'false');
     this.isCookieConsentGiven = true;
   }
+  aboutCookie(): void {
+    localStorage.setItem('cookieConsent', 'false');
+    this.isCookieConsentGiven = true;
+  }
 }
