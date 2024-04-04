@@ -23,6 +23,8 @@ export class ItemComponent implements AfterViewInit {
     private router: Router
   ) {}
 
+
+
   ngAfterViewInit(): void {
     this.identifyContent(this.router.url)
   }

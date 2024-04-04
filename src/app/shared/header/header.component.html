@@ -30,19 +30,13 @@
         </li>
       </ul>
       <div class="header__container--heading">
-        <h1 class="header__heading">
-          Национальный детский образовательно-оздоровительный центр “Зубренок”
-        </h1>
+        <h1 class="header__heading">{{'SHARED.HEADER.ZUBRTITLE' | translate}}</h1>
       </div>
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" routerLink="/about" class="nav__link">О чемпионате</a>
-          </li>
+          <li class="nav__item"><a href="#" routerLink="/about" class="nav__link">{{'SHARED.HEADER.ABOUT' | translate}}</a></li>
           <li class="nav__item nav__item--competitions">
-            <a href="#" routerLink="/sphere-list" class="nav__link"
-              >Компетенции</a
-            >
+            <a href="#" routerLink="/sphere-list" class="nav__link">{{'SHARED.HEADER.COMPETENCE.TITLE' | translate}}</a>
             <ul class="nav__competitions">
               <li class="nav__competition" *ngFor="let sphere of sphereList">
                 <a [href]="'/sphere-list/' + sphere.name" class="nav__link">
@@ -52,82 +46,36 @@
             </ul>
           </li>
           <li class="nav__item nav__item--competitions">
-            <a class="nav__link">Наши ресурсы</a>
+            <a class="nav__link">{{'SHARED.HEADER.RESOURCE.TITLE' | translate}}</a>
             <ul class="nav__competitions">
               <li class="nav__competition">
-                <a
-                  href="https://files.robin-zubronok.by"
-                  target="_blank"
-                  class="nav__link"
-                >
-                  Электронный репозиторий
+                <a href="https://files.robin-zubronok.by" target="_blank" class="nav__link">
+                  {{'SHARED.HEADER.RESOURCE.RES1' | translate}}
                 </a>
               </li>
               <li class="nav__competition">
-                <a
-                  href="https://moodle.robin-zubronok.by"
-                  target="_blank"
-                  class="nav__link"
-                >
-                  Дистанционная платформа Moodle
+                <a href="https://moodle.robin-zubronok.by" target="_blank" class="nav__link">
+                  {{'SHARED.HEADER.RESOURCE.RES2' | translate}}
                 </a>
               </li>
               <li class="nav__competition">
-                <a
-                  href="https://gpt4.robin-zubronok.by/chat"
-                  target="_blank"
-                  class="nav__link"
-                >
-                  ChatGPT
+                <a href="https://gpt4.robin-zubronok.by/chat" target="_blank" class="nav__link">
+                  {{'SHARED.HEADER.RESOURCE.RES3' | translate}}
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav__item">
-            <a href="#" routerLink="/media" class="nav__link">Медиа</a>
-          </li>
+          <li class="nav__item"><a href="#" routerLink="/media" class="nav__link">{{'SHARED.HEADER.MEDIA' | translate}}</a></li>
           <li class="nav__item nav__item--langs">
-            <a class="nav__link nav__cur-lang">{{ currentLang }}</a>
+            <a class="nav__link nav__cur-lang">{{ currentLANG }}</a>
             <ul class="nav__langs">
-              <li
-                class="nav__competition"
-                data-google-lang="ru"
-                onclick="onClickTranslate(this)"
-              >
-                <a
-                  href="#"
-                  class="nav__link"
-                  data-google-lang="ru"
-                  onclick="onClickTranslate(this)"
-                  >RU</a
-                >
+              <li class="nav__competition" (click)="reLoad('ru')">
+                <a href="#" class="nav__link" (click)="reLoad('ru')">RU</a>
               </li>
-              <li
-                class="nav__competition"
-                data-google-lang="be"
-                onclick="onClickTranslate(this)"
-              >
-                <a
-                  href="#"
-                  class="nav__link"
-                  data-google-lang="be"
-                  onclick="onClickTranslate(this)"
-                  >BE</a
-                >
+              <li class="nav__competition" (click)="reLoad('be')">
+                <a href="#" class="nav__link" (click)="reLoad('be')">BE</a>
               </li>
-              <li
-                class="nav__competition"
-                data-google-lang="en"
-                onclick="onClickTranslate(this)"
-              >
-                <a
-                  href="#"
-                  class="nav__link"
-                  data-google-lang="en"
-                  onclick="onClickTranslate(this)"
-                  >EN</a
-                >
-              </li>
+              
             </ul>
           </li>
           <li class="nav__item" hidden>
@@ -166,28 +114,15 @@
       "
     >
       <li class="header__description--part-1">
-        Открытый республиканский IT-чемпионат
+        {{'SHARED.HEADER.MAINTITLE' | translate}}
       </li>
       <li class="header__description--part-2">
-        «<span style="letter-spacing: -3vw; font-weight: 300; font-size: 22.3vw"
-          >Р</span
-        >
-        <span
-          style="letter-spacing: -1.7vw; font-weight: 300; font-size: 22.3vw"
-          >о</span
-        >
-        <span
-          style="letter-spacing: -2.5vw; font-weight: 300; font-size: 22.3vw"
-          >б</span
-        >
-        <span style="letter-spacing: -3vw; font-weight: 300; font-size: 22.3vw"
-          >И</span
-        >
-        <span
-          style="letter-spacing: -1.7vw; font-weight: 300; font-size: 22.3vw"
-          >н</span
-        >
-        - 2024»
+        {{'SHARED.HEADER.ROBIN.ROB_' | translate}}<span style="letter-spacing: -3vw; font-weight: 300; font-size: 22.3vw">{{'SHARED.HEADER.ROBIN.ROB_R' | translate}}</span>
+        <span style="letter-spacing: -1.7vw; font-weight: 300; font-size: 22.3vw">{{'SHARED.HEADER.ROBIN.ROB_O' | translate}}</span>
+        <span style="letter-spacing: -2.5vw; font-weight: 300; font-size: 22.3vw">{{'SHARED.HEADER.ROBIN.ROB_B' | translate}}</span>
+        <span style="letter-spacing: -3vw; font-weight: 300; font-size: 22.3vw">{{'SHARED.HEADER.ROBIN.ROB_I' | translate}}</span>
+        <span style="letter-spacing: -1.7vw; font-weight: 300; font-size: 22.3vw">{{'SHARED.HEADER.ROBIN.ROB_N' | translate}}</span>
+        {{'SHARED.HEADER.ROBIN.ROB_2024' | translate}}
       </li>
     </ul>
   </header>

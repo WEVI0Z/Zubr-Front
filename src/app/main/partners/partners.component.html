@@ -1,5 +1,5 @@
 <section #mainWrapper class="partners">
-  <h2 class="partners__slogan">Партнеры</h2>
+  <h2 class="partners__slogan">{{'MAIN.PARTNERS.TITLE' | translate}}</h2>
   <div class="partners__container">
     <div
       #partnerWrapper
@@ -7,192 +7,45 @@
       (wheel)="handleMouseWheel($event)"
     >
       <ul #partnerList class="partners__list">
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a href="http://bresttur.by/" class="partners__name" target="_blank">
-            ГУО «Брестский областной центр туризма и краеведения детей и
-            молодежи»
-          </a>
-          <img
-            ngSrc="assets/partners/ico-1.png"
-            width="66"
-            height="76"
-            alt="Лого партнера"
-            class="partners__image"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="http://bresttur.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN1' | translate}}</a>
+          <img ngSrc="assets/partners/ico-1.png" width="66" height="76" alt="Лого партнера" class="partners__image">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a
-            href="https://centers.by/ott"
-            class="partners__name"
-            target="_blank"
-            >ГУДО «Витебский областной дворец детей и молодежи»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-2.png"
-            width="64"
-            height="70"
-            alt="Лого партнера"
-            class="partners__image"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://centers.by/ott" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN2' | translate}}</a>
+          <img ngSrc="assets/partners/ico-2.png" width="64" height="70" alt="Лого партнера" class="partners__image">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a
-            href="https://goctt.grodno.by/"
-            class="partners__name"
-            target="_blank"
-            >ГУО «Гродненский областной центр технического творчества»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-3.png"
-            width="76"
-            height="83"
-            alt="Лого партнера"
-            class="partners__image"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://goctt.grodno.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN3' | translate}}</a>
+          <img ngSrc="assets/partners/ico-3.png" width="76" height="83" alt="Лого партнера" class="partners__image">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a href="http://oct.by/" class="partners__name" target="_blank"
-            >ГУО «Могилевский областной центр творчества»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-4.png"
-            width="64"
-            height="68"
-            alt="Лого партнера"
-            class="partners__image"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="http://oct.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN4' | translate}}</a>
+          <img ngSrc="assets/partners/ico-4.png" width="64" height="68" alt="Лого партнера" class="partners__image">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a href="https://ndtp.by/" class="partners__name" target="_blank"
-            >Учреждение образования «Национальный детский технопарк»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-5.png"
-            width="132"
-            height="132"
-            alt="Лого партнера"
-            class="partners__image"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://ndtp.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN5' | translate}}</a>
+          <img ngSrc="assets/partners/ico-5.png" width="132" height="132" alt="Лого партнера" class="partners__image">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a
-            href="https://xn--b1afyeafhbl5a6e.xn--90ais/"
-            class="partners__name"
-            target="_blank"
-            >Отдел технического творчества и спорта ГУО «Минский ГДДиМ»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-6.png"
-            alt="Лого партнера"
-            class="partners__image"
-            height="120"
-            width="89"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://xn--b1afyeafhbl5a6e.xn--90ais/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN6' | translate}}</a>
+          <img ngSrc="assets/partners/ico-6.png" alt="Лого партнера" class="partners__image" height="120" width="89">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a href="http://octt.by/" class="partners__name" target="_blank"
-            >ГУО «Гомельский областной центр технического творчества детей и
-            молодежи»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-7.png"
-            alt="Лого партнера"
-            class="partners__image"
-            height="130"
-            width="139"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="http://octt.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN7' | translate}}</a>
+          <img ngSrc="assets/partners/ico-7.png" alt="Лого партнера" class="partners__image" height="130" width="139">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a
-            href="https://roboturnir.by/"
-            class="partners__name"
-            target="_blank"
-            >Кубок по образовательной робототехнике</a
-          >
-          <img
-            ngSrc="assets/partners/ico-8.jpg"
-            alt="Лого партнера"
-            class="partners__image"
-            height="244"
-            width="250"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://roboturnir.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN8' | translate}}</a>
+          <img ngSrc="assets/partners/ico-8.jpg" alt="Лого партнера" class="partners__image" height="244" width="250">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a href="https://moiro.by/" class="partners__name" target="_blank"
-            >ГУО «Минский областной институт образования и развития»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-9.jpg"
-            alt="Лого партнера"
-            class="partners__image"
-            height="244"
-            width="350"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://moiro.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN9' | translate}}</a>
+          <img ngSrc="assets/partners/ico-9.jpg" alt="Лого партнера" class="partners__image" height="244" width="350">
         </li>
-        <li
-          class="partners__item"
-          (mouseenter)="stopImageChange()"
-          (mouseleave)="resumeImageChange()"
-          (wheel)="handleMouseWheel($event)"
-        >
-          <a
-            href="https://bntu.by/faculties/fitr"
-            class="partners__name"
-            target="_blank"
-            >Факультет информационных технологий и робототехники УО «БНТУ»</a
-          >
-          <img
-            ngSrc="assets/partners/ico-10.jpg"
-            alt="Лого партнера"
-            class="partners__image"
-            height="50"
-            width="250"
-          />
+        <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
+          <a href="https://bntu.by/faculties/fitr" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN10' | translate}}</a>
+          <img ngSrc="assets/partners/ico-10.jpg" alt="Лого партнера" class="partners__image" height="50" width="250">
         </li>
       </ul>
     </div>
