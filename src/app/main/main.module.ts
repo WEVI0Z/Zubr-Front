@@ -7,8 +7,13 @@ import { SphereComponent } from './sphere/sphere.component';
 import { MediaComponent } from './media/media.component';
 import { PartnersComponent } from './partners/partners.component';
 import { TimerComponent } from './timer/timer.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -22,10 +27,21 @@ import { TimerComponent } from './timer/timer.component';
         CommonModule,
         MainRoutingModule,
         SharedModule,
-        NgOptimizedImage
+      NgOptimizedImage,
+         HttpClientModule,
+      TranslateModule.forRoot(
+        {
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          },
+          defaultLanguage: "ru"
+        }
+      )
     ],
   exports: [
     MainRoutingModule
   ]
 })
-export class MainModule { }
+export class MainModule {}

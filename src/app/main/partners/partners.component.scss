@@ -1,4 +1,4 @@
-@import "../../../stylesheets/global";
+@import '../../../stylesheets/global';
 
 .partners {
   max-width: $max-width;
@@ -20,7 +20,7 @@
     transform: translate(0, -50%);
     width: 40px;
     height: 40px;
-    background-image: url("/assets/partners/r_arrow.png");
+    background-image: url('/assets/partners/r_arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,7 +34,7 @@
     transform: translate(0, -50%);
     width: 40px;
     height: 40px;
-    background-image: url("/assets/partners/l_arrow.png");
+    background-image: url('/assets/partners/l_arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -65,13 +65,12 @@
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    background-color: #007AFF;
+    background-color: #007aff;
     -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
     box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
-    background-image: url("/assets/shared/blue-background.png");
+    background-image: url('/assets/shared/blue-background.png');
   }
-
 
   &__item {
     margin: 0 30px 0 30px;
@@ -85,7 +84,8 @@
     border-radius: 3%;
     transition: 0.3s ease-in-out;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       transform: scale(1.1);
     }
   }
@@ -94,7 +94,7 @@
     margin: 0;
     font-size: 16px;
     font-weight: 400;
-    color: #007AFF;
+    color: #007aff;
     text-decoration: none;
   }
 
@@ -137,12 +137,11 @@
       position: relative;
       overflow: hidden;
 
-      background-color: #007AFF;
+      background-color: #007aff;
       -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
       -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
       box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
-      background-image: url("/assets/shared/blue-background.png");
-
+      background-image: url('/assets/shared/blue-background.png');
     }
 
     &__item {
@@ -157,7 +156,8 @@
       border-radius: 3%;
       transition: 0.3s ease-in-out;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         transform: scale(1.1);
       }
     }
@@ -167,7 +167,7 @@
 
       font-size: 16px;
       font-weight: 400;
-      color: #007AFF;
+      color: #007aff;
       text-decoration: none;
     }
 
