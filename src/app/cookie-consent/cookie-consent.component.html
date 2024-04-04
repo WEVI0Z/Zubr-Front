@@ -1,0 +1,23 @@
+<div *ngIf="!isCookieConsentGiven" class="cookie-consent">
+  <div class="content">
+    <div class="cookies-content">
+      <img src="../../assets/cookies/cookie.png" class="cookie-image" />
+      <p class="cookie-title">{{'COOKIE-CONSENT.H1' | translate}}</p>
+    </div>
+    <p clss="cookies-text">{{ 'COOKIE-CONSENT.MESSAGE' | translate }}</p>
+    <button (click)="acceptCookies()" class="cookies-button">
+      {{ 'COOKIE-CONSENT.ACCEPT' | translate }}
+    </button>
+    <button (click)="rejectCookies()" class="cookies-button">
+      {{ 'COOKIE-CONSENT.REJECT' | translate}}
+    </button>
+    <a
+      href="/about-cookie"
+      routerLink="/about-cookie"
+      (click)="aboutCookie()"
+      class="about-cookies"
+      >{{ 'COOKIE-CONSENT.ABOUT' | translate }}</a
+    >
+  </div>
+</div>
+<div class="overlay" *ngIf="!isCookieConsentGiven"></div>

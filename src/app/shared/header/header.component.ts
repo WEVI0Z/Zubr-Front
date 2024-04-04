@@ -1,10 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import { ParticlesConfig } from './particles-config';
-import {Router} from "@angular/router";
-import {Sphere} from "../../sphere-list/interface/sphere";
-import {SphereService} from "../../sphere-list/service/sphere.service";
-import { TranslateService } from '@ngx-translate/core';
-import { TrenslateClass } from '../../translate.component';
+import { Component, OnInit } from '@angular/core'
+import { ParticlesConfig } from './particles-config'
+import { Router } from '@angular/router'
+import { Sphere } from '../../sphere-list/interface/sphere'
+import { SphereService } from '../../sphere-list/service/sphere.service'
+import { TranslateService } from '@ngx-translate/core'
+import { TrenslateClass } from '../../translate.component'
 
 declare let particlesJS: any
 
@@ -13,12 +13,11 @@ declare let particlesJS: any
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit{
-  protected isPageMain: boolean = this.router.url === "/";
-  protected sphereList: Sphere[] = this.sphereService.sphereList;
-  public currentLANG: string = 'RU';
-  private translation: TrenslateClass;
-
+export class HeaderComponent implements OnInit {
+  protected isPageMain: boolean = this.router.url === '/'
+  protected sphereList: Sphere[] = this.sphereService.sphereList
+  public currentLANG: string = 'RU'
+  private translation: TrenslateClass
 
   public ngOnInit(): void {
     if (this.isPageMain) {
@@ -26,14 +25,15 @@ export class HeaderComponent implements OnInit{
     }
   }
 
-  constructor(private router: Router,
+  constructor(
+    private router: Router,
     private sphereService: SphereService,
-    public translate: TranslateService) {
-
+    public translate: TranslateService
+  ) {
     this.translation = new TrenslateClass(translate, this.currentLANG)
 
-    this.currentLANG = this.translation.getCurrentLanguage();
-    this.translation.translateData(this.currentLANG);
+    this.currentLANG = this.translation.getCurrentLanguage()
+    this.translation.translateData(this.currentLANG)
   }
 
   private invokeParticles(): void {
@@ -41,8 +41,7 @@ export class HeaderComponent implements OnInit{
   }
 
   public reLoad(lang: string): any {
-    this.translation.setCookie(lang);
-    window.location.reload();
-
+    this.translation.setCookie(lang)
+    window.location.reload()
   }
 }
