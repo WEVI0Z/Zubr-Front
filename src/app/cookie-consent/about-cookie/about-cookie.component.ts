@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-about-cookie',
   templateUrl: './about-cookie.component.html',
-  styleUrls: ['./about-cookie.component.scss']
+  styleUrls: ['./about-cookie.component.scss'],
 })
-export class AboutCookieComponent {
-
-}
+export class AboutCookieComponent {}

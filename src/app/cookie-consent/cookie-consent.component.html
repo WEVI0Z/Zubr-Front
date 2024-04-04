@@ -1,13 +1,23 @@
 <div *ngIf="!isCookieConsentGiven" class="cookie-consent">
-    <div class="content">
-        <div class="cookies-content">
-            <img src="../../assets/cookies/cookie.png" class="cookie-image" />
-            <p class="cookie-title">Мы используем cookies</p>
-        </div>
-        <p clss="cookies-text">{{message}}</p>
-        <button (click)="acceptCookies()" class="cookies-button">{{acceptText}}</button>
-        <button (click)="rejectCookies()" class="cookies-button">{{rejectText}}</button>
-        <a href="#" routerLink="/about-cookie" (click)="aboutCookie()" class="about-cookies">{{aboutCookies}}</a>
+  <div class="content">
+    <div class="cookies-content">
+      <img src="../../assets/cookies/cookie.png" class="cookie-image" />
+      <p class="cookie-title">Мы используем cookies</p>
     </div>
+    <p clss="cookies-text">{{ message }}</p>
+    <button (click)="acceptCookies()" class="cookies-button">
+      {{ acceptText }}
+    </button>
+    <button (click)="rejectCookies()" class="cookies-button">
+      {{ rejectText }}
+    </button>
+    <a
+      href="#"
+      routerLink="/about-cookie"
+      (click)="aboutCookie()"
+      class="about-cookies"
+      >{{ aboutCookies }}</a
+    >
+  </div>
 </div>
 <div class="overlay" *ngIf="!isCookieConsentGiven"></div>
