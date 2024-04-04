@@ -6,11 +6,6 @@ import { Component } from '@angular/core'
   styleUrls: ['./cookie-consent.component.scss'],
 })
 export class CookieConsentComponent {
-  message =
-    'Для обеспечения удобства пользователей сайта и повышения качества его функционирования, используются cookies.'
-  acceptText = 'Принять'
-  rejectText = 'Отклонить'
-  aboutCookies = 'Подробнее'
   isCookieConsentGiven: boolean =
     localStorage.getItem('cookieConsent') === 'true'
 

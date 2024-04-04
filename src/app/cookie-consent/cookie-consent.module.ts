@@ -1,23 +1,19 @@
 import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
-import { AboutCookieComponent } from './about-cookie.component'
-import { CookieRoutingModule } from '../cookie-routing.module'
-import { SharedModule } from 'src/app/shared/shared.module'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
+import { CookieConsentComponent } from './cookie-consent.component'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
 }
 
 @NgModule({
-  declarations: [AboutCookieComponent],
+  declarations: [CookieConsentComponent],
   imports: [
-    CommonModule,
-    CookieRoutingModule,
-    SharedModule,
     HttpClientModule,
+    CommonModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -27,6 +23,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'ru',
     }),
   ],
-  exports: [CookieRoutingModule],
+  exports: [CookieConsentComponent],
 })
-export class AboutCookieModule {}
+export class CookieConsentModule {}
