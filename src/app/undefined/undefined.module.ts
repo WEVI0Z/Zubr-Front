@@ -33,4 +33,4 @@ export function HttpLoaderFactory(http: HttpClient) {
     UndefinedRoutingModule
   ]
 })
-export class UndefinedModule { }
+export class UndefinedModule {}

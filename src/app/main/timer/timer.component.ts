@@ -5,19 +5,18 @@ import ruDictionary from '../../../assets/i18n/ru.json'
 import beDictionary from '../../../assets/i18n/be.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
-const TARGET_DATE: Date = new Date(2024, 3, 8, 23, 59, 59);
+const TARGET_DATE: Date = new Date(2024, 3, 8, 23, 59, 59)
 
-const SECONDS_MULTIPLIER: number = 1000;
-const MINUTES_MULTIPLIER: number = SECONDS_MULTIPLIER * 60;
-const HOURS_MULTIPLIER: number = MINUTES_MULTIPLIER * 60;
-const DAYS_MULTIPLIER: number = HOURS_MULTIPLIER * 24;
-
+const SECONDS_MULTIPLIER: number = 1000
+const MINUTES_MULTIPLIER: number = SECONDS_MULTIPLIER * 60
+const HOURS_MULTIPLIER: number = MINUTES_MULTIPLIER * 60
+const DAYS_MULTIPLIER: number = HOURS_MULTIPLIER * 24
 
 //TODO проверка на дополнительный ноль; динамика
 @Component({
   selector: 'app-timer',
   templateUrl: './timer.component.html',
-  styleUrls: ['./timer.component.scss']
+  styleUrls: ['./timer.component.scss'],
 })
 export class TimerComponent implements OnInit{
   protected daysLeft: number = 0;
@@ -43,27 +42,34 @@ export class TimerComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.setTime(this.calculateDifference(new Date(), TARGET_DATE));
+    this.setTime(this.calculateDifference(new Date(), TARGET_DATE))
 
     setInterval(() => {
-      this.milliseconds -= 1000;
-      this.setTime(this.milliseconds);
-    }, 1000);
+      this.milliseconds -= 1000
+      this.setTime(this.milliseconds)
+    }, 1000)
   }
 
   private calculateDifference(beginDate: Date, endDate: Date): number {
-    this.milliseconds = endDate.getTime() - beginDate.getTime();
+    this.milliseconds = endDate.getTime() - beginDate.getTime()
     return this.milliseconds
   }
 
   private setTime(milliseconds: number): void {
-    let result: string[] = [];
+    let result: string[] = []
 
-    this.daysLeft = Math.floor(milliseconds / DAYS_MULTIPLIER);
-    this.hoursLeft = Math.floor(milliseconds / HOURS_MULTIPLIER) - this.daysLeft * 24;
-    this.minutesLeft = Math.floor(milliseconds / MINUTES_MULTIPLIER) - this.daysLeft * 24 * 60 - this.hoursLeft * 60;
-    this.secondsLeft = Math.floor(milliseconds / SECONDS_MULTIPLIER) - this.daysLeft * 24 * 60 * 60
-      - this.hoursLeft * 60 * 60 - this.minutesLeft * 60;
+    this.daysLeft = Math.floor(milliseconds / DAYS_MULTIPLIER)
+    this.hoursLeft =
+      Math.floor(milliseconds / HOURS_MULTIPLIER) - this.daysLeft * 24
+    this.minutesLeft =
+      Math.floor(milliseconds / MINUTES_MULTIPLIER) -
+      this.daysLeft * 24 * 60 -
+      this.hoursLeft * 60
+    this.secondsLeft =
+      Math.floor(milliseconds / SECONDS_MULTIPLIER) -
+      this.daysLeft * 24 * 60 * 60 -
+      this.hoursLeft * 60 * 60 -
+      this.minutesLeft * 60
 
     if (this.daysLeft % 10 === 1) {
       this.dayString = this.getDayLang(1)

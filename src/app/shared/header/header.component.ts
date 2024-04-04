@@ -6,12 +6,12 @@ import {SphereService} from "../../sphere-list/service/sphere.service";
 import { TranslateService } from '@ngx-translate/core';
 import { TrenslateClass } from '../../translate.component';
 
-declare let particlesJS: any;
+declare let particlesJS: any
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit{
   protected isPageMain: boolean = this.router.url === "/";
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit{
 
   public ngOnInit(): void {
     if (this.isPageMain) {
-      this.invokeParticles();
+      this.invokeParticles()
     }
   }
 
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit{
   }
 
   private invokeParticles(): void {
-    particlesJS('particles-js', ParticlesConfig, function() {});
+    particlesJS('particles-js', ParticlesConfig, function () {})
   }
 
   public reLoad(lang: string): any {

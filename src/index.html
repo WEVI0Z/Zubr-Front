@@ -1,63 +1,97 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>Открытый республиканский IT-чемпионат «РобИн-2024»</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="yandex-verification" content="31c2d449cd522ba0" />
-  <meta name="google-site-verification" content="bxWPkf9M8uLPZgdkf4_S3vdF_o_KzNnzyoVNisIOwNg"/>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <title>Открытый республиканский IT-чемпионат Робин - 2024</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="yandex-verification" content="31c2d449cd522ba0" />
+    <meta
+      name="google-site-verification"
+      content="bxWPkf9M8uLPZgdkf4_S3vdF_o_KzNnzyoVNisIOwNg"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-  />
-</head>
-<body>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      ;(function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            ;(m[i].a = m[i].a || []).push(arguments)
+          }
+        m[i].l = 1 * new Date()
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return
+          }
+        }
+        ;(k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a)
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      )
 
-    ym(96139941, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/96139941" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-  <app-root></app-root>
+      ym(96139941, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      })
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/96139941"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <app-root></app-root>
 
-  <script>
-    jQuery(document).ready(function(){
+    <script>
+      jQuery(document).ready(function () {
         jQuery(window).scroll(function () {
-            if (jQuery(this).scrollTop() > 600) {
-                jQuery('#myBtn').css('opacity', '1');
-            } else {
-                jQuery('#myBtn').css('opacity', '0');
-            }
-        });
+          if (jQuery(this).scrollTop() > 600) {
+            jQuery('#myBtn').css('opacity', '1')
+          } else {
+            jQuery('#myBtn').css('opacity', '0')
+          }
+        })
 
         jQuery('#myBtn').click(function () {
-            jQuery('body,html').animate({
-                scrollTop: 0
-            }, 1800);
-            return false;
-        });
-    });
-  </script>
+          jQuery('body,html').animate(
+            {
+              scrollTop: 0,
+            },
+            1800
+          )
+          return false
+        })
+      })
+    </script>
 
   
 
-  <div id="myBtn" title="К началу страницы"><i class="fa fa-angle-double-up"></i></div>
-</body>
+    <div id="myBtn" title="К началу страницы">
+      <i class="fa fa-angle-double-up"></i>
+    </div>
+  </body>
 </html>

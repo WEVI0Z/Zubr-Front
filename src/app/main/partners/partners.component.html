@@ -1,7 +1,11 @@
 <section #mainWrapper class="partners">
   <h2 class="partners__slogan">{{'MAIN.PARTNERS.TITLE' | translate}}</h2>
   <div class="partners__container">
-    <div #partnerWrapper class="partners__wrapper" (wheel)="handleMouseWheel($event)">
+    <div
+      #partnerWrapper
+      class="partners__wrapper"
+      (wheel)="handleMouseWheel($event)"
+    >
       <ul #partnerList class="partners__list">
         <li class="partners__item" (mouseenter)="stopImageChange()" (mouseleave)="resumeImageChange()" (wheel)="handleMouseWheel($event)">
           <a href="http://bresttur.by/" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN1' | translate}}</a>
@@ -43,10 +47,17 @@
           <a href="https://bntu.by/faculties/fitr" class="partners__name" target="_blank">{{'MAIN.PARTNERS.PARTN10' | translate}}</a>
           <img ngSrc="assets/partners/ico-10.jpg" alt="Лого партнера" class="partners__image" height="50" width="250">
         </li>
-
       </ul>
     </div>
-    <button class="partners__rbutton" [hidden]="isRButtonHidden"  (click)="nextImage()"></button>
-    <button class="partners__lbutton" [hidden]="isLButtonHidden"  (click)="previosImage()"></button>
+    <button
+      class="partners__rbutton"
+      [hidden]="isRButtonHidden"
+      (click)="nextImage()"
+    ></button>
+    <button
+      class="partners__lbutton"
+      [hidden]="isLButtonHidden"
+      (click)="previosImage()"
+    ></button>
   </div>
 </section>

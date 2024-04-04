@@ -37,4 +37,4 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {}

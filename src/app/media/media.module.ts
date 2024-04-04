@@ -13,9 +13,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    MediaComponent
-  ],
+  declarations: [MediaComponent],
   imports: [
     CommonModule,
     MediaRoutingModule,
@@ -35,8 +33,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     )
   ],
-  exports: [
-    MediaRoutingModule
-  ]
+  exports: [MediaRoutingModule],
 })
-export class MediaModule { }
+export class MediaModule {}

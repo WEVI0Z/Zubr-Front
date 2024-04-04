@@ -5,7 +5,7 @@ import { TrenslateClass } from '../translate.component';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
   public currentLang: string = 'ru';

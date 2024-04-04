@@ -44,4 +44,4 @@ export function HttpLoaderFactory(http: HttpClient) {
     MainRoutingModule
   ]
 })
-export class MainModule { }
+export class MainModule {}

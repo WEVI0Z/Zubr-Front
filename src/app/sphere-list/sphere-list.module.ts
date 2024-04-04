@@ -40,4 +40,4 @@ export function HttpLoaderFactory(http: HttpClient) {
     SphereListRoutingModule
   ]
 })
-export class SphereListModule { }
+export class SphereListModule {}

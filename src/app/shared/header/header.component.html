@@ -1,16 +1,31 @@
 <div class="header__wrapper">
-  <div id="particles-js" [class]="isPageMain ? 'header__particles' : 'visually-hidden'"></div>
+  <div
+    id="particles-js"
+    [class]="isPageMain ? 'header__particles' : 'visually-hidden'"
+  ></div>
   <header [class]="!isPageMain ? 'header' : 'header header--basic'">
     <div class="header__upper-container">
       <ul class="header__orgs">
         <li class="header__org org">
           <a href="https://zubronok.by/" target="_blank" class="org__link">
-            <img width="47" height="47" src="../../../assets/header/zubr-logo.svg" alt="Лого лагеря 'Зубренок'" class="org__image">
+            <img
+              width="47"
+              height="47"
+              src="../../../assets/header/zubr-logo.svg"
+              alt="Лого лагеря 'Зубренок'"
+              class="org__image"
+            />
           </a>
         </li>
         <li class="header__org org">
           <a href="#" routerLink="/" class="org__link">
-            <img width="47" height="50" src="../../../assets/header/robin-logo.svg" alt="Лого чемпионата Робин" class="org__image">
+            <img
+              width="47"
+              height="50"
+              src="../../../assets/header/robin-logo.svg"
+              alt="Лого чемпионата Робин"
+              class="org__image"
+            />
           </a>
         </li>
       </ul>
@@ -25,7 +40,7 @@
             <ul class="nav__competitions">
               <li class="nav__competition" *ngFor="let sphere of sphereList">
                 <a [href]="'/sphere-list/' + sphere.name" class="nav__link">
-                  {{sphere.viewName}}
+                  {{ sphere.viewName }}
                 </a>
               </li>
             </ul>
@@ -65,23 +80,39 @@
           </li>
           <li class="nav__item" hidden>
             <a href="#" class="nav__link">
-              <img  src="assets/header/eye.svg" alt="Версия для слабовидящих" class="nav__image">
+              <img
+                src="assets/header/eye.svg"
+                alt="Версия для слабовидящих"
+                class="nav__image"
+              />
             </a>
           </li>
           <li class="nav__item nav__user">
             <a href="javascript:void(0)" class="nav__link">
-              <img src="assets/header/user.svg" alt="Вход" class="nav__image">
+              <img src="assets/header/user.svg" alt="Вход" class="nav__image" />
             </a>
           </li>
           <li class="nav__item nav__user">
-            <a href="https://email.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
-              <img src="assets/header/icon-mail.svg" alt="Почта" class="nav__image">
+            <a
+              href="https://email.robin-zubronok.by/webmail/"
+              target="_blank"
+              class="nav__link"
+            >
+              <img
+                src="assets/header/icon-mail.svg"
+                alt="Почта"
+                class="nav__image"
+              />
             </a>
           </li>
         </ul>
       </nav>
     </div>
-    <ul [class]="!isPageMain ? 'header__slogan visually-hidden' : 'header__slogan'">
+    <ul
+      [class]="
+        !isPageMain ? 'header__slogan visually-hidden' : 'header__slogan'
+      "
+    >
       <li class="header__description--part-1">
         {{'SHARED.HEADER.MAINTITLE' | translate}}
       </li>
