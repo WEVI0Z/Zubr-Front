@@ -9,13 +9,9 @@
     ></a>
   </h2>
   <div #wrapper class="item"></div>
-  <a
-    [href]="'../../../assets/sphere/zip/' + sphere?.viewName + '.zip'"
-    target="_blank"
-    class="item__task"
-  >
-    <img src="../../../assets/sphere/zip.png" alt="" class="item__picture" />
-    Задание
+  <a [href]="'../../../assets/sphere/zip/' + sphere?.viewName + '.zip'" target="_blank" class="item__task">
+    <img src="../../../assets/sphere/zip.png" alt="" class="item__picture">
+    {{'SPHERE-LIST.ITEM.TASKS' | translate}}
   </a>
 </main>
 <app-share-block></app-share-block>

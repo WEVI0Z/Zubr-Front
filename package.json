@@ -22,6 +22,8 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@fancyapps/ui": "^5.0.33",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "@types/fancybox": "^3.5.7",
     "particles.js": "^2.0.0",
     "rxjs": "~7.8.0",
@@ -29,7 +31,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.3",
+    "@angular-devkit/build-angular": "^16.2.12",
     "@angular/cli": "~16.2.3",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
