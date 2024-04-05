@@ -234,6 +234,136 @@
   }
 }
 @media (max-width: 778px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    right: 0; /* Изменено */
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Изменено */
+    transform: translateX(100%); /* Изменено */
+    z-index: 1002;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar__menu {
+    /* Стили для пунктов меню */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar__menu-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sidebar__menu-link {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+
+  .sidebar__menu-link:hover {
+    background-color: #444444;
+  }
+  //-----------------------------
+  .sidebar__sub-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar__sub-menu.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .sidebar__sub-item {
+    width: 100%;
+  }
+
+  .sidebar__submenu-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+  }
+
+  .sidebar__submenu-item:hover {
+    background-color: #e0e0e0;
+  }
+
+  .sidebar__submenu-item:focus {
+    outline: none;
+    background-color: #c0c0c0;
+  }
+
+  .sidebar__submenu-item:active {
+    background-color: #a0a0a0;
+  }
+  
+//------------------------------------------
+
+  #menuButton {
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    z-index: 999;
+    transition: right 0.3s ease-in-out;
+    width: 70px;
+    height: 70px;
+    background-image: url("/assets/header/menu_pict.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+  }
+
+  #menuButton img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+
+  #menuButton.active {
+    /* Измените стиль для отображения кнопки */
+    right: 300px; /* Изменено */
+  }
+
+  #menuContainer {
+    position: fixed;
+    top: 0;
+    right: -600px;
+    width: 300px;
+    height: 100%;
+    background-color: #f1f1f1;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+
   .header {
     &__upper-container {
       display: flex;
@@ -251,7 +381,6 @@
         margin: 0 5.3vw;
         padding: 0;
         margin-bottom: 50px;
-
         letter-spacing: -0.5vw;
         font-weight: 300;
         font-size: 6vw;
@@ -261,7 +390,6 @@
         margin: 0 1.4vw;
         margin-top: -70px;
         padding: 0;
-
         letter-spacing: -0.5vw;
         font-weight: 300;
         font-size: 5vw;
@@ -276,7 +404,6 @@
       min-width: 110px;
       height: 50px;
       justify-content: left;
-
       list-style-type: none;
       padding: 0;
     }
@@ -288,7 +415,6 @@
     &__heading {
       width: 100%;
       margin: 0 8px;
-
       color: white;
       font-size: 16px;
       font-weight: 400;

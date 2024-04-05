@@ -17,10 +17,34 @@
       <div class="header__container--heading">
         <h1 class="header__heading">Национальный детский образовательно-оздоровительный центр “Зубренок”</h1>
       </div>
+      <div class="sidebar" [class.active]="isMenuOpen" *ngIf="isMobileScreen">
+        <!-- Код пунктов меню -->
+        <ul class="sidebar__menu">
+
+          <li class="sidebar__menu-item sidebar__item">
+            <a href="#" routerLink="/about" class="sidebar__menu-link">О чемпионате</a>
+          </li>
+
+          <li class="sidebar__item">
+            <button class="sidebar__menu-link" (click)="toggleSubmenu(1)">Компетенции</button>
+            <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 1}">
+              <li class="sidebar__sub-item" *ngFor="let sphere of sphereList">
+                <a [href]="'/sphere-list/' + sphere.name" class="sidebar__submenu-item">{{sphere.viewName}}</a>
+              </li>
+            </ul>
+          </li>
+
+
+
+        </ul>
+      </div>
+
+      <button id="menuButton" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen" (click)="toggleMenu()"></button>
+
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" routerLink="/about" class="nav__link">О чемпионате</a></li>
-          <li class="nav__item nav__item--competitions">
+          <li class="nav__item" [hidden]="isMobileScreen"><a href="#" routerLink="/about" class="nav__link">О чемпионате</a></li>
+          <li class="nav__item nav__item--competitions" [hidden]="isMobileScreen">
             <a href="#" routerLink="/sphere-list" class="nav__link">Компетенции</a>
             <ul class="nav__competitions">
               <li class="nav__competition" *ngFor="let sphere of sphereList">
@@ -30,7 +54,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav__item nav__item--competitions">
+          <li class="nav__item nav__item--competitions" [hidden]="isMobileScreen">
             <a class="nav__link">Наши ресурсы</a>
             <ul class="nav__competitions">
               <li class="nav__competition">
@@ -50,8 +74,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav__item"><a href="#" routerLink="/media" class="nav__link">Медиа</a></li>
-          <li class="nav__item nav__item--langs">
+          <li class="nav__item" [hidden]="isMobileScreen"><a href="#" routerLink="/media" class="nav__link">Медиа</a></li>
+          <li class="nav__item nav__item--langs" [hidden]="isMobileScreen">
             <a class="nav__link nav__cur-lang">{{ currentLang }}</a>
             <ul class="nav__langs">
               <li class="nav__competition" data-google-lang="ru" onclick="onClickTranslate(this)">
@@ -67,15 +91,15 @@
           </li>
           <li class="nav__item" hidden>
             <a href="#" class="nav__link">
-              <img  src="assets/header/eye.svg" alt="Версия для слабовидящих" class="nav__image">
+              <img src="assets/header/eye.svg" alt="Версия для слабовидящих" class="nav__image">
             </a>
           </li>
-          <li class="nav__item nav__user">
+          <li class="nav__item nav__user" [hidden]="isMobileScreen">
             <a href="javascript:void(0)" class="nav__link">
               <img src="assets/header/user.svg" alt="Вход" class="nav__image">
             </a>
           </li>
-          <li class="nav__item nav__user">
+          <li class="nav__item nav__user" [hidden]="isMobileScreen">
             <a href="https://email.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
               <img src="assets/header/icon-mail.svg" alt="Почта" class="nav__image">
             </a>
