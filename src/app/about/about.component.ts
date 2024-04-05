@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TrenslateClass } from '../translate.component';
+import { TranslateClass } from '../translate.component';
 
 @Component({
   selector: 'app-about',
@@ -9,16 +9,12 @@ import { TrenslateClass } from '../translate.component';
 })
 export class AboutComponent {
 
-  public currentLang: string = 'ru';
-
-  private translation: TrenslateClass;
+  private translation: TranslateClass;
 
   constructor(public translate: TranslateService) {
 
-    this.translation = new TrenslateClass(translate, this.currentLang)
-
-    this.currentLang = this.translation.getCurrentLanguage();
-    this.translation.translateData(this.currentLang);
+    this.translation = new TranslateClass(translate)
+    this.translation.translateData(this.translation.getLanguage());
 
   }
 }

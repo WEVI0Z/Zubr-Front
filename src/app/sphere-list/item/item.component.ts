@@ -8,20 +8,28 @@ import {
 import { SphereService } from '../service/sphere.service'
 import { Router } from '@angular/router'
 import { Sphere } from '../interface/sphere'
+import { TranslateClass } from '../../translate.component';
+
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss'],
 })
+
 export class ItemComponent implements AfterViewInit {
   @ViewChild('wrapper', { read: ElementRef }) wrapper!: ElementRef
   protected sphere?: Sphere
 
   constructor(
     private sphereService: SphereService,
-    private router: Router
-  ) {}
+    private router: Router,
+    public translate: TranslateService
+  ) {
+
+  }
 
 
 
@@ -39,4 +47,5 @@ export class ItemComponent implements AfterViewInit {
       }
     })
   }
+
 }

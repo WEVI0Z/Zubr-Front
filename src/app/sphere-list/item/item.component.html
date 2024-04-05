@@ -2,15 +2,16 @@
 <main style="position: relative">
   <h2 class="item__heading">
     {{ sphere ? sphere.viewName : 'Компетенция не найдена' }}
-    <a
-      [href]="'../../../assets/sphere/docx/' + sphere?.viewName + '.docx'"
-      class="item__link"
-      aria-label="Скачать документ"
-    ></a>
+    <a [href]="'../../../assets/sphere/docx/' + sphere?.viewNameRU + '.docx'"
+       class="item__link"
+       aria-label="Скачать документ">
+      <span class="tooltiptext">{{'SPHERE-LIST.ITEM.DOWNLOAD' | translate}}</span>
+    </a>
   </h2>
   <div #wrapper class="item"></div>
-  <a [href]="'../../../assets/sphere/zip/' + sphere?.viewName + '.zip'" target="_blank" class="item__task">
-    <img src="../../../assets/sphere/zip.png" alt="" class="item__picture">
+  <a [href]="'../../../assets/sphere/zip/' + sphere?.viewNameRU + '.zip'" target="_blank" class="item__task">
+    <img src="../../../assets/sphere/zip.png" alt="" class="item__picture" />
+    <span class="tooltiptext2">{{'SPHERE-LIST.ITEM.ZIP' | translate}}</span>
     {{'SPHERE-LIST.ITEM.TASKS' | translate}}
   </a>
 </main>

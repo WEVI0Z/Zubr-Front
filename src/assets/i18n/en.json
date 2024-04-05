@@ -121,7 +121,9 @@
   "SPHERE-LIST": {
     "NAME": "Сompetence",
     "ITEM": {
-      "TASKS": "Tasks"
+      "TASKS": "Tasks",
+      "DOWNLOAD": "Download document",
+      "ZIP": "Download ZIP"
     }
   },
   "SPHERE": {
@@ -187,6 +189,10 @@
       "description": "Working with web technologies is a key skill in a world that increasingly places the Internet at the center of the modern digital platform. It is also one of the most complex and varied skills to master. Strong design and communication skills combined with an understanding of target audiences, markets and trends are all essential. During the development process, web designers and developers create databases, create programs, and test and debug websites.",
       "content": ""
     }
+  },
+
+  "SHARE-BLOCK": {
+    "TITLE": "Share page"
   },
 
   "UNDEFINED": {

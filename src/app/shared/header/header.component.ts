@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 import {Sphere} from "../../sphere-list/interface/sphere";
 import {SphereService} from "../../sphere-list/service/sphere.service";
 import { TranslateService } from '@ngx-translate/core';
-import { TrenslateClass } from '../../translate.component';
+import { TranslateClass } from '../../translate.component';
 
 declare let particlesJS: any
 
@@ -16,8 +16,8 @@ declare let particlesJS: any
 export class HeaderComponent implements OnInit{
   protected isPageMain: boolean = this.router.url === "/";
   protected sphereList: Sphere[] = this.sphereService.sphereList;
-  public currentLANG: string = 'RU';
-  private translation: TrenslateClass;
+  public currentLANG: string;
+  private translation: TranslateClass;
 
 
   public ngOnInit(): void {
@@ -30,9 +30,8 @@ export class HeaderComponent implements OnInit{
     private sphereService: SphereService,
     public translate: TranslateService) {
 
-    this.translation = new TrenslateClass(translate, this.currentLANG)
-
-    this.currentLANG = this.translation.getCurrentLanguage();
+    this.translation = new TranslateClass(translate)
+    this.currentLANG = this.translation.getLanguage().toUpperCase()
     this.translation.translateData(this.currentLANG);
   }
 
@@ -41,8 +40,7 @@ export class HeaderComponent implements OnInit{
   }
 
   public reLoad(lang: string): any {
-    this.translation.setCookie(lang);
+    this.translation.setLanguage(lang);
     window.location.reload();
-
   }
 }

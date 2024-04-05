@@ -1,27 +1,18 @@
 import { TranslateService } from "@ngx-translate/core";
 
+export class TranslateClass{
 
-export class TrenslateClass{
-
-  public currentLang: string ='ru';
-
-  constructor(public translate: TranslateService, public currentLanguage: string) {
-    this.currentLang = currentLanguage
+  public getLanguage(): string{
+    let value = localStorage.getItem('language')
+    return value!=null?value:'ru'
   }
 
-
-  public getCookie(name: any): any {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : this.currentLang.toLowerCase();
+  public setLanguage(lang: string) {
+    localStorage.setItem('language',lang)
   }
 
-
-  public setCookie(lang: string) {
-
-    document.cookie = "language=" + lang + "; path/";
-
+  constructor(public translate: TranslateService) {
+    
   }
 
   public translateData(lang: string): void {
@@ -29,15 +20,4 @@ export class TrenslateClass{
     this.translate.use(lang.toLowerCase());
   }
 
-  public getCurrentLanguage(): string {
-
-    let lang = this.getCookie('language');
-    if (lang.includes('en')) {
-      this.currentLang = 'EN';
-    } else if (lang.includes('be')) {
-      this.currentLang = 'BE';
-    }
-
-    return this.currentLang
-  }
 }

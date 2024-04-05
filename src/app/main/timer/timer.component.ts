@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TrenslateClass } from '../../translate.component';
+import { TranslateClass } from '../../translate.component';
 import ruDictionary from '../../../assets/i18n/ru.json'
 import beDictionary from '../../../assets/i18n/be.json'
 import enDictionary from '../../../assets/i18n/en.json'
@@ -29,15 +29,15 @@ export class TimerComponent implements OnInit{
   protected secondString: string = '';
   protected milliseconds: number = 0;
   protected ifTimerRelevant: boolean = new Date() < TARGET_DATE;
-  private currentLang: string ="ru";
-  private translation: TrenslateClass;
+  private currentLang: string;
+  private translation: TranslateClass;
 
 
   constructor(public translate: TranslateService) {
  
-    this.translation = new TrenslateClass(translate, this.currentLang)
+    this.translation = new TranslateClass(translate)
 
-    this.currentLang = this.translation.getCurrentLanguage().toLowerCase();
+    this.currentLang = this.translation.getLanguage();
   }
 
 

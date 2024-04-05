@@ -439,21 +439,24 @@ export class WEB_DESIGN {
     name: this.nameSphere,
     viewName: this.viewNameRU,
     description: this.descriptionRU,
-    content: this.contentRU
+    content: this.contentRU,
+    viewNameRU: this.viewNameRU
   }
 
   private static beTranslate: Sphere = {
     name: this.nameSphere,
     viewName: this.viewNameBE,
     description: this.descriptionBE,
-    content: this.contentBE
+    content: this.contentBE,
+    viewNameRU: this.viewNameRU
   }
 
   private static enTranslate: Sphere = {
     name: this.nameSphere,
     viewName: this.viewNameEN,
     description: this.descriptionEN,
-    content: this.contentEN
+    content: this.contentEN,
+    viewNameRU: this.viewNameRU
   }
 
 }
