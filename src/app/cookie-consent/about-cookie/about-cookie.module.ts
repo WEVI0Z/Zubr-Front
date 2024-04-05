@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { UndefinedComponent } from './undefined.component'
-import { UndefinedRoutingModule } from './undefined-routing.module'
+import { NgModule } from '@angular/core'
+import { AboutCookieComponent } from './about-cookie.component'
+import { CookieRoutingModule } from '../cookie-routing.module'
+import { SharedModule } from 'src/app/shared/shared.module'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
@@ -11,10 +12,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [UndefinedComponent],
+  declarations: [AboutCookieComponent],
   imports: [
     CommonModule,
-    UndefinedRoutingModule,
+    CookieRoutingModule,
+    SharedModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -25,6 +27,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'ru',
     }),
   ],
-  exports: [UndefinedRoutingModule],
+  exports: [CookieRoutingModule],
 })
-export class UndefinedModule {}
+export class AboutCookieModule {}

@@ -1,9 +1,7 @@
 {
   "INDEX": {
-
     "TITLE": "Open Republican IT championship «RobIn-2024»"
   },
-
   "SHARED": {
     "HEADER": {
       "ZUBRTITLE": " The National children’s education and health center «Zubrenok» ",
@@ -35,7 +33,6 @@
         "ROB_2024": " - 2024» "
       }
     },
-
     "FOOTER": {
       "CONTACTS": "Contacts",
       "DEV1": "developed by ",
@@ -52,13 +49,9 @@
       "PHONE2": "8 (01797) 22 784 (fax) ",
       "PHONE3": "+375298008175 (mob. Viber)",
       "LASTTITLE": "© 2024 Open Republican IT championship «RobIn-2024». All rights reserved"
-
     }
   },
-
   "MAIN": {
-
-
     "TIMER": {
       "TITLE": "Before the RobIn shift:",
       "DAY1": "day",
@@ -70,19 +63,16 @@
       "SECOND1": "second",
       "SECOND2": "seconds"
     },
-
     "SPHERE": {
       "TITLE": "Сompetence",
       "ABOUT_CHAMP": "Open Republican IT championship «RobIn-2024»",
       "ABOUT_SPHERE": "Competencies. What are they like and what do they represent?"
     },
-
     "MEDIA": {
       "TITLE": "Media",
       "ABOUT_CHAMP": "Open Republican IT championship «RobIn-2024»",
       "ABOUT_MEDIA": "Photo gallery of the championship"
     },
-
     "PARTNERS": {
       "TITLE": "Partners",
       "PARTN1": "Brest Regional Center for Tourism and Local History of Children and Youth",
@@ -97,11 +87,9 @@
       "PARTN10": "Faculty of Information Technology and Robotics of UO BNTU"
     }
   },
-
   "MEDIA": {
     "TITLE": "Media"
   },
-
   "ABOUT": {
     "TITLE": "About",
     "PARAGR_1": "In the era of modern technology, great attention is paid to the development of artificial intelligence, robotic systems, virtual and augmented realities.",
@@ -115,9 +103,35 @@
     "TASK_PARAGR4": "To create conditions for the organization of experimental work on the development of new technologies, new types of professional activities, forms of vocational training.",
     "POSITION": "Robin's Position 2024 (ru)",
     "COMPOSITION": "The composition of the Republican Organizing Committee (ru)"
-
   },
-
+  "ABOUT-COOKIE": {
+    "TITLE": "Cookie Processing Policy Statement",
+    "LI_1_PARAGR_1": "Cookies are a text file saved in the browser of the user's computer (mobile device) on the official website of the Open Republican IT Championship \"Robin 2024\" (hereinafter referred to as the site) when visiting it to reflect the actions performed. This file allows you not to re-enter or select the same parameters when you visit the site again, for example, choosing a language version.",
+    "LI_1_PARAGR_2": "The purpose of processing cookies is to ensure the convenience of users of the site and improve the quality of its operation.",
+    "LI_1_PARAGR_3": "We do not transfer cookies to third parties and do not use them to identify personal data subjects.",
+    "LI_2_PARAGR_1": "The following types of cookies are processed on the site:",
+    "LI_2_PARAGR_2": "functional – allow you to provide an individual experience of using the site and are installed in response to the actions of the subject of personal data;",
+    "LI_2_PARAGR_3": "statistical – allows you to store the history of visits to the pages of the site in order to improve the quality of its functioning in order to identify the most and least popular pages.",
+    "LI_3_PARAGR_1": "Cookies processed on the site and their retention periods:",
+    "LI_3_PARAGR_2": "setting up cookies (functional), stored for no more than a year;",
+    "LI_3_PARAGR_3": "choosing a version for the visually impaired (functional), some of which are stored while using the site, and the rest for no more than a day;",
+    "LI_3_PARAGR_4": "selection of language preferences (functional), stored for no more than a year;",
+    "LI_3_PARAGR_5": "the necessary for the functioning of the web analytics platform «Google Analytics», «Yandex.Metrica», (statistical), are installed on the server of the educational institution «National Children's Educational and Wellness Center «Zubrenok»» and are not transferred to third parties, some of which are stored while using the site, and the rest for no more than a year.",
+    "LI_4_PARAGR_1": "Users can accept or reject all cookies processed on the site.",
+    "LI_4_PARAGR_2": "Users can accept or reject all cookies processed on the site, except the necessary ones*.",
+    "LI_4_PARAGR_3": "At the same time, the correct operation of the site is possible only if «necessary», «functional» cookies are used. If they are disabled, it may be necessary to re-select cookie preferences, the language version of the site, and the versions of pages for the visually impaired may not be displayed correctly.",
+    "LI_4_PARAGR_4": "Disabling statistical cookies does not allow you to determine the preferences of site users, including the most and least popular pages, and take measures to improve the operation of the site based on user preferences.",
+    "LI_5_PARAGR_1": "In addition to the cookie settings on the site, personal data subjects can accept or reject the collection of all or some cookies in their browser settings.",
+    "LI_5_PARAGR_2": "At the same time, some browsers allow you to visit Internet sites in «incognito» mode in order to limit the amount of information stored on your computer and automatically delete session cookies. In addition, the personal data subject can delete previously stored cookies by selecting the appropriate option in the browser history.",
+    "LI_5_PARAGR_3": "You can learn more about the cookie management settings by clicking on the external links leading to the corresponding pages of the websites of the main browsers:"
+  },
+  "COOKIE-CONSENT": {
+    "H1": "We use cookies",
+    "MESSAGE": "Cookies are used to ensure the convenience of users of the site and improve the quality of its functioning.",
+    "ACCEPT":"Accept",
+    "REJECT":"Reject",
+    "ABOUT":"Details"
+  },
   "SPHERE-LIST": {
     "NAME": "Сompetence",
     "ITEM": {
@@ -129,7 +143,6 @@
       "viewName": "bot-constructor 9th grade",
       "description": "A bot is an automated multifunctional assistant that can show information to subscribers and collect information upon request according to pre-prepared scripts. Telegram is a cross-platform instant messaging system (messenger) with VoIP functions that allows you to exchange text, voice and video messages, stickers and photos, and files of many formats.",
       "content": ""
-
     },
     "design-elder": {
       "viewName": "Graphic design 10th grade",
@@ -141,7 +154,6 @@
       "description": "A graphic designer specializes in designing the environment using graphics. It works with signs, billboards, posters, indexes, signs and diagrams, and also takes care of the readability of necessary information, such as Internet sites, magazines, newspapers, leaflets, book and CD covers, restaurant menus, product catalogs, etc. The areas of graphic design include: corporate identity and branding, font development, advertising design, design of books, magazines and newspapers, design for the Internet.",
       "content": ""
     },
-
     "football": {
       "viewName": "Football controlled robots 2x2 7th grade",
       "description": "Robot soccer aims to recreate the game of human soccer. Two-on-two teams of autonomous robots chase a ball; their goal is to score as many goals as possible to the opponent.",
@@ -188,7 +200,6 @@
       "content": ""
     }
   },
-
   "UNDEFINED": {
     "LINE": "Oops... This page does not exist....",
     "BACK": "Go back to the main page"

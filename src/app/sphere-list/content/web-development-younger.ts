@@ -1,20 +1,24 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
 export class WEB_DEVELOPMENT_YOUNGER {
+  private static nameSphere: string = 'web-development-younger'
 
+  private static viewNameRU: string =
+    ruDictionary.SPHERE['web-devolopment-younger'].viewName
+  private static viewNameBE: string =
+    beDictionary.SPHERE['web-devolopment-younger'].viewName
+  private static viewNameEN: string =
+    enDictionary.SPHERE['web-devolopment-younger'].viewName
 
-  private static nameSphere: string = "web-development-younger";
-
-  private static viewNameRU: string = ruDictionary.SPHERE["web-devolopment-younger"].viewName;
-  private static viewNameBE: string = beDictionary.SPHERE["web-devolopment-younger"].viewName;
-  private static viewNameEN: string = enDictionary.SPHERE["web-devolopment-younger"].viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE["web-devolopment-younger"].description;
-  private static descriptionBE: string = beDictionary.SPHERE["web-devolopment-younger"].description;
-  private static descriptionEN: string = enDictionary.SPHERE["web-devolopment-younger"].description;
+  private static descriptionRU: string =
+    ruDictionary.SPHERE['web-devolopment-younger'].description
+  private static descriptionBE: string =
+    beDictionary.SPHERE['web-devolopment-younger'].description
+  private static descriptionEN: string =
+    enDictionary.SPHERE['web-devolopment-younger'].description
 
   private static contentRU: string = `
         <ol>
@@ -101,7 +105,7 @@ export class WEB_DEVELOPMENT_YOUNGER {
         <p>В случае набора участниками одинакового количества баллов, победителем конкурса считается участник, набравший
             наибольшее количество баллов и выполнивший конкурсные задания за наименьшее время.</p>
         <p>В случае разногласий окончательное решение оценки конкурса принимает главный судья.</p>
-    `;
+    `
   private static contentBE: string = `
     < ol >
     <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
@@ -170,21 +174,19 @@ export class WEB_DEVELOPMENT_YOUNGER {
                                                 < /ol>
                                                 < p > Удзельнік, які набраў найбольшую колькасць балаў за выкананне двух конкурсных заданняў, лічыцца пераможцам.< /p>
                                                   < p > У выпадку набору ўдзельнікамі аднолькавай колькасці балаў, пераможцам конкурсу лічыцца ўдзельнік, які набраў найбольшую колькасць балаў і выканаў конкурсныя заданні за найменшы час.< /p>
-                                                    < p > У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+                                                    < p > У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence
@@ -194,21 +196,20 @@ export class WEB_DEVELOPMENT_YOUNGER {
     name: this.nameSphere,
     viewName: this.viewNameRU,
     description: this.descriptionRU,
-    content: this.contentRU
+    content: this.contentRU,
   }
 
   private static beTranslate: Sphere = {
     name: this.nameSphere,
     viewName: this.viewNameBE,
     description: this.descriptionBE,
-    content: this.contentBE
+    content: this.contentBE,
   }
 
   private static enTranslate: Sphere = {
     name: this.nameSphere,
     viewName: this.viewNameEN,
     description: this.descriptionEN,
-    content: this.contentEN
+    content: this.contentEN,
   }
 }
-

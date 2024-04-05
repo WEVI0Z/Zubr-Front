@@ -1,19 +1,21 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
 export class FOOTBALL {
+  private static nameSphere: string = 'football'
 
-  private static nameSphere: string = "football";
+  private static viewNameRU: string = ruDictionary.SPHERE.football.viewName
+  private static viewNameBE: string = beDictionary.SPHERE.football.viewName
+  private static viewNameEN: string = enDictionary.SPHERE.football.viewName
 
-  private static viewNameRU: string = ruDictionary.SPHERE.football.viewName;
-  private static viewNameBE: string = beDictionary.SPHERE.football.viewName;
-  private static viewNameEN: string = enDictionary.SPHERE.football.viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE.football.description;
-  private static descriptionBE: string = beDictionary.SPHERE.football.description;
-  private static descriptionEN: string = enDictionary.SPHERE.football.description;
+  private static descriptionRU: string =
+    ruDictionary.SPHERE.football.description
+  private static descriptionBE: string =
+    beDictionary.SPHERE.football.description
+  private static descriptionEN: string =
+    enDictionary.SPHERE.football.description
 
   private static contentRU: string = `
         <ol>
@@ -283,7 +285,7 @@ export class FOOTBALL {
         <p>Победителем в матче объявляется команда, забившая наибольшее количество голов.</p>
         <p>При необходимости выявить победителя в матче назначается дополнительный тайм.</p>
         <p>Победителем соревнований объявляется команда занявший первое место по итогам турнира.</p>
-    `;
+    `
   private static contentBE: string = `<ol>
 <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
 </ol>
@@ -518,21 +520,19 @@ export class FOOTBALL {
 </ol>
 <p>Пераможцам у матчы аб'яўляецца каманда, якая забіла найбольшую колькасць галоў.</p>
 <p>Пры неабходнасці выявіць пераможцу ў матчы прызначаецца дадатковы тайм.</p>
-<p>Пераможцам спаборніцтваў аб'яўляецца каманда, якая заняла першае месца па выніках турніру.</p>`;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+<p>Пераможцам спаборніцтваў аб'яўляецца каманда, якая заняла першае месца па выніках турніру.</p>`
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence
@@ -541,23 +541,22 @@ export class FOOTBALL {
     name: this.nameSphere,
     viewName: this.viewNameRU,
     description: this.descriptionRU,
-    content: this.contentRU
+    content: this.contentRU,
   }
 
   private static beTranslate: Sphere = {
     name: this.nameSphere,
     viewName: this.viewNameBE,
     description: this.descriptionBE,
-    content: this.contentBE
+    content: this.contentBE,
   }
 
   private static enTranslate: Sphere = {
     name: this.nameSphere,
     viewName: this.viewNameEN,
     description: this.descriptionEN,
-    content: this.contentEN
+    content: this.contentEN,
   }
-
 }
 
 //export const FOOTBALL: Sphere = {
