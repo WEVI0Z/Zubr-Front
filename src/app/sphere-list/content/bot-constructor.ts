@@ -13,12 +13,14 @@ export class BOT_CONSTRUCTOR {
   private static viewNameEN: string =
     enDictionary.SPHERE['bot-constructor'].viewName
 
+
   private static descriptionRU: string =
     ruDictionary.SPHERE['bot-constructor'].description
   private static descriptionBE: string =
     beDictionary.SPHERE['bot-constructor'].description
   private static descriptionEN: string =
     enDictionary.SPHERE['bot-constructor'].description
+
 
   private static contentRU: string = `
         <ol>

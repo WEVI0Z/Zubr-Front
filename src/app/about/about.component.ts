@@ -12,6 +12,10 @@ export class AboutComponent {
 
   private translation: TrenslateClass
 
+  /**
+   * Конструктор компонента.
+   * @param translate Сервис для работы с переводом.
+   */
   constructor(public translate: TranslateService) {
     this.translation = new TrenslateClass(translate, this.currentLang)
 
