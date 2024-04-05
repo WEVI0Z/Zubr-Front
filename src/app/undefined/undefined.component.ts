@@ -8,6 +8,7 @@ import { TranslateClass } from '../translate.component';
   styleUrls: ['./undefined.component.scss'],
 })
 export class UndefinedComponent {
+  public currentLang: string = 'ru'
 
   private translation: TranslateClass;
 
@@ -16,5 +17,4 @@ export class UndefinedComponent {
     this.translation = new TranslateClass(translate)
     this.translation.translateData(this.translation.getLanguage());
   }
-
 }

@@ -1,20 +1,24 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
 export class WEB_DEVELOPMENT_YOUNGER {
+  private static nameSphere: string = 'web-development-younger'
 
+  private static viewNameRU: string =
+    ruDictionary.SPHERE['web-devolopment-younger'].viewName
+  private static viewNameBE: string =
+    beDictionary.SPHERE['web-devolopment-younger'].viewName
+  private static viewNameEN: string =
+    enDictionary.SPHERE['web-devolopment-younger'].viewName
 
-  private static nameSphere: string = "web-development-younger";
-
-  private static viewNameRU: string = ruDictionary.SPHERE["web-devolopment-younger"].viewName;
-  private static viewNameBE: string = beDictionary.SPHERE["web-devolopment-younger"].viewName;
-  private static viewNameEN: string = enDictionary.SPHERE["web-devolopment-younger"].viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE["web-devolopment-younger"].description;
-  private static descriptionBE: string = beDictionary.SPHERE["web-devolopment-younger"].description;
-  private static descriptionEN: string = enDictionary.SPHERE["web-devolopment-younger"].description;
+  private static descriptionRU: string =
+    ruDictionary.SPHERE['web-devolopment-younger'].description
+  private static descriptionBE: string =
+    beDictionary.SPHERE['web-devolopment-younger'].description
+  private static descriptionEN: string =
+    enDictionary.SPHERE['web-devolopment-younger'].description
 
   private static contentRU: string = `
         <ol>
@@ -171,17 +175,14 @@ export class WEB_DEVELOPMENT_YOUNGER {
   private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence
@@ -211,4 +212,3 @@ export class WEB_DEVELOPMENT_YOUNGER {
     viewNameRU: this.viewNameRU
   }
 }
-

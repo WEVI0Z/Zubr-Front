@@ -1,20 +1,24 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
 export class PROTOTYPING_YOUNGER {
+  private static nameSphere: string = 'prototyping-younger'
 
-  private static nameSphere: string = "prototyping-younger";
+  private static viewNameRU: string =
+    ruDictionary.SPHERE['prototyping-younger'].viewName
+  private static viewNameBE: string =
+    beDictionary.SPHERE['prototyping-younger'].viewName
+  private static viewNameEN: string =
+    enDictionary.SPHERE['prototyping-younger'].viewName
 
-
-  private static viewNameRU: string = ruDictionary.SPHERE["prototyping-younger"].viewName;
-  private static viewNameBE: string = beDictionary.SPHERE["prototyping-younger"].viewName;
-  private static viewNameEN: string = enDictionary.SPHERE["prototyping-younger"].viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE["prototyping-younger"].description;
-  private static descriptionBE: string = beDictionary.SPHERE["prototyping-younger"].description;
-  private static descriptionEN: string = enDictionary.SPHERE["prototyping-younger"].description;
+  private static descriptionRU: string =
+    ruDictionary.SPHERE['prototyping-younger'].description
+  private static descriptionBE: string =
+    beDictionary.SPHERE['prototyping-younger'].description
+  private static descriptionEN: string =
+    enDictionary.SPHERE['prototyping-younger'].description
 
   private static contentRU: string = `<ol>
             <li>ОБЩИЕ ПОЛОЖЕНИЯ</li>
@@ -221,7 +225,7 @@ export class PROTOTYPING_YOUNGER {
             наибольшее количество баллов и выполнивший конкурсные задания за наименьшее время.</p>
         <p>В случае разногласий окончательное решение оценки конкурса принимает главный судья.</p>
     `
-  private static contentBE: string =`<ol>
+  private static contentBE: string = `<ol>
 <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
 </ol>
 <p>Прататыпіраванне - гэта інжынерна-канструктарская праца, звязаная са стварэннем прататыпаў (доследных узораў) для наступных даследаванняў, тэсціравання і іншых праверак. Падчас прац з прататыпам становіцца магчымай адпрацоўка і ўхіленне ўсіх магчымых неадпаведнасцяў і няспраўнасцяў, а таксама дапрацоўка канструктарскіх рашэнняў.</p>
@@ -414,20 +418,18 @@ export class PROTOTYPING_YOUNGER {
 <p>Удзельнік, які набраў найбольшую колькасць балаў за выкананне двух конкурсных заданняў, лічыцца пераможцам.</p>
 <p>У выпадку набору ўдзельнікамі аднолькавай колькасці балаў, пераможцам конкурсу лічыцца ўдзельнік, які набраў найбольшую колькасць балаў і выканаў конкурсныя заданні за найменшы час.</p>
 <p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`
-  private static contentEN: string ='Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence
@@ -456,6 +458,5 @@ export class PROTOTYPING_YOUNGER {
     content: this.contentEN,
     viewNameRU: this.viewNameRU
   }
-
-  }
+}
 

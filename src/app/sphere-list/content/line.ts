@@ -1,19 +1,17 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
 export class LINE {
+  private static nameSphere: string = 'line'
+  private static viewNameRU: string = ruDictionary.SPHERE.line.viewName
+  private static viewNameBE: string = beDictionary.SPHERE.line.viewName
+  private static viewNameEN: string = enDictionary.SPHERE.line.viewName
 
-  private static nameSphere: string = "line";
-  private static viewNameRU: string = ruDictionary.SPHERE.line.viewName;
-  private static viewNameBE: string = beDictionary.SPHERE.line.viewName;
-  private static viewNameEN: string = enDictionary.SPHERE.line.viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE.line.description;
-  private static descriptionBE: string = beDictionary.SPHERE.line.description;
-  private static descriptionEN: string = enDictionary.SPHERE.line.description;
-
+  private static descriptionRU: string = ruDictionary.SPHERE.line.description
+  private static descriptionBE: string = beDictionary.SPHERE.line.description
+  private static descriptionEN: string = enDictionary.SPHERE.line.description
 
   private static contentRU: string = `
     <ol>
@@ -102,7 +100,7 @@ export class LINE {
     <p>D &ge; 100мм</p>
     <p>Длина трассы 12,5м</p>
     <p>В случае разногласий окончательное решение оценки конкурса принимает главный судья.</p>
-  `;
+  `
   private static contentBE: string = `<ol>
 <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
 </ol>
@@ -174,21 +172,19 @@ export class LINE {
 <p>С &ge; 150мм</p>
 <p>D &ge; 100мм</p>
 <p>Даўжыня трасы 12,5м</p>
-<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence

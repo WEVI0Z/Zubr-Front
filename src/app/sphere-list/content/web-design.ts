@@ -1,21 +1,21 @@
-import { Sphere } from '../interface/sphere';
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
-
 export class WEB_DESIGN {
+  private static nameSphere: string = 'web-design'
 
-  private static nameSphere: string = "web-design";
+  private static viewNameRU: string = ruDictionary.SPHERE['web-design'].viewName
+  private static viewNameBE: string = beDictionary.SPHERE['web-design'].viewName
+  private static viewNameEN: string = enDictionary.SPHERE['web-design'].viewName
 
-  private static viewNameRU: string = ruDictionary.SPHERE["web-design"].viewName;
-  private static viewNameBE: string = beDictionary.SPHERE["web-design"].viewName;
-  private static viewNameEN: string = enDictionary.SPHERE["web-design"].viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE["web-design"].description;
-  private static descriptionBE: string = beDictionary.SPHERE["web-design"].description;
-  private static descriptionEN: string = enDictionary.SPHERE["web-design"].description;
-
+  private static descriptionRU: string =
+    ruDictionary.SPHERE['web-design'].description
+  private static descriptionBE: string =
+    beDictionary.SPHERE['web-design'].description
+  private static descriptionEN: string =
+    enDictionary.SPHERE['web-design'].description
 
   private static contentRU: string = `
         <ol>
@@ -226,7 +226,7 @@ export class WEB_DESIGN {
         <p>В случае набора участниками одинакового количества баллов, победителем конкурса считается участник, набравший
             наибольшее количество баллов и выполнивший конкурсное задания за наименьшее время.</p>
         <p>В случае разногласий окончательное решение оценки конкурса принимает главный судья.</p>
-    `;
+    `
   private static contentBE: string = `<ol>
 <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
 </ol>
@@ -415,21 +415,19 @@ export class WEB_DESIGN {
 </ol>
 <p>Удзельнік, які набраў найбольшую колькасць балаў за выкананне конкурснага задання, лічыцца пераможцам.</p>
 <p>У выпадку набору ўдзельнікамі аднолькавай колькасці балаў, пераможцам конкурсу лічыцца ўдзельнік, які набраў найбольшую колькасць балаў і выканаў конкурснае заданне за найменшы час.</p>
-<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence
@@ -458,7 +456,4 @@ export class WEB_DESIGN {
     content: this.contentEN,
     viewNameRU: this.viewNameRU
   }
-
 }
-
-

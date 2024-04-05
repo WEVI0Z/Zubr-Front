@@ -15,5 +15,4 @@ export class MainComponent {
     this.translation = new TranslateClass(translate)
     this.translation.translateData(this.translation.getLanguage());
   }
- 
 }

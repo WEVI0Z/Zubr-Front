@@ -32,14 +32,12 @@ export class TimerComponent implements OnInit{
   private currentLang: string;
   private translation: TranslateClass;
 
-
   constructor(public translate: TranslateService) {
  
     this.translation = new TranslateClass(translate)
 
     this.currentLang = this.translation.getLanguage();
   }
-
 
   ngOnInit(): void {
     this.setTime(this.calculateDifference(new Date(), TARGET_DATE))
@@ -77,266 +75,282 @@ export class TimerComponent implements OnInit{
       this.dayString = this.getDayLang(2)
     }
 
-    if ((this.daysLeft % 10 >= 5 && this.daysLeft % 10 <= 9) ||
-      this.daysLeft === 11 || this.daysLeft === 10 ||this.daysLeft % 10 === 0 ||
-      this.daysLeft === 12 || this.daysLeft === 13 || this.daysLeft === 14) {
-      this.dayString = this.getDayLang(5);
+    if (
+      (this.daysLeft % 10 >= 5 && this.daysLeft % 10 <= 9) ||
+      this.daysLeft === 11 ||
+      this.daysLeft === 10 ||
+      this.daysLeft % 10 === 0 ||
+      this.daysLeft === 12 ||
+      this.daysLeft === 13 ||
+      this.daysLeft === 14
+    ) {
+      this.dayString = this.getDayLang(5)
     }
 
     if (this.hoursLeft % 10 === 1) {
       this.hourString = this.getHourLang(1)
     } else if (this.hoursLeft % 10 >= 2 && this.hoursLeft % 10 <= 4) {
-      this.hourString = this.getHourLang(2);
+      this.hourString = this.getHourLang(2)
     }
 
-    if ((this.hoursLeft % 10 >= 5 && this.hoursLeft % 10 <= 9) ||
-      this.hoursLeft === 11 || this.hoursLeft === 10 ||this.hoursLeft % 10 === 0 ||
-      this.hoursLeft === 12 || this.hoursLeft === 13 || this.hoursLeft === 14) {
-      this.hourString = this.getHourLang(5);
+    if (
+      (this.hoursLeft % 10 >= 5 && this.hoursLeft % 10 <= 9) ||
+      this.hoursLeft === 11 ||
+      this.hoursLeft === 10 ||
+      this.hoursLeft % 10 === 0 ||
+      this.hoursLeft === 12 ||
+      this.hoursLeft === 13 ||
+      this.hoursLeft === 14
+    ) {
+      this.hourString = this.getHourLang(5)
     }
 
     if (this.minutesLeft % 10 === 1) {
-      this.minuteString = this.getMinutLang(1);
+      this.minuteString = this.getMinutLang(1)
     } else if (this.minutesLeft % 10 >= 2 && this.minutesLeft % 10 <= 4) {
-      this.minuteString = this.getMinutLang(2);
+      this.minuteString = this.getMinutLang(2)
     }
 
-    if ((this.minutesLeft % 10 >= 5 && this.minutesLeft % 10 <= 9) ||
-      this.minutesLeft === 11 || this.minutesLeft === 10 ||this.minutesLeft % 10 === 0 ||
-      this.minutesLeft === 12 || this.minutesLeft === 13 || this.minutesLeft === 14) {
-      this.minuteString = this.getMinutLang(5);
+    if (
+      (this.minutesLeft % 10 >= 5 && this.minutesLeft % 10 <= 9) ||
+      this.minutesLeft === 11 ||
+      this.minutesLeft === 10 ||
+      this.minutesLeft % 10 === 0 ||
+      this.minutesLeft === 12 ||
+      this.minutesLeft === 13 ||
+      this.minutesLeft === 14
+    ) {
+      this.minuteString = this.getMinutLang(5)
     }
 
     if (this.secondsLeft % 10 === 1) {
-      this.secondString = this.getSecondLang(1);
+      this.secondString = this.getSecondLang(1)
     } else if (this.secondsLeft % 10 >= 2 && this.secondsLeft % 10 <= 4) {
-      this.secondString = this.getSecondLang(2);
+      this.secondString = this.getSecondLang(2)
     }
 
-    if ((this.secondsLeft % 10 >= 5 && this.secondsLeft % 10 <= 9) ||
-      this.secondsLeft === 11 || this.secondsLeft === 10 ||this.secondsLeft % 10 === 0 ||
-      this.secondsLeft === 12 || this.secondsLeft === 13 || this.secondsLeft === 14) {
-      this.secondString = this.getSecondLang(5);
+    if (
+      (this.secondsLeft % 10 >= 5 && this.secondsLeft % 10 <= 9) ||
+      this.secondsLeft === 11 ||
+      this.secondsLeft === 10 ||
+      this.secondsLeft % 10 === 0 ||
+      this.secondsLeft === 12 ||
+      this.secondsLeft === 13 ||
+      this.secondsLeft === 14
+    ) {
+      this.secondString = this.getSecondLang(5)
     }
   }
 
   //в качестве аргумента могут быть три числа: 1-день, 2-дня, 5-дней
   private getDayLang(number: number): string {
-    let dayLang: string;
+    let dayLang: string
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          dayLang = ruDictionary.MAIN.TIMER.DAY1;
-          break;
+          dayLang = ruDictionary.MAIN.TIMER.DAY1
+          break
         case 'en':
-          dayLang = enDictionary.MAIN.TIMER.DAY1;
-          break;
+          dayLang = enDictionary.MAIN.TIMER.DAY1
+          break
         case 'be':
-          dayLang = beDictionary.MAIN.TIMER.DAY1;
-          break;
+          dayLang = beDictionary.MAIN.TIMER.DAY1
+          break
         default:
-          dayLang = ruDictionary.MAIN.TIMER.DAY1;
-          break;
+          dayLang = ruDictionary.MAIN.TIMER.DAY1
+          break
       }
-    }
-    else if (number == 2) {
+    } else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          dayLang = ruDictionary.MAIN.TIMER.DAY2;
-          break;
+          dayLang = ruDictionary.MAIN.TIMER.DAY2
+          break
         case 'en':
-          dayLang = enDictionary.MAIN.TIMER.DAY2;
-          break;
+          dayLang = enDictionary.MAIN.TIMER.DAY2
+          break
         case 'be':
-          dayLang = beDictionary.MAIN.TIMER.DAY2;
-          break;
+          dayLang = beDictionary.MAIN.TIMER.DAY2
+          break
         default:
-          dayLang = ruDictionary.MAIN.TIMER.DAY2;
-          break;
+          dayLang = ruDictionary.MAIN.TIMER.DAY2
+          break
       }
-    }
-    else {
+    } else {
       switch (this.currentLang) {
         case 'ru':
-          dayLang = ruDictionary.MAIN.TIMER.DAY5;
-          break;
+          dayLang = ruDictionary.MAIN.TIMER.DAY5
+          break
         case 'en':
-          dayLang = enDictionary.MAIN.TIMER.DAY2;
-          break;
+          dayLang = enDictionary.MAIN.TIMER.DAY2
+          break
         case 'be':
-          dayLang = beDictionary.MAIN.TIMER.DAY5;
-          break;
+          dayLang = beDictionary.MAIN.TIMER.DAY5
+          break
         default:
-          dayLang = ruDictionary.MAIN.TIMER.DAY5;
-          break;
+          dayLang = ruDictionary.MAIN.TIMER.DAY5
+          break
       }
     }
 
-    return dayLang;
+    return dayLang
   }
 
   //в качестве аргумента могут быть три числа: 1-час, 2-часа, 5-часов
   private getHourLang(number: number): string {
-    let hourLang: string;
+    let hourLang: string
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          hourLang = ruDictionary.MAIN.TIMER.HOUR1;
-          break;
+          hourLang = ruDictionary.MAIN.TIMER.HOUR1
+          break
         case 'en':
-          hourLang = enDictionary.MAIN.TIMER.HOUR1;
-          break;
+          hourLang = enDictionary.MAIN.TIMER.HOUR1
+          break
         case 'be':
-          hourLang = beDictionary.MAIN.TIMER.HOUR1;
-          break;
+          hourLang = beDictionary.MAIN.TIMER.HOUR1
+          break
         default:
-          hourLang = ruDictionary.MAIN.TIMER.HOUR1;
-          break;
+          hourLang = ruDictionary.MAIN.TIMER.HOUR1
+          break
       }
-    }
-    else if (number == 2) {
+    } else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          hourLang = ruDictionary.MAIN.TIMER.HOUR2;
-          break;
+          hourLang = ruDictionary.MAIN.TIMER.HOUR2
+          break
         case 'en':
-          hourLang = enDictionary.MAIN.TIMER.HOUR2;
-          break;
+          hourLang = enDictionary.MAIN.TIMER.HOUR2
+          break
         case 'be':
-          hourLang = beDictionary.MAIN.TIMER.HOUR2;
-          break;
+          hourLang = beDictionary.MAIN.TIMER.HOUR2
+          break
         default:
-          hourLang = ruDictionary.MAIN.TIMER.HOUR2;
-          break;
+          hourLang = ruDictionary.MAIN.TIMER.HOUR2
+          break
       }
-    }
-    else {
+    } else {
       switch (this.currentLang) {
         case 'ru':
-          hourLang = ruDictionary.MAIN.TIMER.HOUR5;
-          break;
+          hourLang = ruDictionary.MAIN.TIMER.HOUR5
+          break
         case 'en':
-          hourLang = enDictionary.MAIN.TIMER.HOUR2;
-          break;
+          hourLang = enDictionary.MAIN.TIMER.HOUR2
+          break
         case 'be':
-          hourLang = beDictionary.MAIN.TIMER.HOUR5;
-          break;
+          hourLang = beDictionary.MAIN.TIMER.HOUR5
+          break
         default:
-          hourLang = ruDictionary.MAIN.TIMER.HOUR5;
-          break;
+          hourLang = ruDictionary.MAIN.TIMER.HOUR5
+          break
       }
     }
 
-    return hourLang;
+    return hourLang
   }
 
   //в качестве аргумента могут быть три числа: 1-минута, 2-минуты, 5-минут
   private getMinutLang(number: number): string {
-    let minutLang: string;
+    let minutLang: string
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          minutLang = ruDictionary.MAIN.TIMER.MINUT1;
-          break;
+          minutLang = ruDictionary.MAIN.TIMER.MINUT1
+          break
         case 'en':
-          minutLang = enDictionary.MAIN.TIMER.MINUT1;
-          break;
+          minutLang = enDictionary.MAIN.TIMER.MINUT1
+          break
         case 'be':
-          minutLang = beDictionary.MAIN.TIMER.MINUT1;
-          break;
+          minutLang = beDictionary.MAIN.TIMER.MINUT1
+          break
         default:
-          minutLang = ruDictionary.MAIN.TIMER.MINUT1;
-          break;
+          minutLang = ruDictionary.MAIN.TIMER.MINUT1
+          break
       }
-    }
-    else if (number == 2) {
+    } else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          minutLang = ruDictionary.MAIN.TIMER.MINUT2;
-          break;
+          minutLang = ruDictionary.MAIN.TIMER.MINUT2
+          break
         case 'en':
-          minutLang = enDictionary.MAIN.TIMER.MINUT2;
-          break;
+          minutLang = enDictionary.MAIN.TIMER.MINUT2
+          break
         case 'be':
-          minutLang = beDictionary.MAIN.TIMER.MINUT2;
-          break;
+          minutLang = beDictionary.MAIN.TIMER.MINUT2
+          break
         default:
-          minutLang = ruDictionary.MAIN.TIMER.MINUT2;
-          break;
+          minutLang = ruDictionary.MAIN.TIMER.MINUT2
+          break
       }
-    }
-    else {
+    } else {
       switch (this.currentLang) {
         case 'ru':
-          minutLang = ruDictionary.MAIN.TIMER.MINUT5;
-          break;
+          minutLang = ruDictionary.MAIN.TIMER.MINUT5
+          break
         case 'en':
-          minutLang = enDictionary.MAIN.TIMER.MINUT2;
-          break;
+          minutLang = enDictionary.MAIN.TIMER.MINUT2
+          break
         case 'be':
-          minutLang = beDictionary.MAIN.TIMER.MINUT5;
-          break;
+          minutLang = beDictionary.MAIN.TIMER.MINUT5
+          break
         default:
-          minutLang = ruDictionary.MAIN.TIMER.MINUT5;
-          break;
+          minutLang = ruDictionary.MAIN.TIMER.MINUT5
+          break
       }
     }
 
-    return minutLang;
+    return minutLang
   }
 
   //в качестве аргумента могут быть три числа: 1-секунда, 2-секунды, 5-секунд
   private getSecondLang(number: number): string {
-    let secondLang: string;
+    let secondLang: string
     if (number == 1) {
       switch (this.currentLang) {
         case 'ru':
-          secondLang = ruDictionary.MAIN.TIMER.SECOND1;
-          break;
+          secondLang = ruDictionary.MAIN.TIMER.SECOND1
+          break
         case 'en':
-          secondLang = enDictionary.MAIN.TIMER.SECOND1;
-          break;
+          secondLang = enDictionary.MAIN.TIMER.SECOND1
+          break
         case 'be':
-          secondLang = beDictionary.MAIN.TIMER.SECOND1;
-          break;
+          secondLang = beDictionary.MAIN.TIMER.SECOND1
+          break
         default:
-          secondLang = ruDictionary.MAIN.TIMER.SECOND1;
-          break;
+          secondLang = ruDictionary.MAIN.TIMER.SECOND1
+          break
       }
-    }
-    else if (number == 2) {
+    } else if (number == 2) {
       switch (this.currentLang) {
         case 'ru':
-          secondLang = ruDictionary.MAIN.TIMER.SECOND2;
-          break;
+          secondLang = ruDictionary.MAIN.TIMER.SECOND2
+          break
         case 'en':
-          secondLang = enDictionary.MAIN.TIMER.SECOND2;
-          break;
+          secondLang = enDictionary.MAIN.TIMER.SECOND2
+          break
         case 'be':
-          secondLang = beDictionary.MAIN.TIMER.SECOND2;
-          break;
+          secondLang = beDictionary.MAIN.TIMER.SECOND2
+          break
         default:
-          secondLang = ruDictionary.MAIN.TIMER.SECOND2;
-          break;
+          secondLang = ruDictionary.MAIN.TIMER.SECOND2
+          break
       }
-    }
-    else {
+    } else {
       switch (this.currentLang) {
         case 'ru':
-          secondLang = ruDictionary.MAIN.TIMER.SECOND5;
-          break;
+          secondLang = ruDictionary.MAIN.TIMER.SECOND5
+          break
         case 'en':
-          secondLang = enDictionary.MAIN.TIMER.SECOND2;
-          break;
+          secondLang = enDictionary.MAIN.TIMER.SECOND2
+          break
         case 'be':
-          secondLang = beDictionary.MAIN.TIMER.SECOND5;
-          break;
+          secondLang = beDictionary.MAIN.TIMER.SECOND5
+          break
         default:
-          secondLang = ruDictionary.MAIN.TIMER.SECOND5;
-          break;
+          secondLang = ruDictionary.MAIN.TIMER.SECOND5
+          break
       }
     }
 
-    return secondLang;
+    return secondLang
   }
 }

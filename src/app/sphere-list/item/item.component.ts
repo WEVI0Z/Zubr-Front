@@ -31,8 +31,6 @@ export class ItemComponent implements AfterViewInit {
 
   }
 
-
-
   ngAfterViewInit(): void {
     this.identifyContent(this.router.url)
   }

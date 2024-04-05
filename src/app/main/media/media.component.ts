@@ -25,10 +25,15 @@ export class MediaComponent implements OnInit {
     private utilsService: UtilsService
   ) {}
 
+  /**
+   * Метод, вызываемый после инициализации компонента.
+   * Устанавливает интервал для автоматического переключения медиа-файлов.
+   */
   ngOnInit(): void {
     setInterval(() => this.changePicture(), 3000)
   }
 
+  /** Метод для смены текущего изображения или видео. */
   private changePicture(): void {
     if (this.currentIndex >= this.mediaList.length) {
       this.currentIndex = 0

@@ -1,4 +1,4 @@
-import { TranslateService } from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core'
 
 export class TranslateClass{
 
@@ -16,8 +16,7 @@ export class TranslateClass{
   }
 
   public translateData(lang: string): void {
-
-    this.translate.use(lang.toLowerCase());
+    this.translate.use(lang.toLowerCase())
   }
 
 }

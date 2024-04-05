@@ -26,7 +26,8 @@ export class HeaderComponent implements OnInit{
     }
   }
 
-  constructor(private router: Router,
+  constructor(
+    private router: Router,
     private sphereService: SphereService,
     public translate: TranslateService) {
 

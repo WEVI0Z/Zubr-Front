@@ -1,19 +1,18 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
-export class SUMO{
+export class SUMO {
+  private static nameSphere: string = 'sumo'
 
-  private static nameSphere: string = "sumo";
+  private static viewNameRU: string = ruDictionary.SPHERE.sumo.viewName
+  private static viewNameBE: string = beDictionary.SPHERE.sumo.viewName
+  private static viewNameEN: string = enDictionary.SPHERE.sumo.viewName
 
-  private static viewNameRU: string = ruDictionary.SPHERE.sumo.viewName;
-  private static viewNameBE: string = beDictionary.SPHERE.sumo.viewName;
-  private static viewNameEN: string = enDictionary.SPHERE.sumo.viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE.sumo.description;
-  private static descriptionBE: string = beDictionary.SPHERE.sumo.description;
-  private static descriptionEN: string = enDictionary.SPHERE.sumo.description;
+  private static descriptionRU: string = ruDictionary.SPHERE.sumo.description
+  private static descriptionBE: string = beDictionary.SPHERE.sumo.description
+  private static descriptionEN: string = enDictionary.SPHERE.sumo.description
 
   private static contentRU: string = `
         <ol>
@@ -151,7 +150,7 @@ export class SUMO{
             в дополнительном раунде, объявляется победителем матча. Если по итогу дополнительного раунда победитель не выявлен,
             то судьи выбирают&nbsp;победителя на основании оценки тактики, агрессии и активности соперников.</p>
         <p>Победителем соревнований объявляется команда, занявшая первое место в финальном этапе.</p>
-    `;
+    `
   private static contentBE: string = `
         <ol>
             <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
@@ -266,26 +265,23 @@ export class SUMO{
         <p>У матчы перамагае робат, які набраў найбольшую колькасць балаў. Пры роўнасці балаў па выніках матча аб'яўляецца нічыя.</p>
         <p>Пры неабходнасці вызначыць пераможцу матча пры роўнасці балаў праводзіцца дадатковы раўнд. Робат, які перамог у дадатковым раўндзе, аб'яўляецца пераможцам матча. Калі па выніках дадатковага раўнда пераможца не выяўлены, то суддзі выбіраюць пераможцу на падставе ацэнкі тактыкі, агрэсіі і актыўнасці сапернікаў.</p>
         <p>Пераможцам спаборніцтваў аб'яўляецца каманда, якая заняла першае месца ў фінальным этапе.</p>
-    `;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+    `
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
-  static getItem(currentLang: string): Sphere{
-
-    let competence;
+  static getItem(currentLang: string): Sphere {
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
-    }
-    
+
     return competence
   }
-
 
   private static ruTranslate: Sphere = {
     name: this.nameSphere,

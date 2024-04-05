@@ -1,20 +1,24 @@
-import { Sphere } from "../interface/sphere";
+import { Sphere } from '../interface/sphere'
 import beDictionary from '../../../assets/i18n/be.json'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
 export class DESIGN_ELDER {
+  private static nameSphere: string = 'design-elder'
 
+  private static viewNameRU: string =
+    ruDictionary.SPHERE['design-elder'].viewName
+  private static viewNameBE: string =
+    beDictionary.SPHERE['design-elder'].viewName
+  private static viewNameEN: string =
+    enDictionary.SPHERE['design-elder'].viewName
 
-  private static nameSphere: string = "design-elder";
-
-  private static viewNameRU: string = ruDictionary.SPHERE["design-elder"].viewName;
-  private static viewNameBE: string = beDictionary.SPHERE["design-elder"].viewName;
-  private static viewNameEN: string = enDictionary.SPHERE["design-elder"].viewName;
-
-  private static descriptionRU: string = ruDictionary.SPHERE["design-elder"].description;
-  private static descriptionBE: string = beDictionary.SPHERE["design-elder"].description;
-  private static descriptionEN: string = enDictionary.SPHERE["design-elder"].description;
+  private static descriptionRU: string =
+    ruDictionary.SPHERE['design-elder'].description
+  private static descriptionBE: string =
+    beDictionary.SPHERE['design-elder'].description
+  private static descriptionEN: string =
+    enDictionary.SPHERE['design-elder'].description
 
   private static contentRU: string = `
         <ol>
@@ -483,7 +487,7 @@ export class DESIGN_ELDER {
         <p>В случае набора участниками одинакового количества баллов, победителем конкурса считается участник, набравший
             наибольшее количество баллов и выполнивший конкурсные задания за наименьшее время.</p>
         <p>В случае разногласий окончательное решение оценки конкурса принимает главный судья.</p>
-      `;
+      `
   private static contentBE: string = `<ol>
 <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
 </ol>
@@ -935,21 +939,19 @@ export class DESIGN_ELDER {
 </ol>
 <p>Удзельнік, які набраў найбольшую колькасць балаў за выкананне двух конкурсных заданняў, лічыцца пераможцам.</p>
 <p>У выпадку набору ўдзельнікамі аднолькавай колькасці балаў, пераможцам конкурсу лічыцца ўдзельнік, які набраў найбольшую колькасць балаў і выканаў конкурсныя заданні за найменшы час.</p>
-<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
-
-    let competence;
+    let competence
 
     if (currentLang == 'ru') {
-      competence = this.ruTranslate;
-    }
-    else if (currentLang == 'be') {
-      competence = this.beTranslate;
-    }
-    else {
-      competence = this.enTranslate;
+      competence = this.ruTranslate
+    } else if (currentLang == 'be') {
+      competence = this.beTranslate
+    } else {
+      competence = this.enTranslate
     }
 
     return competence

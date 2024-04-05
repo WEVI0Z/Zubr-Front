@@ -16,7 +16,6 @@ import { WEB_DEVELOPMENT_ELDER } from "../content/web-development-elder";
 import { TranslateClass } from '../../translate.component';
 import { TranslateService } from '@ngx-translate/core';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -31,18 +30,17 @@ export class SphereService {
     this.currentLang = this.translation.getLanguage();
 
 
-    this.sphereList.push(SUMO.getItem(this.currentLang));
-    this.sphereList.push(LINE.getItem(this.currentLang));
-    this.sphereList.push(FOOTBALL.getItem(this.currentLang));
-    this.sphereList.push(DESIGN_YOUNGER.getItem(this.currentLang));
-    this.sphereList.push(DESIGN_ELDER.getItem(this.currentLang));
-    this.sphereList.push(WEB_DEVELOPMENT_YOUNGER.getItem(this.currentLang));
-    this.sphereList.push(WEB_DEVELOPMENT_ELDER.getItem(this.currentLang));
-    this.sphereList.push(PROTOTYPING_YOUNGER.getItem(this.currentLang));
-    this.sphereList.push(PROTOTYPING_ELDER.getItem(this.currentLang));
-    this.sphereList.push(BOT_CONSTRUCTOR.getItem(this.currentLang));
-    this.sphereList.push(WEB_DESIGN.getItem(this.currentLang));
-    this.sphereList.push(PROGRAMMING.getItem(this.currentLang));
+    this.sphereList.push(SUMO.getItem(this.currentLang))
+    this.sphereList.push(LINE.getItem(this.currentLang))
+    this.sphereList.push(FOOTBALL.getItem(this.currentLang))
+    this.sphereList.push(DESIGN_YOUNGER.getItem(this.currentLang))
+    this.sphereList.push(DESIGN_ELDER.getItem(this.currentLang))
+    this.sphereList.push(WEB_DEVELOPMENT_YOUNGER.getItem(this.currentLang))
+    this.sphereList.push(WEB_DEVELOPMENT_ELDER.getItem(this.currentLang))
+    this.sphereList.push(PROTOTYPING_YOUNGER.getItem(this.currentLang))
+    this.sphereList.push(PROTOTYPING_ELDER.getItem(this.currentLang))
+    this.sphereList.push(BOT_CONSTRUCTOR.getItem(this.currentLang))
+    this.sphereList.push(WEB_DESIGN.getItem(this.currentLang))
+    this.sphereList.push(PROGRAMMING.getItem(this.currentLang))
   }
-
 }
