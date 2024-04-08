@@ -68,31 +68,5 @@
     ></noscript>
     <!-- /Yandex.Metrika counter -->
     <app-root></app-root>
-
-    <script>
-      jQuery(document).ready(function () {
-        jQuery(window).scroll(function () {
-          if (jQuery(this).scrollTop() > 600) {
-            jQuery('#myBtn').css('opacity', '1')
-          } else {
-            jQuery('#myBtn').css('opacity', '0')
-          }
-        })
-
-        jQuery('#myBtn').click(function () {
-          jQuery('body,html').animate(
-            {
-              scrollTop: 0,
-            },
-            1800
-          )
-          return false
-        })
-      })
-    </script>
-
-    <div id="myBtn" title="К началу страницы">
-      <i class="fa fa-angle-double-up"></i>
-    </div>
   </body>
 </html>
