@@ -257,36 +257,71 @@
   .sidebar__menu {
     /* Стили для пунктов меню */
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .sidebar__menu-image {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px;
+    background-color: transparent;
   }
 
   .sidebar__menu-item {
-    width: 100%;
-    margin-bottom: 10px;
+    /*width: 100%;
+    margin-bottom: 15px;
+    //margin-top: 10px;
+    height: 50px;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ADD8E6;
   }
 
   .sidebar__menu-link {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 10px;
-    background-color: #333333;
-    text-align: center;
+    height: 50px;
+    padding-left: 10px;
+    text-align: left;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     border: none;
     outline: none;
+    background-color: #ffffff;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+
+  .sidebar__menu-link > * {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .sidebar__menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #87CEFA; 
   }
 
   .sidebar__menu-link:hover {
-    background-color: #444444;
+    background-color: #eeeeee;
   }
   //-----------------------------
   .sidebar__sub-menu {
     display: none;
     position: absolute;
     width: 100%;
+    top: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -294,6 +329,7 @@
     margin: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 999;
   }
 
   .sidebar__sub-menu.active {

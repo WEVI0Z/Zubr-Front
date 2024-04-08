@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\media",
-    "\\src\\app\\media\\interface"
+    "\\src\\app\\main",
+    "\\src\\app\\main\\partners",
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\header"
   ],
-  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
