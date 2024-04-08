@@ -105,7 +105,7 @@ export class WEB_DEVELOPMENT_YOUNGER {
         <p>В случае набора участниками одинакового количества баллов, победителем конкурса считается участник, набравший
             наибольшее количество баллов и выполнивший конкурсные задания за наименьшее время.</p>
         <p>В случае разногласий окончательное решение оценки конкурса принимает главный судья.</p>
-    `;
+    `
   private static contentBE: string = `<ol>
 <li>АГУЛЬНЫЯ ПАЛАЖЭННІ</li>
 </ol>
@@ -171,8 +171,9 @@ export class WEB_DEVELOPMENT_YOUNGER {
 </ol>
 <p>Удзельнік, які набраў найбольшую колькасць балаў за выкананне двух конкурсных заданняў, лічыцца пераможцам.</p>
 <p>У выпадку набору ўдзельнікамі аднолькавай колькасці балаў, пераможцам конкурсу лічыцца ўдзельнік, які набраў найбольшую колькасць балаў і выканаў конкурсныя заданні за найменшы час.</p>
-<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`;
-  private static contentEN: string = "Information is temporarily unavailable. You can view details in Russian or Belarusian languages";
+<p>У выпадку рознагалоссяў канчатковае рашэнне адзнакі конкурсу прымае галоўны суддзя.</p>`
+  private static contentEN: string =
+    'Information is temporarily unavailable. You can view details in Russian or Belarusian languages'
 
   static getItem(currentLang: string): Sphere {
     let competence
@@ -193,7 +194,7 @@ export class WEB_DEVELOPMENT_YOUNGER {
     viewName: this.viewNameRU,
     description: this.descriptionRU,
     content: this.contentRU,
-    viewNameRU: this.viewNameRU
+    viewNameRU: this.viewNameRU,
   }
 
   private static beTranslate: Sphere = {
@@ -201,7 +202,7 @@ export class WEB_DEVELOPMENT_YOUNGER {
     viewName: this.viewNameBE,
     description: this.descriptionBE,
     content: this.contentBE,
-    viewNameRU: this.viewNameRU
+    viewNameRU: this.viewNameRU,
   }
 
   private static enTranslate: Sphere = {
@@ -209,6 +210,6 @@ export class WEB_DEVELOPMENT_YOUNGER {
     viewName: this.viewNameEN,
     description: this.descriptionEN,
     content: this.contentEN,
-    viewNameRU: this.viewNameRU
+    viewNameRU: this.viewNameRU,
   }
 }

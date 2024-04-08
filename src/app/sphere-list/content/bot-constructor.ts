@@ -13,14 +13,12 @@ export class BOT_CONSTRUCTOR {
   private static viewNameEN: string =
     enDictionary.SPHERE['bot-constructor'].viewName
 
-
   private static descriptionRU: string =
     ruDictionary.SPHERE['bot-constructor'].description
   private static descriptionBE: string =
     beDictionary.SPHERE['bot-constructor'].description
   private static descriptionEN: string =
     enDictionary.SPHERE['bot-constructor'].description
-
 
   private static contentRU: string = `
         <ol>
@@ -277,7 +275,7 @@ export class BOT_CONSTRUCTOR {
     viewName: this.viewNameRU,
     description: this.descriptionRU,
     content: this.contentRU,
-    viewNameRU: this.viewNameRU
+    viewNameRU: this.viewNameRU,
   }
 
   private static beTranslate: Sphere = {
@@ -285,7 +283,7 @@ export class BOT_CONSTRUCTOR {
     viewName: this.viewNameBE,
     description: this.descriptionBE,
     content: this.contentBE,
-    viewNameRU: this.viewNameRU
+    viewNameRU: this.viewNameRU,
   }
 
   private static enTranslate: Sphere = {
@@ -293,6 +291,6 @@ export class BOT_CONSTRUCTOR {
     viewName: this.viewNameEN,
     description: this.descriptionEN,
     content: this.contentEN,
-    viewNameRU: this.viewNameRU
+    viewNameRU: this.viewNameRU,
   }
 }

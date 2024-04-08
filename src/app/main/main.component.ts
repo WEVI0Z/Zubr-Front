@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateClass } from '../translate.component';
+import { Component } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
+import { TranslateClass } from '../translate.component'
 
 @Component({
   selector: 'app-main',
@@ -8,11 +8,10 @@ import { TranslateClass } from '../translate.component';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
-  private translation: TranslateClass;
+  private translation: TranslateClass
 
   constructor(public translate: TranslateService) {
-
     this.translation = new TranslateClass(translate)
-    this.translation.translateData(this.translation.getLanguage());
+    this.translation.translateData(this.translation.getLanguage())
   }
 }

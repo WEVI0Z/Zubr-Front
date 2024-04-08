@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateClass } from '../../translate.component';
+import { Component, OnInit } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
+import { TranslateClass } from '../../translate.component'
 import ruDictionary from '../../../assets/i18n/ru.json'
 import beDictionary from '../../../assets/i18n/be.json'
 import enDictionary from '../../../assets/i18n/en.json'
@@ -18,25 +18,24 @@ const DAYS_MULTIPLIER: number = HOURS_MULTIPLIER * 24
   templateUrl: './timer.component.html',
   styleUrls: ['./timer.component.scss'],
 })
-export class TimerComponent implements OnInit{
-  protected daysLeft: number = 0;
-  protected hoursLeft: number = 0;
-  protected minutesLeft: number = 0;
-  protected secondsLeft: number = 0;
-  protected dayString: string = '';
-  protected hourString: string = '';
-  protected minuteString: string = '';
-  protected secondString: string = '';
-  protected milliseconds: number = 0;
-  protected ifTimerRelevant: boolean = new Date() < TARGET_DATE;
-  private currentLang: string;
-  private translation: TranslateClass;
+export class TimerComponent implements OnInit {
+  protected daysLeft: number = 0
+  protected hoursLeft: number = 0
+  protected minutesLeft: number = 0
+  protected secondsLeft: number = 0
+  protected dayString: string = ''
+  protected hourString: string = ''
+  protected minuteString: string = ''
+  protected secondString: string = ''
+  protected milliseconds: number = 0
+  protected ifTimerRelevant: boolean = new Date() < TARGET_DATE
+  private currentLang: string
+  private translation: TranslateClass
 
   constructor(public translate: TranslateService) {
- 
     this.translation = new TranslateClass(translate)
 
-    this.currentLang = this.translation.getLanguage();
+    this.currentLang = this.translation.getLanguage()
   }
 
   ngOnInit(): void {
