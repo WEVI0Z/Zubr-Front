@@ -34,7 +34,7 @@ ol.two-level-list {
   counter-reset: item;
 
   & > li::marker {
-    content: "1." counter(item) " ";
+    content: '1.' counter(item) ' ';
   }
 
   & > li {

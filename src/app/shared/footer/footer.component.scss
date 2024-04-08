@@ -1,4 +1,4 @@
-@import "../../../stylesheets/global";
+@import '../../../stylesheets/global';
 
 .footer {
   color: white;
@@ -7,8 +7,8 @@
 
   &__wrapper {
     width: 100%;
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
   }
 
   &__sections {
@@ -23,7 +23,6 @@
   &__section {
     display: flex;
     flex-direction: column;
-
 
     &--main {
       max-width: 996px;
@@ -50,14 +49,14 @@
     margin-top: 3px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 15px;
       height: 15px;
       margin-left: -20px;
       margin-top: 4px;
 
-      background-image: url("/assets/footer/star-icon.svg");
+      background-image: url('/assets/footer/star-icon.svg');
     }
 
     &__link {
@@ -65,7 +64,8 @@
       color: white;
     }
 
-    &__link:hover, &__link:focus {
+    &__link:hover,
+    &__link:focus {
       text-decoration: underline;
     }
   }
@@ -108,7 +108,8 @@
     text-decoration: none;
     font-weight: 300;
 
-    &--link:hover, &--link:focus {
+    &--link:hover,
+    &--link:focus {
       text-decoration: underline;
     }
   }
@@ -130,7 +131,8 @@
   }
 
   &__link {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 0.7;
     }
 
@@ -140,11 +142,14 @@
   }
 }
 
+.hint--info {
+  //background-color: #fff;
+}
+
 @media (max-width: 778px) {
   .footer__section {
     display: flex;
     flex-direction: column;
-
 
     &--main {
       max-width: 996px;

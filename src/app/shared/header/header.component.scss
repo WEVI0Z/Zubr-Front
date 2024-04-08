@@ -1,4 +1,4 @@
-@import "../../../stylesheets/global";
+@import '../../../stylesheets/global';
 
 .header {
   max-width: $max-width;
@@ -15,8 +15,8 @@
   &__wrapper {
     width: 100%;
 
-    background-color: #007AFF;
-    background-image: url("/assets/shared/blue-background.png");
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
   }
 
   &__upper-container {
@@ -161,7 +161,8 @@
     color: white;
   }
 
-  &__competitions, &__langs {
+  &__competitions,
+  &__langs {
     position: absolute;
     display: none;
     width: 270px;
@@ -177,8 +178,8 @@
     -moz-box-shadow: 0 7px 8px 1px rgba(34, 60, 80, 0.2);
     box-shadow: 0 7px 8px 1px rgba(34, 60, 80, 0.2);
 
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       display: block;
     }
   }
@@ -196,14 +197,16 @@
       background-color: #fff;
       display: block;
 
-      &:hover, &:focus {
-        background-color: #007AFF80;
+      &:hover,
+      &:focus {
+        background-color: #007aff80;
         color: white;
       }
     }
 
-    &:hover, &:focus {
-      background-color: #007AFF80;
+    &:hover,
+    &:focus {
+      background-color: #007aff80;
     }
   }
 }
@@ -494,7 +497,8 @@
       color: white;
     }
 
-    &__competitions, &__langs {
+    &__competitions,
+    &__langs {
       position: absolute;
       display: none;
       width: 270px;
@@ -510,8 +514,8 @@
       -moz-box-shadow: 0 7px 8px 1px rgba(34, 60, 80, 0.2);
       box-shadow: 0 7px 8px 1px rgba(34, 60, 80, 0.2);
 
-
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         display: none;
       }
     }
@@ -524,14 +528,14 @@
       background-color: #fff;
 
       .nav__link {
-
         padding: 4px;
         color: black;
         background-color: #fff;
         display: block;
 
-        &:hover, &:focus {
-          background-color: #007AFF80;
+        &:hover,
+        &:focus {
+          background-color: #007aff80;
         }
       }
     }
