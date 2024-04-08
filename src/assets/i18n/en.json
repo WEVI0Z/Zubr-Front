@@ -128,14 +128,16 @@
   "COOKIE-CONSENT": {
     "H1": "We use cookies",
     "MESSAGE": "Cookies are used to ensure the convenience of users of the site and improve the quality of its functioning.",
-    "ACCEPT":"Accept",
-    "REJECT":"Reject",
-    "ABOUT":"Details"
+    "ACCEPT": "Accept",
+    "REJECT": "Reject",
+    "ABOUT": "Details"
   },
   "SPHERE-LIST": {
     "NAME": "Сompetence",
     "ITEM": {
-      "TASKS": "Tasks"
+      "TASKS": "Tasks",
+      "DOWNLOAD": "Download document",
+      "ZIP": "Download ZIP"
     }
   },
   "SPHERE": {
@@ -200,6 +202,11 @@
       "content": ""
     }
   },
+
+  "SHARE-BLOCK": {
+    "TITLE": "Share page"
+  },
+
   "UNDEFINED": {
     "LINE": "Oops... This page does not exist....",
     "BACK": "Go back to the main page"

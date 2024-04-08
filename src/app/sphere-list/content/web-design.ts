@@ -438,6 +438,7 @@ export class WEB_DESIGN {
     viewName: this.viewNameRU,
     description: this.descriptionRU,
     content: this.contentRU,
+    viewNameRU: this.viewNameRU,
   }
 
   private static beTranslate: Sphere = {
@@ -445,6 +446,7 @@ export class WEB_DESIGN {
     viewName: this.viewNameBE,
     description: this.descriptionBE,
     content: this.contentBE,
+    viewNameRU: this.viewNameRU,
   }
 
   private static enTranslate: Sphere = {
@@ -452,5 +454,6 @@ export class WEB_DESIGN {
     viewName: this.viewNameEN,
     description: this.descriptionEN,
     content: this.contentEN,
+    viewNameRU: this.viewNameRU,
   }
 }
