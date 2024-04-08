@@ -2,18 +2,18 @@
   <div class="content">
     <div class="cookies-content">
       <img src="../../assets/cookies/cookie.png" class="cookie-image" />
-      <p class="cookie-title">{{'COOKIE-CONSENT.H1' | translate}}</p>
+      <p class="cookie-title">{{ 'COOKIE-CONSENT.H1' | translate }}</p>
     </div>
     <p clss="cookies-text">{{ 'COOKIE-CONSENT.MESSAGE' | translate }}</p>
     <button (click)="acceptCookies()" class="cookies-button">
       {{ 'COOKIE-CONSENT.ACCEPT' | translate }}
     </button>
     <button (click)="rejectCookies()" class="cookies-button">
-      {{ 'COOKIE-CONSENT.REJECT' | translate}}
+      {{ 'COOKIE-CONSENT.REJECT' | translate }}
     </button>
     <a
-      href="/about-cookie"
-      routerLink="/about-cookie"
+      href="/privacy-policy"
+      routerLink="/privacy-policy"
       (click)="aboutCookie()"
       class="about-cookies"
       >{{ 'COOKIE-CONSENT.ABOUT' | translate }}</a

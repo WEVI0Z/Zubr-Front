@@ -5,14 +5,15 @@ import { FooterComponent } from './footer/footer.component'
 import { RouterLink } from '@angular/router'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
 }
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent],
+  declarations: [HeaderComponent, FooterComponent, ScrollTopComponent],
   imports: [
     CommonModule,
     RouterLink,
@@ -26,6 +27,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'ru',
     }),
   ],
-  exports: [HeaderComponent, FooterComponent],
+    exports: [HeaderComponent, FooterComponent, ScrollTopComponent],
 })
 export class SharedModule {}

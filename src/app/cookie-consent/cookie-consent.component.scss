@@ -82,6 +82,31 @@
   z-index: 999;
 }
 
+@media screen and (max-width: 480px) {
+  .cookie-consent {
+    width: 70%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .cookie-title {
+    font-size: 14px;
+  }
+
+  .cookie-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+  }
+
+  .cookies-button,
+  .cookies-button:hover {
+    margin: 6px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .cookie-consent {
     width: 35%;

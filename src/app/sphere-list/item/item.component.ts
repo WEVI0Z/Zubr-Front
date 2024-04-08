@@ -8,6 +8,9 @@ import {
 import { SphereService } from '../service/sphere.service'
 import { Router } from '@angular/router'
 import { Sphere } from '../interface/sphere'
+import { TranslateClass } from '../../translate.component'
+
+import { TranslateService } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-item',
@@ -20,7 +23,8 @@ export class ItemComponent implements AfterViewInit {
 
   constructor(
     private sphereService: SphereService,
-    private router: Router
+    private router: Router,
+    public translate: TranslateService
   ) {}
 
   ngAfterViewInit(): void {
