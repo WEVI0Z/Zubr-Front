@@ -1,0 +1,36 @@
+@import '../../../stylesheets/global';
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: justify;
+}
+
+h3 {
+  font-family: Inter, sans-serif, monospace;
+  letter-spacing: -5px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+li {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #007aff;
+}
