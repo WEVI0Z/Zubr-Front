@@ -86,7 +86,7 @@
             </a>
           </li>
 
-          <li class="sidebar__menu-item sidebar__menu-item--langs">
+          <li class="sidebar__menu-item">
             <button class="sidebar__menu-link" (click)="toggleSubmenu(3)">
               <img src="assets/header/lang.png" class="sidebar__menu-image">
               {{ 'SHARED.HEADER.LANG' | translate }}
@@ -94,10 +94,10 @@
             </button>
             <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 3}">
               <li class="sidebar__sub-menu-item" (click)="reLoad('ru')">
-                <a href="#" class="sidebar__submenu-link" (click)="reLoad('ru')">RU</a>
+                <a href="#" class="sidebar__submenu-item" (click)="reLoad('ru')">RU</a>
               </li>
               <li class="sidebar__sub-menu-item" (click)="reLoad('be')">
-                <a href="#" class="sidebar__submenu-link" (click)="reLoad('be')">BE</a>
+                <a href="#" class="sidebar__submenu-item" (click)="reLoad('be')">BE</a>
               </li>
             </ul>
           </li>
