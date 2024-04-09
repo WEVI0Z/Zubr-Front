@@ -237,17 +237,20 @@
   }
 }
 @media (max-width: 778px) {
+
+
   .sidebar {
     position: absolute;
     top: 0;
-    right: 0; 
+    right: 0;
     width: 280px;
     height: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
-    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
     z-index: 1002;
+    overflow-y: auto;
   }
 
   .sidebar.active {
@@ -269,11 +272,20 @@
     background-color: transparent;
   }
 
+  .sidebar__menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+
+
   .sidebar__menu-item {
-    /*width: 100%;
-    margin-bottom: 15px;
-    //margin-top: 10px;
-    height: 50px;*/
     position: relative;
     display: flex;
     align-items: center;
@@ -337,9 +349,6 @@
     opacity: 1;
   }
 
-  .sidebar__sub-item {
-    width: 100%;
-  }
 
   .sidebar__submenu-item {
     display: block;
@@ -373,18 +382,27 @@
     transition: right 0.3s ease-in-out;
     width: 70px;
     height: 70px;
-    background-image: url("/assets/header/menu_pict.png");
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-button-image {
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
-    border: none;
+    opacity: 1;
+    transition: background-image 0.5s ease;
   }
 
-  #menuButton img {
-    width: 100%;
-    height: auto;
-    background-color: transparent;
+  .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
   }
 
   #menuButton.active {
@@ -395,12 +413,13 @@
   #menuContainer {
     position: fixed;
     top: 0;
-    right: -600px;
+    right: -300px;
     width: 300px;
     height: 100%;
     background-color: #f1f1f1;
     transition: right 0.3s ease-in-out;
     z-index: 999;
+    overflow: hidden;
   }
 
   .header {
@@ -408,6 +427,8 @@
       display: flex;
       flex-direction: column;
       margin: 0 10px;
+      //height: 95vh;
+      overflow-x: hidden;
     }
 
     &__particles {
@@ -457,6 +478,8 @@
       color: white;
       font-size: 16px;
       font-weight: 400;
+      overflow: hidden;
+      overflow-x: hidden;
     }
 
     &__container {

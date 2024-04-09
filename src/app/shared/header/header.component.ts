@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core'
 import { ParticlesConfig } from './particles-config'
-import { Router } from '@angular/router'
+import { Router, NavigationEnd } from '@angular/router'
 import { Sphere } from '../../sphere-list/interface/sphere'
 import { SphereService } from '../../sphere-list/service/sphere.service'
 import { TranslateService } from '@ngx-translate/core'
@@ -16,13 +16,19 @@ declare let particlesJS: any
 export class HeaderComponent implements OnInit {
   protected isPageMain: boolean = this.router.url === '/'
   protected sphereList: Sphere[] = this.sphereService.sphereList
-    public currentLANG: string
-    private translation: TranslateClass
+  public currentLANG: string
+  private translation: TranslateClass
   isMobileScreen: boolean = false;
   isMenuOpen: boolean = false;
   isSubmenuOpen: boolean = false;
   activeSubmenu: number | null = null;
-
+  menuButtonImage: string = '/assets/header/menu_pict.png';
+  subMenuArrow: string = '/assets/header/down.png';
+  submenuIcons: string[] = [
+    'assets/header/up1.png',
+    'assets/header/up2.png',
+    'assets/header/up3.png'
+  ];
 
   public ngOnInit(): void {
     if (this.isPageMain) {
@@ -48,7 +54,7 @@ export class HeaderComponent implements OnInit {
 
     if (!this.isMobileScreen) {
       this.isMenuOpen = false;
-      document.body.style.overflow = ''; // ��������� ��������� �������� ��� ������� ������� ����
+      document.body.style.overflow = '';
     }
   }
 
@@ -61,7 +67,15 @@ export class HeaderComponent implements OnInit {
     this.translation = new TranslateClass(translate)
     this.currentLANG = this.translation.getLanguage().toUpperCase()
     this.translation.translateData(this.currentLANG)
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.checkWindowSize();
+      }
+    });
   }
+
+
+    
 
   private invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function () {})
@@ -74,11 +88,13 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+    this.menuButtonImage = this.isMenuOpen ? '/assets/header/close-pict.png' : '/assets/header/menu_pict.png';
 
     if (this.isMenuOpen) {
-      document.body.style.overflow = 'hidden'; // ��������� ��������� ��������
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ''; // ��������� ��������� ��������
+      document.body.style.overflow = '';
     }
   }
 

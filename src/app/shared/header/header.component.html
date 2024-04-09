@@ -37,14 +37,15 @@
           <li class="sidebar__menu-item">
             <a href="#" routerLink="/about" class="sidebar__menu-link">
               <img src="assets/header/ask.png" class="sidebar__menu-image">
-              О чемпионате
+              {{'SHARED.HEADER.ABOUT' | translate}}
             </a>
           </li>
 
           <li class="sidebar__menu-item">
             <button class="sidebar__menu-link" (click)="toggleSubmenu(1)">
               <img src="assets/header/competitions.png" class="sidebar__menu-image">
-              Компетенции
+              {{'SHARED.HEADER.COMPETENCE.TITLE' | translate}}
+              <img [src]="submenuIcons[0]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 1">
             </button>
             <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 1}">
               <li class="sidebar__sub-menu-item" *ngFor="let sphere of sphereList">
@@ -57,6 +58,7 @@
             <button class="sidebar__menu-link" (click)="toggleSubmenu(2)">
               <img src="assets/header/res.png" class="sidebar__menu-image">
               {{ 'SHARED.HEADER.RESOURCE.TITLE' | translate }}
+              <img [src]="submenuIcons[1]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 2">
             </button>
             <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 2}">
               <li class="sidebar__sub-menu-item">
@@ -87,7 +89,8 @@
           <li class="sidebar__menu-item sidebar__menu-item--langs">
             <button class="sidebar__menu-link" (click)="toggleSubmenu(3)">
               <img src="assets/header/lang.png" class="sidebar__menu-image">
-              Языки
+              {{ 'SHARED.HEADER.LANG' | translate }}
+              <img [src]="submenuIcons[2]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 3">
             </button>
             <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 3}">
               <li class="sidebar__sub-menu-item" (click)="reLoad('ru')">
@@ -96,16 +99,25 @@
               <li class="sidebar__sub-menu-item" (click)="reLoad('be')">
                 <a href="#" class="sidebar__submenu-link" (click)="reLoad('be')">BE</a>
               </li>
-              <!--<li class="sidebar__sub-menu-item" (click)="reLoad('be')">
-                <a href="#" class="sidebar__submenu-link" (click)="reLoad('be')">BE</a>
-              </li>-->
             </ul>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <a href="https://email.robin-zubronok.by/webmail/"
+               target="_blank"
+               class="sidebar__menu-link">
+              <img src="assets/header/mail.png"
+                   class="sidebar__menu-image" />
+              {{ 'SHARED.HEADER.ENTER' | translate }}
+            </a>
           </li>
 
         </ul>
       </div>
       <!------>
-      <button id="menuButton" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen" (click)="toggleMenu()"></button>
+      <button id="menuButton" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen" (click)="toggleMenu()">
+        <div class="menu-button-image" [ngStyle]="{'background-image': 'url(' + menuButtonImage + ')'}"></div>
+      </button>
 
       <nav class="header__nav nav">
         <ul class="nav__list">
