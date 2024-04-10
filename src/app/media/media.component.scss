@@ -16,7 +16,6 @@ main {
 
   &__title {
     margin: 0;
-
     font-size: 96px;
     font-weight: 300;
     letter-spacing: -11px;
@@ -27,7 +26,6 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     list-style-type: none;
     padding: 0;
   }
@@ -35,14 +33,14 @@ main {
   &__item {
     margin-bottom: 50px;
     position: relative;
+    max-width: 403px;
 
     &::before {
       content: '';
       position: absolute;
-      height: 403px;
+      height: 303px;
       width: 403px;
       z-index: -1;
-
       background-color: #007aff;
       border-radius: 5px;
       transition: 0.2s ease-in-out;
@@ -61,7 +59,6 @@ main {
 
   &__description {
     margin: 8px 0 10px 10px;
-
     font-size: 16px;
     letter-spacing: -8%;
     font-weight: 500;
@@ -75,8 +72,7 @@ main {
 
   &__image {
     width: 403px;
-    height: 403px;
-
+    height: 303px;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -110,7 +106,6 @@ main {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-
       list-style-type: none;
       padding: 0 10px;
     }
@@ -125,7 +120,6 @@ main {
         height: 340px;
         width: 340px;
         z-index: -1;
-
         background-color: #007aff;
         border-radius: 5px;
         transition: 0.2s ease-in-out;
@@ -139,12 +133,13 @@ main {
       &:hover .media__description,
       &:active .media__description {
         color: white;
+        word-wrap: break-word;
       }
     }
 
     &__description {
       margin: 8px 0 10px 10px;
-
+      word-wrap: break-word;
       font-size: 16px;
       letter-spacing: -8%;
       font-weight: 500;
@@ -159,7 +154,6 @@ main {
     &__image {
       width: 340px;
       height: 340px;
-
       object-fit: cover;
       border-radius: 5px;
     }

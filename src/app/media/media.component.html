@@ -3,20 +3,21 @@
   <section class="media">
     <h2 class="media__title">{{ 'MEDIA.TITLE' | translate }}</h2>
     <ul class="media__list">
-      <li class="media__item" *ngFor="let media of mediaList">
+      <li class="media__item" *ngFor="let album of albumList">
         <a
-          [href]="'../../assets/media/' + media.path"
+          href="#"
+          routerLink="/media/{{ album.folderPath }}"
           data-fancybox="photo"
-          [attr.data-caption]="media.name ? media.name : 'Фотография'"
+          [attr.data-caption]="album.name ? album.name : 'Фотография'"
           class="media__link"
         >
           <img
             class="media__image"
-            [src]="'../../assets/media/' + media.path"
-            [alt]="media.name ? media.name : 'Фотография'"
+            [src]="'../../assets/media/albums/' + album.folderPath + '/1.jpg'"
+            [alt]="album.name ? album.name : 'Фотография'"
           />
           <p class="media__description">
-            {{ media.name ? media.name : 'Фотография' }}
+            {{ album.name ? album.name : 'Фотография' }}
           </p>
         </a>
       </li>

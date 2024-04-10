@@ -1,0 +1,17 @@
+<main>
+  <app-header></app-header>
+
+  <section class="media">
+    <h2 class="media__title">{{ albumName }}</h2>
+    <ul class="media__list">
+      <li class="media__item" *ngFor="let photo of photoList">
+        <img
+          class="media__image"
+          [src]="'../../assets/media/album' + photo.photoPath"
+        />
+      </li>
+    </ul>
+  </section>
+  <app-share-block></app-share-block>
+  <app-footer></app-footer>
+</main>
