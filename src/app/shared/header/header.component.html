@@ -197,12 +197,33 @@
                    class="nav__image" />
             </a>
           </li>
-          <li class="nav__item nav__user" [hidden]="isMobileScreen">
-            <a href="javascript:void(0)" class="nav__link">
-              <img src="assets/header/user.svg" alt="Вход" class="nav__image" />
-            </a>
+          <li class="nav__item nav__user nav__item--competitions" [hidden]="isMobileScreen">
+            <button href="javascript:void(0)" class="nav__button">
+              Войти
+              <ul class="nav__competitions">
+                <li class="nav__competition">
+                  <!-- TODO: Поменять на https -->
+                  <a href="http://robin-zubronok.by" target="_blank" class="nav__link">
+                    <img src="assets/header/user.svg" alt="">
+                    Личный кабинет
+                  </a>
+                </li>
+                <li class="nav__competition"> 
+                  <a href="https://nextcloud.robin-zubronok.by/" target="_blank" class="nav__link">
+                    <img src="assets/header/cloud.png" alt="">
+                    Облако
+                  </a>
+                </li>
+                <li class="nav__competition">
+                  <a href="https://mail.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
+                    <img src="assets/header/icon-mail.svg" alt="">
+                    Почта
+                  </a>
+                </li>
+              </ul>
+            </button>
           </li>
-          <li class="nav__item nav__user" [hidden]="isMobileScreen">
+          <!-- <li class="nav__item nav__user" [hidden]="isMobileScreen">
             <a href="https://email.robin-zubronok.by/webmail/"
                target="_blank"
                class="nav__link">
@@ -210,7 +231,7 @@
                    alt="Почта"
                    class="nav__image" />
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>
