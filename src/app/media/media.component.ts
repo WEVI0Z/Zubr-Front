@@ -11,6 +11,7 @@ import { Album } from './interface/album'
     '../../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css',
   ],
 })
+
 export class MediaComponent {
   protected albumList: Album[] = this.mediaService.albumList
 

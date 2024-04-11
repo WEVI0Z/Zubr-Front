@@ -5,12 +5,25 @@ import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 import { Album } from '../interface/album'
 import { Photo } from '../interface/photo'
-import { UndefinedComponent } from '../../undefined/undefined.component'
 
+//Для добавления нового альбома:
+//1. Создать папку альбома с соответствующим названием
+//2. В файлы переводов внести полное название ( "ALBUM..{"TITLE": " ... "}" )
+//3. В список albumNames внести название папки (оно же будет и URL)
+//4. В методе getAlbumList() класса AlbumList добавить элемент case
+//5. В классе PhotoList добавить свойство <album_name>:Photo[] и заполнить его именами файлов фото
+//6. В методе getPhotoList() класса PhotoList добавить элемент case
+
+const albumsNames: string[] = [
+  'zubr2023',
+  'minsk2024',
+  'mogilev2024',
+  'brest2024',
+]
 export class AlbumList {
+
   private currentLang: string
   private translation: TranslateClass
-  private list: Album[] | undefined
 
   constructor(public translate: TranslateService) {
     this.translation = new TranslateClass(translate)
@@ -18,94 +31,83 @@ export class AlbumList {
   }
 
   public getAlbumList(): Album[] {
-    this.list = [
+    let list: Album[]
+    list = [
+      //для нового альбома
+      //{
+      //  name: this.getFullName(albumsNames[4]),
+      //  folderPath: albumsNames[4],
+      //},
       {
-        name: this.getName(4),
-        folderPath: 'brest2024',
+        name: this.getFullName(albumsNames[3]),
+        folderPath: albumsNames[3],
       },
       {
-        name: this.getName(3),
-        folderPath: 'mogilev2024',
+        name: this.getFullName(albumsNames[2]),
+        folderPath: albumsNames[2],
       },
       {
-        name: this.getName(2),
-        folderPath: 'minsk2024',
+        name: this.getFullName(albumsNames[1]),
+        folderPath: albumsNames[1],
       },
       {
-        name: this.getName(1),
-        folderPath: 'zubr2023',
+        name: this.getFullName(albumsNames[0]),
+        folderPath: albumsNames[0],
       },
     ]
-    return this.list
+    return list
   }
 
-  public getName(ind: number): string {
-    let name: string = ''
+  public getFullName(path: string): string {
 
-    if (this.currentLang == 'ru') {
-      switch (ind) {
-        case 1: {
-          name = ruDictionary.MEDIA.ALBUM1.TITLE
-          break
-        }
-        case 2: {
-          name = ruDictionary.MEDIA.ALBUM2.TITLE
-          break
-        }
-        case 3: {
-          name = ruDictionary.MEDIA.ALBUM3.TITLE
-          break
-        }
-        case 4: {
-          name = ruDictionary.MEDIA.ALBUM4.TITLE
-          break
-        }
-      }
-    } else if (this.currentLang == 'be') {
-      switch (ind) {
-        case 1: {
-          name = beDictionary.MEDIA.ALBUM1.TITLE
-          break
-        }
-        case 2: {
-          name = beDictionary.MEDIA.ALBUM2.TITLE
-          break
-        }
-        case 3: {
-          name = beDictionary.MEDIA.ALBUM3.TITLE
-          break
-        }
-        case 4: {
-          name = beDictionary.MEDIA.ALBUM4.TITLE
-          break
-        }
-      }
-    } else {
-      switch (ind) {
-        case 1: {
-          name = enDictionary.MEDIA.ALBUM1.TITLE
-          break
-        }
-        case 2: {
-          name = enDictionary.MEDIA.ALBUM2.TITLE
-          break
-        }
-        case 3: {
-          name = enDictionary.MEDIA.ALBUM3.TITLE
-          break
-        }
-        case 4: {
-          name = enDictionary.MEDIA.ALBUM4.TITLE
-          break
-        }
-      }
+    let dict
+    if (this.currentLang == 'be') {
+      dict = beDictionary
     }
+    else if (this.currentLang == 'en') {
+      dict = enDictionary
+    }
+    else {
+      dict = ruDictionary
+    }
+
+    let name = ''
+
+    switch (path) {
+      case albumsNames[0]: {
+        name = dict.MEDIA.ALBUM1.TITLE
+        break
+      }
+      case albumsNames[1]: {
+        name = dict.MEDIA.ALBUM2.TITLE
+        break
+      }
+      case albumsNames[2]: {
+        name = dict.MEDIA.ALBUM3.TITLE
+        break
+      }
+      case albumsNames[3]: {
+        name = dict.MEDIA.ALBUM4.TITLE
+        break
+      }
+      //для нового альбома
+      //case albumsNames[4]: {
+      //  name = dict.MEDIA.ALBUM5.TITLE
+      //  break
+      //}
+    }
+    
+   
     return name
+  }
+
+  public getAlbumPath(url: string): string {
+    let path = url.split('/').at(-1)
+    return path != undefined ? path : albumsNames[0]
   }
 }
 
 export class PhotoList {
-
   private zubr2023: Photo[] = [
     { photoPath: '1.jpg' },
     { photoPath: '2.jpg' },
@@ -160,29 +162,36 @@ export class PhotoList {
     { photoPath: '7.jpg' },
   ]
 
-  public getPhotoList(folderPath:string): Photo[] {
-    let list: Photo[]=[]
-    switch (folderPath){
-      case 'zubr2023': {
+  //private <album_name>: Photo[] = [
+  //  { photoPath: '1.jpg' },
+  //  ...
+  //]
+
+  public getPhotoList(folderPath: string): Photo[] {
+    let list: Photo[] = []
+    switch (folderPath) {
+      case albumsNames[0]: {
         list = this.zubr2023
         break
       }
-      case 'minsk2024': {
+      case albumsNames[1]: {
         list = this.minsk2024
         break
       }
-      case 'mogilev2024': {
+      case albumsNames[2]: {
         list = this.mogilev2024
         break
       }
-      case 'brest2024': {
+      case albumsNames[3]: {
         list = this.brest2024
         break
       }
-
+      //для нового альбома
+      //case albumsNames[4]: {
+      //  list = this.<album_name>
+      //  break
+      //}
     }
     return list
   }
 }
-
-

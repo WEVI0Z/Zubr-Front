@@ -5,10 +5,14 @@
     <h2 class="media__title">{{ albumName }}</h2>
     <ul class="media__list">
       <li class="media__item" *ngFor="let photo of photoList">
-        <img
-          class="media__image"
-          [src]="'../../assets/media/albums/' + folderPath+'/'+photo.photoPath"
-        />
+        <a [href]="'../../assets/media/albums/' + folderPath+'/'+photo.photoPath"
+           data-fancybox="photo"
+           
+           class="media__link">
+          <img class="media__image"
+               [src]="'../../assets/media/albums/' + folderPath+'/'+photo.photoPath" />
+        </a>
+       
       </li>
     </ul>
   </section>
