@@ -15,12 +15,13 @@
         "RES2": " Moodle Remote Platform  ",
         "RES3": " ChatGPT "
       },
-      "MEDIA": " Media ",
+      "MEDIA": "Media",
+      "LOGIN_BTN": "Sign in",
       "LOGIN": {
         "TITLE": "Login",
-        "ACCOUNT": " Account ",
-        "EMAIL": " Email ",
-        "CLOUD": " Cloud "
+        "ACCOUNT": "Account",
+        "EMAIL": "Email",
+        "CLOUD": "Cloud"
       },
       "MAINTITLE": " Open Republican IT championship ",
       "ROBIN": {
@@ -114,7 +115,8 @@
     "TASK_PARAGR3": "To contribute to the development and implementation of children's innovative projects with the help of high-tech equipment and software that create conditions for the formation of modern and future professional competencies, engineering thinking skills.",
     "TASK_PARAGR4": "To create conditions for the organization of experimental work on the development of new technologies, new types of professional activities, forms of vocational training.",
     "POSITION": "Robin's Position 2024 (ru)",
-    "COMPOSITION": "The composition of the Republican Organizing Committee (ru)"
+    "COMPOSITION": "The composition of the Republican Organizing Committee (ru)",
+    "REGULATIONS": "Information about the competition"
   },
   "ABOUT-COOKIE": {
     "TITLE": "Privacy Policy",
