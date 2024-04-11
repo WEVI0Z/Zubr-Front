@@ -8,24 +8,20 @@
       <ul class="header__orgs">
         <li class="header__org org">
           <a href="https://zubronok.by/" target="_blank" class="org__link">
-            <img
-              width="47"
-              height="47"
-              src="../../../assets/header/zubr-logo.svg"
-              alt="Лого лагеря 'Зубренок'"
-              class="org__image"
-            />
+            <img width="47"
+                 height="47"
+                 src="../../../assets/header/zubr-logo.svg"
+                 alt="Лого лагеря 'Зубренок'"
+                 class="org__image" />
           </a>
         </li>
         <li class="header__org org">
           <a href="#" routerLink="/" class="org__link">
-            <img
-              width="47"
-              height="50"
-              src="../../../assets/header/robin-logo.svg"
-              alt="Лого чемпионата Робин"
-              class="org__image"
-            />
+            <img width="47"
+                 height="50"
+                 src="../../../assets/header/robin-logo.svg"
+                 alt="Лого чемпионата Робин"
+                 class="org__image" />
           </a>
         </li>
       </ul>
@@ -34,17 +30,110 @@
           {{ 'SHARED.HEADER.ZUBRTITLE' | translate }}
         </h1>
       </div>
+      <!------>
+      <div class="sidebar" [class.active]="isMenuOpen" *ngIf="isMobileScreen">
+        <ul class="sidebar__menu">
+
+          <li class="sidebar__menu-item">
+            <a href="#" routerLink="/about" class="sidebar__menu-link">
+              <img src="assets/header/ask.png" class="sidebar__menu-image">
+              {{'SHARED.HEADER.ABOUT' | translate}}
+            </a>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <button class="sidebar__menu-link" (click)="toggleSubmenu(1)">
+              <img src="assets/header/competitions.png" class="sidebar__menu-image">
+              {{'SHARED.HEADER.COMPETENCE.TITLE' | translate}}
+              <img [src]="submenuIcons[0]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 1">
+            </button>
+            <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 1}">
+              <li class="sidebar__sub-menu-item" *ngFor="let sphere of sphereList">
+                <a [href]="'/sphere-list/' + sphere.name" class="sidebar__submenu-item">{{sphere.viewName}}</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <button class="sidebar__menu-link" (click)="toggleSubmenu(2)">
+              <img src="assets/header/res.png" class="sidebar__menu-image">
+              {{ 'SHARED.HEADER.RESOURCE.TITLE' | translate }}
+              <img [src]="submenuIcons[1]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 2">
+            </button>
+            <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 2}">
+              <li class="sidebar__sub-menu-item">
+                <a href="https://files.robin-zubronok.by" target="_blank" class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.RESOURCE.RES1' | translate }}
+                </a>
+              </li>
+              <li class="sidebar__sub-menu-item">
+                <a href="https://moodle.robin-zubronok.by" target="_blank" class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.RESOURCE.RES2' | translate }}
+                </a>
+              </li>
+              <li class="sidebar__sub-menu-item">
+                <a href="https://gpt4.robin-zubronok.by/chat" target="_blank" class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.RESOURCE.RES3' | translate }}
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <a href="#" routerLink="/media" class="sidebar__menu-link">
+              <img src="assets/header/media.png" class="sidebar__menu-image">
+              {{ 'SHARED.HEADER.MEDIA' | translate }}
+            </a>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <button class="sidebar__menu-link" (click)="toggleSubmenu(3)">
+              <img src="assets/header/lang.png" class="sidebar__menu-image">
+              {{ 'SHARED.HEADER.LANG' | translate }}
+              <img [src]="submenuIcons[2]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 3">
+            </button>
+            <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 3}">
+              <li class="sidebar__sub-menu-item" (click)="reLoad('ru')">
+                <a href="#" class="sidebar__submenu-item" (click)="reLoad('ru')">RU</a>
+              </li>
+              <li class="sidebar__sub-menu-item" (click)="reLoad('be')">
+                <a href="#" class="sidebar__submenu-item" (click)="reLoad('be')">BE</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <a href="https://email.robin-zubronok.by/webmail/"
+               target="_blank"
+               class="sidebar__menu-link">
+              <img src="assets/header/mail.png"
+                   class="sidebar__menu-image" />
+              {{ 'SHARED.HEADER.ENTER' | translate }}
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <!------>
+      <button id="menuButton" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen" (click)="toggleMenu()">
+        <div class="menu-button-image" [ngStyle]="{'background-image': 'url(' + menuButtonImage + ')'}"></div>
+      </button>
+
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" routerLink="/about" class="nav__link">{{
+          <li class="nav__item" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/about" class="nav__link">
+              {{
               'SHARED.HEADER.ABOUT' | translate
-            }}</a>
+              }}
+            </a>
           </li>
-          <li class="nav__item nav__item--competitions">
-            <a href="#" routerLink="/sphere-list" class="nav__link">{{
+          <li class="nav__item nav__item--competitions" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/sphere-list" class="nav__link">
+              {{
               'SHARED.HEADER.COMPETENCE.TITLE' | translate
-            }}</a>
+              }}
+            </a>
             <ul class="nav__competitions">
               <li class="nav__competition" *ngFor="let sphere of sphereList">
                 <a [href]="'/sphere-list/' + sphere.name" class="nav__link">
@@ -53,46 +142,44 @@
               </li>
             </ul>
           </li>
-          <li class="nav__item nav__item--competitions">
-            <a class="nav__link">{{
+          <li class="nav__item nav__item--competitions" [hidden]="isMobileScreen">
+            <a class="nav__link">
+              {{
               'SHARED.HEADER.RESOURCE.TITLE' | translate
-            }}</a>
+              }}
+            </a>
             <ul class="nav__competitions">
               <li class="nav__competition">
-                <a
-                  href="https://files.robin-zubronok.by"
-                  target="_blank"
-                  class="nav__link"
-                >
+                <a href="https://files.robin-zubronok.by"
+                   target="_blank"
+                   class="nav__link">
                   {{ 'SHARED.HEADER.RESOURCE.RES1' | translate }}
                 </a>
               </li>
               <li class="nav__competition">
-                <a
-                  href="https://moodle.robin-zubronok.by"
-                  target="_blank"
-                  class="nav__link"
-                >
+                <a href="https://moodle.robin-zubronok.by"
+                   target="_blank"
+                   class="nav__link">
                   {{ 'SHARED.HEADER.RESOURCE.RES2' | translate }}
                 </a>
               </li>
               <li class="nav__competition">
-                <a
-                  href="https://gpt4.robin-zubronok.by/chat"
-                  target="_blank"
-                  class="nav__link"
-                >
+                <a href="https://gpt4.robin-zubronok.by/chat"
+                   target="_blank"
+                   class="nav__link">
                   {{ 'SHARED.HEADER.RESOURCE.RES3' | translate }}
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav__item">
-            <a href="#" routerLink="/media" class="nav__link">{{
+          <li class="nav__item" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/media" class="nav__link">
+              {{
               'SHARED.HEADER.MEDIA' | translate
-            }}</a>
+              }}
+            </a>
           </li>
-          <li class="nav__item nav__item--langs">
+          <li class="nav__item nav__item--langs" [hidden]="isMobileScreen">
             <a class="nav__link nav__cur-lang">{{ currentLANG }}</a>
             <ul class="nav__langs">
               <li class="nav__competition" (click)="reLoad('ru')">
@@ -105,29 +192,23 @@
           </li>
           <li class="nav__item" hidden>
             <a href="#" class="nav__link">
-              <img
-                src="assets/header/eye.svg"
-                alt="Версия для слабовидящих"
-                class="nav__image"
-              />
+              <img src="assets/header/eye.svg"
+                   alt="Версия для слабовидящих"
+                   class="nav__image" />
             </a>
           </li>
-          <li class="nav__item nav__user">
+          <li class="nav__item nav__user" [hidden]="isMobileScreen">
             <a href="javascript:void(0)" class="nav__link">
               <img src="assets/header/user.svg" alt="Вход" class="nav__image" />
             </a>
           </li>
-          <li class="nav__item nav__user">
-            <a
-              href="https://email.robin-zubronok.by/webmail/"
-              target="_blank"
-              class="nav__link"
-            >
-              <img
-                src="assets/header/icon-mail.svg"
-                alt="Почта"
-                class="nav__image"
-              />
+          <li class="nav__item nav__user" [hidden]="isMobileScreen">
+            <a href="https://email.robin-zubronok.by/webmail/"
+               target="_blank"
+               class="nav__link">
+              <img src="assets/header/icon-mail.svg"
+                   alt="Почта"
+                   class="nav__image" />
             </a>
           </li>
         </ul>
