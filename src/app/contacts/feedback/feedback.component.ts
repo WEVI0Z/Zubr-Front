@@ -45,11 +45,11 @@ export class FeedbackComponent implements OnInit {
   submitForm() {
     this.submitted = true;
     if (this.feedbackForm.valid) {
-      alert('Сообщение отправлено!');
+      alert('!');
       this.feedbackForm.reset();
       this.submitted = false;
     } else {
-      alert('Произошла ошибка!');
+      alert('?');
     }
   }
 }
