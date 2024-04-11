@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
   private translation: TranslateClass
   isMobileScreen: boolean = false;
   isMenuOpen: boolean = false;
+  ismenuHidden: boolean = true;
   isSubmenuOpen: boolean = false;
   activeSubmenu: number | null = null;
   menuButtonImage: string = '/assets/header/menu_pict.png';
@@ -87,15 +88,12 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-    this.menuButtonImage = this.isMenuOpen ? '/assets/header/close-pict.png' : '/assets/header/menu_pict.png';
-
-    if (this.isMenuOpen) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    this.ismenuHidden = !this.ismenuHidden;
+    setTimeout(() => {
+      this.isMenuOpen = !this.isMenuOpen;
+      this.menuButtonImage = this.isMenuOpen ? '/assets/header/close-pict.png' : '/assets/header/menu_pict.png';
+    }, 1); 
+    
   }
 
   toggleSubmenu(submenuId: number) {

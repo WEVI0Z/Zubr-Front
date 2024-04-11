@@ -277,7 +277,7 @@
 
 
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 280px;
@@ -370,6 +370,7 @@
     display: none;
     position: absolute;
     width: 100%;
+    max-width: 100%;
     top: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -389,7 +390,7 @@
 
   .sidebar__submenu-item {
     display: block;
-    width: 100%;
+    width: 93%; 
     text-align: left;
     padding: 10px;
     background-color: #f0f0f0;
