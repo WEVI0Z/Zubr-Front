@@ -31,7 +31,7 @@
         </h1>
       </div>
       <!------>
-      <div class="sidebar" [class.active]="isMenuOpen" *ngIf="isMobileScreen">
+      <div class="sidebar" [class.active]="isMenuOpen" [hidden]="ismenuHidden">
         <ul class="sidebar__menu">
 
           <li class="sidebar__menu-item">
@@ -103,14 +103,36 @@
           </li>
 
           <li class="sidebar__menu-item">
-            <a href="https://email.robin-zubronok.by/webmail/"
-               target="_blank"
-               class="sidebar__menu-link">
-              <img src="assets/header/mail.png"
-                   class="sidebar__menu-image" />
+            <button class="sidebar__menu-link" (click)="toggleSubmenu(4)">
+              <img src="assets/header/enter.png" class="sidebar__menu-image">
               {{ 'SHARED.HEADER.ENTER' | translate }}
-            </a>
+              <img [src]="submenuIcons[2]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 4">
+            </button>
+            <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 4}">
+              <li class="sidebar__sub-menu-item">
+                <a href="http://robin-zubronok.by"
+                   target="_blank"
+                   class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.LOGIN.ACCOUNT' | translate }}
+                </a>
+              </li>
+              <li class="sidebar__sub-menu-item">
+                <a href="https://nextcloud.robin-zubronok.by/"
+                   target="_blank"
+                   class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.LOGIN.EMAIL' | translate }}
+                </a>
+              </li>
+              <li class="sidebar__sub-menu-item">
+                <a href="https://mail.robin-zubronok.by/webmail/"
+                   target="_blank"
+                   class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.LOGIN.CLOUD' | translate }}
+                </a>
+              </li>
+            </ul>
           </li>
+
 
         </ul>
       </div>
@@ -197,12 +219,33 @@
                    class="nav__image" />
             </a>
           </li>
-          <li class="nav__item nav__user" [hidden]="isMobileScreen">
-            <a href="javascript:void(0)" class="nav__link">
-              <img src="assets/header/user.svg" alt="Вход" class="nav__image" />
-            </a>
+          <li class="nav__item nav__user nav__item--competitions" [hidden]="isMobileScreen">
+            <button href="javascript:void(0)" class="nav__button">
+              {{ 'SHARED.HEADER.LOGIN_BTN' | translate }}
+              <ul class="nav__competitions">
+                <li class="nav__competition">
+                  <!-- TODO: Поменять на https -->
+                  <a href="http://robin-zubronok.by" target="_blank" class="nav__link">
+                    <img src="assets/header/user.svg" alt="">
+                    {{ 'SHARED.HEADER.LOGIN.ACCOUNT' | translate }}
+                  </a>
+                </li>
+                <li class="nav__competition">
+                  <a href="https://nextcloud.robin-zubronok.by/" target="_blank" class="nav__link">
+                    <img src="assets/header/cloud.png" alt="">
+                    {{ 'SHARED.HEADER.LOGIN.CLOUD' | translate }}
+                  </a>
+                </li>
+                <li class="nav__competition">
+                  <a href="https://mail.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
+                    <img src="assets/header/icon-mail.svg" alt="">
+                    {{ 'SHARED.HEADER.LOGIN.EMAIL' | translate }}
+                  </a>
+                </li>
+              </ul>
+            </button>
           </li>
-          <li class="nav__item nav__user" [hidden]="isMobileScreen">
+          <!-- <li class="nav__item nav__user" [hidden]="isMobileScreen">
             <a href="https://email.robin-zubronok.by/webmail/"
                target="_blank"
                class="nav__link">
@@ -210,7 +253,7 @@
                    alt="Почта"
                    class="nav__image" />
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>

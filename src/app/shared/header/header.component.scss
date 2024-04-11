@@ -129,6 +129,43 @@
     padding: 0;
   }
 
+  &__button {
+    padding : 4px 40px 4px 15px;
+    background-image: url('/assets/header/user.svg');
+    background-position: center right 10px;
+    color :#fff;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border :1px solid #fff;
+    background-color: transparent;
+ 
+    .nav__competitions {
+      color: #000;
+
+      top: 100%;
+      right: 15px;
+      
+      text-align: left;
+
+      img {
+        width: 24px;
+        filter: invert(1);
+        margin-right: 10px;
+      }
+
+      .nav__link {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &:hover .nav__competitions {
+      display: block;
+      opacity: 1;
+    }
+  }
+
   &__item {
     position: relative;
     padding: 0 5px;
@@ -240,7 +277,7 @@
 
 
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 280px;
@@ -333,6 +370,7 @@
     display: none;
     position: absolute;
     width: 100%;
+    max-width: 100%;
     top: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -352,7 +390,7 @@
 
   .sidebar__submenu-item {
     display: block;
-    width: 100%;
+    width: 93%; 
     text-align: left;
     padding: 10px;
     background-color: #f0f0f0;
