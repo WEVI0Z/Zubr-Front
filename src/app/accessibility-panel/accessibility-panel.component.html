@@ -1,0 +1,19 @@
+<div class="modal">
+  <div class="modal-header">
+    <h4>Панель доступности</h4>
+    <button class="close-button" (click)="closeModal.emit()">X</button>
+    <button class="reset-button" (click)="resetPreferences()">Сбросить</button>
+  </div>
+  <div class="modal-body">
+    <button (click)="increaseFontSize()">Увеличить размер шрифта</button>
+    <button (click)="decreaseFontSize()">Уменьшить размер шрифта</button>
+    <button (click)="increaseLineHeight()">Увеличить интервал шрифта</button>
+    <button (click)="decreaseLineHeight()">Уменьшить интервал шрифта</button>
+    <button (click)="invertColors()">Инвертировать цвета</button>
+    <button (click)="applyGrayscale()">Серые оттенки</button>
+    <button (click)="underlineLinks()">Подчеркнуть ссылки</button>
+    <button (click)="increaseCursorSize()">Увеличить курсор</button>
+    <button (click)="enableReadingMode()">Линейка для чтения</button>
+    <button (click)="convertTextToSpeech()">Преобразовать текст в речь</button>
+  </div>
+</div>
