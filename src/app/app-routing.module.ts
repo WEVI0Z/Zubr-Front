@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./about/about.module').then((m) => m.AboutModule),
   },
+   {
+    path: 'contacts',
+    loadChildren: () =>
+      import('./contacts/contacts.module').then((m) => m.ContactsModule),
+  },
   {
     path: 'sphere-list',
     loadChildren: () =>
