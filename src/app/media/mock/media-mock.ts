@@ -5,7 +5,7 @@ import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 import { Album } from '../interface/album'
 import { Photo } from '../interface/photo'
-//import * as fs from 'fs';
+import { UndefinedComponent } from '../../undefined/undefined.component'
 
 export class AlbumList {
   private currentLang: string
@@ -20,22 +20,18 @@ export class AlbumList {
   public getAlbumList(): Album[] {
     this.list = [
       {
-        //photoPath: 'brest2024/1.jpg',
         name: this.getName(4),
         folderPath: 'brest2024',
       },
       {
-        //photoPath: 'mogilev2024/1.jpg',
         name: this.getName(3),
         folderPath: 'mogilev2024',
       },
       {
-        //photoPath: 'mock-3.jpg',
         name: this.getName(2),
         folderPath: 'minsk2024',
       },
       {
-        //photoPath: 'mock-3.jpg',
         name: this.getName(1),
         folderPath: 'zubr2023',
       },
@@ -109,106 +105,84 @@ export class AlbumList {
 }
 
 export class PhotoList {
-  private folderPath: string = ''
 
-  constructor(path: string) {
-    this.folderPath = path
-  }
+  private zubr2023: Photo[] = [
+    { photoPath: '1.jpg' },
+    { photoPath: '2.jpg' },
+    { photoPath: '3.jpg' },
+    { photoPath: '4.jpg' },
+    { photoPath: '5.jpg' },
+    { photoPath: '6.jpg' },
+    { photoPath: '7.jpg' },
+    { photoPath: '8.jpg' },
+    { photoPath: '9.jpg' },
+    { photoPath: '10.jpg' },
+    { photoPath: '11.jpg' },
+    { photoPath: '12.jpg' },
+  ]
+  private brest2024: Photo[] = [
+    { photoPath: '1.jpg' },
+    { photoPath: '2.jpg' },
+    { photoPath: '3.jpg' },
+    { photoPath: '4.jpg' },
+    { photoPath: '5.jpg' },
+    { photoPath: '6.jpg' },
+    { photoPath: '7.jpg' },
+    { photoPath: '8.jpg' },
+    { photoPath: '9.jpg' },
+  ]
+  private minsk2024: Photo[] = [
+    { photoPath: '1.jpg' },
+    { photoPath: '2.jpg' },
+    { photoPath: '3.jpg' },
+    { photoPath: '4.jpg' },
+    { photoPath: '5.jpg' },
+    { photoPath: '6.jpg' },
+    { photoPath: '7.jpg' },
+    { photoPath: '8.jpg' },
+    { photoPath: '9.jpg' },
+    { photoPath: '10.jpg' },
+    { photoPath: '11.jpg' },
+    { photoPath: '12.jpg' },
+    { photoPath: '13.jpg' },
+    { photoPath: '14.jpg' },
+    { photoPath: '15.jpg' },
+    { photoPath: '16.jpg' },
+    { photoPath: '17.jpg' },
+  ]
+  private mogilev2024: Photo[] = [
+    { photoPath: '1.jpg' },
+    { photoPath: '2.jpg' },
+    { photoPath: '3.jpg' },
+    { photoPath: '4.jpg' },
+    { photoPath: '5.jpg' },
+    { photoPath: '6.jpg' },
+    { photoPath: '7.jpg' },
+  ]
 
-  //private getFiles(dir: string, files: string[] = []): string[] {
-  //  const allFiles = fs.readdirSync(dir)
-  //  for (let i = 0; i < allFiles.length; i++) {
-  //    const name = `${dir}/${allFiles[i]}`
-  //    if (fs.statSync(name).isDirectory()) {
-  //      this.getFiles(name, files)
-  //    } else {
-  //      files.push(name)
-  //    }
-  //  }
-  //  return files
-  //}
+  public getPhotoList(folderPath:string): Photo[] {
+    let list: Photo[]=[]
+    switch (folderPath){
+      case 'zubr2023': {
+        list = this.zubr2023
+        break
+      }
+      case 'minsk2024': {
+        list = this.minsk2024
+        break
+      }
+      case 'mogilev2024': {
+        list = this.mogilev2024
+        break
+      }
+      case 'brest2024': {
+        list = this.brest2024
+        break
+      }
 
-  //private files: string[] = this.getFiles(this.folderPath)
-
-  public getPhotoList(): Photo[] {
-    let path = this.folderPath
-    let list: Photo[] = []
-    //let item: Photo = { folderPath: '', photoPath: '' }
-    //for (let file in this.files) {
-    //  item.folderPath = path
-    //  item.photoPath = file
-    //  list.push(item)
-    //}
+    }
     return list
   }
 }
 
-//export const PHOTO_LIST: Photo[] = [
-//  {
-//    photoPath: '1.jpg',
-//    folderPath:
-//  },
-//  {
-//    photoPath: '2.jpg',
-//  },
-//  {
-//    photoPath: '3.jpg',
-//  },
-//  {
-//    photoPath: '4.jpg',
-//  },
-//  {
-//    photoPath: '5.jpg',
-//  },
-//]
 
-//export const MEDIA_LIST: Media[] = [
-//  {
-//    path: 'mock-1.jpg',
-//    name: 'Компетенция «Графический дизайн»',
-//  },
-//  {
-//    path: 'mock-2.jpg',
-//    name: 'Компетенция «Web-разработка»',
-//  },
-//  {
-//    path: 'mock-3.jpg',
-//    name: 'Кубки для награждения победителей',
-//  },
-//  {
-//    path: 'mock-4.jpg',
-//    name: 'Главный судья контролирует участников',
-//  },
-//  {
-//    path: 'mock-5.jpg',
-//    name: 'Компетенция «Робосумо»',
-//  },
-//  {
-//    path: 'mock-6.jpg',
-//    name: 'Компетенция «Следование по линии»',
-//  },
-//  {
-//    path: 'mock-7.jpg',
-//    name: 'Компетенция «Робофутбол»',
-//  },
-//  {
-//    path: 'mock-8.jpg',
-//    name: 'Компетенция «Робофутбол»',
-//  },
-//  {
-//    path: 'mock-9.jpg',
-//    name: 'Компетенция «Робосумо»',
-//  },
-//  {
-//    path: 'mock-10.jpg',
-//    name: 'Компетенция «БПЛА»',
-//  },
-//  {
-//    path: 'mock-11.jpg',
-//    name: 'Компетенция «Прототипирование»',
-//  },
-//  {
-//    path: 'mock-12.jpg',
-//    name: 'Победители IT-чемпионата «РобИн-2023»',
-//  },
-//]

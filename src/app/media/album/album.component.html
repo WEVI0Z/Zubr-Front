@@ -7,7 +7,7 @@
       <li class="media__item" *ngFor="let photo of photoList">
         <img
           class="media__image"
-          [src]="'../../assets/media/album' + photo.photoPath"
+          [src]="'../../assets/media/albums/' + folderPath+'/'+photo.photoPath"
         />
       </li>
     </ul>

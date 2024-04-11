@@ -27,6 +27,7 @@
     "@types/fancybox": "^3.5.7",
     "fs": "^0.0.1-security",
     "fstb": "^1.0.0",
+    "get-all-files": "^4.1.0",
     "hint.css": "^3.0.0",
     "jsdoc": "^4.0.2",
     "particles.js": "^2.0.0",

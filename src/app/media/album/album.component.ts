@@ -1,10 +1,9 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core'
+import { Component, ElementRef, ViewChild } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
 import { TranslateClass } from '../../translate.component'
 import { MediaService } from '../service/media.service'
 import { Router } from '@angular/router'
 import { Photo } from '../interface/photo'
-import { Album } from '../interface/album'
 import { AlbumList } from '../mock/media-mock'
 
 @Component({
@@ -15,8 +14,10 @@ import { AlbumList } from '../mock/media-mock'
 export class AlbumComponent {
   @ViewChild('wrapper', { read: ElementRef }) wrapper!: ElementRef
 
+  private mediaService: MediaService
+
   private albumList: AlbumList
-  public photoList: Photo[] = this.mediaService.photoList
+  public photoList: Photo[]
 
   private translation: TranslateClass
 
@@ -25,14 +26,18 @@ export class AlbumComponent {
 
   constructor(
     public translate: TranslateService,
-    private mediaService: MediaService,
     private router: Router
   ) {
     this.translation = new TranslateClass(translate)
     this.translation.translateData(this.translation.getLanguage())
-    this.albumList = new AlbumList(translate)
     this.folderPath = this.getAlbumPath(router.url)
+    this.mediaService = new MediaService(translate)
+    
+    this.albumList = new AlbumList(translate)
     this.albumName = this.albumList.getName(this.getAlbumIndex(this.folderPath))
+
+    this.photoList = this.mediaService.getPhotoList(this.folderPath)
+
   }
 
   private getAlbumPath(url: string): string {
