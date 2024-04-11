@@ -5,7 +5,7 @@ import ruDictionary from '../../../assets/i18n/ru.json'
 import beDictionary from '../../../assets/i18n/be.json'
 import enDictionary from '../../../assets/i18n/en.json'
 
-const TARGET_DATE: Date = new Date(2024, 3, 9, 12, 0, 0)
+const TARGET_DATE: Date = new Date(2024, 3, 8, 23, 59, 59)
 
 const SECONDS_MULTIPLIER: number = 1000
 const MINUTES_MULTIPLIER: number = SECONDS_MULTIPLIER * 60
@@ -42,12 +42,7 @@ export class TimerComponent implements OnInit {
     this.setTime(this.calculateDifference(new Date(), TARGET_DATE))
 
     setInterval(() => {
-      if(this.milliseconds >= 1000) {
-        this.milliseconds -= 1000
-      }else{
-        this.milliseconds = 0
-      }
-
+      this.milliseconds -= 1000
       this.setTime(this.milliseconds)
     }, 1000)
   }
