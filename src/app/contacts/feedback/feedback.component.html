@@ -1,0 +1,57 @@
+
+<div class="contacts__feedback">
+  <div class="feedback__left">
+    <p class="feedback_text">{{ 'CONTACTS.FEEDBACK_TEXT' | translate }}</p>
+    <img src="../../../assets/header/robin-logo.svg"
+         alt="Лого чемпионата Робин"
+         class="feedback_image" />
+  </div>
+  <div class="feedback_right">
+   
+    <section>
+      <form [formGroup]="feedbackForm" (ngSubmit)="submitForm()">
+        <h3>{{ 'CONTACTS.FEEDBACK_TITLE' | translate }}</h3>
+        <div>
+          <label class="feedback_label" for="firstName">{{ 'CONTACTS.FEEDBACK_FIRSTNAME' | translate }}:</label>
+          <input type="text" id="firstName" name="firstName" formControlName="firstName">
+
+          <div class="text-danger" *ngIf="(registerFormControl['firstName'].touched || submitted) &&registerFormControl['firstName'].errors">
+            <span *ngIf="registerFormControl['firstName'].errors['required']">{{ 'CONTACTS.FEEDBACK_FISTNAME_IS_REQUIRED' | translate }}</span>
+            <span *ngIf="registerFormControl['firstName'].errors['maxlength']">{{ 'CONTACTS.FEEDBACK_FISTNAME_ERROR_MESSAGE' | translate }}</span>
+          </div>
+
+        </div>
+        <div>
+          <label class="feedback_label" for="lastName">{{ 'CONTACTS.FEEDBACK_LASTNAME' | translate }}:</label>
+          <input type="text" id="lastName" name="lastName" formControlName="lastName">
+
+          <div class="text-danger" *ngIf="submitted || (registerFormControl['lastName'].dirty || registerFormControl['lastName'].touched)">
+            <span *ngIf="registerFormControl['lastName'].errors?.['required']">{{ 'CONTACTS.FEEDBACK_LASTNAME_IS_REQUIRED' | translate }}</span>
+            <span *ngIf="registerFormControl['lastName'].errors?.['maxlength']">{{ 'CONTACTS.FEEDBACK_LASTNAME_ERROR_MESSAGE' | translate }}</span>
+          </div>
+        </div>
+        <div>
+          <label class="feedback_label" for="email">{{ 'CONTACTS.FEEDBACK_EMAIL' | translate }}:</label>
+          <input type="email" id="email" name="email" formControlName="email">
+          <div class="text-danger" *ngIf="registerFormControl['email'].errors && (registerFormControl['email'].dirty || registerFormControl['email'].touched)">
+            <span *ngIf="registerFormControl['email'].hasError('required')">{{ 'CONTACTS.FEEDBACK_EMAIL_IS_REQUIRED' | translate }}</span>
+            <span *ngIf="registerFormControl['email'].hasError('email')">{{ 'CONTACTS.FEEDBACK_INVALID_EMAIL_FORMAT' | translate }}</span>
+          </div>
+        </div>
+        <div>
+          <label class="feedback_label" for="message">{{ 'CONTACTS.FEEDBACK_MESSAGE' | translate }}:</label>
+          <textarea id="message" name="message" formControlName="message"></textarea>
+          <div class="text-danger" *ngIf="registerFormControl['message'].errors && (registerFormControl['message'].dirty || registerFormControl['message'].touched)">
+            <span *ngIf="registerFormControl['message'].hasError('required')">{{ 'CONTACTS.FEEDBACK_MESSAGE_IS_REQUIRED' | translate }}</span>
+            <span *ngIf="registerFormControl['message'].hasError('minlength') || registerFormControl['message'].hasError('maxlength')">{{ 'CONTACTS.FEEDBACK_MESSAGE_ERROR' | translate }}</span>
+          </div>
+        </div>
+        <button type="submit" [disabled]="feedbackForm.invalid">{{ 'CONTACTS.FEEDBACK_BUTTON' | translate }}</button>
+      </form>
+    </section>
+
+
+  </div>
+</div>
+
+
