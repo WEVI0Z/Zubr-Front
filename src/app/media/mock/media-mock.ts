@@ -40,18 +40,22 @@ export class AlbumList {
       //},
       {
         name: this.getFullName(albumsNames[3]),
+        date:'12.03.2024',
         folderPath: albumsNames[3],
       },
       {
         name: this.getFullName(albumsNames[2]),
+        date:'06.03.2024',
         folderPath: albumsNames[2],
       },
       {
         name: this.getFullName(albumsNames[1]),
+        date:'02.03.2024',
         folderPath: albumsNames[1],
       },
       {
         name: this.getFullName(albumsNames[0]),
+        date: '05.05.2023',
         folderPath: albumsNames[0],
       },
     ]

@@ -7,8 +7,6 @@
         <a
           href="#"
           routerLink="/media/{{ album.folderPath }}"
-          data-fancybox="photo"
-          [attr.data-caption]="album.name ? album.name : 'Фотография'"
           class="media__link"
         >
           <img
@@ -17,7 +15,8 @@
             [alt]="album.name ? album.name : 'Фотография'"
           />
           <p class="media__description">
-            {{ album.name ? album.name : 'Фотография' }}
+            {{ album.name ? album.name : 'Фотография' }}<br />
+            {{ album.date ? album.date : '' }}
           </p>
         </a>
       </li>
