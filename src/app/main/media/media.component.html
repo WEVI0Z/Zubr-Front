@@ -4,7 +4,7 @@
     <p class="media__description">{{ 'MAIN.MEDIA.ABOUT_CHAMP' | translate }}</p>
     <div class="media__image-wrapper">
       <img
-        [src]="'assets/media/' + currentPicture.path"
+        [src]="'assets/media/albums/' + currentPicture.folderPath + '/1.jpg'"
         width="1176"
         height="623"
         alt="Фотография"
@@ -12,7 +12,7 @@
         #currentElement
       />
       <img
-        [src]="'assets/media/' + nextPicture.path"
+        [src]="'assets/media/albums/' + nextPicture.folderPath + '/1.jpg'"
         width="1176"
         height="623"
         alt="Фотография"

@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core'
 import { MediaService } from '../../media/service/media.service'
-import { Media } from '../../media/interface/media'
 import { UtilsService } from '../../shared/services/utils.service'
+import { Album } from '../../media/interface/album'
 
 @Component({
   selector: 'app-media',
@@ -9,13 +9,13 @@ import { UtilsService } from '../../shared/services/utils.service'
   styleUrls: ['./media.component.scss'],
 })
 export class MediaComponent implements OnInit {
-  private mediaList: Media[] = this.utilsService.randomizeList(
-    this.mediaService.mediaList
+  private mediaList: Album[] = this.utilsService.randomizeList(
+    this.mediaService.albumList
   )
   private currentIndex: number = 0
 
-  protected currentPicture: Media = this.mediaList[this.currentIndex]
-  protected nextPicture: Media = this.mediaList[this.currentIndex + 1]
+  protected currentPicture: Album = this.mediaList[this.currentIndex]
+  protected nextPicture: Album = this.mediaList[this.currentIndex + 1]
   @ViewChild('currentElement') private currentElement!: ElementRef
   @ViewChild('nextElement') private nextElement!: ElementRef
   private isNext: boolean = false
