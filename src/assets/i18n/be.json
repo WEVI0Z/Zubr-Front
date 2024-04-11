@@ -8,7 +8,6 @@
       "ENTER": "Уваход",
       "ZUBRTITLE": "Нацыянальны дзіцячы адукацыйна-аздараўленчы цэнтр «Зубронак»",
       "ABOUT": "Пра чэмпіянат",
-	  "CONTACTS": "Кантакты",
       "COMPETENCE": {
         "TITLE": "Кампетэнцыi"
       },
@@ -124,33 +123,6 @@
     "COMPOSITION": "Састаў рэспубліканскага арганізацыйнага камітэта (рус)",
     "PARTICIPANTS" : "Спісачны састаў удзельнікаў заключнага этапу (рус)",
     "REGULATIONS": "Інфармацыя аб правядзенні спаборніцтваў (рус)"
-  },
-  "CONTACTS":{
-   "TITLE": "Кантакты",
-   "BOX1_TITLE": "Адрас",
-   "BOX2_TITLE": "Тэлефон",
-   "BOX3_TITLE": "Факс",
-   "BOX4_TITLE": "E-mail",
-   "BOX1_TEXT1": "адрас арнакамітэта",
-   "BOX1_TEXT2": "Мядзельскі р-н, пасёлак Зубреневка, НДЦ «Зубренок», Чэмпіянат «РoбІн-2024»",
-   "BOX2_TEXT": "+375298008175 (маб. Viber)",
-   "BOX3_TEXT": "8 (01797) 22 784",
-   "BOX4_TEXT": "info@robin-zubronok.by",
-   "FEEDBACK_TEXT": "Дзякуй, што пасетілі наш сайт. Калі Вы хочаце пакінуць свой водгук аб утрыманні сайта або паведаміць аб непрацуючай сылцы, запоўніце форму. Мы ацанілі вашыя водгукі і прапановы.",
-   "FEEDBACK_TITLE": "Форма зваротнай сувязі",
-   "FEEDBACK_FIRSTNAME": "Імя",
-   "FEEDBACK_LASTNAME": "Прозвішча",
-   "FEEDBACK_EMAIL": "E-mail",
-   "FEEDBACK_MESSAGE": "Паведамленне",
-   "FEEDBACK_BUTTON": "Адправіць",
-   "FEEDBACK_FISTNAME_IS_REQUIRED": "Калі ласка, увядзіце імя",
-   "FEEDBACK_FISTNAME_ERROR_MESSAGE": "Даўжыня імя да 100 сімвалаў",
-   "FEEDBACK_LASTNAME_IS_REQUIRED": "Увядзіце прозвішча",
-   "FEEDBACK_LASTNAME_ERROR_MESSAGE": "Даўжыня прозвішча да 100 сімвалаў",
-   "FEEDBACK_EMAIL_IS_REQUIRED": "Увядзіце свой адрас электроннай пошты",
-   "FEEDBACK_INVALID_EMAIL_FORMAT": "Няслушны фармат электроннай пошты",
-   "FEEDBACK_MESSAGE_IS_REQUIRED": "Увядзіце паведамленне",
-   "FEEDBACK_MESSAGE_ERROR": "Паведамленне павінна ўтрымліваць ад 10 да 500 сімвалаў"
   },
   "ABOUT-COOKIE": {
     "TITLE": "Палітыка прыватнасці",
