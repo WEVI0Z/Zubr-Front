@@ -6,6 +6,7 @@
     "HEADER": {
       "ZUBRTITLE": " The National children’s education and health center «Zubrenok» ",
       "ABOUT": " About ",
+	  "CONTACTS": " Contacts ",
       "COMPETENCE": {
         "TITLE": " Сompetence "
       },
@@ -117,6 +118,33 @@
     "POSITION": "Robin's Position 2024 (ru)",
     "COMPOSITION": "The composition of the Republican Organizing Committee (ru)",
     "REGULATIONS": "Information about the competition"
+  },
+  "CONTACTS":{
+   "TITLE": "Contacts",
+   "BOX1_TITLE": "Address",
+   "BOX2_TITLE": "Phone",
+   "BOX3_TITLE": "Fax",
+   "BOX4_TITLE": "E-mail",
+   "BOX1_TEXT1": "address of the special committee",
+   "BOX1_TEXT2": "Medialsky district, Zubrenevka village, NDC «Zubrenok», Championship «RobIn-2024»",
+   "BOX2_TEXT": "+375298008175 (mob. Viber)",
+   "BOX3_TEXT": "8 (01797) 22 784",
+   "BOX4_TEXT": "info@robin-zubronok.by",
+   "FEEDBACK_TEXT": "Thank you for visiting our site. If you would like to provide feedback on the content of the site or report a broken link, please fill out the form. We value your feedback and suggestions.",
+   "FEEDBACK_TITLE": "Feedback Form",
+   "FEEDBACK_FIRSTNAME": "First Name",
+   "FEEDBACK_LASTNAME": "Last Name",
+   "FEEDBACK_EMAIL": "E-mail",
+   "FEEDBACK_MESSAGE": "Message",
+   "FEEDBACK_BUTTON":"Submit",
+   "FEEDBACK_FISTNAME_IS_REQUIRED": "Name is required",
+   "FEEDBACK_FISTNAME_ERROR_MESSAGE": "Name should not exceed 100 characters",
+   "FEEDBACK_LASTNAME_IS_REQUIRED": "Last Name is required",
+   "FEEDBACK_LASTNAME_ERROR_MESSAGE": "Last Name should not exceed 100 characters",
+   "FEEDBACK_EMAIL_IS_REQUIRED": "Email is required",
+   "FEEDBACK_INVALID_EMAIL_FORMAT": "Invalid email format",
+   "FEEDBACK_MESSAGE_IS_REQUIRED": "Message is required",
+   "FEEDBACK_MESSAGE_ERROR": "Message should be between 10 and 500 characters"
   },
   "ABOUT-COOKIE": {
     "TITLE": "Privacy Policy",
