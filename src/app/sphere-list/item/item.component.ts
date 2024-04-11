@@ -8,7 +8,6 @@ import {
 import { SphereService } from '../service/sphere.service'
 import { Router } from '@angular/router'
 import { Sphere } from '../interface/sphere'
-import { TranslateClass } from '../../translate.component'
 
 import { TranslateService } from '@ngx-translate/core'
 

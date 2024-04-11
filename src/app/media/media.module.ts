@@ -7,13 +7,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { ShareBlockModule } from '../share-block/share-block.module'
+import { AlbumComponent } from './album/album.component'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
 }
 
 @NgModule({
-  declarations: [MediaComponent],
+  declarations: [MediaComponent, AlbumComponent],
   imports: [
     CommonModule,
     MediaRoutingModule,

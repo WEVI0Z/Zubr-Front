@@ -1,4 +1,4 @@
-@import '../../stylesheets/global';
+@import '../../../stylesheets/global';
 
 main {
   display: flex;
@@ -16,9 +16,9 @@ main {
 
   &__title {
     margin: 0;
-    font-size: 96px;
+    font-size: 50px;
     font-weight: 300;
-    letter-spacing: -11px;
+    letter-spacing: -5px;
   }
 
   &__list {
@@ -33,7 +33,6 @@ main {
   &__item {
     margin-bottom: 50px;
     position: relative;
-    max-width: 403px;
 
     &::before {
       content: '';
@@ -57,19 +56,6 @@ main {
     }
   }
 
-  &__description {
-    margin: 8px 0 10px 10px;
-    font-size: 16px;
-    letter-spacing: -8%;
-    font-weight: 500;
-    color: black;
-    transition: 0.2s ease-in-out;
-  }
-
-  &__link {
-    text-decoration: none;
-  }
-
   &__image {
     width: 403px;
     height: 303px;
@@ -77,7 +63,6 @@ main {
     border-radius: 5px;
   }
 }
-
 
 @media (max-width: 778px) {
   .media {
@@ -121,22 +106,7 @@ main {
       &:hover .media__description,
       &:active .media__description {
         color: white;
-        word-wrap: break-word;
       }
-    }
-
-    &__description {
-      margin: 8px 0 10px 10px;
-      word-wrap: break-word;
-      font-size: 16px;
-      letter-spacing: -8%;
-      font-weight: 500;
-      color: black;
-      transition: 0.2s ease-in-out;
-    }
-
-    &__link {
-      text-decoration: none;
     }
 
     &__image {

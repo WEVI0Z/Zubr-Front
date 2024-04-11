@@ -1,8 +1,7 @@
 import { Component } from '@angular/core'
 import { MediaService } from './service/media.service'
-import { Media } from './interface/media'
-
 import { Fancybox } from '@fancyapps/ui'
+import { Album } from './interface/album'
 
 @Component({
   selector: 'app-media',
@@ -12,8 +11,9 @@ import { Fancybox } from '@fancyapps/ui'
     '../../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css',
   ],
 })
+
 export class MediaComponent {
-  protected mediaList: Media[] = this.mediaService.mediaList
+  protected albumList: Album[] = this.mediaService.albumList
 
   constructor(private mediaService: MediaService) {
     Fancybox.bind('[data-fancybox]', {})
