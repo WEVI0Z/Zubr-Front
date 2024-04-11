@@ -15,12 +15,13 @@
         "RES2": " Moodle Remote Platform  ",
         "RES3": " ChatGPT "
       },
-      "MEDIA": " Media ",
+      "MEDIA": "Media",
+      "LOGIN_BTN": "Sign in",
       "LOGIN": {
         "TITLE": "Login",
-        "ACCOUNT": " Account ",
-        "EMAIL": " Email ",
-        "CLOUD": " Cloud "
+        "ACCOUNT": "Account",
+        "EMAIL": "Email",
+        "CLOUD": "Cloud"
       },
       "MAINTITLE": " Open Republican IT championship ",
       "ROBIN": {

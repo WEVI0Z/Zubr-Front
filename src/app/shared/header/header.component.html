@@ -199,25 +199,25 @@
           </li>
           <li class="nav__item nav__user nav__item--competitions" [hidden]="isMobileScreen">
             <button href="javascript:void(0)" class="nav__button">
-              Войти
+              {{ 'SHARED.HEADER.LOGIN_BTN' | translate }}
               <ul class="nav__competitions">
                 <li class="nav__competition">
                   <!-- TODO: Поменять на https -->
                   <a href="http://robin-zubronok.by" target="_blank" class="nav__link">
                     <img src="assets/header/user.svg" alt="">
-                    Личный кабинет
+                    {{ 'SHARED.HEADER.LOGIN.ACCOUNT' | translate }}
                   </a>
                 </li>
-                <li class="nav__competition"> 
+                <li class="nav__competition">
                   <a href="https://nextcloud.robin-zubronok.by/" target="_blank" class="nav__link">
                     <img src="assets/header/cloud.png" alt="">
-                    Облако
+                    {{ 'SHARED.HEADER.LOGIN.CLOUD' | translate }}
                   </a>
                 </li>
                 <li class="nav__competition">
                   <a href="https://mail.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
                     <img src="assets/header/icon-mail.svg" alt="">
-                    Почта
+                    {{ 'SHARED.HEADER.LOGIN.EMAIL' | translate }}
                   </a>
                 </li>
               </ul>

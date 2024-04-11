@@ -18,10 +18,11 @@
         "RES3": " ChatGPT "
       },
       "MEDIA": " Медиа ",
+      "LOGIN_BTN": "Войти",
       "LOGIN": {
-        "ACCOUNT": " Аккаунт ",
-        "EMAIL": " Почта ",
-        "CLOUD": " Облако "
+        "ACCOUNT": "Личный кабинет",
+        "EMAIL": "Почта",
+        "CLOUD": "Облако"
       },
       "MAINTITLE": " Открытый республиканский IT-чемпионат ",
       "ROBIN": {
