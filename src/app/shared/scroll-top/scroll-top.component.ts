@@ -11,7 +11,8 @@ export class ScrollTopComponent implements OnInit {
   view: Window = document.defaultView!
 
   protected scroll(): void {
-    this.view.scrollTo({ top: 0 })
+    this.view.scrollTo({ top: 0 });
+    this.view.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   ngOnInit(): void {

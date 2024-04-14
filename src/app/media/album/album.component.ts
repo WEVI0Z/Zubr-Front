@@ -6,6 +6,7 @@ import { Router } from '@angular/router'
 import { Photo } from '../interface/photo'
 import { AlbumList } from '../mock/media-mock'
 import { Fancybox } from '@fancyapps/ui'
+import { Video } from '../interface/video'
 
 @Component({
   selector: 'app-album',
@@ -20,6 +21,7 @@ export class AlbumComponent {
 
   private albumList: AlbumList
   public photoList: Photo[]
+  public videoList: Video[]
 
   public folderPath: string
   public albumName: string
@@ -36,6 +38,9 @@ export class AlbumComponent {
     this.mediaService = new MediaService(translate)
     //получаем список фото
     this.photoList = this.mediaService.getPhotoList(this.folderPath)
+    //получаем список видео
+    this.videoList = this.mediaService.getVideoList(this.folderPath)
+
     Fancybox.bind('[data-fancybox]', {})
   }
 

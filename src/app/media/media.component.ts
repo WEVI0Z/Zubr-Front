@@ -2,6 +2,9 @@ import { Component } from '@angular/core'
 import { MediaService } from './service/media.service'
 import { Fancybox } from '@fancyapps/ui'
 import { Album } from './interface/album'
+import { Video } from './interface/video'
+import { Pipe, PipeTransform } from '@angular/core'
+import { DomSanitizer } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-media',
@@ -11,11 +14,11 @@ import { Album } from './interface/album'
     '../../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css',
   ],
 })
-
 export class MediaComponent {
   protected albumList: Album[] = this.mediaService.albumList
-
+  protected videoList: Video[] = this.mediaService.getVideoList('media')
   constructor(private mediaService: MediaService) {
     Fancybox.bind('[data-fancybox]', {})
   }
 }
+
