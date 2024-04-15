@@ -1,11 +1,9 @@
 @import '../../../stylesheets/global';
 
-.yandex__map {
+.ya-map {
   width: 100%;
-  padding-top: 50%;
-  position: relative;
-  margin-top: 10px;
+  height: 400px;
   border: 1px solid #ccc;
-  background-color: rgba(207, 205, 201, 0.527);
   margin-bottom: 20px;
+  border-radius: 5px;
 }
