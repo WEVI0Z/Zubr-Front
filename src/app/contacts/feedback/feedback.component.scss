@@ -1,0 +1,117 @@
+@import '../../../stylesheets/global';
+
+
+.contacts__feedback {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+
+  .feedback__left {
+    width: 50%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 60%;
+      max-width: 60%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .feedback_right {
+    width: 50%;
+    background-color: #0034fe;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+
+
+    form {
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      .text-danger {
+        color: rgba(253, 146, 146, 1);
+        font-weight: bold;
+      }
+
+      div {
+        margin-bottom: 10px;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: calc(100% - 20px);
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+
+        textarea {
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 40%;
+        padding: 10px;
+        background-color: #087cfb;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .feedback_text {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    border: 0px solid black;
+
+    .feedback__left {
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .feedback__left,
+    .feedback_right {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
