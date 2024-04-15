@@ -8,7 +8,7 @@
       "ENTER": "Вход",
       "ZUBRTITLE": "Национальный детский образовательно-оздоровительный центр «Зубренок»",
       "ABOUT": "О чемпионате",
-	  "CONTACTS": "Контакты",
+      "CONTACTS": "Контакты",
       "COMPETENCE": {
         "TITLE": "Компетенции"
       },
@@ -125,7 +125,7 @@
     "PARTICIPANTS": "Списочный состав участников заключительного этапа",
     "REGULATIONS": "Информация о проведении соревнований"
   },
-   "CONTACTS":{
+  "CONTACTS": {
     "TITLE": "Контакты",
     "BOX1_TITLE": "Адрес",
     "BOX2_TITLE": "Телефон",
@@ -142,7 +142,7 @@
     "FEEDBACK_LASTNAME": "Фамилия",
     "FEEDBACK_EMAIL": "E-mail",
     "FEEDBACK_MESSAGE": "Сообщение",
-    "FEEDBACK_BUTTON":"Отправить",
+    "FEEDBACK_BUTTON": "Отправить",
     "FEEDBACK_FISTNAME_IS_REQUIRED": "Введите имя",
     "FEEDBACK_FISTNAME_ERROR_MESSAGE": "Размер имени до 100 символов",
     "FEEDBACK_LASTNAME_IS_REQUIRED": "Введите фамилию",
