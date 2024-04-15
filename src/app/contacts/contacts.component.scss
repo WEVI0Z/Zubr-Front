@@ -61,6 +61,11 @@ main {
       align-items: center;
       justify-content: center;
       flex-grow: 1;
+
+      &__ref {
+        color: inherit;  
+        text-decoration: none;
+      }
     }
   }
 }
