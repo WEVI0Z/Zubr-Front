@@ -1,6 +1,5 @@
 @import '../../../stylesheets/global';
 
-
 .contacts__feedback {
   margin-top: 20px;
   display: flex;
@@ -35,11 +34,11 @@
 
   .feedback_right {
     width: 50%;
-    background-color: #0034fe;
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
     padding: 20px;
     border-radius: 5px;
     color: white;
-
 
     form {
       h3 {
@@ -59,8 +58,8 @@
           margin-bottom: 5px;
         }
 
-        input[type="text"],
-        input[type="email"],
+        input[type='text'],
+        input[type='email'],
         textarea {
           width: calc(100% - 20px);
           padding: 10px;
@@ -76,16 +75,25 @@
       button {
         width: 40%;
         padding: 10px;
-        background-color: #087cfb;
+        background-color: #0033fe70;
         color: white;
         border: 0;
         border-radius: 5px;
-        cursor: pointer;
         transition: background-color 0.3s ease;
 
         &:hover {
-          background-color: white;
+          background-color: #0034fe;
           color: black;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+          background-color: #0033fe70;
+          color: white;
+        }
+
+        &:enabled {
+          cursor: pointer;
         }
       }
     }
@@ -99,18 +107,15 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
-    border: 0px solid black;
+    border: 1px solid black;
 
     .feedback__left {
-      border: 1px solid black;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      padding: 10px;
+      width: 100%;
+      max-width: none;
     }
 
-    .feedback__left,
     .feedback_right {
-      width: 100%;
+      width: 80%;
       max-width: none;
     }
   }

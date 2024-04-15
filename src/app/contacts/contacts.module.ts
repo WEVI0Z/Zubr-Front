@@ -33,7 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule,
     ShareBlockModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports: [ContactsRoutingModule],
 })
