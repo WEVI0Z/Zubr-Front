@@ -3,8 +3,6 @@ import { MediaService } from './service/media.service'
 import { Fancybox } from '@fancyapps/ui'
 import { Album } from './interface/album'
 import { Video } from './interface/video'
-import { Pipe, PipeTransform } from '@angular/core'
-import { DomSanitizer } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-media',

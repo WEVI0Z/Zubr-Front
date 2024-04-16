@@ -25,7 +25,7 @@ export class AlbumComponent {
 
   public folderPath: string
   public albumName: string
-
+  public RobIn: string
   constructor(
     public translate: TranslateService,
     private router: Router
@@ -35,6 +35,7 @@ export class AlbumComponent {
     this.folderPath = this.albumList.getAlbumPath(router.url)
     //получаем полное имя альбома 
     this.albumName = this.albumList.getFullName(this.folderPath)
+    this.RobIn = this.albumList.getRobIn(this.folderPath)
     this.mediaService = new MediaService(translate)
     //получаем список фото
     this.photoList = this.mediaService.getPhotoList(this.folderPath)

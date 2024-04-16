@@ -32,42 +32,36 @@ export class AlbumList {
   }
 
   public getAlbumList(): Album[] {
-    let robin: string = 'РобИн'
-    if (this.currentLang == 'be') {
-      robin = 'РобIн'
-    } else if (this.currentLang == 'en') {
-      robin = 'RobIn'
-    }
-
     let list: Album[]
     list = [
       //для нового альбома
       //{
       //  name: this.getFullName(albumsNames[5]),
+      //  robin: this.getRobIn(albumsNames[5]),
       //  folderPath: albumsNames[5],
       //},
       {
         name: this.getFullName(albumsNames[4]),
         date: '12.03.2024',
-        robin: '«' + robin +'-2024»',
+        robin: this.getRobIn(albumsNames[4]),
         folderPath: albumsNames[4],
       },
       {
         name: this.getFullName(albumsNames[3]),
         date: '06.03.2024',
-        robin: '«' + robin + '-2024»',
+        robin: this.getRobIn(albumsNames[3]),
         folderPath: albumsNames[3],
       },
       {
         name: this.getFullName(albumsNames[2]),
         date: '02.03.2024',
-        robin: '«' + robin + '-2024»',
+        robin: this.getRobIn(albumsNames[2]),
         folderPath: albumsNames[2],
       },
       {
         name: this.getFullName(albumsNames[1]),
         date: '05.05.2023',
-        robin: '«' + robin + '-2023»',
+        robin: this.getRobIn(albumsNames[1]),
         folderPath: albumsNames[1],
       },
     ]
@@ -116,6 +110,24 @@ export class AlbumList {
   public getAlbumPath(url: string): string {
     let path = url.split('/').at(-1)
     return path != undefined ? path : albumsNames[0]
+  }
+
+  public getRobIn(path: string): string {
+    let robin: string = '«РобИн'
+    if (this.currentLang == 'be') {
+      robin = '«РобIн'
+    } else if (this.currentLang == 'en') {
+      robin = '«RobIn'
+    }
+
+    if (path == albumsNames[1]) {
+      robin += "-2023»"
+    }
+    else {
+      robin += "-2024»"
+    }
+
+    return robin
   }
 }
 
