@@ -31,13 +31,20 @@
         </h1>
       </div>
       <!------>
-      <div class="sidebar" [class.active]="isMenuOpen" *ngIf="isMobileScreen">
+      <div class="sidebar" [class.active]="isMenuOpen" [hidden]="ismenuHidden">
         <ul class="sidebar__menu">
 
           <li class="sidebar__menu-item">
             <a href="#" routerLink="/about" class="sidebar__menu-link">
               <img src="assets/header/ask.png" class="sidebar__menu-image">
               {{'SHARED.HEADER.ABOUT' | translate}}
+            </a>
+          </li>
+		  
+		   <li class="sidebar__menu-item">
+            <a href="#" routerLink="/contacts" class="sidebar__menu-link">
+              <img src="assets/header/contacts.png" class="sidebar__menu-image">
+              {{'SHARED.HEADER.CONTACTS' | translate}}
             </a>
           </li>
 
@@ -103,21 +110,44 @@
           </li>
 
           <li class="sidebar__menu-item">
-            <a href="https://email.robin-zubronok.by/webmail/"
-               target="_blank"
-               class="sidebar__menu-link">
-              <img src="assets/header/mail.png"
-                   class="sidebar__menu-image" />
+            <button class="sidebar__menu-link" (click)="toggleSubmenu(4)">
+              <img src="assets/header/enter.png" class="sidebar__menu-image">
               {{ 'SHARED.HEADER.ENTER' | translate }}
-            </a>
+              <img [src]="submenuIcons[2]" class="sidebar__menu-icon" [class.rotate]="activeSubmenu === 4">
+            </button>
+            <ul class="sidebar__sub-menu" [ngClass]="{'active': activeSubmenu === 4}">
+              <li class="sidebar__sub-menu-item">
+                <a href="http://robin-zubronok.by"
+                   target="_blank"
+                   class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.LOGIN.ACCOUNT' | translate }}
+                </a>
+              </li>
+              <li class="sidebar__sub-menu-item">
+                <a href="https://nextcloud.robin-zubronok.by/"
+                   target="_blank"
+                   class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.LOGIN.EMAIL' | translate }}
+                </a>
+              </li>
+              <li class="sidebar__sub-menu-item">
+                <a href="https://mail.robin-zubronok.by/webmail/"
+                   target="_blank"
+                   class="sidebar__submenu-item">
+                  {{ 'SHARED.HEADER.LOGIN.CLOUD' | translate }}
+                </a>
+              </li>
+            </ul>
           </li>
+
 
         </ul>
       </div>
       <!------>
-      <button id="menuButton" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen" (click)="toggleMenu()">
-        <div class="menu-button-image" [ngStyle]="{'background-image': 'url(' + menuButtonImage + ')'}"></div>
-      </button>
+
+      <div id="nav-icon7" (click)="toggleMenu()" [ngClass]="{'open': isMenuOpen}" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen">
+        <span></span>
+      </div>
 
       <nav class="header__nav nav">
         <ul class="nav__list">
@@ -125,6 +155,13 @@
             <a href="#" routerLink="/about" class="nav__link">
               {{
               'SHARED.HEADER.ABOUT' | translate
+              }}
+            </a>
+          </li>
+		  <li class="nav__item" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/contacts" class="nav__link">
+              {{
+              'SHARED.HEADER.CONTACTS' | translate
               }}
             </a>
           </li>
@@ -197,20 +234,41 @@
                    class="nav__image" />
             </a>
           </li>
-          <li class="nav__item nav__user" [hidden]="isMobileScreen">
-            <a href="javascript:void(0)" class="nav__link">
-              <img src="assets/header/user.svg" alt="Вход" class="nav__image" />
-            </a>
+          <li class="nav__item nav__user nav__item--competitions" [hidden]="isMobileScreen">
+            <button href="javascript:void(0)" class="nav__button">
+              {{ 'SHARED.HEADER.LOGIN_BTN' | translate }}
+              <ul class="nav__competitions">
+                <li class="nav__competition">
+                  <!-- TODO: Поменять на https -->
+                  <a href="http://robin-zubronok.by" target="_blank" class="nav__link">
+                    <img src="assets/header/user.svg" alt="">
+                    {{ 'SHARED.HEADER.LOGIN.ACCOUNT' | translate }}
+                  </a>
+                </li>
+                <li class="nav__competition">
+                  <a href="https://nextcloud.robin-zubronok.by/" target="_blank" class="nav__link">
+                    <img src="assets/header/cloud.png" alt="">
+                    {{ 'SHARED.HEADER.LOGIN.CLOUD' | translate }}
+                  </a>
+                </li>
+                <li class="nav__competition">
+                  <a href="https://mail.robin-zubronok.by/webmail/" target="_blank" class="nav__link">
+                    <img src="assets/header/icon-mail.svg" alt="">
+                    {{ 'SHARED.HEADER.LOGIN.EMAIL' | translate }}
+                  </a>
+                </li>
+              </ul>
+            </button>
           </li>
-          <li class="nav__item nav__user" [hidden]="isMobileScreen">
-            <a href="https://email.robin-zubronok.by/webmail/"
-               target="_blank"
-               class="nav__link">
-              <img src="assets/header/icon-mail.svg"
-                   alt="Почта"
-                   class="nav__image" />
-            </a>
-          </li>
+          <!-- <li class="nav__item nav__user" [hidden]="isMobileScreen">
+        <a href="https://email.robin-zubronok.by/webmail/"
+           target="_blank"
+           class="nav__link">
+          <img src="assets/header/icon-mail.svg"
+               alt="Почта"
+               class="nav__image" />
+        </a>
+      </li> -->
         </ul>
       </nav>
     </div>
