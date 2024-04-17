@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateClass } from '../translate.component';
+import { Component, OnInit } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
+import { TranslateClass } from '../translate.component'
 
 @Component({
   selector: 'app-about',
@@ -8,16 +8,18 @@ import { TranslateClass } from '../translate.component';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  private translation: TranslateClass;
+  private translation: TranslateClass
 
   constructor(private translateService: TranslateService) {
-    this.translation = new TranslateClass(translateService);
-    this.translation.translateData(this.translation.getLanguage());
+    this.translation = new TranslateClass(translateService)
+    this.translation.translateData(this.translation.getLanguage())
   }
 
   ngOnInit(): void {
-    this.translateService.get('SHARED.HEADER.ABOUT').subscribe((translation: string) => {
-      document.title = translation;
-    });
+    this.translateService
+      .get('SHARED.HEADER.ABOUT')
+      .subscribe((translation: string) => {
+        document.title = translation
+      })
   }
 }

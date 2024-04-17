@@ -113,18 +113,17 @@ export class AlbumList {
   }
 
   public getRobIn(path: string): string {
-    let robin: string = '«РобИн'
+    let robin: string = ruDictionary.SHARED.HEADER.ROBIN.TITLE
     if (this.currentLang == 'be') {
-      robin = '«РобIн'
+      robin = beDictionary.SHARED.HEADER.ROBIN.TITLE
     } else if (this.currentLang == 'en') {
-      robin = '«RobIn'
+      robin = enDictionary.SHARED.HEADER.ROBIN.TITLE
     }
 
     if (path == albumsNames[1]) {
-      robin += "-2023»"
-    }
-    else {
-      robin += "-2024»"
+      robin += '-2023»'
+    } else {
+      robin += '-2024»'
     }
 
     return robin

@@ -24,7 +24,7 @@ main {
   &__list {
     width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
@@ -33,7 +33,6 @@ main {
   &__item {
     margin-bottom: 50px;
     position: relative;
-
 
     &::before {
       content: '';
@@ -71,7 +70,6 @@ main {
     margin-bottom: 150px;
     position: relative;
 
-
     &::before {
       content: '';
       position: absolute;
@@ -87,7 +85,6 @@ main {
     &:active::before {
       height: 100%;
     }
-
   }
 
   &__link {
@@ -112,7 +109,6 @@ main {
     left: 0;
   }
 }
-
 
 @media (max-width: 778px) {
   .media {
@@ -173,7 +169,6 @@ main {
     &__item2 {
       margin-bottom: 150px;
       position: relative;
-
 
       &::before {
         content: '';

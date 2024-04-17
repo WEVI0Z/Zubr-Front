@@ -33,7 +33,7 @@ export class AlbumComponent {
     this.albumList = new AlbumList(translate)
     //получаем имя альбома (имя папки) из url
     this.folderPath = this.albumList.getAlbumPath(router.url)
-    //получаем полное имя альбома 
+    //получаем полное имя альбома
     this.albumName = this.albumList.getFullName(this.folderPath)
     this.RobIn = this.albumList.getRobIn(this.folderPath)
     this.mediaService = new MediaService(translate)
@@ -44,5 +44,4 @@ export class AlbumComponent {
 
     Fancybox.bind('[data-fancybox]', {})
   }
-
 }
