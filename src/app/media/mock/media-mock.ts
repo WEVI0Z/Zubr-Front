@@ -108,11 +108,21 @@ export class AlbumList {
   }
 
   public getAlbumPath(url: string): string {
-    let path = url.split('/').at(-1)
+    const path = url.split('/').at(-1)
     return path != undefined ? path : albumsNames[0]
   }
 
   public getRobIn(path: string): string {
+
+    //this.translate.currentLang = this.translation.getLanguage()
+    //let robin = this.translation.getValue('SHARED.HEADER.ROBIN.TITLE')
+
+    //this.translate
+    //  .get('SHARED.HEADER.ROBIN.TITLE')
+    //  .subscribe((translations: string) => {
+    //    robin = translations
+    //  })
+
     let robin: string = ruDictionary.SHARED.HEADER.ROBIN.TITLE
     if (this.currentLang == 'be') {
       robin = beDictionary.SHARED.HEADER.ROBIN.TITLE
@@ -126,8 +136,10 @@ export class AlbumList {
       robin += '-2024»'
     }
 
-    return robin
+    return '«' + robin
   }
+
+
 }
 
 export class PhotoList {

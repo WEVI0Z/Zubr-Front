@@ -1,6 +1,5 @@
 import { Component } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
-import { TranslateClass } from '../../translate.component'
 import { MediaService } from '../service/media.service'
 import { Router } from '@angular/router'
 import { Photo } from '../interface/photo'

@@ -13,9 +13,13 @@ import { Video } from './interface/video'
   ],
 })
 export class MediaComponent {
-  protected albumList: Album[] = this.mediaService.albumList
+
   protected videoList: Video[] = this.mediaService.getVideoList('media')
+  protected albumList: Album[] = this.mediaService.getAlbumList()
   constructor(private mediaService: MediaService) {
     Fancybox.bind('[data-fancybox]', {})
+
   }
+
+
 }
