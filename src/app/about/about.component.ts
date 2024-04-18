@@ -1,7 +1,6 @@
-
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateClass } from '../translate.component';
+import { Component, OnInit } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
+import { TranslateClass } from '../translate.component'
 import { BreadcrumbService } from 'xng-breadcrumb'
 import { Router } from '@angular/router'
 
@@ -17,15 +16,17 @@ export class AboutComponent implements OnInit {
     public translate: TranslateService,
     private breadcrumbService: BreadcrumbService,
     private router: Router
-   ) {
-    this.translation = new TranslateClass(translate);
-    this.translation.translateData(this.translation.getLanguage());
+  ) {
+    this.translation = new TranslateClass(translate)
+    this.translation.translateData(this.translation.getLanguage())
   }
 
   ngOnInit(): void {
-    this.translate.get('SHARED.HEADER.ABOUT').subscribe((translation: string) => {
-      document.title = translation;
-    });
+    this.translate
+      .get('SHARED.HEADER.ABOUT')
+      .subscribe((translation: string) => {
+        document.title = translation
+      })
     this.breadcrumbService.set('@About', 'ABOUT.BREADCRUMB')
   }
   checkRouteUrl() {

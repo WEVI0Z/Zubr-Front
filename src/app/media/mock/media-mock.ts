@@ -113,7 +113,6 @@ export class AlbumList {
   }
 
   public getRobIn(path: string): string {
-
     //this.translate.currentLang = this.translation.getLanguage()
     //let robin = this.translation.getValue('SHARED.HEADER.ROBIN.TITLE')
 
@@ -138,8 +137,6 @@ export class AlbumList {
 
     return '«' + robin
   }
-
-
 }
 
 export class PhotoList {

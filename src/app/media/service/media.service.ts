@@ -21,7 +21,7 @@ export class MediaService {
     //this.albumList = this.listA.getAlbumList()
   }
 
-  public getAlbumList():Album[] {
+  public getAlbumList(): Album[] {
     return this.listA.getAlbumList()
   }
   public getPhotoList(path: string): Photo[] {

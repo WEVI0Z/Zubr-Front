@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { SphereService } from './service/sphere.service';
-import { Sphere } from './interface/sphere';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, OnInit, ViewChild } from '@angular/core'
+import { SphereService } from './service/sphere.service'
+import { Sphere } from './interface/sphere'
+import { TranslateService } from '@ngx-translate/core'
 import { BreadcrumbService } from 'xng-breadcrumb'
 
 @Component({
@@ -24,6 +24,6 @@ export class SphereListComponent implements OnInit {
       .subscribe((translation: string) => {
         document.title = translation
       })
-   this.breadcrumbsService.set('@SphereList', 'SPHERE-LIST.BREADCRUMB')
+    this.breadcrumbsService.set('@SphereList', 'SPHERE-LIST.BREADCRUMB')
   }
 }
