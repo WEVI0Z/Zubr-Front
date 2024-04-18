@@ -7,6 +7,9 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
+    data: {
+      breadcrumb: { alias: 'Main' },
+    },
   },
   {
     path: 'undefined',

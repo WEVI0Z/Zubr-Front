@@ -1,6 +1,11 @@
 <main>
   <app-header></app-header>
-
+  <xng-breadcrumb [separator]="iconTemplate">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
+  <ng-template #iconTemplate> > </ng-template>
   <section class="about">
     <h2 class="about__name">{{ 'ABOUT.TITLE' | translate }}</h2>
     <p class="about__paragraph about__paragraph--first">

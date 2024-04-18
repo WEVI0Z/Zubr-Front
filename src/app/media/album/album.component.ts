@@ -5,6 +5,7 @@ import { Router } from '@angular/router'
 import { Photo } from '../interface/photo'
 import { AlbumList } from '../mock/media-mock'
 import { Fancybox } from '@fancyapps/ui'
+import { BreadcrumbService } from 'xng-breadcrumb'
 import { Video } from '../interface/video'
 
 @Component({
@@ -27,7 +28,8 @@ export class AlbumComponent {
   public RobIn: string
   constructor(
     public translate: TranslateService,
-    private router: Router
+    private router: Router,
+    private breadcrumbService: BreadcrumbService
   ) {
     this.albumList = new AlbumList(translate)
     //получаем имя альбома (имя папки) из url
@@ -42,5 +44,10 @@ export class AlbumComponent {
     this.videoList = this.mediaService.getVideoList(this.folderPath)
 
     Fancybox.bind('[data-fancybox]', {})
+  }
+
+  ngOnInit(): void {
+    this.breadcrumbService.set('@Album', this.albumName)
+    this.breadcrumbService.set('@Media', 'MEDIA.BREADCRUMB')
   }
 }
