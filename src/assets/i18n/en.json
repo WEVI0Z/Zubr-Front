@@ -6,6 +6,7 @@
     "HEADER": {
       "ZUBRTITLE": " The National children’s education and health center «Zubrenok» ",
       "ABOUT": " About ",
+      "CONTACTS": " Contacts ",
       "COMPETENCE": {
         "TITLE": " Сompetence "
       },
@@ -15,12 +16,13 @@
         "RES2": " Moodle Remote Platform  ",
         "RES3": " ChatGPT "
       },
-      "MEDIA": " Media ",
+      "MEDIA": "Media",
+      "LOGIN_BTN": "Sign in",
       "LOGIN": {
         "TITLE": "Login",
-        "ACCOUNT": " Account ",
-        "EMAIL": " Email ",
-        "CLOUD": " Cloud "
+        "ACCOUNT": "Account",
+        "EMAIL": "Email",
+        "CLOUD": "Cloud"
       },
       "MAINTITLE": " Open Republican IT championship ",
       "ROBIN": {
@@ -88,7 +90,19 @@
     }
   },
   "MEDIA": {
-    "TITLE": "Media"
+    "TITLE": "Media",
+    "ALBUM1": {
+      "TITLE": "Open Republican IT Championship «Robin - 2024»"
+    },
+    "ALBUM2": {
+      "TITLE": "Minsk regional stage of the open republican IT championship «Robin - 2024»"
+    },
+    "ALBUM3": {
+      "TITLE": "Mogilev regional stage of the open republican IT championship «Robin - 2024»"
+    },
+    "ALBUM4": {
+      "TITLE": "Brest regional stage of the open republican IT championship «RobIn - 2024»"
+    }
   },
   "ABOUT": {
     "TITLE": "About",
@@ -102,7 +116,35 @@
     "TASK_PARAGR3": "To contribute to the development and implementation of children's innovative projects with the help of high-tech equipment and software that create conditions for the formation of modern and future professional competencies, engineering thinking skills.",
     "TASK_PARAGR4": "To create conditions for the organization of experimental work on the development of new technologies, new types of professional activities, forms of vocational training.",
     "POSITION": "Robin's Position 2024 (ru)",
-    "COMPOSITION": "The composition of the Republican Organizing Committee (ru)"
+    "COMPOSITION": "The composition of the Republican Organizing Committee (ru)",
+    "REGULATIONS": "Information about the competition"
+  },
+  "CONTACTS": {
+    "TITLE": "Contacts",
+    "BOX1_TITLE": "Address",
+    "BOX2_TITLE": "Phone",
+    "BOX3_TITLE": "Fax",
+    "BOX4_TITLE": "E-mail",
+    "BOX1_TEXT1": "address of the special committee",
+    "BOX1_TEXT2": "Medialsky district, Zubrenevka village, NDC «Zubrenok», Championship «RobIn-2024»",
+    "BOX2_TEXT": "+375298008175 (mob. Viber)",
+    "BOX3_TEXT": "8 (01797) 22 784",
+    "BOX4_TEXT": "info@robin-zubronok.by",
+    "FEEDBACK_TEXT": "Thank you for visiting our site. If you would like to provide feedback on the content of the site or report a broken link, please fill out the form. We value your feedback and suggestions.",
+    "FEEDBACK_TITLE": "Feedback Form",
+    "FEEDBACK_FIRSTNAME": "First Name",
+    "FEEDBACK_LASTNAME": "Last Name",
+    "FEEDBACK_EMAIL": "E-mail",
+    "FEEDBACK_MESSAGE": "Message",
+    "FEEDBACK_BUTTON": "Submit",
+    "FEEDBACK_FISTNAME_IS_REQUIRED": "Name is required",
+    "FEEDBACK_FISTNAME_ERROR_MESSAGE": "Name should not exceed 100 characters",
+    "FEEDBACK_LASTNAME_IS_REQUIRED": "Last Name is required",
+    "FEEDBACK_LASTNAME_ERROR_MESSAGE": "Last Name should not exceed 100 characters",
+    "FEEDBACK_EMAIL_IS_REQUIRED": "Email is required",
+    "FEEDBACK_INVALID_EMAIL_FORMAT": "Invalid email format",
+    "FEEDBACK_MESSAGE_IS_REQUIRED": "Message is required",
+    "FEEDBACK_MESSAGE_ERROR": "Message should be between 10 and 500 characters"
   },
   "ABOUT-COOKIE": {
     "TITLE": "Privacy Policy",

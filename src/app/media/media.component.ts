@@ -1,8 +1,8 @@
-import { Component } from '@angular/core'
-import { MediaService } from './service/media.service'
-import { Media } from './interface/media'
-
-import { Fancybox } from '@fancyapps/ui'
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { MediaService } from './service/media.service';
+import { Fancybox } from '@fancyapps/ui';
+import { Album } from './interface/album';
 
 @Component({
   selector: 'app-media',
@@ -12,10 +12,16 @@ import { Fancybox } from '@fancyapps/ui'
     '../../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css',
   ],
 })
-export class MediaComponent {
-  protected mediaList: Media[] = this.mediaService.mediaList
+export class MediaComponent implements OnInit {
+  protected albumList: Album[] = this.mediaService.albumList;
 
-  constructor(private mediaService: MediaService) {
-    Fancybox.bind('[data-fancybox]', {})
+  constructor(private mediaService: MediaService, private translateService: TranslateService) {
+    Fancybox.bind('[data-fancybox]', {});
+  }
+
+  ngOnInit(): void {
+    this.translateService.get('SHARED.HEADER.MEDIA').subscribe((translation: string) => {
+      document.title = translation;
+    });
   }
 }

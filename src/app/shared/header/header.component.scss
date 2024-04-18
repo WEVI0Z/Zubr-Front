@@ -129,6 +129,43 @@
     padding: 0;
   }
 
+  &__button {
+    padding : 4px 40px 4px 15px;
+    background-image: url('/assets/header/user.svg');
+    background-position: center right 10px;
+    color :#fff;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border :1px solid #fff;
+    background-color: transparent;
+ 
+    .nav__competitions {
+      color: #000;
+
+      top: 100%;
+      right: 15px;
+      
+      text-align: left;
+
+      img {
+        width: 24px;
+        filter: invert(1);
+        margin-right: 10px;
+      }
+
+      .nav__link {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &:hover .nav__competitions {
+      display: block;
+      opacity: 1;
+    }
+  }
+
   &__item {
     position: relative;
     padding: 0 5px;
@@ -237,11 +274,263 @@
   }
 }
 @media (max-width: 778px) {
+
+  #nav-icon7 {
+    width: 50px;
+    height: 45px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    transition-duration: 0.25s;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #nav-icon7 span {
+    height: 9px;
+    width: 50px;
+    background-color: #ffffff; 
+    border-radius: 20px;
+    position: absolute;
+    transition-duration: 0.25s;
+  }
+
+  #nav-icon7 span:before {
+    left: 0;
+    position: absolute;
+    top: -18px;
+    height: 9px;
+    width: 50px;
+    background-color: #ffffff;
+    content: "";
+    border-radius: 20px;
+    transition-duration: 0.25s;
+  }
+
+  #nav-icon7 span:after {
+    left: 0;
+    position: absolute;
+    top: 18px;
+    height: 9px;
+    width: 50px;
+    background-color: #ffffff;
+    content: "";
+    border-radius: 20px;
+    transition-duration: 0.25s;
+  }
+
+  #nav-icon7.open {
+    right: 300px; 
+  }
+
+  #nav-icon7.open span {
+    background: transparent;
+  }
+
+  #nav-icon7.open span:before {
+    transition: transform 0.25s;
+    transform: rotateZ(45deg);
+    top: 0;
+  }
+
+  #nav-icon7.open span:after {
+    transition: transform 0.25s;
+    transform: rotateZ(-405deg);
+    top: 0;
+  }
+  //-----------------------------
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1002;
+    overflow-y: auto;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar__menu {
+    /* Стили для пунктов меню */
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .sidebar__menu-image {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px;
+    background-color: transparent;
+  }
+
+  .sidebar__menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+
+
+  .sidebar__menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ADD8E6;
+  }
+
+  .sidebar__menu-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+
+  .sidebar__menu-link > * {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .sidebar__menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #87CEFA; 
+  }
+
+  .sidebar__menu-link:hover {
+    background-color: #eeeeee;
+  }
+  //-----------------------------
+  .sidebar__sub-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+
+  .sidebar__sub-menu.active {
+    display: block;
+    opacity: 1;
+  }
+
+
+  .sidebar__submenu-item {
+    display: block;
+    width: 93%; 
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+  }
+
+  .sidebar__submenu-item:hover {
+    background-color: #e0e0e0;
+  }
+
+  .sidebar__submenu-item:focus {
+    outline: none;
+    background-color: #c0c0c0;
+  }
+
+  .sidebar__submenu-item:active {
+    background-color: #a0a0a0;
+  }
+  
+//------------------------------------------
+
+  #menuButton {
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    z-index: 999;
+    transition: right 0.3s ease-in-out;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-button-image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    transition: background-image 0.5s ease;
+  }
+
+  .fade-out {
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+
+  #menuButton.active {
+    /* Измените стиль для отображения кнопки */
+    right: 300px; /* Изменено */
+  }
+
+  #menuContainer {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f1f1f1;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    overflow: hidden;
+  }
+
   .header {
     &__upper-container {
       display: flex;
       flex-direction: column;
       margin: 0 10px;
+      //height: 95vh;
+      overflow-x: hidden;
     }
 
     &__particles {
@@ -254,7 +543,7 @@
         margin: 0 5.3vw;
         padding: 0;
         margin-bottom: 50px;
-
+        margin-top: -40px;
         letter-spacing: -0.5vw;
         font-weight: 300;
         font-size: 6vw;
@@ -264,7 +553,6 @@
         margin: 0 1.4vw;
         margin-top: -70px;
         padding: 0;
-
         letter-spacing: -0.5vw;
         font-weight: 300;
         font-size: 5vw;
@@ -279,7 +567,6 @@
       min-width: 110px;
       height: 50px;
       justify-content: left;
-
       list-style-type: none;
       padding: 0;
     }
@@ -291,10 +578,11 @@
     &__heading {
       width: 100%;
       margin: 0 8px;
-
       color: white;
       font-size: 16px;
       font-weight: 400;
+      overflow: hidden;
+      overflow-x: hidden;
     }
 
     &__container {
