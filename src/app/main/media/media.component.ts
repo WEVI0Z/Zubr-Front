@@ -10,7 +10,7 @@ import { Album } from '../../media/interface/album'
 })
 export class MediaComponent implements OnInit {
   private mediaList: Album[] = this.utilsService.randomizeList(
-    this.mediaService.albumList
+    this.mediaService.getAlbumList()
   )
   private currentIndex: number = 0
 
