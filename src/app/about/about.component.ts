@@ -18,12 +18,12 @@ export class AboutComponent implements OnInit {
     private breadcrumbService: BreadcrumbService,
     private router: Router
    ) {
-    this.translation = new TranslateClass(translateService);
+    this.translation = new TranslateClass(translate);
     this.translation.translateData(this.translation.getLanguage());
   }
 
   ngOnInit(): void {
-    this.translateService.get('SHARED.HEADER.ABOUT').subscribe((translation: string) => {
+    this.translate.get('SHARED.HEADER.ABOUT').subscribe((translation: string) => {
       document.title = translation;
     });
     this.breadcrumbService.set('@About', 'ABOUT.BREADCRUMB')

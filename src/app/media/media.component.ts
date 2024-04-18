@@ -20,8 +20,7 @@ export class MediaComponent implements OnInit {
 
   protected videoList: Video[] = this.mediaService.getVideoList('media')
   protected albumList: Album[] = this.mediaService.getAlbumList()
-  constructor(private mediaService: MediaService) {
-    Fancybox.bind('[data-fancybox]', {})
+
 
   constructor(private mediaService: MediaService, private translateService: TranslateService, private breadcrumbService: BreadcrumbService, private router: Router) {
     Fancybox.bind('[data-fancybox]', {});
