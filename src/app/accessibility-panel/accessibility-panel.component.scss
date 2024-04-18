@@ -10,6 +10,14 @@
   z-index: 999;
 }
 
+.reading-line {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+}
+
 .modal-header {
   display: flex;
   justify-content: space-between;
