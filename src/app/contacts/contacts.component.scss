@@ -29,8 +29,9 @@ main {
   &__box {
     position: relative;
     flex: 1;
-    min-width: 150px;
-    background-color: #0034fe;
+    min-width: 100px;
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -60,6 +61,11 @@ main {
       align-items: center;
       justify-content: center;
       flex-grow: 1;
+
+      &__ref {
+        color: inherit;  
+        text-decoration: none;
+      }
     }
   }
 }
@@ -70,6 +76,21 @@ main {
 
     &__title {
       font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 778px) {
+  .contacts {
+    max-width: $max-width;
+    padding: 0 10px;
+    margin-top: 10px;
+
+    &__title {
+      margin: 0;
+      font-size: 55px;
+      font-weight: 300;
+      letter-spacing: -5px;
     }
   }
 }

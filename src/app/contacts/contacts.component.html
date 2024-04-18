@@ -8,9 +8,7 @@
   <ng-template #iconTemplate> > </ng-template>
   <section class="contacts">
     <h2 class="contacts__title">{{ 'CONTACTS.TITLE' | translate }}</h2>
-
     <app-yandex-map></app-yandex-map>
-
     <div class="contacts__boxs">
       <div class="contacts__box">
         <span class="contacts__box__title"
@@ -24,17 +22,15 @@
           {{ 'CONTACTS.BOX1_TEXT2' | translate }}
         </p>
       </div>
-
       <div class="contacts__box">
         <span class="contacts__box__title"
           >{{ 'CONTACTS.BOX2_TITLE' | translate }}
           <i class="fa fa-phone" aria-hidden="true"></i
         ></span>
         <p class="contacts__box__text">
-          {{ 'CONTACTS.BOX2_TEXT' | translate }}
+          <a class="contacts__box__text__ref" href="tel:+375298008175">{{ 'CONTACTS.BOX2_TEXT' | translate }}</a>
         </p>
       </div>
-
       <div class="contacts__box">
         <span class="contacts__box__title"
           >{{ 'CONTACTS.BOX3_TITLE' | translate }}
@@ -44,7 +40,6 @@
           {{ 'CONTACTS.BOX3_TEXT' | translate }}
         </p>
       </div>
-
       <div class="contacts__box">
         <span class="contacts__box__title"
           >{{ 'CONTACTS.BOX4_TITLE' | translate }}
@@ -55,7 +50,6 @@
         </p>
       </div>
     </div>
-
     <app-feedback></app-feedback>
   </section>
   <app-share-block></app-share-block>

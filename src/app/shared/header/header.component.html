@@ -144,9 +144,10 @@
         </ul>
       </div>
       <!------>
-      <button id="menuButton" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen" (click)="toggleMenu()">
-        <div class="menu-button-image" [ngStyle]="{'background-image': 'url(' + menuButtonImage + ')'}"></div>
-      </button>
+
+      <div id="nav-icon7" (click)="toggleMenu()" [ngClass]="{'open': isMenuOpen}" [ngClass]="{'active': isMenuOpen}" *ngIf="isMobileScreen">
+        <span></span>
+      </div>
 
       <nav class="header__nav nav">
         <ul class="nav__list">
@@ -260,14 +261,14 @@
             </button>
           </li>
           <!-- <li class="nav__item nav__user" [hidden]="isMobileScreen">
-            <a href="https://email.robin-zubronok.by/webmail/"
-               target="_blank"
-               class="nav__link">
-              <img src="assets/header/icon-mail.svg"
-                   alt="Почта"
-                   class="nav__image" />
-            </a>
-          </li> -->
+        <a href="https://email.robin-zubronok.by/webmail/"
+           target="_blank"
+           class="nav__link">
+          <img src="assets/header/icon-mail.svg"
+               alt="Почта"
+               class="nav__image" />
+        </a>
+      </li> -->
         </ul>
       </nav>
     </div>

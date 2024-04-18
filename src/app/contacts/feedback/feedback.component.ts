@@ -1,55 +1,66 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { TranslateClass } from '../../translate.component';
-import { Validators, FormGroup, FormBuilder } from '@angular/forms';
+import { Component, OnInit } from '@angular/core'
+import { TranslateService } from '@ngx-translate/core'
+import { TranslateClass } from '../../translate.component'
+import { FormControl, FormGroup, Validators } from '@angular/forms'
+import { EmailService } from '../services/email-send.service'
 
 @Component({
   selector: 'app-feedback',
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.scss'],
+  providers: [EmailService],
 })
-
 export class FeedbackComponent implements OnInit {
-  public feedbackForm: FormGroup;
-  public translation: TranslateClass;
-  submitted = false;
+  public translation: TranslateClass
+
+  public feedbackForm = new FormGroup({
+    firstName: new FormControl('', [
+      Validators.required,
+      Validators.maxLength(100),
+    ]),
+    lastName: new FormControl('', [
+      Validators.required,
+      Validators.maxLength(100),
+    ]),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.maxLength(100),
+      Validators.email,
+    ]),
+    message: new FormControl('', [
+      Validators.required,
+      Validators.maxLength(200),
+      Validators.minLength(10),
+    ]),
+  })
 
   constructor(
-    public formBuilder: FormBuilder,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private emailService: EmailService
   ) {
-    this.translation = new TranslateClass(translate);
-    this.translation.translateData(this.translation.getLanguage());
-
-    this.feedbackForm = this.formBuilder.group({
-      firstName: ['', [Validators.required, Validators.maxLength(100)]],
-      lastName: ['', [Validators.required, Validators.maxLength(100)]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(500)]]
-    });
+    this.translation = new TranslateClass(translate)
+    this.translation.translateData(this.translation.getLanguage())
   }
 
-  ngOnInit(): void {
-    this.feedbackForm = this.formBuilder.group({
-      firstName: ['', [Validators.required, Validators.maxLength(100)]],
-      lastName: ['', [Validators.required, Validators.maxLength(100)]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(500)]]
-    });
-  }
+  ngOnInit(): void {}
 
   get registerFormControl() {
-    return this.feedbackForm.controls;
+    return this.feedbackForm.controls
   }
 
   submitForm() {
-    this.submitted = true;
+    const { firstName, lastName, email, message } = this.feedbackForm.value
     if (this.feedbackForm.valid) {
-      alert('!');
-      this.feedbackForm.reset();
-      this.submitted = false;
+      this.emailService.sendEmail(
+        firstName ?? '',
+        lastName ?? '',
+        email ?? '',
+        message ?? ''
+      )
+      alert('Ok')
+      this.feedbackForm.reset()
     } else {
-      alert('?');
+      alert('Error')
     }
   }
 }

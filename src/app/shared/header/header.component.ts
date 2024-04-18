@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core'
+import { Component, OnInit, HostListener, Renderer2} from '@angular/core'
 import { ParticlesConfig } from './particles-config'
 import { Router, NavigationEnd } from '@angular/router'
 import { Sphere } from '../../sphere-list/interface/sphere'
@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+
   @HostListener('window:resize')
   onWindowResize(): void {
     this.checkWindowSize();
@@ -48,8 +49,12 @@ export class HeaderComponent implements OnInit {
 
     if (windowWidth <= 778) {
       this.isMobileScreen = true;
+      this.ismenuHidden = true;
+      this.isMenuOpen = false;
     }
     else {
+      this.ismenuHidden = true;
+      this.isMenuOpen = false;
       this.isMobileScreen = false;
     }
 
@@ -63,7 +68,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private router: Router,
     private sphereService: SphereService,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private renderer: Renderer2
   ) {
     this.translation = new TranslateClass(translate)
     this.currentLANG = this.translation.getLanguage().toUpperCase()
@@ -91,9 +97,12 @@ export class HeaderComponent implements OnInit {
     this.ismenuHidden = !this.ismenuHidden;
     setTimeout(() => {
       this.isMenuOpen = !this.isMenuOpen;
-      this.menuButtonImage = this.isMenuOpen ? '/assets/header/close-pict.png' : '/assets/header/menu_pict.png';
-    }, 1); 
-    
+      if (this.isMenuOpen) {
+        this.renderer.addClass(document.getElementById('nav-icon7'), 'open');
+      } else {
+        this.renderer.removeClass(document.getElementById('nav-icon7'), 'open');
+      }
+    }, 1);
   }
 
   toggleSubmenu(submenuId: number) {
