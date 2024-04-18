@@ -10,6 +10,7 @@ import { Router } from '@angular/router'
 import { Sphere } from '../interface/sphere'
 
 import { TranslateService } from '@ngx-translate/core'
+import { BreadcrumbService } from 'xng-breadcrumb'
 
 @Component({
   selector: 'app-item',
@@ -23,7 +24,8 @@ export class ItemComponent implements AfterViewInit {
   constructor(
     private sphereService: SphereService,
     private router: Router,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private breadcrumbService: BreadcrumbService
   ) {}
 
   ngAfterViewInit(): void {
@@ -37,6 +39,8 @@ export class ItemComponent implements AfterViewInit {
       if (url.includes(sphere.name)) {
         this.sphere = sphere
         wrapper.innerHTML = sphere.content
+        this.breadcrumbService.set('@SphereList', 'SPHERE-LIST.BREADCRUMB')
+        this.breadcrumbService.set('@Sphere', sphere.viewNameRU)
       }
     })
   }

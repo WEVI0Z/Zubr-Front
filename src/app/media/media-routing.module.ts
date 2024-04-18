@@ -8,10 +8,16 @@ const routes: Routes = [
   {
     path: '',
     component: MediaComponent,
+    data: {
+      breadcrumb: { alias: 'Media' },
+    },
   },
   {
     path: ':name',
     component: AlbumComponent,
+    data: {
+      breadcrumb: { alias: 'Album' },
+    },
   },
 ]
 

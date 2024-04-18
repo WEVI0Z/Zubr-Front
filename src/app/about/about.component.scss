@@ -8,7 +8,7 @@ main {
 
 .about {
   max-width: $max-width;
-  margin: 70px auto;
+  margin: 30px auto 70px;
   padding: 0 90px;
   box-sizing: border-box;
 
@@ -196,6 +196,10 @@ main {
       font-weight: 300;
       letter-spacing: -5px;
     }
+  }
+
+  xng-breadcrumb {
+    padding: 10px 0 0 15px;
   }
 
   .tasks__item {
