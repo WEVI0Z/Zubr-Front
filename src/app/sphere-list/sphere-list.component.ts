@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { SphereService } from './service/sphere.service';
 import { Sphere } from './interface/sphere';
 import { TranslateService } from '@ngx-translate/core';
+import { BreadcrumbService } from 'xng-breadcrumb'
 
 @Component({
   selector: 'app-sphere-list',
@@ -13,6 +14,7 @@ export class SphereListComponent implements OnInit {
 
   constructor(
     private sphereService: SphereService,
+    private breadcrumbsService: BreadcrumbService,
     private translateService: TranslateService
   ) { }
 
@@ -20,5 +22,6 @@ export class SphereListComponent implements OnInit {
     this.translateService.get('SHARED.HEADER.COMPETENCE.TITLE').subscribe((translation: string) => {
       document.title = translation;
     });
+    this.breadcrumbsService.set('@SphereList', 'SPHERE-LIST.BREADCRUMB')
   }
 }

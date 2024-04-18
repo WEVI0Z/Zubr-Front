@@ -121,6 +121,10 @@ li {
 }
 
 @media (max-width: 778px) {
+  xng-breadcrumb {
+    padding: 10px 0 0 15px;
+  }
+
   main {
     margin: auto;
     padding: 0 10px;

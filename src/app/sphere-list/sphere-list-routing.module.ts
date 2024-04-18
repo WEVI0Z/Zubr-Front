@@ -7,10 +7,16 @@ const routes: Routes = [
   {
     path: '',
     component: SphereListComponent,
+    data: {
+      breadcrumb: { alias: 'SphereList' },
+    },
   },
   {
     path: ':name',
     component: ItemComponent,
+    data: {
+      breadcrumb: { alias: 'Sphere' },
+    },
   },
 ]
 

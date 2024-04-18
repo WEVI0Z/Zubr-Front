@@ -1,5 +1,11 @@
 <main>
   <app-header></app-header>
+  <xng-breadcrumb [separator]="iconTemplate">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
+  <ng-template #iconTemplate> > </ng-template>
   <section class="contacts">
     <h2 class="contacts__title">{{ 'CONTACTS.TITLE' | translate }}</h2>
     <app-yandex-map></app-yandex-map>

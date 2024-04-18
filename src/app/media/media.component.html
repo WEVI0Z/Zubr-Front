@@ -1,5 +1,11 @@
 <main>
   <app-header></app-header>
+  <xng-breadcrumb [separator]="iconTemplate">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
+  <ng-template #iconTemplate> > </ng-template>
   <section class="media">
     <h2 class="media__title">{{ 'MEDIA.TITLE' | translate }}</h2>
     <ul class="media__list">

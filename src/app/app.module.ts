@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module'
 import { HttpClient } from '@angular/common/http'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { CookieConsentModule } from './cookie-consent/cookie-consent.module'
+import { BreadcrumbModule, BreadcrumbService } from 'xng-breadcrumb'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -20,8 +21,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     SharedModule,
     CookieConsentModule,
+    BreadcrumbModule,
   ],
-  providers: [],
+  providers: [BreadcrumbService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
