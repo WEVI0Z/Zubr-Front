@@ -6,6 +6,16 @@ html {
   overflow-x: hidden;
 }
 
+xng-breadcrumb {
+  padding: 10px 0 0 90px;
+}
+.xng-breadcrumb-item {
+  font-size: 18px;
+}
+.xng-breadcrumb-separator {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   padding: 0;

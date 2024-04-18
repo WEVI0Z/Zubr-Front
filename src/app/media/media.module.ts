@@ -8,6 +8,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { ShareBlockModule } from '../share-block/share-block.module'
 import { AlbumComponent } from './album/album.component'
+import { BreadcrumbModule } from 'xng-breadcrumb'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -23,6 +24,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ShareBlockModule,
     NgOptimizedImage,
     HttpClientModule,
+    BreadcrumbModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

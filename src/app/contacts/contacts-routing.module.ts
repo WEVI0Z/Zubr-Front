@@ -7,13 +7,15 @@ const routes: Routes = [
   {
     path: '',
     component: ContactsComponent,
+    data: {
+      breadcrumb: { alias: 'Contacts' },
+    },
   },
 ]
 
 @NgModule({
-  declarations: [
-  ],
+  declarations: [],
   imports: [RouterModule.forChild(routes), HttpClientModule],
   exports: [RouterModule],
 })
-export class ContactsRoutingModule { }
+export class ContactsRoutingModule {}

@@ -1,8 +1,7 @@
 @import '../../stylesheets/global';
 
 .sphere {
-  margin: auto;
-  margin-top: 40px;
+  margin: 30px auto 70px;
   max-width: $max-width;
   padding: 0 92px;
   box-sizing: border-box;
@@ -74,6 +73,10 @@
 }
 
 @media (max-width: 778px) {
+  xng-breadcrumb {
+    padding: 10px 0 0 15px;
+  }
+
   .sphere {
     margin: auto;
     margin-top: 40px;

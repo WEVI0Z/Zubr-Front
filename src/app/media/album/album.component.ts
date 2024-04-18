@@ -6,6 +6,7 @@ import { Router } from '@angular/router'
 import { Photo } from '../interface/photo'
 import { AlbumList } from '../mock/media-mock'
 import { Fancybox } from '@fancyapps/ui'
+import { BreadcrumbService } from 'xng-breadcrumb'
 
 @Component({
   selector: 'app-album',
@@ -26,12 +27,13 @@ export class AlbumComponent {
 
   constructor(
     public translate: TranslateService,
-    private router: Router
+    private router: Router,
+    private breadcrumbService: BreadcrumbService
   ) {
     this.albumList = new AlbumList(translate)
     //получаем имя альбома (имя папки) из url
     this.folderPath = this.albumList.getAlbumPath(router.url)
-    //получаем полное имя альбома 
+    //получаем полное имя альбома
     this.albumName = this.albumList.getFullName(this.folderPath)
     this.mediaService = new MediaService(translate)
     //получаем список фото
@@ -39,4 +41,8 @@ export class AlbumComponent {
     Fancybox.bind('[data-fancybox]', {})
   }
 
+  ngOnInit(): void {
+    this.breadcrumbService.set('@Album', this.albumName)
+    this.breadcrumbService.set('@Media', 'MEDIA.BREADCRUMB')
+  }
 }

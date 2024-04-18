@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { FeedbackComponent } from './feedback/feedback.component'
 import { YandexMapComponent } from './yandex-map/yandex-map.component'
+import { BreadcrumbModule } from 'xng-breadcrumb'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -33,7 +34,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule,
     ShareBlockModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BreadcrumbModule,
   ],
   exports: [ContactsRoutingModule],
 })
