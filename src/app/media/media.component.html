@@ -22,9 +22,30 @@
           />
           <p class="media__description">
             {{ album.name ? album.name : 'Фотография' }}<br />
+            {{ album.robin }}<br />
             {{ album.date ? album.date : '' }}
           </p>
         </a>
+      </li>
+      <li
+        class="media__item2 fancybox-youtube-container"
+        *ngFor="let video of videoList"
+      >
+        <a
+          class="fancybox.iframe fancybox-youtube"
+          data-fancybox
+          href="{{ video.path }}"
+        ></a>
+        <iframe
+          class="media__image"
+          width="403"
+          height="403"
+          [src]="video.path | safe"
+        >
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture; web-share" allowfullscreen>
+        </iframe>
       </li>
     </ul>
   </section>

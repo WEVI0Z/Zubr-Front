@@ -130,22 +130,22 @@
   }
 
   &__button {
-    padding : 4px 40px 4px 15px;
+    padding: 4px 40px 4px 15px;
     background-image: url('/assets/header/user.svg');
     background-position: center right 10px;
-    color :#fff;
+    color: #fff;
     font-size: 16px;
     background-repeat: no-repeat;
     border-radius: 15px;
-    border :1px solid #fff;
+    border: 1px solid #fff;
     background-color: transparent;
- 
+
     .nav__competitions {
       color: #000;
 
       top: 100%;
       right: 15px;
-      
+
       text-align: left;
 
       img {
@@ -274,7 +274,6 @@
   }
 }
 @media (max-width: 778px) {
-
   #nav-icon7 {
     width: 50px;
     height: 45px;
@@ -289,7 +288,7 @@
   #nav-icon7 span {
     height: 9px;
     width: 50px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border-radius: 20px;
     position: absolute;
     transition-duration: 0.25s;
@@ -302,7 +301,7 @@
     height: 9px;
     width: 50px;
     background-color: #ffffff;
-    content: "";
+    content: '';
     border-radius: 20px;
     transition-duration: 0.25s;
   }
@@ -314,13 +313,13 @@
     height: 9px;
     width: 50px;
     background-color: #ffffff;
-    content: "";
+    content: '';
     border-radius: 20px;
     transition-duration: 0.25s;
   }
 
   #nav-icon7.open {
-    right: 300px; 
+    right: 300px;
   }
 
   #nav-icon7.open span {
@@ -367,8 +366,8 @@
 
   .sidebar__menu-image {
     display: inline-block;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     background-color: transparent;
   }
@@ -384,13 +383,11 @@
     transform: rotate(180deg);
   }
 
-
-
   .sidebar__menu-item {
     position: relative;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ADD8E6;
+    border-bottom: 1px solid #add8e6;
   }
 
   .sidebar__menu-link {
@@ -417,13 +414,13 @@
   }
 
   .sidebar__menu-link::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #87CEFA; 
+    background-color: #87cefa;
   }
 
   .sidebar__menu-link:hover {
@@ -451,10 +448,9 @@
     opacity: 1;
   }
 
-
   .sidebar__submenu-item {
     display: block;
-    width: 93%; 
+    width: 93%;
     text-align: left;
     padding: 10px;
     background-color: #f0f0f0;
@@ -473,8 +469,8 @@
   .sidebar__submenu-item:active {
     background-color: #a0a0a0;
   }
-  
-//------------------------------------------
+
+  //------------------------------------------
 
   #menuButton {
     position: fixed;

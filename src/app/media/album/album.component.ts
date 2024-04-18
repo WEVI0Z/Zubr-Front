@@ -1,12 +1,12 @@
 import { Component } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
-import { TranslateClass } from '../../translate.component'
 import { MediaService } from '../service/media.service'
 import { Router } from '@angular/router'
 import { Photo } from '../interface/photo'
 import { AlbumList } from '../mock/media-mock'
 import { Fancybox } from '@fancyapps/ui'
 import { BreadcrumbService } from 'xng-breadcrumb'
+import { Video } from '../interface/video'
 
 @Component({
   selector: 'app-album',
@@ -21,10 +21,11 @@ export class AlbumComponent {
 
   private albumList: AlbumList
   public photoList: Photo[]
+  public videoList: Video[]
 
   public folderPath: string
   public albumName: string
-
+  public RobIn: string
   constructor(
     public translate: TranslateService,
     private router: Router,
@@ -35,9 +36,13 @@ export class AlbumComponent {
     this.folderPath = this.albumList.getAlbumPath(router.url)
     //получаем полное имя альбома
     this.albumName = this.albumList.getFullName(this.folderPath)
+    this.RobIn = this.albumList.getRobIn(this.folderPath)
     this.mediaService = new MediaService(translate)
     //получаем список фото
     this.photoList = this.mediaService.getPhotoList(this.folderPath)
+    //получаем список видео
+    this.videoList = this.mediaService.getVideoList(this.folderPath)
+
     Fancybox.bind('[data-fancybox]', {})
   }
 

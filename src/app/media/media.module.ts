@@ -9,13 +9,14 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { ShareBlockModule } from '../share-block/share-block.module'
 import { AlbumComponent } from './album/album.component'
 import { BreadcrumbModule } from 'xng-breadcrumb'
+import { SafePipe } from './safe.pipe'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
 }
 
 @NgModule({
-  declarations: [MediaComponent, AlbumComponent],
+  declarations: [MediaComponent, AlbumComponent, SafePipe],
   imports: [
     CommonModule,
     MediaRoutingModule,
