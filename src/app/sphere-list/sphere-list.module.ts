@@ -8,6 +8,7 @@ import { ShareBlockModule } from '../share-block/share-block.module'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
+import { BreadcrumbModule } from 'xng-breadcrumb'
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http)
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     SharedModule,
     ShareBlockModule,
+    BreadcrumbModule,
   ],
   exports: [SphereListRoutingModule],
 })

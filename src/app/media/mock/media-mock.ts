@@ -5,6 +5,7 @@ import ruDictionary from '../../../assets/i18n/ru.json'
 import enDictionary from '../../../assets/i18n/en.json'
 import { Album } from '../interface/album'
 import { Photo } from '../interface/photo'
+import { Video } from '../interface/video'
 
 //Для добавления нового альбома:
 //1. Создать папку альбома с соответствующим названием
@@ -15,13 +16,13 @@ import { Photo } from '../interface/photo'
 //6. В методе getPhotoList() класса PhotoList добавить элемент case
 
 const albumsNames: string[] = [
+  'media', //общая страница медиа
   'zubr2023',
   'minsk2024',
   'mogilev2024',
   'brest2024',
 ]
 export class AlbumList {
-
   private currentLang: string
   private translation: TranslateClass
 
@@ -35,79 +36,106 @@ export class AlbumList {
     list = [
       //для нового альбома
       //{
-      //  name: this.getFullName(albumsNames[4]),
-      //  folderPath: albumsNames[4],
+      //  name: this.getFullName(albumsNames[5]),
+      //  robin: this.getRobIn(albumsNames[5]),
+      //  folderPath: albumsNames[5],
       //},
       {
+        name: this.getFullName(albumsNames[4]),
+        date: '12.03.2024',
+        robin: this.getRobIn(albumsNames[4]),
+        folderPath: albumsNames[4],
+      },
+      {
         name: this.getFullName(albumsNames[3]),
-        date:'12.03.2024',
+        date: '06.03.2024',
+        robin: this.getRobIn(albumsNames[3]),
         folderPath: albumsNames[3],
       },
       {
         name: this.getFullName(albumsNames[2]),
-        date:'06.03.2024',
+        date: '02.03.2024',
+        robin: this.getRobIn(albumsNames[2]),
         folderPath: albumsNames[2],
       },
       {
         name: this.getFullName(albumsNames[1]),
-        date:'02.03.2024',
-        folderPath: albumsNames[1],
-      },
-      {
-        name: this.getFullName(albumsNames[0]),
         date: '05.05.2023',
-        folderPath: albumsNames[0],
+        robin: this.getRobIn(albumsNames[1]),
+        folderPath: albumsNames[1],
       },
     ]
     return list
   }
 
   public getFullName(path: string): string {
-
     let dict
     if (this.currentLang == 'be') {
       dict = beDictionary
-    }
-    else if (this.currentLang == 'en') {
+    } else if (this.currentLang == 'en') {
       dict = enDictionary
-    }
-    else {
+    } else {
       dict = ruDictionary
     }
 
     let name = ''
 
     switch (path) {
-      case albumsNames[0]: {
+      case albumsNames[1]: {
         name = dict.MEDIA.ALBUM1.TITLE
         break
       }
-      case albumsNames[1]: {
+      case albumsNames[2]: {
         name = dict.MEDIA.ALBUM2.TITLE
         break
       }
-      case albumsNames[2]: {
+      case albumsNames[3]: {
         name = dict.MEDIA.ALBUM3.TITLE
         break
       }
-      case albumsNames[3]: {
+      case albumsNames[4]: {
         name = dict.MEDIA.ALBUM4.TITLE
         break
       }
       //для нового альбома
-      //case albumsNames[4]: {
+      //case albumsNames[5]: {
       //  name = dict.MEDIA.ALBUM5.TITLE
       //  break
       //}
     }
-    
-   
+
     return name
   }
 
   public getAlbumPath(url: string): string {
-    let path = url.split('/').at(-1)
+    const path = url.split('/').at(-1)
     return path != undefined ? path : albumsNames[0]
+  }
+
+  public getRobIn(path: string): string {
+    //this.translate.currentLang = this.translation.getLanguage()
+    //let robin = this.translation.getValue('SHARED.HEADER.ROBIN.TITLE')
+
+    //this.translate
+    //  .get('SHARED.HEADER.ROBIN.TITLE')
+    //  .subscribe((translations: string) => {
+    //    robin = translations
+    //  })
+
+    let robin: string = ruDictionary.SHARED.HEADER.ROBIN.TITLE
+    if (this.currentLang == 'be') {
+      robin = beDictionary.SHARED.HEADER.ROBIN.TITLE
+    } else if (this.currentLang == 'en') {
+      robin = enDictionary.SHARED.HEADER.ROBIN.TITLE
+    }
+
+    if (path == albumsNames[1]) {
+      robin += '-2023»'
+    } else {
+      robin += '-2024»'
+    }
+
+    return '«' + robin
   }
 }
 
@@ -174,27 +202,53 @@ export class PhotoList {
   public getPhotoList(folderPath: string): Photo[] {
     let list: Photo[] = []
     switch (folderPath) {
-      case albumsNames[0]: {
+      case albumsNames[1]: {
         list = this.zubr2023
         break
       }
-      case albumsNames[1]: {
+      case albumsNames[2]: {
         list = this.minsk2024
         break
       }
-      case albumsNames[2]: {
+      case albumsNames[3]: {
         list = this.mogilev2024
         break
       }
-      case albumsNames[3]: {
+      case albumsNames[4]: {
         list = this.brest2024
         break
       }
       //для нового альбома
-      //case albumsNames[4]: {
+      //case albumsNames[5]: {
       //  list = this.<album_name>
       //  break
       //}
+    }
+    return list
+  }
+}
+
+export class VideoList {
+  private zubr2023_video: Video[] = [
+    { path: 'https://www.youtube.com/embed/Bn2T-m-d1jU?si=y85cM7MiAKCxR22j' },
+  ]
+
+  private general_video: Video[] = [
+    { path: 'https://www.youtube.com/embed/K9kon1kD7HQ?si=VFFOrsI8W0R8EJMk' },
+    { path: 'https://www.youtube.com/embed/bHY9OWusqb8?si=wNxtxqvAIDxaX6Wm' },
+  ]
+
+  public getVideoList(folderPath: string): Video[] {
+    let list: Video[] = []
+    switch (folderPath) {
+      case albumsNames[0]: {
+        list = this.general_video
+        break
+      }
+      case albumsNames[1]: {
+        list = this.zubr2023_video
+        break
+      }
     }
     return list
   }

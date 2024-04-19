@@ -1,4 +1,13 @@
 <app-header></app-header>
+<xng-breadcrumb
+  [separator]="iconTemplate"
+  class="xng-breadcrumb-root xng-breadcrumb-separator xng-breadcrumb-item"
+>
+  <ng-container *xngBreadcrumbItem="let breadcrumb">
+    <ng-container>{{ breadcrumb | translate }}</ng-container>
+  </ng-container>
+</xng-breadcrumb>
+<ng-template #iconTemplate> > </ng-template>
 <main class="sphere">
   <h2 class="sphere__name">{{ 'SPHERE-LIST.NAME' | translate }}</h2>
   <ul class="sphere__list">

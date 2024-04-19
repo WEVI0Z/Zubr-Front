@@ -1,21 +1,53 @@
 <main>
   <app-header></app-header>
-
+  <xng-breadcrumb [separator]="iconTemplate">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
+  <ng-template #iconTemplate> > </ng-template>
   <section class="media">
-    <h2 class="media__title">{{ albumName }}</h2>
+    <h2 class="media__title">{{ albumName }} {{ RobIn }}</h2>
     <ul class="media__list">
       <li class="media__item" *ngFor="let photo of photoList">
-        <a [href]="'../../assets/media/albums/' + folderPath+'/'+photo.photoPath"
-           data-fancybox="photo"
-           
-           class="media__link">
-          <img class="media__image"
-               [src]="'../../assets/media/albums/' + folderPath+'/'+photo.photoPath" />
+        <a
+          [href]="
+            '../../assets/media/albums/' + folderPath + '/' + photo.photoPath
+          "
+          data-fancybox="photo"
+          class="media__link"
+        >
+          <img
+            class="media__image"
+            [src]="
+              '../../assets/media/albums/' + folderPath + '/' + photo.photoPath
+            "
+          />
         </a>
-       
+      </li>
+      <li
+        class="media__item fancybox-youtube-container"
+        *ngFor="let video of videoList"
+      >
+        <a
+          class="fancybox.iframe fancybox-youtube"
+          data-fancybox
+          href="{{ video.path }}"
+        ></a>
+        <iframe
+          class="media__image"
+          width="403"
+          height="403"
+          [src]="video.path | safe"
+        >
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+          autoplay; clipboard-write; encrypted-media; gyroscope;
+          picture-in-picture; web-share" allowfullscreen>
+        </iframe>
       </li>
     </ul>
   </section>
+
   <app-share-block></app-share-block>
   <app-footer></app-footer>
 </main>

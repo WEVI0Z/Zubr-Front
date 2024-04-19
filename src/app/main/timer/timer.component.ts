@@ -42,9 +42,9 @@ export class TimerComponent implements OnInit {
     this.setTime(this.calculateDifference(new Date(), TARGET_DATE))
 
     setInterval(() => {
-      if(this.milliseconds >= 1000) {
+      if (this.milliseconds >= 1000) {
         this.milliseconds -= 1000
-      }else{
+      } else {
         this.milliseconds = 0
       }
 

@@ -1,5 +1,11 @@
 <main>
   <app-header></app-header>
+  <xng-breadcrumb [separator]="iconTemplate">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
+  <ng-template #iconTemplate> > </ng-template>
   <section class="contacts">
     <h2 class="contacts__title">{{ 'CONTACTS.TITLE' | translate }}</h2>
     <app-yandex-map></app-yandex-map>
@@ -22,7 +28,9 @@
           <i class="fa fa-phone" aria-hidden="true"></i
         ></span>
         <p class="contacts__box__text">
-          <a class="contacts__box__text__ref" href="tel:+375298008175">{{ 'CONTACTS.BOX2_TEXT' | translate }}</a>
+          <a class="contacts__box__text__ref" href="tel:+375298008175">{{
+            'CONTACTS.BOX2_TEXT' | translate
+          }}</a>
         </p>
       </div>
       <div class="contacts__box">

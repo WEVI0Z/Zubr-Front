@@ -15,4 +15,13 @@ export class TranslateClass {
   public translateData(lang: string): void {
     this.translate.use(lang.toLowerCase())
   }
+
+  public getValue(key: string): string {
+    let res = ''
+    this.translate
+    this.translate.get(key).subscribe((translations: string) => {
+      res = translations
+    })
+    return res
+  }
 }
