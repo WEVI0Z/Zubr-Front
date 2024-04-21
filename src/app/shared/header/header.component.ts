@@ -46,7 +46,7 @@ export class HeaderComponent implements OnInit {
   checkWindowSize(): void {
     const windowWidth: number = window.innerWidth
 
-    if (windowWidth <= 778) {
+    if (windowWidth <= 840) {
       this.isMobileScreen = true
       this.ismenuHidden = true
       this.isMenuOpen = false
