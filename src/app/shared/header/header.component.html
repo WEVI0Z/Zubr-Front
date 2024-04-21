@@ -45,16 +45,6 @@
           </li>
 
           <li class="sidebar__menu-item">
-            <a href="#" routerLink="/contacts" class="sidebar__menu-link">
-              <img
-                src="assets/header/contacts.png"
-                class="sidebar__menu-image"
-              />
-              {{ 'SHARED.HEADER.CONTACTS' | translate }}
-            </a>
-          </li>
-
-          <li class="sidebar__menu-item">
             <button class="sidebar__menu-link" (click)="toggleSubmenu(1)">
               <img
                 src="assets/header/competitions.png"
@@ -136,6 +126,16 @@
           </li>
 
           <li class="sidebar__menu-item">
+            <a href="#" routerLink="/contacts" class="sidebar__menu-link">
+              <img
+                src="assets/header/contacts.png"
+                class="sidebar__menu-image"
+              />
+              {{ 'SHARED.HEADER.CONTACTS' | translate }}
+            </a>
+          </li>
+
+          <li class="sidebar__menu-item">
             <button class="sidebar__menu-link" (click)="toggleSubmenu(3)">
               <img src="assets/header/lang.png" class="sidebar__menu-image" />
               {{ 'SHARED.HEADER.LANG' | translate }}
@@ -145,6 +145,7 @@
                 [class.rotate]="activeSubmenu === 3"
               />
             </button>
+
             <ul
               class="sidebar__sub-menu"
               [ngClass]="{ active: activeSubmenu === 3 }"
@@ -225,11 +226,6 @@
               {{ 'SHARED.HEADER.ABOUT' | translate }}
             </a>
           </li>
-          <li class="nav__item" [hidden]="isMobileScreen">
-            <a href="#" routerLink="/contacts" class="nav__link">
-              {{ 'SHARED.HEADER.CONTACTS' | translate }}
-            </a>
-          </li>
           <li
             class="nav__item nav__item--competitions"
             [hidden]="isMobileScreen"
@@ -285,6 +281,11 @@
           <li class="nav__item" [hidden]="isMobileScreen">
             <a href="#" routerLink="/media" class="nav__link">
               {{ 'SHARED.HEADER.MEDIA' | translate }}
+            </a>
+          </li>
+          <li class="nav__item" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/contacts" class="nav__link">
+              {{ 'SHARED.HEADER.CONTACTS' | translate }}
             </a>
           </li>
           <li class="nav__item nav__item--langs" [hidden]="isMobileScreen">
