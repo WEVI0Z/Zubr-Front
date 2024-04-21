@@ -1,10 +1,17 @@
-import { Component, OnInit, HostListener, Renderer2 } from '@angular/core'
+import {
+  Component,
+  OnInit,
+  ViewContainerRef,
+  HostListener,
+  Renderer2,
+} from '@angular/core'
 import { ParticlesConfig } from './particles-config'
 import { Router, NavigationEnd } from '@angular/router'
 import { Sphere } from '../../sphere-list/interface/sphere'
 import { SphereService } from '../../sphere-list/service/sphere.service'
 import { TranslateService } from '@ngx-translate/core'
 import { TranslateClass } from '../../translate.component'
+import { AccessibilityPanelComponent } from 'src/app/accessibility-panel/accessibility-panel.component'
 
 declare let particlesJS: any
 
@@ -30,6 +37,7 @@ export class HeaderComponent implements OnInit {
     'assets/header/up2.png',
     'assets/header/up3.png',
   ]
+  showAccessibilityModal: boolean = false
 
   public ngOnInit(): void {
     if (this.isPageMain) {
@@ -66,7 +74,8 @@ export class HeaderComponent implements OnInit {
     private router: Router,
     private sphereService: SphereService,
     public translate: TranslateService,
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private containerRef: ViewContainerRef
   ) {
     this.translation = new TranslateClass(translate)
     this.currentLANG = this.translation.getLanguage().toUpperCase()
@@ -105,5 +114,16 @@ export class HeaderComponent implements OnInit {
     } else {
       this.activeSubmenu = submenuId
     }
+  }
+
+  public openAccessibilityPanel() {
+    this.showAccessibilityModal = true
+    const componentRef = this.containerRef.createComponent(
+      AccessibilityPanelComponent
+    )
+    componentRef.instance.closeModal.subscribe(() => {
+      componentRef.destroy()
+      this.showAccessibilityModal = false
+    })
   }
 }
