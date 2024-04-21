@@ -14,7 +14,7 @@ declare let particlesJS: any
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  protected isPageMain: boolean = this.router.url === '/'
+  protected isPageMain: boolean = this.router.url === '/' || this.router.url === '/#'
   protected sphereList: Sphere[] = this.sphereService.sphereList
   public currentLANG: string
   private translation: TranslateClass
