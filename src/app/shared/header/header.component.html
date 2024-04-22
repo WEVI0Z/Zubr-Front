@@ -299,17 +299,14 @@
               </li>
             </ul>
           </li>
-          <li class="nav__item">
-            <button
-              class="accessibility__button"
-              (click)="openAccessibilityPanel()"
-            >
+          <li class="nav__item" hidden>
+            <a href="#" class="nav__link">
               <img
                 src="assets/header/eye.svg"
                 alt="Версия для слабовидящих"
                 class="nav__image"
               />
-            </button>
+            </a>
           </li>
           <li
             class="nav__item nav__user nav__item--competitions"
@@ -398,7 +395,4 @@
       </li>
     </ul>
   </header>
-  <app-accessibility-panel
-    *ngIf="showAccessibilityModal"
-  ></app-accessibility-panel>
 </div>
