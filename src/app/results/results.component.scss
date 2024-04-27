@@ -29,6 +29,7 @@ main {
     }
 
     &__text {
+      white-space: nowrap;
       padding: 6px;
       font-weight: normal;
       font-size: 18px;
