@@ -9,6 +9,45 @@
   <section class="results">
     <h2 class="results__title">{{ 'RESULTS.TITLE' | translate }}</h2>
     <h2 class="results__name">{{ 'RESULTS.FIRST' | translate }}</h2>
+    <table>
+      <tr>
+        <td *ngFor="let item of columns_1">
+          {{ item }}
+        </td>
+      </tr>
+      <tr *ngFor="let item of items_1">
+        <td>
+          {{ item.title }}
+        </td>
+        <td>
+          <ng-container *ngFor="let children of item.children">
+            <tr>
+              <th>
+                {{ children.name }}
+              </th>
+            </tr>
+          </ng-container>
+        </td>
+        <td>
+          <ng-container *ngFor="let children of item.children">
+            <tr>
+              <th>
+                {{ children.place }}
+              </th>
+            </tr>
+          </ng-container>
+        </td>
+        <td>
+          <ng-container *ngFor="let children of item.children">
+            <tr>
+              <th>
+                {{ children.region }}
+              </th>
+            </tr>
+          </ng-container>
+        </td>
+      </tr>
+    </table>
     <h2 class="results__name">{{ 'RESULTS.SECOND' | translate }}</h2>
     <h2 class="results__name">{{ 'RESULTS.THIRD' | translate }}</h2>
     <a
