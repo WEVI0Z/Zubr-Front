@@ -266,6 +266,21 @@ const ITEMS_1 = [
 
 const COLUMNS_2 = ['Место', 'Область']
 
+const ITEMS_2 = [
+  {
+    place: '1 место',
+    region: 'г. Минск',
+  },
+  {
+    place: '2 место',
+    region: 'Гомельская область',
+  },
+  {
+    place: '3 место',
+    region: 'Могилевская область',
+  },
+]
+
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
@@ -276,6 +291,8 @@ export class ResultsComponent implements OnInit {
 
   columns_1 = COLUMNS_1
   items_1 = ITEMS_1
+  columns_2 = COLUMNS_2
+  items_2 = ITEMS_2
 
   constructor(
     public translate: TranslateService,

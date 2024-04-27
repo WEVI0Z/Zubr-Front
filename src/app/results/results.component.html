@@ -49,6 +49,21 @@
       </tr>
     </table>
     <h2 class="results__name">{{ 'RESULTS.SECOND' | translate }}</h2>
+    <table>
+      <tr>
+        <td *ngFor="let item of columns_2">
+          {{ item }}
+        </td>
+      </tr>
+      <tr *ngFor="let item of items_2">
+        <td>
+          {{ item.place }}
+        </td>
+        <td>
+          {{ item.region }}
+        </td>
+      </tr>
+    </table>
     <h2 class="results__name">{{ 'RESULTS.THIRD' | translate }}</h2>
     <a
       href="../../assets/results/Bot-конструктор%209%20класс.pdf"
