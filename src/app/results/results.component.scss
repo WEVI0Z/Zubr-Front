@@ -7,6 +7,7 @@ main {
 }
 
 .results {
+  overflow: auto;
   width: 100%;
   max-width: $max-width;
   margin: 30px auto 70px;
@@ -18,7 +19,7 @@ main {
 
     &__title {
       vertical-align: middle;
-      padding: 15px 0;
+      padding: 15px 10px;
       text-align: center;
       font-size: 26px;
     }
