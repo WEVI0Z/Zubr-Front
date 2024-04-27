@@ -37,7 +37,6 @@ export class AlbumComponent {
     //получаем полное имя альбома
     this.albumName = this.albumList.getFullName(this.folderPath)
     this.RobIn = this.albumList.getRobIn(this.folderPath)
-    
     this.mediaService = new MediaService(translate)
     //получаем список фото
     this.photoList = this.mediaService.getPhotoList(this.folderPath)
@@ -48,7 +47,7 @@ export class AlbumComponent {
   }
 
   ngOnInit(): void {
-    this.breadcrumbService.set('@Album', this.albumName + ' ' + this.RobIn)
+    this.breadcrumbService.set('@Album', this.albumName)
     this.breadcrumbService.set('@Media', 'MEDIA.BREADCRUMB')
   }
 }
