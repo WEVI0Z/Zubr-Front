@@ -23,13 +23,13 @@ export class ResultsComponent implements OnInit {
 
   ngOnInit(): void {
     this.translate
-      .get('SHARED.HEADER.ABOUT')
+      .get('SHARED.HEADER.RESULTS')
       .subscribe((translation: string) => {
         document.title = translation
       })
-    this.breadcrumbService.set('@About', 'ABOUT.BREADCRUMB')
+    this.breadcrumbService.set('@Results', 'RESULTS.BREADCRUMB')
   }
   checkRouteUrl() {
-    return this.router.url == '/about'
+    return this.router.url == '/results'
   }
 }

@@ -6,7 +6,8 @@ main {
   min-height: 100vh;
 }
 
-.about {
+.results {
+  width: 100%;
   max-width: $max-width;
   margin: 30px auto 70px;
   padding: 0 90px;
@@ -18,27 +19,6 @@ main {
     font-size: 96px;
     font-weight: 300;
     letter-spacing: -11px;
-  }
-
-  &__paragraph {
-    font-size: 16px;
-    letter-spacing: -1px;
-
-    &--first {
-      max-width: 685px;
-    }
-
-    &--second {
-      max-width: 970px;
-    }
-  }
-
-  &__goal {
-    margin-top: 45px;
-  }
-
-  &__tasks {
-    margin-top: 45px;
   }
 
   &__link {
@@ -64,127 +44,8 @@ main {
   }
 }
 
-.goal {
-  &__name {
-    margin: 0;
-
-    font-size: 48px;
-    font-weight: 300;
-    letter-spacing: -5px;
-  }
-
-  &__card {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-
-    background-color: #007aff;
-    background-image: url('/assets/shared/blue-background.png');
-  }
-
-  &__image {
-    margin: 5px;
-    width: 107px;
-    height: 107px;
-    padding: 9.5px;
-
-    background-color: #fff;
-    border-radius: 10px;
-  }
-
-  &__paragraph {
-    margin: 10px;
-    max-width: 389px;
-
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: -1px;
-    color: white;
-  }
-}
-
-.tasks {
-  &__name {
-    margin: 0;
-
-    font-size: 48px;
-    font-weight: 300;
-    letter-spacing: -5px;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    list-style-type: none;
-    padding: 0;
-  }
-
-  &__item {
-    max-width: 743px;
-    flex-grow: 1;
-    display: flex;
-    margin-top: 20px;
-  }
-
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    width: 136px;
-    height: 136px;
-
-    background-color: #007aff;
-    background-image: url('/assets/shared/blue-background.png');
-  }
-
-  &__image {
-    margin: 5px;
-    width: 107px;
-    height: 107px;
-    padding: 9.5px;
-    object-fit: scale-down;
-
-    background-color: #fff;
-    border-radius: 10px;
-  }
-
-  &__paragraph {
-    margin-left: 20px;
-    margin-top: 0;
-
-    font-size: 16px;
-    letter-spacing: -1px;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 1700px) {
-  .tasks__item {
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 1380px) {
-  .tasks__item {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .tasks__item {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .tasks__item {
-    max-width: 743px;
-  }
-}
-
 @media (max-width: 778px) {
-  .about {
+  .results {
     max-width: $max-width;
     margin: 30px auto;
     padding: 0 10px;
@@ -200,48 +61,5 @@ main {
 
   xng-breadcrumb {
     padding: 10px 0 0 15px;
-  }
-
-  .tasks__item {
-    max-width: 320px;
-  }
-
-  .goal {
-    &__name {
-      margin: 0;
-
-      font-size: 48px;
-      font-weight: 300;
-      letter-spacing: -5px;
-    }
-
-    &__card {
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-
-      background-color: #007aff;
-      background-image: url('/assets/shared/blue-background.png');
-    }
-
-    &__image {
-      margin: 5px;
-      width: 107px;
-      height: 107px;
-      padding: 9.5px;
-
-      background-color: #fff;
-      border-radius: 10px;
-    }
-
-    &__paragraph {
-      margin: 10px;
-      max-width: 389px;
-
-      font-size: 16px;
-      font-weight: 300;
-      letter-spacing: -1px;
-      color: white;
-    }
   }
 }
