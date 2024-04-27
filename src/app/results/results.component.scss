@@ -13,10 +13,25 @@ main {
   padding: 0 90px;
   box-sizing: border-box;
 
-  table {
+  .table {
     margin: 0;
 
-    th {
+    &__title {
+      vertical-align: middle;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    &__name {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__text {
+      padding: 6px;
+      font-weight: normal;
+      font-size: 18px;
       text-align: left;
     }
   }

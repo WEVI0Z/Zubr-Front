@@ -9,20 +9,20 @@
   <section class="results">
     <h2 class="results__title">{{ 'RESULTS.TITLE' | translate }}</h2>
     <h2 class="results__name">{{ 'RESULTS.FIRST' | translate }}</h2>
-    <table>
+    <table class="'table">
       <tr>
-        <td *ngFor="let item of columns_1">
+        <td class="table__title" *ngFor="let item of columns_1">
           {{ item }}
         </td>
       </tr>
       <tr *ngFor="let item of items_1">
-        <td>
+        <td class="table__name">
           {{ item.title }}
         </td>
         <td>
           <ng-container *ngFor="let children of item.children">
             <tr>
-              <th>
+              <th class="table__text">
                 {{ children.name }}
               </th>
             </tr>
@@ -31,7 +31,7 @@
         <td>
           <ng-container *ngFor="let children of item.children">
             <tr>
-              <th>
+              <th class="table__text">
                 {{ children.place }}
               </th>
             </tr>
@@ -40,7 +40,7 @@
         <td>
           <ng-container *ngFor="let children of item.children">
             <tr>
-              <th>
+              <th class="table__text">
                 {{ children.region }}
               </th>
             </tr>
@@ -49,17 +49,17 @@
       </tr>
     </table>
     <h2 class="results__name">{{ 'RESULTS.SECOND' | translate }}</h2>
-    <table>
+    <table class="'table">
       <tr>
-        <td *ngFor="let item of columns_2">
+        <td class="table__title" *ngFor="let item of columns_2">
           {{ item }}
         </td>
       </tr>
       <tr *ngFor="let item of items_2">
-        <td>
+        <td class="table__text">
           {{ item.place }}
         </td>
-        <td>
+        <td class="table__text">
           {{ item.region }}
         </td>
       </tr>
