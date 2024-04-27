@@ -45,6 +45,23 @@
           </li>
 
           <li class="sidebar__menu-item">
+            <a href="#" routerLink="/results" class="sidebar__menu-link">
+              <img class="sidebar__menu-image" />
+              {{ 'SHARED.HEADER.RESULTS' | translate }}
+            </a>
+          </li>
+
+          <li class="sidebar__menu-item">
+            <a href="#" routerLink="/contacts" class="sidebar__menu-link">
+              <img
+                src="assets/header/contacts.png"
+                class="sidebar__menu-image"
+              />
+              {{ 'SHARED.HEADER.CONTACTS' | translate }}
+            </a>
+          </li>
+
+          <li class="sidebar__menu-item">
             <button class="sidebar__menu-link" (click)="toggleSubmenu(1)">
               <img
                 src="assets/header/competitions.png"
@@ -224,6 +241,16 @@
           <li class="nav__item" [hidden]="isMobileScreen">
             <a href="#" routerLink="/about" class="nav__link">
               {{ 'SHARED.HEADER.ABOUT' | translate }}
+            </a>
+          </li>
+          <li class="nav__item" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/results" class="nav__link">
+              {{ 'SHARED.HEADER.RESULTS' | translate }}
+            </a>
+          </li>
+          <li class="nav__item" [hidden]="isMobileScreen">
+            <a href="#" routerLink="/contacts" class="nav__link">
+              {{ 'SHARED.HEADER.CONTACTS' | translate }}
             </a>
           </li>
           <li
