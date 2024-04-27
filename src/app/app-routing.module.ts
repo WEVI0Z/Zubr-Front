@@ -22,6 +22,11 @@ const routes: Routes = [
       import('./about/about.module').then((m) => m.AboutModule),
   },
   {
+    path: 'results',
+    loadChildren: () =>
+      import('./results/results.module').then((m) => m.ResultsModule),
+  },
+  {
     path: 'contacts',
     loadChildren: () =>
       import('./contacts/contacts.module').then((m) => m.ContactsModule),
