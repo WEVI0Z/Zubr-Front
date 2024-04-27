@@ -1,0 +1,106 @@
+@import '../../stylesheets/global';
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.results {
+  overflow: auto;
+  width: 100%;
+  max-width: $max-width;
+  margin: 30px auto 70px;
+  padding: 0 90px;
+  box-sizing: border-box;
+
+  .table {
+    margin: 0;
+
+    &__title {
+      vertical-align: middle;
+      padding: 15px 10px;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    &__name {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__text {
+      white-space: nowrap;
+      padding: 6px;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -11px;
+  }
+
+  &__name {
+    text-align: center;
+    margin-top: 50px;
+
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -5px;
+  }
+
+  &__paragraph {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+
+  &__link {
+    margin-top: 30px;
+    display: block;
+    position: relative;
+    font-size: 40px;
+    padding: 5px;
+
+    text-decoration: none;
+    color: white;
+    background-color: #007aff;
+    background-image: url('/assets/shared/blue-background.png');
+  }
+
+  &__image {
+    position: relative;
+    top: 6px;
+    width: 40px;
+    height: 44px;
+
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 778px) {
+  .results {
+    max-width: $max-width;
+    margin: 30px auto;
+    padding: 0 10px;
+
+    &__name {
+      margin-top: 30px;
+
+      font-size: 55px;
+      font-weight: 300;
+      letter-spacing: -5px;
+    }
+  }
+
+  xng-breadcrumb {
+    padding: 10px 0 0 15px;
+  }
+}

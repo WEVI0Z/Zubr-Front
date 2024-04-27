@@ -1,0 +1,217 @@
+<main>
+  <app-header></app-header>
+  <xng-breadcrumb [separator]="iconTemplate">
+    <ng-container *xngBreadcrumbItem="let breadcrumb">
+      <ng-container>{{ breadcrumb | translate }}</ng-container>
+    </ng-container>
+  </xng-breadcrumb>
+  <ng-template #iconTemplate> > </ng-template>
+  <section class="results">
+    <h2 class="results__title">{{ 'RESULTS.TITLE' | translate }}</h2>
+    <h2 class="results__name">{{ 'RESULTS.FIRST' | translate }}</h2>
+    <p class="results__paragraph">{{ 'RESULTS.PARAGR.1' | translate }}</p>
+    <table class="'table">
+      <tr>
+        <td class="table__title" *ngFor="let item of columns_1">
+          {{ item }}
+        </td>
+      </tr>
+      <tr *ngFor="let item of items_1">
+        <td class="table__name">
+          {{ item.title }}
+        </td>
+        <td>
+          <ng-container *ngFor="let children of item.children">
+            <tr>
+              <th class="table__text">
+                {{ children.name }}
+              </th>
+            </tr>
+          </ng-container>
+        </td>
+        <td>
+          <ng-container *ngFor="let children of item.children">
+            <tr>
+              <th class="table__text">
+                {{ children.place }}
+              </th>
+            </tr>
+          </ng-container>
+        </td>
+        <td>
+          <ng-container *ngFor="let children of item.children">
+            <tr>
+              <th class="table__text">
+                {{ children.region }}
+              </th>
+            </tr>
+          </ng-container>
+        </td>
+      </tr>
+    </table>
+    <p class="results__paragraph">{{ 'RESULTS.PARAGR.2' | translate }}</p>
+    <h2 class="results__name">{{ 'RESULTS.SECOND' | translate }}</h2>
+    <table class="'table">
+      <tr>
+        <td class="table__title" *ngFor="let item of columns_2">
+          {{ item }}
+        </td>
+      </tr>
+      <tr *ngFor="let item of items_2">
+        <td class="table__text">
+          {{ item.place }}
+        </td>
+        <td class="table__text">
+          {{ item.region }}
+        </td>
+      </tr>
+    </table>
+    <h2 class="results__name">{{ 'RESULTS.THIRD' | translate }}</h2>
+    <a
+      href="../../assets/results/Bot-конструктор%209%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.1' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Web-дизайн.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.2' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Web-разработка%208%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.3' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Web-разработка%209%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.4' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Графический%20дизайн%208%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.5' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Графический%20дизайн%2010%20клас.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.6' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Интеллектуальное%20сумо%2015х15.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.7' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Программирование%2010%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.8' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Прототипирование%208%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.9' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Прототипирование%2010%20класс.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.10' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Следование%20по%20линии.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.11' | translate }}
+    </a>
+    <a
+      href="../../assets/results/Футбол%20управляемых%20роботов%202х2.pdf"
+      target="_blank"
+      class="results__link"
+    >
+      <img
+        src="../../assets/results/pdf-icon.png"
+        alt=""
+        class="results__image"
+      />
+      {{ 'RESULTS.PROTOCOLS.12' | translate }}
+    </a>
+  </section>
+  <app-share-block></app-share-block>
+  <app-footer></app-footer>
+</main>
