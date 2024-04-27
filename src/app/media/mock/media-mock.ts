@@ -21,6 +21,7 @@ const albumsNames: string[] = [
   'minsk2024',
   'mogilev2024',
   'brest2024',
+  'zubr2024'
 ]
 export class AlbumList {
   private currentLang: string
@@ -40,6 +41,13 @@ export class AlbumList {
       //  robin: this.getRobIn(albumsNames[5]),
       //  folderPath: albumsNames[5],
       //},
+      
+      {
+        name: this.getFullName(albumsNames[5]),
+        date:'28.04.2024',
+        robin: this.getRobIn(albumsNames[5]),
+        folderPath: albumsNames[5],
+      },
       {
         name: this.getFullName(albumsNames[4]),
         date: '12.03.2024',
@@ -95,6 +103,10 @@ export class AlbumList {
       }
       case albumsNames[4]: {
         name = dict.MEDIA.ALBUM4.TITLE
+        break
+      }
+      case albumsNames[5]: {
+        name = dict.MEDIA.ALBUM1.TITLE
         break
       }
       //для нового альбома
@@ -154,6 +166,7 @@ export class PhotoList {
     { photoPath: '11.jpg' },
     { photoPath: '12.jpg' },
   ]
+  
   private brest2024: Photo[] = [
     { photoPath: '1.jpg' },
     { photoPath: '2.jpg' },
@@ -193,6 +206,44 @@ export class PhotoList {
     { photoPath: '6.jpg' },
     { photoPath: '7.jpg' },
   ]
+  private zubr2024: Photo[] = [
+    { photoPath: '1.jpg' },
+    { photoPath: '2.jpg' },
+    { photoPath: '3.jpg' },
+    { photoPath: '4.jpg' },
+    { photoPath: '5.jpg' },
+    { photoPath: '6.jpg' },
+    { photoPath: '7.jpg' },
+    { photoPath: '8.jpg' },
+    { photoPath: '9.jpg' },
+    { photoPath: '10.jpg' },
+    { photoPath: '11.jpg' },
+    { photoPath: '12.jpg' },
+    { photoPath: '13.jpg' },
+    { photoPath: '14.jpg' },
+    { photoPath: '15.jpg' },
+    { photoPath: '16.jpg' },
+    { photoPath: '17.jpg' },
+    { photoPath: '18.jpg' },
+    { photoPath: '19.jpg' },
+    { photoPath: '20.jpg' },
+    { photoPath: '21.jpg' },
+    { photoPath: '22.jpg' },
+    { photoPath: '23.jpg' },
+    { photoPath: '24.jpg' },
+    { photoPath: '25.jpg' },
+    { photoPath: '26.jpg' },
+    { photoPath: '27.jpg' },
+    { photoPath: '28.jpg' },
+    { photoPath: '29.jpg' },
+    { photoPath: '30.jpg' },
+    { photoPath: '31.jpg' },
+    { photoPath: '32.jpg' },
+    { photoPath: '33.jpg' },
+    { photoPath: '34.jpg' },
+    { photoPath: '35.jpg' },
+
+  ]
 
   //private <album_name>: Photo[] = [
   //  { photoPath: '1.jpg' },
@@ -218,11 +269,15 @@ export class PhotoList {
         list = this.brest2024
         break
       }
+      case albumsNames[5]: {
+        list = this.zubr2024
+        break
+      }
       //для нового альбома
       //case albumsNames[5]: {
       //  list = this.<album_name>
       //  break
-      //}
+        //}
     }
     return list
   }
