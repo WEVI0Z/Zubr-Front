@@ -1,0 +1,34 @@
+<div class="modal">
+  <div class="modal-header">
+    <h4>{{ 'ACCESS-PANEL.HEADER' | translate }}</h4>
+    <button class="close-button" (click)="closeModal.emit()">X</button>
+    <button class="reset-button" (click)="resetPreferences()">
+      {{ 'ACCESS-PANEL.RESET' | translate }}
+    </button>
+  </div>
+  <div class="modal-body">
+    <button (click)="increaseFontSize()">
+      {{ 'ACCESS-PANEL.IFONT' | translate }}
+    </button>
+    <button (click)="decreaseFontSize()">
+      {{ 'ACCESS-PANEL.DFONT' | translate }}
+    </button>
+    <!-- <button (click)="increaseLineHeight()">Увеличить интервал шрифта</button>
+    <button (click)="decreaseLineHeight()">Уменьшить интервал шрифта</button>
+    <button (click)="invertColors()">Инвертировать цвета</button>
+    <button (click)="applyGrayscale()">Серые оттенки</button> -->
+    <button (click)="underlineLinks()">
+      {{ 'ACCESS-PANEL.UNDERLINK' | translate }}
+    </button>
+    <!-- <button (click)="increaseCursorSize()">Увеличить курсор</button> -->
+    <button (click)="enableReadingMode()">
+      {{ 'ACCESS-PANEL.READINGMODE' | translate }}
+    </button>
+    <div
+      class="reading-line"
+      *ngIf="readingModeEnabled"
+      [style.top.px]="lineTop"
+    ></div>
+    <!-- <button (click)="convertTextToSpeech()">Преобразовать текст в речь</button> -->
+  </div>
+</div>
